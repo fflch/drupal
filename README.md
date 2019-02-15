@@ -6,7 +6,8 @@
     cd web
     php -S 0.0.0.0:8888
 
-# Instalação de novo módulo:
+# Exemplos de instalação de novos módulos:
 
     cd drupal8
-    composer require drupal/smtp
+    composer require drupal/webform:5.1
+    composer require drupal/smtp:1.0-beta4
