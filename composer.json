@@ -9,12 +9,29 @@
             "role": ""
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+       "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "custom-module-fflch": {
+            "type": "git",
+            "url": "https://github.com/fflch/custom-module-fflch.git"
+        },
+        "custom-module-cem": {
+            "type": "git",
+            "url": "https://github.com/fflch/custom-module-cem.git"
+        },
+        "cem-theme": {
+            "type": "git",
+            "url": "https://github.com/fflch/cem-theme.git"
         }
-    ],
+
+    },
     "require": {
         "php": ">=5.6",
         "balbuf/drupal-libraries-installer": "1.0",
@@ -23,6 +40,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "1.4",
         "drupal/admin_toolbar": "1.26",
+        "drupal/aegan": "1.0",
         "drupal/asset_injector": "2.4",
         "drupal/at_tools": "3.2",
         "drupal/block_class": "1.0",
@@ -61,6 +79,7 @@
         "drupal/imce": "1.7",
         "drupal/inline_responsive_images": "2.1",
         "drupal/jcarousel": "4.0",
+        "drupal/jethro": "2.0",
         "drupal/layout_plugin": "1.0-alpha23",
         "drupal/ldap": "3.0-beta5",
         "drupal/mailsystem": "4.1",
@@ -71,15 +90,18 @@
         "drupal/migrate_plus": "4.1",
         "drupal/migrate_source_csv": "2.2",
         "drupal/migrate_tools": "4.1",
+        "drupal/nexus": "1.4",
         "drupal/nice_menus": "1.0-beta2",
         "drupal/nivo_slider": "2.0-alpha1",
         "drupal/page_manager": "4.0-beta3",
         "drupal/panelbutton": "1.2",
         "drupal/panels": "4.3",
         "drupal/pathauto": "1.3",
+        "drupal/paxton": "1.3",
         "drupal/recaptcha": "2.4",
         "drupal/redirect": "1.3",
         "drupal/rules": "3.0-alpha4",
+        "drupal/samara": "1.0",
         "drupal/scheduler": "1.0",
         "drupal/search_api": "1.11",
         "drupal/select_or_other": "1.0-alpha3",
@@ -109,6 +131,11 @@
         "drupal/webform": "5.1",
         "drupal/youtube": "1.0-beta3",
         "drush/drush": "^8.0.0",
+        "fflch/cem-theme": "dev-master",
+        "fflch/custom-module-cem": "dev-master",
+        "fflch/custom-module-fflch": "dev-master",
+        "npm-asset/datetimepicker": "0.1.38",
+        "oomphinc/composer-installers-extender": "^1.1",
         "parsecsv/php-parsecsv": "1.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -130,7 +157,9 @@
         "classmap": [
             "scripts/composer/ScriptHandler.php"
         ],
-        "files": ["load.environment.php"]
+        "files": [
+            "load.environment.php"
+        ]
     },
     "scripts": {
         "pre-install-cmd": [
@@ -151,13 +180,34 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
+        "installer-types": [
+            "npm-asset",
+            "bower-asset"
+        ],
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/{$name}": ["type:drupal-drush"]
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:npm-asset",
+                "type:bower-asset"
+            ],
+            "drush/Commands/{$name}": [
+                "type:drupal-drush"
+            ]
         },
         "drupal-scaffold": {
             "initial": {
