@@ -6,7 +6,6 @@
 /web/themes/
 /web/profiles/
 /web/libraries/
-/config/
 
 # Ignore sensitive information
 /web/sites/*/settings.php
@@ -23,3 +22,6 @@
 
 # Ignore .env files as they are personal
 /.env
+
+*~
+*.swp
