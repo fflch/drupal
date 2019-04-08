@@ -1,0 +1,12 @@
+administration_mode: true
+allow_on_admin_pages: false
+default_challenge: image_captcha/Image
+add_captcha_description: true
+description: ''
+default_validation: 0
+persistence: null
+enable_stats: false
+log_wrong_responses: false
+dependencies:
+  config:
+    - core.extension.yml
