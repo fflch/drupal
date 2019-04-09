@@ -1,20 +1,33 @@
-# Procedimentos de deploy local
+# Procedimentos para deploy no ambiente dev:
 
-Download e instalação de dependências:
+Download e instalação das dependências:
 
     git clone git@github.com:SEU-USERNAME/drupal8.git
     cd drupal8
     composer install
 
-Servidor http básico para testes:
+Instalação em pt-br usando o profile fflch:
+
+    cd drupal8
+    ./vendor/bin/drupal site:install fflch --langcode="pt-br" --db-type="sqlite" \
+           --site-name="tests" --site-mail="admin@example.com" \
+           --account-name="admin" --account-mail="admin@example.com" --account-pass="admin" \
+           --no-interaction
+
+Servidor http básico:
 
     cd web
     php -S 0.0.0.0:8888
 
-Subir as configurações defaults da FFLCH:
+Caso queira forçar que as configurações voltem aos valores defaults:
 
     cd drupal8
-    ./vendor/bin/drush cim --partial --yes
+    ./vendor/bin/drush cim --partial --source='profiles/fflch/config/install'
+
+Se quiser apagar o banco para fazer uma instalação zerada:
+
+    cd drupal8
+    rm web/sites/default/files/.ht.sqlite
 
 # Exemplos de instalação de novos módulos:
 
@@ -28,7 +41,3 @@ Consulte o nome da biblioteca em https://asset-packagist.org e
 depois instale:
 
     composer require npm-asset/datetimepicker:0.1.38
-
-# Sempre quando habilitar ou desabilitar um módulo atualizar:
-
- - core.extension.yml
