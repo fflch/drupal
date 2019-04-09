@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0c88a6068cf28862752e226d330e1c0",
+    "content-hash": "20c06f9d3d039046b2e06a406ccf3a70",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -8182,6 +8182,39 @@
             "time": "2018-09-25T20:59:41+00:00"
         },
         {
+            "name": "fflch/aegan-subtheme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fflch/aegan-subtheme.git",
+                "reference": "f699547bad5324e6b54f18251a40c908a164a95d"
+            },
+            "require": {
+                "drupal/aegan": "1.0"
+            },
+            "type": "drupal-theme",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Gomes Veríssimo",
+                    "email": "thiago.verissimo@usp.br",
+                    "homepage": "https://github.com/thiagogomesverissimo"
+                }
+            ],
+            "description": "Aegan FFLCH",
+            "homepage": "https://github.com/fflch/aegan-subtheme",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://github.com/fflch/aegan-subtheme/issues",
+                "source": "https://github.com/fflch/aegan-subtheme"
+            },
+            "time": "2019-04-09T22:54:45+00:00"
+        },
+        {
             "name": "fflch/cem-theme",
             "version": "dev-master",
             "source": {
@@ -8243,7 +8276,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/drupal-profile-fflch.git",
-                "reference": "dedea656bb0f23a844dd28ff0510d04b01d5dac3"
+                "reference": "294531a7ab3bc328194b9aa853ba6f7e79a1a5f6"
             },
             "type": "drupal-profile",
             "authors": [
@@ -8252,7 +8285,7 @@
                     "email": "thiago.verissimo@usp.br"
                 }
             ],
-            "time": "2019-04-09T22:20:32+00:00"
+            "time": "2019-04-09T23:00:58+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -13747,7 +13780,8 @@
         "fflch/cem-theme": 20,
         "fflch/drupal-profile-fflch": 20,
         "fflch/custom-module-cem": 20,
-        "fflch/custom-module-fflch": 20
+        "fflch/custom-module-fflch": 20,
+        "fflch/aegan-subtheme": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

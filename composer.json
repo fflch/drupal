@@ -30,6 +30,10 @@
             "type": "git",
             "url": "https://github.com/fflch/custom-module-cem.git"
         },
+        "aegan-subtheme": {
+            "type": "git",
+            "url": "https://github.com/fflch/aegan-subtheme.git"
+        },
         "cem-theme": {
             "type": "git",
             "url": "https://github.com/fflch/cem-theme.git"
@@ -45,7 +49,6 @@
         "drupal/address": "1.4",
         "drupal/addtoany": "1.10",
         "drupal/admin_toolbar": "1.26",
-        "drupal/aegan": "1.0",
         "drupal/asset_injector": "2.4",
         "drupal/at_tools": "3.2",
         "drupal/block_class": "1.0",
@@ -140,6 +143,7 @@
         "fflch/drupal-profile-fflch": "dev-master",
         "fflch/custom-module-cem": "dev-master",
         "fflch/custom-module-fflch": "dev-master",
+        "fflch/aegan-subtheme": "dev-master",
         "npm-asset/datetimepicker": "0.1.38",
         "oomphinc/composer-installers-extender": "^1.1",
         "parsecsv/php-parsecsv": "1.0",
