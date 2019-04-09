@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3ac1f651356a9a4338c6bf4e165264d",
+    "content-hash": "f0c88a6068cf28862752e226d330e1c0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -8238,6 +8238,23 @@
             "time": "2019-02-21T14:13:56+00:00"
         },
         {
+            "name": "fflch/drupal-profile-fflch",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fflch/drupal-profile-fflch.git",
+                "reference": "dedea656bb0f23a844dd28ff0510d04b01d5dac3"
+            },
+            "type": "drupal-profile",
+            "authors": [
+                {
+                    "name": "thiagogomesverissimo",
+                    "email": "thiago.verissimo@usp.br"
+                }
+            ],
+            "time": "2019-04-09T22:20:32+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "6.3.3",
             "source": {
@@ -13728,6 +13745,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "fflch/cem-theme": 20,
+        "fflch/drupal-profile-fflch": 20,
         "fflch/custom-module-cem": 20,
         "fflch/custom-module-fflch": 20
     },

@@ -22,6 +22,10 @@
             "type": "git",
             "url": "https://github.com/fflch/custom-module-fflch.git"
         },
+        "drupal-profile-fflch": {
+            "type": "git",
+            "url": "https://github.com/fflch/drupal-profile-fflch.git"
+        },
         "custom-module-cem": {
             "type": "git",
             "url": "https://github.com/fflch/custom-module-cem.git"
@@ -133,6 +137,7 @@
         "drupal/youtube": "1.0-beta3",
         "drush/drush": "^8.0.0",
         "fflch/cem-theme": "dev-master",
+        "fflch/drupal-profile-fflch": "dev-master",
         "fflch/custom-module-cem": "dev-master",
         "fflch/custom-module-fflch": "dev-master",
         "npm-asset/datetimepicker": "0.1.38",

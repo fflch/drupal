@@ -16,8 +16,8 @@ Instalação em pt-br usando o profile fflch:
 
 Servidor http básico:
 
-    cd web
-    php -S 0.0.0.0:8888
+    cd drupal8
+    ./vendor/bin/drupal serve
 
 Caso queira forçar que as configurações voltem aos valores defaults:
 
