@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3fa667cf02793f201704f68c4f20376",
+    "content-hash": "4c60550fb8a5acd399a25c6ab2a84cc1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2958,53 +2958,6 @@
             "homepage": "https://www.drupal.org/project/contact_storage_export",
             "support": {
                 "source": "https://git.drupalcode.org/project/contact_storage_export"
-            }
-        },
-        {
-            "name": "drupal/contentimport",
-            "version": "4.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/contentimport.git",
-                "reference": "8.x-4.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/contentimport-8.x-4.1.zip",
-                "reference": "8.x-4.1",
-                "shasum": "880048420b8bb75c76f5dc72bfb698493503a520"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-4.1",
-                    "datestamp": "1518785880",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "dhayanandan_k",
-                    "homepage": "https://www.drupal.org/user/3534286"
-                }
-            ],
-            "description": "To Import content from CSV file",
-            "homepage": "https://www.drupal.org/project/contentimport",
-            "support": {
-                "source": "https://git.drupalcode.org/project/contentimport"
             }
         },
         {
@@ -7890,27 +7843,30 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.1.0",
+            "version": "5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "8.x-5.1"
+                "reference": "8.x-5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.1.zip",
-                "reference": "8.x-5.1",
-                "shasum": "d04743f078dc154685f9532253e6b5ea8dda1a56"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.2.zip",
+                "reference": "8.x-5.2",
+                "shasum": "44e67c377e156f7f8d6f26bba43240dfa1885637"
             },
             "require": {
                 "drupal/core": "*"
             },
             "require-dev": {
                 "drupal/address": "~1.4",
+                "drupal/captcha": "~1.0",
                 "drupal/chosen": "~2.6",
                 "drupal/devel": "*",
                 "drupal/jsonapi": "~2.0",
+                "drupal/mailsystem": "~4.0",
                 "drupal/select2": "~1.1",
+                "drupal/telephone_validation": "^2.2",
                 "drupal/token": "~1.3",
                 "drupal/webform_access": "*",
                 "drupal/webform_node": "*",
@@ -7923,8 +7879,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.1",
-                    "datestamp": "1553768585",
+                    "version": "8.x-5.2",
+                    "datestamp": "1553801966",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7988,6 +7944,7 @@
             "homepage": "https://drupal.org/project/webform",
             "support": {
                 "source": "http://cgit.drupalcode.org/webform",
+                "error": "Invalid dependency: \"telephone_validation/telephone_validation\" is an unknown drupal 8 package name",
                 "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/webform",
                 "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
@@ -8374,7 +8331,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/drupal-profile-fflch.git",
-                "reference": "bcf3f3a3b6eb81702494929f854c2ce4bbbfc422"
+                "reference": "d53490b83acd3b8e95a0dbb204ce415fc70842d0"
             },
             "type": "drupal-profile",
             "authors": [
@@ -8383,7 +8340,106 @@
                     "email": "thiago.verissimo@usp.br"
                 }
             ],
-            "time": "2019-04-10T14:16:28+00:00"
+            "time": "2019-04-10T23:27:39+00:00"
+        },
+        {
+            "name": "fflch/jethro-subtheme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fflch/jethro-subtheme.git",
+                "reference": "36a9af737ff12048023cca536b27ee19aef60f01"
+            },
+            "require": {
+                "drupal/jethro": "2.0"
+            },
+            "type": "drupal-theme",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Gomes Veríssimo",
+                    "email": "thiago.verissimo@usp.br",
+                    "homepage": "https://github.com/thiagogomesverissimo"
+                }
+            ],
+            "description": "jethro FFLCH",
+            "homepage": "https://github.com/fflch/jethro-subtheme",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://github.com/fflch/jethro-subtheme/issues",
+                "source": "https://github.com/fflch/jethro-subtheme"
+            },
+            "time": "2019-04-10T22:18:32+00:00"
+        },
+        {
+            "name": "fflch/nexus-subtheme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fflch/nexus-subtheme.git",
+                "reference": "9f70a0689477ea3618db70b6838f26a98d493d9f"
+            },
+            "require": {
+                "drupal/nexus": "1.4"
+            },
+            "type": "drupal-theme",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Gomes Veríssimo",
+                    "email": "thiago.verissimo@usp.br",
+                    "homepage": "https://github.com/thiagogomesverissimo"
+                }
+            ],
+            "description": "Nexus FFLCH",
+            "homepage": "https://github.com/fflch/nexus-subtheme",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://github.com/fflch/nexus-subtheme/issues",
+                "source": "https://github.com/fflch/nexus-subtheme"
+            },
+            "time": "2019-04-10T22:11:10+00:00"
+        },
+        {
+            "name": "fflch/paxton-subtheme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fflch/paxton-subtheme.git",
+                "reference": "73010d9c54bc0ee9aca934917234f07024732f7e"
+            },
+            "require": {
+                "drupal/paxton": "1.3"
+            },
+            "type": "drupal-theme",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Gomes Veríssimo",
+                    "email": "thiago.verissimo@usp.br",
+                    "homepage": "https://github.com/thiagogomesverissimo"
+                }
+            ],
+            "description": "Paxton FFLCH",
+            "homepage": "https://github.com/fflch/paxton-subtheme",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://github.com/fflch/paxton-subtheme/issues",
+                "source": "https://github.com/fflch/paxton-subtheme"
+            },
+            "time": "2019-04-10T22:15:24+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -13874,6 +13930,9 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "fflch/aegan-subtheme": 20,
+        "fflch/jethro-subtheme": 20,
+        "fflch/nexus-subtheme": 20,
+        "fflch/paxton-subtheme": 20,
         "fflch/cem-theme": 20,
         "fflch/custom-module-cem": 20,
         "fflch/custom-module-fflch": 20,
