@@ -22,7 +22,7 @@ Servidor http básico:
 Caso queira forçar que as configurações voltem aos valores defaults:
 
     cd drupal8
-    ./vendor/bin/drush cim --partial --source='profiles/contrib/fflch/config/install'
+    ./vendor/bin/drush cim --partial --source='profiles/contrib/drupal-profile-fflch/config/mandatory'
 
 Se quiser apagar o banco para fazer uma instalação zerada:
 
