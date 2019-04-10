@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "20c06f9d3d039046b2e06a406ccf3a70",
+    "content-hash": "0f50455373dd2adba7990915b6add33c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7301,6 +7301,57 @@
             }
         },
         {
+            "name": "drupal/theme_permission",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/theme_permission.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/theme_permission-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "d9706894227eba5e41b69547937d274597db376a"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1533469080",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "liber_t",
+                    "homepage": "https://www.drupal.org/user/3377176"
+                }
+            ],
+            "description": "This module extend  theme permission.",
+            "homepage": "https://www.drupal.org/project/theme_permission",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/theme_permission",
+                "issues": "https://www.drupal.org/project/issues/theme_permission"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.5.0",
             "source": {
@@ -8276,7 +8327,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/drupal-profile-fflch.git",
-                "reference": "294531a7ab3bc328194b9aa853ba6f7e79a1a5f6"
+                "reference": "bcf3f3a3b6eb81702494929f854c2ce4bbbfc422"
             },
             "type": "drupal-profile",
             "authors": [
@@ -8285,7 +8336,7 @@
                     "email": "thiago.verissimo@usp.br"
                 }
             ],
-            "time": "2019-04-09T23:00:58+00:00"
+            "time": "2019-04-10T14:16:28+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -12206,20 +12257,20 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "78af75148f9fdd34ea727c8b529a9b4a8f7b740c"
+                "reference": "e6828efaba2c9b79f4499dae1d66ef8bfa7b2b72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/78af75148f9fdd34ea727c8b529a9b4a8f7b740c",
-                "reference": "78af75148f9fdd34ea727c8b529a9b4a8f7b740c",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/e6828efaba2c9b79f4499dae1d66ef8bfa7b2b72",
+                "reference": "e6828efaba2c9b79f4499dae1d66ef8bfa7b2b72",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2"
+                "php": "^7.1"
             },
             "replace": {
                 "myclabs/deep-copy": "self.version"
@@ -12227,8 +12278,6 @@
             "require-dev": {
                 "doctrine/collections": "^1.0",
                 "doctrine/common": "^2.6",
-                "phpstan/phpstan": "^0.9.2",
-                "phpstan/phpstan-phpunit": "^0.9.4",
                 "phpunit/phpunit": "^7.1"
             },
             "type": "library",
@@ -12252,7 +12301,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2018-10-30T00:14:44+00:00"
+            "time": "2019-04-07T13:18:21+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -13777,11 +13826,11 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "fflch/aegan-subtheme": 20,
         "fflch/cem-theme": 20,
-        "fflch/drupal-profile-fflch": 20,
         "fflch/custom-module-cem": 20,
         "fflch/custom-module-fflch": 20,
-        "fflch/aegan-subtheme": 20
+        "fflch/drupal-profile-fflch": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
