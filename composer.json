@@ -1,14 +1,13 @@
 {
     "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 8 projects with composer",
+    "description": "Drupal 8 FFLCH USP",
     "type": "project",
     "license": "GPL-2.0-or-later",
-    "authors": [
-        {
-            "name": "",
-            "role": ""
-        }
-    ],
+    "authors": [{
+        "name": "Thiago Gomes Veríssimo",
+        "email": "thiago.verissimo@usp.br",
+        "homepage": "https://github.com/thiagogomesverissimo"
+    }],
     "repositories": {
         "0": {
             "type": "composer",
@@ -30,32 +29,10 @@
             "type": "git",
             "url": "https://github.com/fflch/custom-module-cem.git"
         },
-        "aegan-subtheme": {
-            "type": "git",
-            "url": "https://github.com/fflch/aegan-subtheme.git"
-        },
-        "jethro-subtheme": {
-            "type": "git",
-            "url": "https://github.com/fflch/jethro-subtheme.git"
-        },
-        "nexus-subtheme": {
-            "type": "git",
-            "url": "https://github.com/fflch/nexus-subtheme.git"
-        },
-        "paxton-subtheme": {
-            "type": "git",
-            "url": "https://github.com/fflch/paxton-subtheme.git"
-        },
-        "ckeditor_font_temp": {
-            "type": "git",
-            "url": "https://github.com/thiagogomesverissimo/ckeditor_font_temp.git"
-        },
-
         "cem-theme": {
             "type": "git",
             "url": "https://github.com/fflch/cem-theme.git"
         }
-
     },
     "require": {
         "php": ">=5.6",
@@ -65,14 +42,9 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "1.4",
         "drupal/addtoany": "1.10",
-        "drupal/admin_toolbar": "1.26",
-        "drupal/asset_injector": "2.4",
         "drupal/at_tools": "3.2",
         "drupal/block_class": "1.0",
-        "drupal/captcha": "1.0-beta1",
         "drupal/checklistapi": "1.8",
-        "drupal/ckeditor_font": "dev-master",
-        "drupal/collapse_text": "1.0",
         "drupal/colorbutton": "1.1",
         "drupal/conditional_fields": "1.0-alpha5",
         "drupal/config_perms": "2.0-beta1",
@@ -85,23 +57,16 @@
         "drupal/core": "8.6.14",
         "drupal/crop": "1.5",
         "drupal/csv_serialization": "1.4",
-        "drupal/ctools": "3.1",
         "drupal/date_range_formatter": "3.1",
         "drupal/draggableviews": "1.2",
         "drupal/ds": "3.2",
-        "drupal/editor_advanced_link": "1.4",
-        "drupal/editor_file": "1.3",
-        "drupal/entity": "1.0-rc1",
-        "drupal/entity_clone": "1.0-beta2",
         "drupal/externalauth": "1.1",
         "drupal/facets": "1.2",
         "drupal/field_collection": "1.0.0-alpha1",
         "drupal/field_group": "1.0",
         "drupal/file_entity": "2.0-beta6",
         "drupal/form_placeholder": "1.0",
-        "drupal/google_analytics": "2.4",
         "drupal/image_widget_crop": "2.2",
-        "drupal/imce": "1.7",
         "drupal/inline_responsive_images": "2.1",
         "drupal/jcarousel": "4.0",
         "drupal/layout_plugin": "1.0-alpha23",
@@ -119,7 +84,6 @@
         "drupal/page_manager": "4.0-beta3",
         "drupal/panelbutton": "1.2",
         "drupal/panels": "4.3",
-        "drupal/pathauto": "1.3",
         "drupal/recaptcha": "2.4",
         "drupal/redirect": "1.3",
         "drupal/rules": "3.0-alpha4",
@@ -128,7 +92,6 @@
         "drupal/search_api": "1.11",
         "drupal/select_or_other": "1.0-alpha3",
         "drupal/semanticviews": "2.2",
-        "drupal/senhaunicausp": "1.4",
         "drupal/seo_checklist": "4.1",
         "drupal/share_everywhere": "1.1",
         "drupal/simple_gmap": "1.4",
@@ -136,13 +99,11 @@
         "drupal/simplify_menu": "2.0",
         "drupal/single_datetime": "1.7",
         "drupal/site_settings": "1.13",
-        "drupal/smtp": "1.0-beta4",
         "drupal/social_media": "1.3",
         "drupal/superfish": "1.3",
         "drupal/swiftmailer": "1.0-beta2",
         "drupal/tagadelic": "3.0-alpha2",
         "drupal/taxonomy_manager": "1.0-alpha2",
-        "drupal/theme_permission": "1.0",
         "drupal/token": "1.5",
         "drupal/twig_tweak": "2.1",
         "drupal/typed_data": "1.0-alpha2",
@@ -151,19 +112,11 @@
         "drupal/views_bulk_operations": "2.4",
         "drupal/views_data_export": "1.0-beta1",
         "drupal/views_slideshow": "4.6",
-        "drupal/webform": "5.2",
         "drupal/youtube": "1.0-beta3",
         "drush/drush": "^8.0.0",
-        "fflch/aegan-subtheme": "dev-master",
         "fflch/cem-theme": "dev-master",
         "fflch/custom-module-cem": "dev-master",
         "fflch/custom-module-fflch": "dev-master",
-        "fflch/drupal-profile-fflch": "dev-master",
-        "fflch/jethro-subtheme": "dev-master",
-        "fflch/nexus-subtheme": "dev-master",
-        "fflch/paxton-subtheme": "dev-master",
-        "npm-asset/ckeditor": "4.11",
-        "npm-asset/datetimepicker": "0.1.38",
         "oomphinc/composer-installers-extender": "^1.1",
         "parsecsv/php-parsecsv": "1.0",
         "vlucas/phpdotenv": "^2.4",

@@ -29,13 +29,19 @@ Se quiser apagar o banco para fazer uma instalação zerada:
     cd drupal8
     rm web/sites/default/files/.ht.sqlite
 
-# Exemplos de instalação de novos módulos:
+## Observação:
+
+Os módulos, temas e bibliotecas realmente requeridos, isto é, que por default são instalados e configurados no site modelo entregue aos usuários estão no profile fflch,
+disponível em [https://github.com/fflch/drupal-profile-fflch](https://github.com/fflch/drupal-profile-fflch). Neste repositório estão apenas os módulos, temas e 
+bibliotecas usados em apenas alguns sites.
+
+## Exemplos de instalação de novos módulos:
 
     cd drupal8
     composer require drupal/webform:5.1
     composer require drupal/smtp:1.0-beta4
 
-# Bibliotecas de frontend são instaladas usando assest-packgist
+## libraries são instaladas usando assest-packgist:
 
 Consulte o nome da biblioteca em https://asset-packagist.org e
 depois instale:
