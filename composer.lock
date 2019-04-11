@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c60550fb8a5acd399a25c6ab2a84cc1",
+    "content-hash": "3ca18fa0e8e2a0071f8229967b82de31",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2240,48 +2240,15 @@
         },
         {
             "name": "drupal/ckeditor_font",
-            "version": "1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/ckeditor_font.git",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor_font-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "c2c412e477171b44f3c4c6550c0649ce6385a933"
-            },
-            "require": {
-                "drupal/core": "*"
+                "url": "https://github.com/thiagogomesverissimo/ckeditor_font_temp.git",
+                "reference": "24504dd3113c1883118dc920bb0b47b96bee0608"
             },
             "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1458716040",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "darol100",
-                    "homepage": "https://www.drupal.org/user/2667123"
-                },
-                {
-                    "name": "dinarcon",
-                    "homepage": "https://www.drupal.org/user/909522"
-                }
             ],
             "description": "This plugin adds Font Size and Font Family dropdowns that applies as inline element style.",
             "homepage": "https://www.drupal.org/project/ckeditor_font",
@@ -2289,9 +2256,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "http://cgit.drupalcode.org/ckeditor_font",
-                "issues": "http://drupal.org/project/issues/ckeditor_font"
-            }
+                "issues": "http://drupal.org/project/issues/ckeditor_font",
+                "source": "http://cgit.drupalcode.org/ckeditor_font"
+            },
+            "time": "2019-04-11T20:33:17+00:00"
         },
         {
             "name": "drupal/collapse_text",
@@ -8331,7 +8299,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/drupal-profile-fflch.git",
-                "reference": "d53490b83acd3b8e95a0dbb204ce415fc70842d0"
+                "reference": "82dae9e861af59fc28ad546a20c9de4d24375943"
             },
             "type": "drupal-profile",
             "authors": [
@@ -8340,7 +8308,7 @@
                     "email": "thiago.verissimo@usp.br"
                 }
             ],
-            "time": "2019-04-10T23:27:39+00:00"
+            "time": "2019-04-11T19:57:12+00:00"
         },
         {
             "name": "fflch/jethro-subtheme",
@@ -9013,6 +8981,20 @@
                 "php"
             ],
             "time": "2019-02-16T20:54:15+00:00"
+        },
+        {
+            "name": "npm-asset/ckeditor",
+            "version": "4.11.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/ckeditor/-/ckeditor-4.11.0.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "npm-asset",
+            "license": [
+                "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)"
+            ]
         },
         {
             "name": "npm-asset/datetimepicker",
@@ -13677,16 +13659,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.4.1",
+            "version": "3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "5b4333b4010625d29580eb4a41f1e53251be6baa"
+                "reference": "b8a7362af1cc1aadb5bd36c3defc4dda2cf5f0a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/5b4333b4010625d29580eb4a41f1e53251be6baa",
-                "reference": "5b4333b4010625d29580eb4a41f1e53251be6baa",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/b8a7362af1cc1aadb5bd36c3defc4dda2cf5f0a8",
+                "reference": "b8a7362af1cc1aadb5bd36c3defc4dda2cf5f0a8",
                 "shasum": ""
             },
             "require": {
@@ -13724,7 +13706,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-03-19T03:22:27+00:00"
+            "time": "2019-04-10T23:49:02+00:00"
         },
         {
             "name": "symfony/browser-kit",
@@ -13929,14 +13911,15 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/ckeditor_font": 20,
         "fflch/aegan-subtheme": 20,
-        "fflch/jethro-subtheme": 20,
-        "fflch/nexus-subtheme": 20,
-        "fflch/paxton-subtheme": 20,
         "fflch/cem-theme": 20,
         "fflch/custom-module-cem": 20,
         "fflch/custom-module-fflch": 20,
-        "fflch/drupal-profile-fflch": 20
+        "fflch/drupal-profile-fflch": 20,
+        "fflch/jethro-subtheme": 20,
+        "fflch/nexus-subtheme": 20,
+        "fflch/paxton-subtheme": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
