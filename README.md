@@ -19,11 +19,6 @@ Servidor http básico:
     cd drupal8
     ./vendor/bin/drupal serve
 
-Caso queira forçar que as configurações voltem aos valores defaults:
-
-    cd drupal8
-    ./vendor/bin/drush cim --partial --source='profiles/contrib/drupal-profile-fflch/config/mandatory'
-
 Se quiser apagar o banco para fazer uma instalação zerada:
 
     cd drupal8
