@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3ca18fa0e8e2a0071f8229967b82de31",
+    "content-hash": "217a0b85af3b7479c7537ace48c979bf",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5815,6 +5815,10 @@
                     "homepage": "https://www.drupal.org/user/45640"
                 },
                 {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
                     "name": "merlinofchaos",
                     "homepage": "https://www.drupal.org/user/26979"
                 },
@@ -5825,10 +5829,6 @@
                 {
                     "name": "samuel.mortenson",
                     "homepage": "https://www.drupal.org/user/2582268"
-                },
-                {
-                    "name": "sdboyer",
-                    "homepage": "https://www.drupal.org/user/146719"
                 },
                 {
                     "name": "tim.plunkett",
@@ -7471,7 +7471,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha2",
-                    "datestamp": "1536437580",
+                    "datestamp": "1554612486",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -8210,7 +8210,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/aegan-subtheme.git",
-                "reference": "f699547bad5324e6b54f18251a40c908a164a95d"
+                "reference": "28f3b8eb34f1af50d970566dd5d4025486daf9ac"
             },
             "require": {
                 "drupal/aegan": "1.0"
@@ -8235,7 +8235,7 @@
                 "issues": "https://github.com/fflch/aegan-subtheme/issues",
                 "source": "https://github.com/fflch/aegan-subtheme"
             },
-            "time": "2019-04-09T22:54:45+00:00"
+            "time": "2019-04-11T22:27:47+00:00"
         },
         {
             "name": "fflch/cem-theme",
@@ -8299,16 +8299,54 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/drupal-profile-fflch.git",
-                "reference": "82dae9e861af59fc28ad546a20c9de4d24375943"
+                "reference": "4295944bc62e3312b755ad5e01dbac65eeb0a752"
+            },
+            "require": {
+                "drupal/admin_toolbar": "1.26",
+                "drupal/asset_injector": "2.4",
+                "drupal/captcha": "1.0-beta1",
+                "drupal/ckeditor_font": "dev-master",
+                "drupal/collapse_text": "1.0",
+                "drupal/conditional_fields": "1.0-alpha5",
+                "drupal/ctools": "3.1",
+                "drupal/editor_advanced_link": "1.4",
+                "drupal/editor_file": "1.3",
+                "drupal/entity": "1.0-rc1",
+                "drupal/entity_clone": "1.0-beta2",
+                "drupal/google_analytics": "2.4",
+                "drupal/imce": "1.7",
+                "drupal/pathauto": "1.3",
+                "drupal/senhaunicausp": "1.4",
+                "drupal/smtp": "1.0-beta4",
+                "drupal/theme_permission": "1.0",
+                "drupal/webform": "5.2",
+                "fflch/aegan-subtheme": "dev-master",
+                "fflch/jethro-subtheme": "dev-master",
+                "fflch/nexus-subtheme": "dev-master",
+                "fflch/paxton-subtheme": "dev-master",
+                "npm-asset/ckeditor": "4.11"
             },
             "type": "drupal-profile",
+            "license": [
+                "GPL-2.0+"
+            ],
             "authors": [
                 {
-                    "name": "thiagogomesverissimo",
-                    "email": "thiago.verissimo@usp.br"
+                    "name": "Thiago Gomes Veríssimo",
+                    "email": "thiago.verissimo@usp.br",
+                    "homepage": "https://github.com/thiagogomesverissimo"
                 }
             ],
-            "time": "2019-04-11T19:57:12+00:00"
+            "description": "profile FFLCH",
+            "homepage": "https://github.com/fflch/drupal-profile-fflch",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://github.com/fflch/drupal-profile-fflch/issues",
+                "source": "https://github.com/fflch/drupal-profile-fflch"
+            },
+            "time": "2019-04-11T23:04:25+00:00"
         },
         {
             "name": "fflch/jethro-subtheme",
@@ -8316,7 +8354,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/jethro-subtheme.git",
-                "reference": "36a9af737ff12048023cca536b27ee19aef60f01"
+                "reference": "7ed5c7448ab2a397bb6a11c44c086f4564f18c40"
             },
             "require": {
                 "drupal/jethro": "2.0"
@@ -8341,7 +8379,7 @@
                 "issues": "https://github.com/fflch/jethro-subtheme/issues",
                 "source": "https://github.com/fflch/jethro-subtheme"
             },
-            "time": "2019-04-10T22:18:32+00:00"
+            "time": "2019-04-11T22:27:02+00:00"
         },
         {
             "name": "fflch/nexus-subtheme",
@@ -8349,7 +8387,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/nexus-subtheme.git",
-                "reference": "9f70a0689477ea3618db70b6838f26a98d493d9f"
+                "reference": "254cfa3d19bb388723e8c9cc4765a57cc8a25e62"
             },
             "require": {
                 "drupal/nexus": "1.4"
@@ -8374,7 +8412,7 @@
                 "issues": "https://github.com/fflch/nexus-subtheme/issues",
                 "source": "https://github.com/fflch/nexus-subtheme"
             },
-            "time": "2019-04-10T22:11:10+00:00"
+            "time": "2019-04-11T22:27:35+00:00"
         },
         {
             "name": "fflch/paxton-subtheme",
@@ -8382,7 +8420,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/paxton-subtheme.git",
-                "reference": "73010d9c54bc0ee9aca934917234f07024732f7e"
+                "reference": "1dea55be8dc492efc63fcfacf52426bfe4babd8e"
             },
             "require": {
                 "drupal/paxton": "1.3"
@@ -8407,7 +8445,7 @@
                 "issues": "https://github.com/fflch/paxton-subtheme/issues",
                 "source": "https://github.com/fflch/paxton-subtheme"
             },
-            "time": "2019-04-10T22:15:24+00:00"
+            "time": "2019-04-11T22:27:20+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -8994,20 +9032,6 @@
             "type": "npm-asset",
             "license": [
                 "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)"
-            ]
-        },
-        {
-            "name": "npm-asset/datetimepicker",
-            "version": "0.1.38",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/datetimepicker/-/datetimepicker-0.1.38.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
             ]
         },
         {
@@ -13911,15 +13935,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/ckeditor_font": 20,
-        "fflch/aegan-subtheme": 20,
         "fflch/cem-theme": 20,
         "fflch/custom-module-cem": 20,
         "fflch/custom-module-fflch": 20,
-        "fflch/drupal-profile-fflch": 20,
-        "fflch/jethro-subtheme": 20,
-        "fflch/nexus-subtheme": 20,
-        "fflch/paxton-subtheme": 20
+        "fflch/drupal-profile-fflch": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
