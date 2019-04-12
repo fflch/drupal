@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "217a0b85af3b7479c7537ace48c979bf",
+    "content-hash": "dd41f5aa83395fbc239d27b85e9e4f74",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1739,87 +1739,6 @@
             }
         },
         {
-            "name": "drupal/admin_toolbar",
-            "version": "1.26.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "8.x-1.26"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.26.zip",
-                "reference": "8.x-1.26",
-                "shasum": "7be9f91008bf17cf49b43d1c8e2211e7a8e40ce4"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.26",
-                    "datestamp": "1549559402",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Wilfrid Roze (eme)",
-                    "homepage": "https://www.drupal.org/u/eme",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Romain Jarraud (romainj)",
-                    "homepage": "https://www.drupal.org/u/romainj",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Adrian Cid Almaguer (adriancid)",
-                    "homepage": "https://www.drupal.org/u/adriancid",
-                    "email": "adriancid@gmail.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Mohamed Anis Taktak (matio89)",
-                    "homepage": "https://www.drupal.org/u/matio89",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "fethi.krout",
-                    "homepage": "https://www.drupal.org/user/3206765"
-                },
-                {
-                    "name": "matio89",
-                    "homepage": "https://www.drupal.org/user/2320090"
-                },
-                {
-                    "name": "romainj",
-                    "homepage": "https://www.drupal.org/user/370706"
-                }
-            ],
-            "description": "Provides a drop-down menu interface to the core Drupal Toolbar.",
-            "homepage": "http://drupal.org/project/admin_toolbar",
-            "keywords": [
-                "Drupal",
-                "Toolbar"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/admin_toolbar",
-                "issues": "https://www.drupal.org/project/issues/admin_toolbar"
-            }
-        },
-        {
             "name": "drupal/aegan",
             "version": "1.0.0",
             "source": {
@@ -2434,17 +2353,17 @@
         },
         {
             "name": "drupal/config_perms",
-            "version": "2.0.0-beta1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_perms.git",
-                "reference": "8.x-2.0-beta1"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_perms-8.x-2.0-beta1.zip",
-                "reference": "8.x-2.0-beta1",
-                "shasum": "2bd2caca20eef9e1832f8a99265fe8b182e8cf39"
+                "url": "https://ftp.drupal.org/files/projects/config_perms-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "708619cf3ee2f1f16a71414a6ff79f1f4803aa42"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2452,14 +2371,14 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-2.x": "2.x-dev"
+                    "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-beta1",
-                    "datestamp": "1551141180",
+                    "version": "8.x-1.1",
+                    "datestamp": "1510164716",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -8299,15 +8218,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/drupal-profile-fflch.git",
-                "reference": "4295944bc62e3312b755ad5e01dbac65eeb0a752"
+                "reference": "67324a9fd23119c073ac4ddccd7eff2e9e980dce"
             },
             "require": {
-                "drupal/admin_toolbar": "1.26",
                 "drupal/asset_injector": "2.4",
                 "drupal/captcha": "1.0-beta1",
                 "drupal/ckeditor_font": "dev-master",
                 "drupal/collapse_text": "1.0",
                 "drupal/conditional_fields": "1.0-alpha5",
+                "drupal/config_perms": "1.1",
                 "drupal/ctools": "3.1",
                 "drupal/editor_advanced_link": "1.4",
                 "drupal/editor_file": "1.3",
@@ -8346,7 +8265,7 @@
                 "issues": "https://github.com/fflch/drupal-profile-fflch/issues",
                 "source": "https://github.com/fflch/drupal-profile-fflch"
             },
-            "time": "2019-04-11T23:04:25+00:00"
+            "time": "2019-04-12T19:22:54+00:00"
         },
         {
             "name": "fflch/jethro-subtheme",

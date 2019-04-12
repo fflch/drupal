@@ -67,7 +67,6 @@
         "drupal/checklistapi": "1.8",
         "drupal/colorbutton": "1.1",
         "drupal/conditional_fields": "1.0-alpha5",
-        "drupal/config_perms": "2.0-beta1",
         "drupal/console": "^1.0.2",
         "drupal/contact_emails": "1.16",
         "drupal/contact_storage": "1.0-beta9",
