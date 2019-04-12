@@ -8129,7 +8129,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/aegan-subtheme.git",
-                "reference": "28f3b8eb34f1af50d970566dd5d4025486daf9ac"
+                "reference": "4f41061415f138390624b810af49133b703aae10"
             },
             "require": {
                 "drupal/aegan": "1.0"
@@ -8154,7 +8154,7 @@
                 "issues": "https://github.com/fflch/aegan-subtheme/issues",
                 "source": "https://github.com/fflch/aegan-subtheme"
             },
-            "time": "2019-04-11T22:27:47+00:00"
+            "time": "2019-04-12T22:49:23+00:00"
         },
         {
             "name": "fflch/cem-theme",
@@ -8218,7 +8218,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/drupal-profile-fflch.git",
-                "reference": "67324a9fd23119c073ac4ddccd7eff2e9e980dce"
+                "reference": "438fbaa13518b0114c9e814b7fa03e272e290b95"
             },
             "require": {
                 "drupal/asset_injector": "2.4",
@@ -8265,7 +8265,7 @@
                 "issues": "https://github.com/fflch/drupal-profile-fflch/issues",
                 "source": "https://github.com/fflch/drupal-profile-fflch"
             },
-            "time": "2019-04-12T19:22:54+00:00"
+            "time": "2019-04-12T23:20:46+00:00"
         },
         {
             "name": "fflch/jethro-subtheme",
