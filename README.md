@@ -19,6 +19,10 @@ Servidor http básico:
     cd drupal8
     ./vendor/bin/drupal serve -vvv
 
+Caso queira escolher ip e porta:
+
+    ./vendor/bin/drupal server 0.0.0.0:8000 -vvv 
+
 Se quiser apagar o banco para fazer uma instalação zerada:
 
     cd drupal8
