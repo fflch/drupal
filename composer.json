@@ -62,6 +62,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "1.4",
         "drupal/addtoany": "1.10",
+        "drupal/admin_toolbar": "1.26",
         "drupal/at_tools": "3.2",
         "drupal/block_class": "1.0",
         "drupal/checklistapi": "1.8",
