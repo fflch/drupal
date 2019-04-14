@@ -17,7 +17,7 @@ Instalação em pt-br usando o profile fflch:
 Servidor http básico:
 
     cd drupal8
-    ./vendor/bin/drupal serve
+    ./vendor/bin/drupal serve -vvv
 
 Se quiser apagar o banco para fazer uma instalação zerada:
 
