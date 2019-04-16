@@ -8243,7 +8243,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/cem-theme.git",
-                "reference": "cbd62530b826d7782a1fb4adf316d6d497a330e1"
+                "reference": "06bafbe51f7e7624cb1175827e2663e4c0744a74"
             },
             "type": "drupal-theme",
             "authors": [
@@ -8252,7 +8252,7 @@
                     "email": "medeiros.danielm@gmail.com"
                 }
             ],
-            "time": "2019-03-22T12:59:12+00:00"
+            "time": "2019-04-16T15:51:48+00:00"
         },
         {
             "name": "fflch/custom-module-cem",
@@ -8260,7 +8260,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/custom-module-cem.git",
-                "reference": "9c7ad7d12485960731ea9cc90bf605677f240821"
+                "reference": "3d003a61145a96b889ed90aebff532876177b3c0"
             },
             "type": "drupal-custom-module",
             "license": [
@@ -8273,7 +8273,7 @@
                 }
             ],
             "description": "Módulo customizado para o WebSite do CEM baseado em Drupal 8",
-            "time": "2019-02-21T14:15:29+00:00"
+            "time": "2019-04-16T15:52:30+00:00"
         },
         {
             "name": "fflch/custom-module-fflch",
