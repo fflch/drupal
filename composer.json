@@ -21,9 +21,9 @@
             "type": "git",
             "url": "https://github.com/fflch/custom-module-fflch.git"
         },
-        "drupal-profile-fflch": {
+        "fflchprofile": {
             "type": "git",
-            "url": "https://github.com/fflch/drupal-profile-fflch.git"
+            "url": "https://github.com/fflch/fflchprofile.git"
         },
         "custom-module-cem": {
             "type": "git",
@@ -137,7 +137,7 @@
         "fflch/cem-theme": "dev-master",
         "fflch/custom-module-cem": "dev-master",
         "fflch/custom-module-fflch": "dev-master",
-        "fflch/drupal-profile-fflch": "dev-master",
+        "fflch/fflchprofile": "dev-master",
         "oomphinc/composer-installers-extender": "^1.1",
         "parsecsv/php-parsecsv": "1.0",
         "vlucas/phpdotenv": "^2.4",
