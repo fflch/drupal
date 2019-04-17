@@ -9,7 +9,7 @@ Download e instalação das dependências:
 Instalação em pt-br usando o profile fflch:
 
     cd drupal8
-    ./vendor/bin/drupal site:install fflch --langcode="pt-br" --db-type="sqlite" \
+    ./vendor/bin/drupal site:install fflchprofile --db-type="sqlite" \
            --site-name="tests" --site-mail="admin@example.com" \
            --account-name="admin" --account-mail="admin@example.com" --account-pass="admin" \
            --no-interaction
@@ -21,7 +21,7 @@ Servidor http básico:
 
 Caso queira escolher ip e porta:
 
-    ./vendor/bin/drupal server 0.0.0.0:8000 -vvv 
+    ./vendor/bin/drupal server 0.0.0.0:8000 -vvv
 
 Se quiser apagar o banco para fazer uma instalação zerada:
 
@@ -31,7 +31,7 @@ Se quiser apagar o banco para fazer uma instalação zerada:
 ## Observação:
 
 Os módulos, temas e bibliotecas realmente requeridos, isto é, que por default são instalados e configurados no site modelo entregue aos usuários estão no profile fflch,
-disponível em [https://github.com/fflch/drupal-profile-fflch](https://github.com/fflch/drupal-profile-fflch). Neste repositório estão apenas os módulos, temas e 
+disponível em [https://github.com/fflch/drupal-profile-fflch](https://github.com/fflch/drupal-profile-fflch). Neste repositório estão apenas os módulos, temas e
 bibliotecas usados em apenas alguns sites.
 
 ## Exemplos de instalação de novos módulos:
