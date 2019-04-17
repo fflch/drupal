@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "fe5a8e934923f537c87ba9b36d08afa1",
@@ -8299,7 +8299,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/fflchprofile.git",
-                "reference": "2789975502f0fa9262699b115d875119a1a1462b"
+                "reference": "bcf0a276afa9359c478b9e81ab793b73f38368c1"
             },
             "require": {
                 "drupal/asset_injector": "2.4",
@@ -8338,15 +8338,15 @@
                 }
             ],
             "description": "profile FFLCH",
-            "homepage": "https://github.com/fflch/drupal-profile-fflch",
+            "homepage": "https://github.com/fflch/fflchprofile",
             "keywords": [
                 "Drupal"
             ],
             "support": {
-                "issues": "https://github.com/fflch/drupal-profile-fflch/issues",
-                "source": "https://github.com/fflch/drupal-profile-fflch"
+                "issues": "https://github.com/fflch/fflchprofile/issues",
+                "source": "https://github.com/fflch/fflchprofile"
             },
-            "time": "2019-04-17T02:31:11+00:00"
+            "time": "2019-04-17T13:46:55+00:00"
         },
         {
             "name": "fflch/jethro-subtheme",
@@ -12056,11 +12056,11 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.2",
+            "version": "8.3.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/coder.git",
-                "reference": "44c80c21074df43572652f35bec4f184f9eae5e7"
+                "reference": "a33d3388fb2e1d94bd2aee36a8ff79186e9d8f43"
             },
             "require": {
                 "ext-mbstring": "*",
@@ -12089,7 +12089,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-04-14T17:56:07+00:00"
+            "time": "2019-04-16T18:56:06+00:00"
         },
         {
             "name": "fabpot/goutte",

@@ -31,7 +31,7 @@ Se quiser apagar o banco para fazer uma instalação zerada:
 ## Observação:
 
 Os módulos, temas e bibliotecas realmente requeridos, isto é, que por default são instalados e configurados no site modelo entregue aos usuários estão no profile fflch,
-disponível em [https://github.com/fflch/drupal-profile-fflch](https://github.com/fflch/drupal-profile-fflch). Neste repositório estão apenas os módulos, temas e
+disponível em [https://github.com/fflch/fflchprofile](https://github.com/fflch/fflchprofile). Neste repositório estão apenas os módulos, temas e
 bibliotecas usados em apenas alguns sites.
 
 ## Exemplos de instalação de novos módulos:
