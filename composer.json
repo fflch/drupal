@@ -61,6 +61,7 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "1.4",
+        "drupal/cpf": "1.1",
         "drupal/addtoany": "1.10",
         "drupal/admin_toolbar": "1.26",
         "drupal/at_tools": "3.2",
