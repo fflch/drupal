@@ -75,7 +75,7 @@
         "drupal/contact_storage_export": "1.12",
         "drupal/contextual_range_filter": "1.0-rc1",
         "drupal/contribute": "1.0-beta7",
-        "drupal/core": "8.6.15",
+        "drupal/core": "8.7.0",
         "drupal/crop": "1.5",
         "drupal/csv_serialization": "1.4",
         "drupal/date_range_formatter": "3.1",
@@ -149,7 +149,6 @@
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "8.6.15"
     },
     "conflict": {
         "drupal/drupal": "*"
