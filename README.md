@@ -17,7 +17,6 @@ Download e instalação das dependências:
 
 Instalação em pt-br usando o profile fflch:
 
-    cd drupal8
     ./vendor/bin/drupal site:install fflchprofile --db-type="sqlite" \
            --site-name="tests" --site-mail="admin@example.com" \
            --account-name="admin" --account-mail="admin@example.com" --account-pass="admin" \
