@@ -1,5 +1,9 @@
 # Procedimentos para deploy no ambiente dev:
 
+    version='7.3'
+    apt-get install php$v php$v-common php$v-cli php$v-gd php$v-curl php$v-xml php$v-mbstring php-sqlite3
+    apt-get install sqlite3
+
 Download e instalação das dependências:
 
     git clone git@github.com:SEU-USERNAME/drupal8.git
