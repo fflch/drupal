@@ -4,6 +4,11 @@
     apt-get install php$v php$v-common php$v-cli php$v-gd php$v-curl php$v-xml php$v-mbstring php-sqlite3
     apt-get install sqlite3
 
+Composer:
+
+    curl -s https://getcomposer.org/installer | php
+    sudo mv composer.phar /usr/local/bin/composer
+
 Download e instalação das dependências:
 
     git clone git@github.com:SEU-USERNAME/drupal8.git
