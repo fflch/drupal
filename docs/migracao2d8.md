@@ -1,7 +1,6 @@
 1 - Baixar estrutura do site, por exemplo, site treinamento:
 
     scp copia@aegirsti.fflch.usp.br:treinamento.tar.gz .
-    senha: copia123456*
     tar -vzxf treinamento.tar.gz
 
 2 - Criar o banco de dados do site em drupal 6 que será migrado localmente:
