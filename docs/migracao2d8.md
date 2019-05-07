@@ -41,6 +41,7 @@
 9 - Procedimentos manuais:
 
  - Substituir menu principal pelo primário e ativar submenu
+ - Configurar o logo com o novo layout
  - redefinir a home
  - recolocar blocos nas regiões
  - Deletar tipos de conteúdos desnecessários
