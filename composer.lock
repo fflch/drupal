@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "385a312fc8d80806389732f01e5f5a42",
+    "content-hash": "52e0b56994dc3efa388d75d940c6666c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5381,25 +5381,27 @@
         },
         {
             "name": "drupal/migrate_plus",
-            "version": "4.1.0",
+            "version": "4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_plus.git",
-                "reference": "8.x-4.1"
+                "reference": "8.x-4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-4.1.zip",
-                "reference": "8.x-4.1",
-                "shasum": "cfd7ef2b17ede664b2b74eb101032a03c386457e"
+                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-4.2.zip",
+                "reference": "8.x-4.2",
+                "shasum": "5736a43e39cc5c091d54ceef2849ea35ba979af3"
             },
             "require": {
                 "drupal/core": "^8.3"
             },
             "require-dev": {
+                "drupal/entity": "*",
                 "drupal/migrate_example_advanced_setup": "*",
                 "drupal/migrate_example_setup": "*",
-                "drupal/migrate_tools": "*"
+                "drupal/migrate_tools": "*",
+                "drupal/profile": "*"
             },
             "suggest": {
                 "ext-soap": "*",
@@ -5411,7 +5413,7 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.1",
+                    "version": "8.x-4.2",
                     "datestamp": "1555683487",
                     "security-coverage": {
                         "status": "covered",
@@ -8398,7 +8400,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/aegan-subtheme.git",
-                "reference": "26e3288ffe0d4f0c33361259c31a7e32b786b50b"
+                "reference": "c0adc10d7d9850dba7d79d5aedbec054f97067fb"
             },
             "require": {
                 "drupal/aegan": "1.0"
@@ -8423,7 +8425,7 @@
                 "issues": "https://github.com/fflch/aegan-subtheme/issues",
                 "source": "https://github.com/fflch/aegan-subtheme"
             },
-            "time": "2019-04-18T15:29:32+00:00"
+            "time": "2019-05-07T21:06:54+00:00"
         },
         {
             "name": "fflch/cem-theme",
