@@ -25,7 +25,8 @@ Instalação em pt-br usando o profile fflch com *sqlite*:
 Instalação em pt-br usando o profile fflch com *mysql*:
 
     ./vendor/bin/drupal site:install fflchprofile --db-type="mysql" \
-           --db-port="3306" --db-user="master" --db-pass="master" --db-host="127.0.0.1" --db-name="drupal8site" \
+           --db-port="3306" --db-user="master" --db-pass="master"   \
+           --db-host="127.0.0.1" --db-name="drupal8site" \
            --site-name="tests" --site-mail="admin@example.com" \
            --account-name="admin" --account-mail="admin@example.com" --account-pass="admin" \
            --no-interaction
