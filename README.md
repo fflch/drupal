@@ -15,10 +15,17 @@ Download e instalação das dependências:
     cd drupal8
     composer install
 
-Instalação em pt-br usando o profile fflch:
+Instalação em pt-br usando o profile fflch com *sqlite*:
 
-    cd drupal8
     ./vendor/bin/drupal site:install fflchprofile --db-type="sqlite" \
+           --site-name="tests" --site-mail="admin@example.com" \
+           --account-name="admin" --account-mail="admin@example.com" --account-pass="admin" \
+           --no-interaction
+           
+Instalação em pt-br usando o profile fflch com *mysql*:
+
+    ./vendor/bin/drupal site:install fflchprofile --db-type="mysql" \
+           --db-port="3306" --db-user="master" --db-pass="master" --db-host="127.0.0.1" --db-name="drupal8site" \
            --site-name="tests" --site-mail="admin@example.com" \
            --account-name="admin" --account-mail="admin@example.com" --account-pass="admin" \
            --no-interaction
@@ -34,8 +41,9 @@ Caso queira escolher ip e porta:
 
 Se quiser apagar o banco para fazer uma instalação zerada:
 
-    cd drupal8
-    rm web/sites/default/files/.ht.sqlite
+    ./vendor/bin/drupal database:drop
+    # com sqlite, as vezes é necessário:
+    rm web/sites/default/files/.ht.sqlite*
 
 ## Observação:
 
