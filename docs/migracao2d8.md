@@ -27,19 +27,19 @@
     cd treinamento
     composer install
 
-6. Instalar modelo com o banco de dados no mysql - não pode ser sqlite, pois vamos mandar para a produção o resultado da migração. Aqui você pode fazer a instalação com comando (olhe README do drupal8) ou manualmente subindo um server local:
+6 - Instalar modelo com o banco de dados no mysql - não pode ser sqlite, pois vamos mandar para a produção o resultado da migração. Aqui você pode fazer a instalação com comando (olhe README do drupal8) ou manualmente subindo um server local:
 
     ./vendor/bin/drupal serve
 
-7. Habilitar módulos para migração:
+7 - Habilitar módulos para migração:
 
     ./vendor/bin/drush en migrate_plus migrate_tools migrate_upgrade migrate_manifest --yes
 
-8.  Importar conteúdo
+8 - Importar conteúdo
 
     drush migrate-manifest --legacy-db-url=mysql://d6user:d6pass@localhost/drupal_6 manifestd6.yml
 
-9. Checagem manual:
+9 - Procedimentos manuais:
 
  - Substituir menu principal pelo primário e ativar submenu
  - redefinir a home
