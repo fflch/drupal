@@ -41,8 +41,9 @@ Caso queira escolher ip e porta:
 
 Se quiser apagar o banco para fazer uma instalação zerada:
 
-    cd drupal8
-    rm web/sites/default/files/.ht.sqlite
+    ./vendor/bin/drupal database:drop
+    # com sqlite, as vezes é necessário:
+    rm web/sites/default/files/.ht.sqlite*
 
 ## Observação:
 
