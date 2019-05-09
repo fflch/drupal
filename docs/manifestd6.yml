@@ -1,22 +1,22 @@
-# user 
-- d6_user 
-- d6_user_profile_field 
-- d6_user_profile_field_instance 
-- d6_user_profile_entity_display 
-- d6_user_profile_entity_form_display 
-- d6_profile_values:user 
-- d6_filter_format 
-- d6_user_role 
-- d6_user_picture_entity_display 
-- d6_user_picture_entity_form_display 
-- d6_user_picture_file 
-- d6_user_picture_field 
-- d6_user_picture_field_instance 
+# user
+- d6_user
+- d6_user_profile_field
+- d6_user_profile_field_instance
+- d6_user_profile_entity_display
+- d6_user_profile_entity_form_display
+- d6_profile_values:user
+- d6_filter_format
+- d6_user_role
+- d6_user_picture_entity_display
+- d6_user_picture_entity_form_display
+- d6_user_picture_file
+- d6_user_picture_field
+- d6_user_picture_field_instance
 
-# taxonomy 
-- d6_taxonomy_vocabulary 
-- d6_taxonomy_settings 
-- d6_taxonomy_term 
+# taxonomy
+- d6_taxonomy_vocabulary
+- d6_taxonomy_settings
+- d6_taxonomy_term
 - d6_term_node
 - d6_term_node_revision
 - d6_vocabulary_entity_display
@@ -25,58 +25,58 @@
 - d6_vocabulary_field_instance
 - taxonomy_settings
 
-# nodes 
-- d6_node 
-- d6_node_revision 
-- d6_node_type 
+# nodes
+- d6_node
+- d6_node_revision
+- d6_node_type
 - d6_node_setting_promote
 - d6_node_setting_status
 - d6_node_setting_sticky
 - d6_node_settings
 - d6_node_type
-- d6_view_modes 
-- d6_filter_format 
-- d6_field_instance_per_form_display 
-- d6_field_instance_widget_settings 
-- d6_field_formatter_settings 
-- d6_field_instance 
-- d6_field 
-- d6_field_settings  
-- d6_cck_field_values:* 
-- d6_cck_field_revision:* 
+- d6_view_modes
+- d6_filter_format
+- d6_field_instance_per_form_display
+- d6_field_instance_widget_settings
+- d6_field_formatter_settings
+- d6_field_instance
+- d6_field
+- d6_field_settings
+- d6_cck_field_values:*
+- d6_cck_field_revision:*
 - d6_url_alias
 
-# taxonomy fields 
-- d6_term_node_revision 
-- d6_term_node 
-- d6_vocabulary_entity_display 
-- d6_vocabulary_entity_form_display 
-- d6_vocabulary_field_instance 
-- d6_vocabulary_field 
+# taxonomy fields
+- d6_term_node_revision
+- d6_term_node
+- d6_vocabulary_entity_display
+- d6_vocabulary_entity_form_display
+- d6_vocabulary_field_instance
+- d6_vocabulary_field
 
-# blocks 
+# blocks
 - block_content_body_field
 - block_content_entity_display
 - block_content_entity_form_display
 - block_content_type
 - d6_custom_block
-- d6_block 
-- d6_menu 
+- d6_block
+- d6_menu
 
 # menu
 - menu_settings
 - d6_menu_links
 
-# custom blocks 
-- d6_custom_block 
-- d6_filter_format 
+# custom blocks
+- d6_custom_block
+- d6_filter_format
 
-# book 
+# book
 - book_settings
-- d6_book 
-- d6_book_settings 
+- d6_book
+- d6_book_settings
 
-# file migrations are configurable, see https://www.drupal.org/node/2257723 
+# file migrations are configurable, see https://www.drupal.org/node/2257723
 - d6_file
 - d6_upload
 - d6_upload_entity_display
@@ -84,8 +84,3 @@
 - d6_upload_field
 - d6_upload_field_instance
 - file_settings
-
-# webform
-- upgrade_d6_node_webform
-- upgrade_d6_node_revision_webform
-

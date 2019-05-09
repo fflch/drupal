@@ -32,7 +32,7 @@
 
 7 - Habilitar módulos para migração:
 
-    ./vendor/bin/drush en migrate_plus migrate_tools migrate_upgrade migrate_manifest webform_migrate --yes
+    ./vendor/bin/drush en migrate_plus migrate_tools migrate_upgrade migrate_manifest --yes
 
 8 - Importar conteúdo
 
@@ -40,28 +40,18 @@
 
 9 - Procedimentos manuais:
 
- - Substituir menu principal pelo primário e ativar submenu
+ - Identificar responsável pelo site e entrar em contato
+ - Substituir menu principal pelo primário e ativar submenus
  - Configurar o logo com o novo layout
  - redefinir a home
  - recolocar blocos nas regiões
  - Deletar tipos de conteúdos desnecessários
- - Apagar  usuários
+ - Apagar usuários
  - recriar views ?
+ - Orientar como novo webform funciona
 
+10 - observações de envio para produção:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ - migrar site para outro endereço no aegir, ex: d6dlm.fflch.usp.br
+ - copiar a pasta files
+ - Dar um prazo para o responsável checar o site em d6
