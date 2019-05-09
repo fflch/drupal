@@ -85,3 +85,7 @@
 - d6_upload_field_instance
 - file_settings
 
+# webform
+- upgrade_d6_node_webform
+- upgrade_d6_node_revision_webform
+
