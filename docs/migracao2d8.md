@@ -32,7 +32,7 @@
 
 7 - Habilitar módulos para migração:
 
-    ./vendor/bin/drush en migrate_plus migrate_tools migrate_upgrade migrate_manifest --yes
+    ./vendor/bin/drush en migrate_plus migrate_tools migrate_upgrade migrate_manifest webform_migrate --yes
 
 8 - Importar conteúdo
 
