@@ -8623,7 +8623,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/fflchprofile.git",
-                "reference": "89d413099da2bc173f1eec8b57acd45f6cfddf8f"
+                "reference": "f661174f86686021f972e512f39ebf1b2db41df0"
             },
             "require": {
                 "drupal/asset_injector": "2.4",
@@ -8670,7 +8670,7 @@
                 "issues": "https://github.com/fflch/fflchprofile/issues",
                 "source": "https://github.com/fflch/fflchprofile"
             },
-            "time": "2019-05-06T15:50:43+00:00"
+            "time": "2019-05-09T13:47:45+00:00"
         },
         {
             "name": "fflch/jethro-subtheme",
