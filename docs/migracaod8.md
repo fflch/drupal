@@ -68,18 +68,18 @@ E-mail para agendamento:
 
 Prezado(a) __fulano(a)__
 
-A Seção Técnica de Informática da Faculdade de Filosofia Letras e Ciências Humanas vem informar por meio deste a adequação dos sites com a nova identidade visual da Faculdade conforme divulgada em [1].
+A Seção Técnica de Informática da Faculdade de Filosofia Letras e Ciências Humanas informar por meio deste, a adequação dos sites com a nova identidade visual conforme divulgada em [1].
 
-Você consta como responsável pelo site __site__, e sendo assim, gostaríamos de agendar uma reunião para planejamento da migração do mesmo para nova estrutura.
+Você consta como responsável pelo site __site__ e, sendo assim, gostaríamos de agendar uma reunião para planejamento da migração do mesmo para a nova identidade.
 
 Observações sobre a migração:
 
- - O template default será o mesmo da fflch: https://www.fflch.usp.br/
- - Nodes, arquivos, blocos e menus serão migrados
- - webforms e views não serão migrados devido a uma mudança de arquitetura entre as duas versões
- - O site antigo ficará no ar por 10 dias para auxiliar nos ajustes pós migração
- - O login será com senha única no site https://sites.fflch.usp.br/ na opção logon
-
+ - O template default será o mesmo da FFLCH: https://www.fflch.usp.br;
+ - Nodes, Arquivos, Blocos e Menus serão migrados;
+ - Webforms e Views não serão migrados devido a uma mudança de arquitetura entre as versões 6 e 8 do Drupal;
+ - O site antigo ficará disponível por 10 dias para auxiliar nos ajustes pós migração no endereço __endereço__;
+ - O acesso como administrador(a) deve ser efetuado com senha única USP através do site https://sites.fflch.usp.br e depois na opção "Logon no site" correspondente ao seu site;
+ 
 [1] https://www.fflch.usp.br/1276
 
 Atenciosamente,
@@ -91,17 +91,17 @@ E-mail para migração direta:
 
 Prezado(a) __fulano(a)__
 
-A Seção Técnica de Informática da Faculdade de Filosofia Letras e Ciências Humanas vem informar por meio deste a adequação dos sites com a nova identidade visual Faculdade conforme divulgada em [1].
+A Seção Técnica de Informática da Faculdade de Filosofia Letras e Ciências Humanas informar por meio deste, a adequação dos sites com a nova identidade visual conforme divulgada em [1].
 
-Você consta como responsável pelo site __site__, e sendo assim, gostaríamos de comunicar que o mesmo foi migrado para nova estrutura.
+Você consta como responsável pelo site __site__ e, sendo assim, comunicamos que o mesmo foi migrado para nova identidade.
 
 Observações sobre a migração:
 
- - O template default é o mesmo da fflch: https://www.fflch.usp.br/
- - Nodes, arquivos, blocos e menus foram migrados
- - webforms e views não foram migrados devido a uma mudança de arquitetura entre as duas versões, mas caso necessite de auxílio, podemos agendar data para suporte
+ - O template default será o mesmo da FFLCH: https://www.fflch.usp.br;
+ - Nodes, Arquivos, Blocos e Menus serão migrados;
+ - Webforms e Views não serão migrados devido a uma mudança de arquitetura entre as versões 6 e 8 do Drupal. Caso necessite de auxílio, podemos agendar data para suporte;
  - O site antigo ficará no ar por 10 dias para auxiliar nos ajustes pós migração no endereço __endereço__
- - O acesso como administrador(a) deve ser efetuado com senha única USP através do site https://sites.fflch.usp.br/ e depois na opção "logon" correspondente ao seu site
+ - O acesso como administrador(a) deve ser efetuado com senha única USP através do site https://sites.fflch.usp.br/ e depois na opção "Logon no site" correspondente ao seu site
 
 [1] https://www.fflch.usp.br/1276
 
