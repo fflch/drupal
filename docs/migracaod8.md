@@ -101,7 +101,7 @@ Observações sobre a migração:
  - Nodes, arquivos, blocos e menus foram migrados
  - webforms e views não foram migrados devido a uma mudança de arquitetura entre as duas versões, mas caso necessite de auxílio, podemos agendar data para suporte
  - O site antigo ficará no ar por 10 dias para auxiliar nos ajustes pós migração no endereço __endereço__
- - O login é efetuado com senha única USP através do site https://sites.fflch.usp.br/ na opção "logon"
+ - O acesso como administrador(a) deve ser efetuado com senha única USP através do site https://sites.fflch.usp.br/ e depois na opção "logon" correspondente ao seu site
 
 [1] https://www.fflch.usp.br/1276
 
