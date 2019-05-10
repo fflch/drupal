@@ -36,7 +36,7 @@
 
 8 - Importar conteúdo
 
-    ./vendor/bin/drush migrate-manifest --legacy-db-url=mysql://d6user:d6pass@localhost/drupal_6 manifestd6.yml
+    ./vendor/bin/drush migrate-manifest --legacy-db-url=mysql://d6user:d6pass@localhost/drupal_6 ../docs/manifestd6.yml
 
 9 - Procedimentos manuais:
 
