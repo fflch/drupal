@@ -55,6 +55,7 @@
  - migrar site para outro endereço no aegir, ex: d6dlm.fflch.usp.br
  - copiar a pasta files
  - fazer dump local e enviar para produção
+ - rodar o cron para sincronizar as configurações padrões
  - Dar um prazo para o responsável checar o site em d6
  - cadastrar o site e os responsáveis em: sites.fflch.usp.br
 
