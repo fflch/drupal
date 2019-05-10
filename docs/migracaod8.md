@@ -76,7 +76,7 @@ Observações sobre a migração:
 
  - O template default será o mesmo da fflch: https://www.fflch.usp.br/
  - Nodes, arquivos, blocos e menus serão migrados
- - webforms e views não serão migrados, devido a uma mudança de arquitetura entre as duas versões
+ - webforms e views não serão migrados devido a uma mudança de arquitetura entre as duas versões
  - O site antigo ficará no ar por 10 dias para auxiliar nos ajustes pós migração
  - O login será com senha única no site https://sites.fflch.usp.br/ na opção logon
 
