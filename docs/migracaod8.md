@@ -44,14 +44,66 @@
  - Substituir menu principal pelo primário e ativar submenus
  - Configurar o logo com o novo layout
  - redefinir a home
- - recolocar blocos nas regiões
+ - arrumar e recolocar blocos nas regiões
  - Deletar tipos de conteúdos desnecessários
  - Apagar usuários
  - recriar views ?
- - Orientar como novo webform funciona
+ - Orientar como novo webform funciona, em especial novo procedimento de "clone"
 
 10 - observações de envio para produção:
 
  - migrar site para outro endereço no aegir, ex: d6dlm.fflch.usp.br
  - copiar a pasta files
+ - fazer dump local e enviar para produção
  - Dar um prazo para o responsável checar o site em d6
+ - cadastrar o site e os responsáveis em: sites.fflch.usp.br
+
+11 - problemas encontrados
+
+ - corrigir caminhos das imagens do bloco logo
+ - desagregar assets
+
+E-mail para agendamento:
+
+Prezado(a) __fulano(a)__
+
+A Seção Técnica de Informática da Faculdade de Filosofia Letras e Ciências Humanas vem informar por meio deste a adequação dos sites com a nova identidade visual da Faculdade conforme divulgada em [1].
+
+Você consta como responsável pelo site __site__, e sendo assim, gostaríamos de agendar uma reunião para planejamento da migração do mesmo para nova estrutura.
+
+Observações sobre a migração:
+
+ - O template default será o mesmo da fflch: https://www.fflch.usp.br/
+ - Nodes, arquivos, blocos e menus serão migrados
+ - webforms e views não serão migrados, devido a uma mudança de arquitetura entre as duas versões
+ - O site antigo ficará no ar por 10 dias para auxiliar nos ajustes pós migração
+ - O login será com senha única no site https://sites.fflch.usp.br/ na opção logon
+
+[1] https://www.fflch.usp.br/1276
+
+Atenciosamente,
+__nome__
+STI-FFLCH
+
+
+E-mail para migração direta:
+
+Prezado(a) __fulano(a)__
+
+A Seção Técnica de Informática da Faculdade de Filosofia Letras e Ciências Humanas vem informar por meio deste a adequação dos sites com a nova identidade visual Faculdade conforme divulgada em [1].
+
+Você consta como responsável pelo site __site__, e sendo assim, gostaríamos de comunicar que o mesmo foi migrado para nova estrutura.
+
+Observações sobre a migração:
+
+ - O template default é o mesmo da fflch: https://www.fflch.usp.br/
+ - Nodes, arquivos, blocos e menus foram migrados
+ - webforms e views não foram migrados, devido a uma mudança de arquitetura entre as duas versões, mas caso necessite de auxílio, podemos agendar para suporte
+ - O site antigo ficará no ar por 10 dias para auxiliar nos ajustes pós migração no endereço __endereço__
+ - O login é efetuado com senha única USP através do site https://sites.fflch.usp.br/ na opção "logon"
+
+[1] https://www.fflch.usp.br/1276
+
+Atenciosamente,
+__nome__
+STI-FFLCH
