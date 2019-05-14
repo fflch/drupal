@@ -1,68 +1,107 @@
-1 - Baixar estrutura do site, por exemplo, site treinamento:
+### Marisa ou Vitor:
 
+1 - Escolher um site e bloquear usuários na administração do site
+
+2 - Clonar o site modelo isolado somente para essa migração:
+
+    cd ~/migrate
+    git clone https://github.com/fflch/drupal8.git treinamento.fflch.usp.br
+    cd treinamento.fflch.usp.br
+    composer install
+
+### Ricardo, Thiago ou Augusto:
+
+3 - Gerar backup no aegir e colocar na pasta /home/copia e corrigir dono/grupo. Exemplo: 
+
+    /home/copia/treinamento.tar.gz
+
+### Marisa ou Vitor:
+
+4 - Baixar estrutura do site, exemplo:
+
+    mkdir d6
+    cd d6
     scp copia@aegirsti.fflch.usp.br:treinamento.tar.gz .
     tar -vzxf treinamento.tar.gz
 
-2 - Criar o banco de dados do site em drupal 6 que será migrado localmente:
+5 - Supondo que você tem usuário admin com senha admin, crie os bancos:
 
-    sudo mysql -p
+    mysql -uadmin -padmin
     create database treinamentod6;
-    grant all privileges on treinamentod6.* to treinamentod6@localhost identified by 'treinamentod6';
-
-3 - Criar um banco de dados para o so site em drupal 8:
-
-    sudo mysql -p
     create database treinamentod8;
-    grant all privileges on treinamentod8.* to treinamentod8@localhost identified by 'treinamentod8';
     quit
 
-4 - Importar o banco de dados do site em drupal 6:
+6 - Importar o banco de dados do site em drupal 6:
 
-    mysql -u treinamentod6 treinamentod6 -ptreinamentod6 < database.sql
+    mysql -uadmin treinamentod6 -padmin < database.sql
 
-5 - Clonar o site modelo isolado somente para essa migração:
+7 - Instalar modelo do drupal 8, lembre-se de trocar --db-name:
 
-    git clone https://github.com/fflch/drupal8.git treinamento
-    cd treinamento
-    composer install
+    ./vendor/bin/drupal site:install fflchprofile --db-type="mysql" \
+       --db-port="3306" --db-user="admin" --db-pass="admin"   \
+       --db-host="127.0.0.1" --db-name="treinamentod8" \
+       --site-name="tests" --site-mail="admin@example.com" \
+       --account-name="admin" --account-mail="admin@example.com" --account-pass="admin" \
+       --no-interaction
 
-6 - Instalar modelo com o banco de dados no mysql - não pode ser sqlite, pois vamos mandar para a produção o resultado da migração. Aqui você pode fazer a instalação com comando (olhe README do drupal8) ou manualmente subindo um server local:
-
-    ./vendor/bin/drupal serve
-
-7 - Habilitar módulos para migração:
+8 - Habilitar módulos para migração:
 
     ./vendor/bin/drush en migrate_plus migrate_tools migrate_upgrade migrate_manifest --yes
 
-8 - Importar conteúdo
+9 - Executa a importação do conteúdo:
 
-    ./vendor/bin/drush migrate-manifest --legacy-db-url=mysql://d6user:d6pass@localhost/drupal_6 ../docs/manifestd6.yml
+    ./vendor/bin/drush migrate-manifest --legacy-db-url=mysql://admin:admin@localhost/treinamentod6 ../docs/manifestd6.yml
 
-9 - Procedimentos manuais:
+10 - Procedimentos manuais:
 
- - Identificar responsável pelo site e entrar em contato
  - Substituir menu principal pelo primário e ativar submenus
  - Configurar o logo com o novo layout
- - redefinir a home
+ - redefinir a página inical
  - arrumar e recolocar blocos nas regiões
  - Deletar tipos de conteúdos desnecessários
  - Apagar usuários
- - recriar views ?
- - Orientar como novo webform funciona, em especial novo procedimento de "clone"
+ - recriar views
 
-10 - observações de envio para produção:
 
- - migrar site para outro endereço no aegir, ex: d6dlm.fflch.usp.br
- - copiar a pasta files
- - fazer dump local e enviar para produção
- - rodar o cron para sincronizar as configurações padrões
- - Dar um prazo para o responsável checar o site em d6
- - cadastrar o site e os responsáveis em: sites.fflch.usp.br
+11 - gerar o dump do site migrado:
 
-11 - problemas encontrados
+    mysqldump -uadmin treinamentod8 -padmin > treinamento_migrado.sql
+
+12 - Enviar dump para servidor:
+
+    scp treinamento_migrado.sql copia@aegirsti.fflch.usp.br:
+
+### Ricardo, Thiago ou Augusto:
+
+13 - No aegirsti migrar o site. Exemplo: d6treinamento.fflch.usp.br
+
+14 - Criar o mesmo site no aegird8. Exemplo: treinamento.fflch.usp.br
+
+15 - Copiar pasta files do aegirsti para aegird8
+
+16 - Dropar e recriar o banco de dados:
+
+    mysql -uaegir_root -h cloud.fflch.usp.br -p
+    drop database treinamentofflchuspbr;
+    create database treinamentofflchuspbr;
+    exit
+
+17 - Copiar o arquivo treinamento_migrado.sql para máquina local e sobe
+para produção:
+
+    mysql -uaegir_root treinamentofflchuspbr -h cloud.fflch.usp.br -p < treinamento_migrado.sql
+
+18- problemas encontrados
 
  - corrigir caminhos das imagens do bloco logo
- - desagregar assets
+ - desagregar js/css
+
+### Marisa ou Vitor:
+
+19 - cadastrar o site e os responsáveis em: sites.fflch.usp.br
+
+20 - mandar e-mail comunicando a migração
+
 
 E-mail para agendamento:
 
