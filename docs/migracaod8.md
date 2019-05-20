@@ -11,7 +11,7 @@
 
 ### Ricardo, Thiago ou Augusto:
 
-3 - Gerar backup no aegir e colocar na pasta /home/copia e corrigir dono/grupo. Exemplo: 
+3 - Gerar backup no aegir e colocar na pasta /home/copia e corrigir dono/grupo. Exemplo:
 
     /home/copia/treinamento.tar.gz
 
@@ -55,7 +55,7 @@
 10 - Procedimentos manuais:
 
  - Substituir menu principal pelo primário e ativar submenus
- - Configurar o logo com o novo layout
+ - Configurar o nome do site para aparecer na região do logo
  - redefinir a página inical
  - arrumar e recolocar blocos nas regiões
  - Deletar tipos de conteúdos desnecessários
@@ -113,13 +113,13 @@ Você consta como responsável pelo site __site__ e, sendo assim, gostaríamos d
 
 Observações sobre a migração:
 
- - O template padrão é o mesmo da FFLCH: https://www.fflch.usp.br. Com as mesmas cores, fonte, tipologia e logo da página principal, conforme está na página 31 do manual de identidade visual [2]. 
+ - O template padrão é o mesmo da FFLCH: https://www.fflch.usp.br. Com as mesmas cores, fonte, tipologia e logo da página principal, conforme está na página 31 do manual de identidade visual [2].
 A nova identidade visual da Faculdade estipula que os demais sites - dos Departamentos, Centros, Núcleos, Setores Administrativos etc - devem estar alinhados com a página principal, fazendo com que o usuário(a) ao navegar por eles não pareça estar visitando a página de outra instituição, mas sim lembrem que a página destes sites fazem parte da Faculdade, de uma forma integrada;
  - Nodes, Arquivos, Blocos e Menus serão migrados;
  - Webforms e Views não serão migrados devido a uma mudança de arquitetura entre as versões 6 e 8 do Drupal;
  - O site antigo ficará disponível por 10 dias para auxiliar nos ajustes pós migração no endereço __endereço__;
  - O acesso como administrador(a) deve ser efetuado com senha única USP através do site https://sites.fflch.usp.br e depois na opção "Logon no site" correspondente ao seu site;
- 
+
 [1] https://www.fflch.usp.br/1276
 [2] https://www.fflch.usp.br/sites/fflch.usp.br/files/2019-04/manual_identidade_fflch.pdf
 
@@ -138,7 +138,7 @@ Você consta como responsável pelo site __site__ e, sendo assim, comunicamos qu
 
 Observações sobre a migração:
 
- - O template padrão é o mesmo da FFLCH: https://www.fflch.usp.br. Com as mesmas cores, fonte, tipologia e logo da página principal, conforme está na página 31 do manual de identidade visual [2]. 
+ - O template padrão é o mesmo da FFLCH: https://www.fflch.usp.br. Com as mesmas cores, fonte, tipologia e logo da página principal, conforme está na página 31 do manual de identidade visual [2].
 A nova identidade visual da Faculdade estipula que os demais sites - dos Departamentos, Centros, Núcleos, Setores Administrativos etc - devem estar alinhados com a página principal, fazendo com que o usuário(a) ao navegar por eles não pareça estar visitando a página de outra instituição, mas sim lembrem que a página destes sites fazem parte da Faculdade, de uma forma integrada.
  - Nodes, Arquivos, Blocos e Menus serão migrados;
  - Webforms e Views não serão migrados devido a uma mudança de arquitetura entre as versões 6 e 8 do Drupal. Caso necessite de auxílio, podemos agendar data para suporte;
