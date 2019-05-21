@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52e0b56994dc3efa388d75d940c6666c",
+    "content-hash": "ae1423f60a1ed33cb8221dd37a3b755b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3042,16 +3042,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.7.0",
+            "version": "8.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "5da135abcf5dbc0204e9a75c87381c7553a74d5e"
+                "reference": "969f24810fb31eac71dd624de593f551bd6dc2a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/5da135abcf5dbc0204e9a75c87381c7553a74d5e",
-                "reference": "5da135abcf5dbc0204e9a75c87381c7553a74d5e",
+                "url": "https://api.github.com/repos/drupal/core/zipball/969f24810fb31eac71dd624de593f551bd6dc2a3",
+                "reference": "969f24810fb31eac71dd624de593f551bd6dc2a3",
                 "shasum": ""
             },
             "require": {
@@ -3096,7 +3096,7 @@
                 "symfony/validator": "~3.4.0",
                 "symfony/yaml": "~3.4.5",
                 "twig/twig": "^1.38.2",
-                "typo3/phar-stream-wrapper": "^2.0.1",
+                "typo3/phar-stream-wrapper": "^2.1.1",
                 "zendframework/zend-diactoros": "^1.1",
                 "zendframework/zend-feed": "^2.4"
             },
@@ -3282,7 +3282,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-05-01T18:39:15+00:00"
+            "time": "2019-05-08T16:00:55+00:00"
         },
         {
             "name": "drupal/cpf",
@@ -7046,6 +7046,34 @@
             }
         },
         {
+            "name": "drupal/site_audit",
+            "version": "dev-fflch",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thiagogomesverissimo/site_audit.git",
+                "reference": "8d267e136f206f48d03c1ba53816cb1959631fb7"
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "authors": [
+                {
+                    "name": "James Glasgow",
+                    "email": "james@jrglasgow.com"
+                }
+            ],
+            "description": "This extension provides Site Audit commands for Drush.",
+            "time": "2019-05-21T00:16:52+00:00"
+        },
+        {
             "name": "drupal/site_settings",
             "version": "1.13.0",
             "source": {
@@ -7712,7 +7740,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x",
-                    "datestamp": "1557724385",
+                    "datestamp": "1523338084",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8033,7 +8061,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.2",
-                    "datestamp": "1557418583",
+                    "datestamp": "1553801966",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8489,7 +8517,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/fflchprofile.git",
-                "reference": "b8626cf9f12074308cda0804db2790b6d7b45fa6"
+                "reference": "94489ee72cb8035a809536b92824eb4ca6658095"
             },
             "require": {
                 "drupal/asset_injector": "2.4",
@@ -8536,7 +8564,7 @@
                 "issues": "https://github.com/fflch/fflchprofile/issues",
                 "source": "https://github.com/fflch/fflchprofile"
             },
-            "time": "2019-05-20T18:56:52+00:00"
+            "time": "2019-05-20T19:53:20+00:00"
         },
         {
             "name": "fflch/jethro-subtheme",
@@ -9215,9 +9243,7 @@
             "version": "4.11.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor/-/ckeditor-4.11.0.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/ckeditor/-/ckeditor-4.11.0.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -12175,6 +12201,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/site_audit": 20,
         "fflch/cem-theme": 20,
         "fflch/custom-module-cem": 20,
         "fflch/custom-module-fflch": 20,

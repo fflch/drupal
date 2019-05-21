@@ -7,6 +7,9 @@
 /web/profiles/
 /web/libraries/
 /config
+/drush/Commands/
+
+!/drush/Commands/PolicyCommands.php
 
 # Ignore sensitive information
 /web/sites/*/settings.php
