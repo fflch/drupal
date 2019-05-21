@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae1423f60a1ed33cb8221dd37a3b755b",
+    "content-hash": "6535ff2baf46acac8f08b625ccc043e9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -8517,7 +8517,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/fflchprofile.git",
-                "reference": "94489ee72cb8035a809536b92824eb4ca6658095"
+                "reference": "73cdecfd9c8103a80633028ad1d757cf765ffeb7"
             },
             "require": {
                 "drupal/asset_injector": "2.4",
@@ -8535,6 +8535,7 @@
                 "drupal/imce": "1.7",
                 "drupal/pathauto": "1.3",
                 "drupal/senhaunicausp": "1.4",
+                "drupal/site_audit": "dev-fflch",
                 "drupal/smtp": "1.0-beta4",
                 "drupal/theme_permission": "1.0",
                 "drupal/webform": "5.2",
@@ -8564,7 +8565,7 @@
                 "issues": "https://github.com/fflch/fflchprofile/issues",
                 "source": "https://github.com/fflch/fflchprofile"
             },
-            "time": "2019-05-20T19:53:20+00:00"
+            "time": "2019-05-21T13:49:16+00:00"
         },
         {
             "name": "fflch/jethro-subtheme",
@@ -9243,7 +9244,9 @@
             "version": "4.11.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor/-/ckeditor-4.11.0.tgz"
+                "url": "https://registry.npmjs.org/ckeditor/-/ckeditor-4.11.0.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -12201,7 +12204,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/site_audit": 20,
         "fflch/cem-theme": 20,
         "fflch/custom-module-cem": 20,
         "fflch/custom-module-fflch": 20,
