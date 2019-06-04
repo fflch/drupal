@@ -52,10 +52,6 @@
         "cem-theme": {
             "type": "git",
             "url": "https://github.com/fflch/cem-theme.git"
-        },
-       "site_audit": {
-            "type": "git",
-            "url": "https://github.com/thiagogomesverissimo/site_audit.git"
         }
     },
     "require": {
