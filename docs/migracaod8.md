@@ -1,8 +1,8 @@
 ### Marisa ou Vitor:
 
-0. Criação de super usuário no mysql:
+0 - Criação de super usuário no mysql:
 
-    GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION IDENTIFIED BY 'admin';
+    GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%'  IDENTIFIED BY 'admin' WITH GRANT OPTION;
 
 1 - Escolher um site e bloquear usuários na administração do site
 
