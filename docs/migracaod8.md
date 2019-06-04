@@ -1,11 +1,15 @@
 ### Marisa ou Vitor:
 
+0. Criação de super usuário no mysql:
+
+    GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION IDENTIFIED BY 'admin';
+
 1 - Escolher um site e bloquear usuários na administração do site
 
 2 - Clonar o site modelo isolado somente para essa migração:
 
     cd ~/migrate
-    git clone https://github.com/fflch/drupal8.git treinamento.fflch.usp.br
+    git clone https://github.com/fflch/drupal.git treinamento.fflch.usp.br
     cd treinamento.fflch.usp.br
     composer install
 
