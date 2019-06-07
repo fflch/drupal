@@ -8508,7 +8508,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/aegan-subtheme.git",
-                "reference": "9951b0bb1a2923dba8b16ace9186bc278a5563fc"
+                "reference": "617d9a5a69b33f7ad05f1ad4b029c4a0b91816ac"
             },
             "require": {
                 "drupal/aegan": "1.0"
@@ -8533,7 +8533,7 @@
                 "issues": "https://github.com/fflch/aegan-subtheme/issues",
                 "source": "https://github.com/fflch/aegan-subtheme"
             },
-            "time": "2019-06-03T02:41:38+00:00"
+            "time": "2019-06-06T23:51:45+00:00"
         },
         {
             "name": "fflch/cem-theme",
@@ -8597,7 +8597,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/fflchprofile.git",
-                "reference": "d8d4300f0d5abeec28f7f148180055a43096ccd3"
+                "reference": "a91f7780ecadc75b6dc8950878e5bbb853c8010e"
             },
             "require": {
                 "drupal/asset_injector": "2.4",
@@ -8646,7 +8646,7 @@
                 "issues": "https://github.com/fflch/fflchprofile/issues",
                 "source": "https://github.com/fflch/fflchprofile"
             },
-            "time": "2019-06-04T01:43:49+00:00"
+            "time": "2019-06-07T00:01:52+00:00"
         },
         {
             "name": "fflch/jethro-subtheme",
@@ -9325,7 +9325,9 @@
             "version": "4.11.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor/-/ckeditor-4.11.0.tgz"
+                "url": "https://registry.npmjs.org/ckeditor/-/ckeditor-4.11.0.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -11722,16 +11724,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.42.0",
+            "version": "v1.42.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "2983fcf2e20a4afe95f07e61d89a7590b3c8df2e"
+                "reference": "671347603760a88b1e7288aaa9378f33687d7edf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/2983fcf2e20a4afe95f07e61d89a7590b3c8df2e",
-                "reference": "2983fcf2e20a4afe95f07e61d89a7590b3c8df2e",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/671347603760a88b1e7288aaa9378f33687d7edf",
+                "reference": "671347603760a88b1e7288aaa9378f33687d7edf",
                 "shasum": ""
             },
             "require": {
@@ -11784,7 +11786,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-05-31T06:20:05+00:00"
+            "time": "2019-06-04T11:31:08+00:00"
         },
         {
             "name": "typo3/phar-stream-wrapper",
