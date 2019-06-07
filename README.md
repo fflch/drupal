@@ -73,3 +73,7 @@ depois instale:
  nova configuração pode-se fazer:
  
      drush @cjc.fflch.usp.br config-set aegan.settings slideshow_display '0' --yes
+ 
+ Ou mesmo comando para todos sites na pasta sites:
+ 
+     for i in $(ls|grep fflch); do drush @$i config-set aegan.settings slideshow_display '0' --yes ;done
