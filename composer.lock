@@ -8597,7 +8597,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/fflchprofile.git",
-                "reference": "a91f7780ecadc75b6dc8950878e5bbb853c8010e"
+                "reference": "b3f477dd6da580a608f42759416cfb44fc4c3224"
             },
             "require": {
                 "drupal/asset_injector": "2.4",
@@ -8646,7 +8646,7 @@
                 "issues": "https://github.com/fflch/fflchprofile/issues",
                 "source": "https://github.com/fflch/fflchprofile"
             },
-            "time": "2019-06-07T00:01:52+00:00"
+            "time": "2019-06-07T01:16:59+00:00"
         },
         {
             "name": "fflch/jethro-subtheme",
@@ -9325,9 +9325,7 @@
             "version": "4.11.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor/-/ckeditor-4.11.0.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/ckeditor/-/ckeditor-4.11.0.tgz"
             },
             "type": "npm-asset",
             "license": [
