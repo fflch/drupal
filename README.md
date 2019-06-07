@@ -66,3 +66,10 @@ Consulte o nome da biblioteca em https://asset-packagist.org e
 depois instale:
 
     composer require npm-asset/datetimepicker:0.1.38
+    
+ ## Configurações
+ 
+ As vezes, novas configurações são incorporadas ao site modelo, para aplicar essa
+ nova configuração pode-se fazer:
+ 
+     drush @cjc.fflch.usp.br config-set aegan.settings slideshow_display '0' --yes
