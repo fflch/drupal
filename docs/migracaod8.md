@@ -1,3 +1,5 @@
+# Migração do Drupal 6 para o Drupal 8
+
 ### Marisa ou Vitor:
 
 0 - Criação de super usuário no mysql:
@@ -106,8 +108,27 @@ para produção:
 
 20 - mandar e-mail comunicando a migração
 
+# Migração do Drupal 8 para o Drupal 8
 
-E-mail para agendamento:
+- Exportar configurações do site em produção
+- subir dump localmente
+- desativar módulo loginbytoken
+- updatedb
+- update entities?
+- copiar os arquivos de yaml relativos as posições dos blocos do tema usado
+- remover ids dos arquivos yaml?
+- find and grep nos arquivos yaml trocando o tema que está para fflch_aegan
+- colocar fflch_aegan como tema default
+- Aplicar os arquivos de configurações de bloco, supondo que você colocouos arquivos yaml modificados em /tmp/blocos:
+
+    ./vendor/bin/drush cim --partial --source='/tmp/blocos'
+    
+
+
+
+# E-mails
+
+## E-mail para agendamento:
 
 Prezado(a) __fulano(a)__
 
