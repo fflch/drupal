@@ -97,16 +97,11 @@ para produção:
 
     mysql -uaegir_root treinamentofflchuspbr -h cloud.fflch.usp.br -p < treinamento_migrado.sql
 
-18- problemas encontrados
-
- - corrigir caminhos das imagens do bloco logo
- - desagregar js/css
-
 ### Marisa ou Vitor:
 
-19 - cadastrar o site e os responsáveis em: sites.fflch.usp.br
+18 - cadastrar o site e os responsáveis em: sites.fflch.usp.br
 
-20 - mandar e-mail comunicando a migração
+19 - mandar e-mail comunicando a migração
 
 # Migração do Drupal 8 para o Drupal 8
 
@@ -122,8 +117,15 @@ para produção:
 - Aplicar os arquivos de configurações de bloco, supondo que você colocouos arquivos yaml modificados em /tmp/blocos:
 
     ./vendor/bin/drush cim --partial --source='/tmp/blocos'
-    
+   
+Trocar profile para fflchprofile:
 
+1 - usar esse módulo https://www.drupal.org/project/profile_switcher ?
+
+2 - ou usar drupal shell:
+    
+    ./vendor/bin/drupal shell
+    ??
 
 
 # E-mails
