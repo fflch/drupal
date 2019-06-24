@@ -74,7 +74,7 @@
         "drupal/contact_storage_export": "1.12",
         "drupal/contextual_range_filter": "1.0-rc1",
         "drupal/contribute": "1.0-beta7",
-        "drupal/core": "8.7.2",
+        "drupal/core": "8.7.3",
         "drupal/cpf": "1.1",
         "drupal/crop": "1.5",
         "drupal/csv_serialization": "1.4",
