@@ -105,13 +105,24 @@ para produção:
 
 # Migração do Drupal 8 para o Drupal 8
 
-- Exportar configurações do site em produção
-- subir dump localmente
+- Exportar e subir dump localmente
 
 Comandos:
 
     ./vendor/bin/drush updb --entity-updates
     ./vendor/bin/drush pm-uninstall webform loginbytoken
+    
+Trocar profile:
+
+    ./vendor/bin/drupal shell
+    $config = \Drupal::service('config.factory')->getEditable('core.extension');
+    $config->set('profile', 'fflchprofile')->save();
+    
+    mkdir /tmp/blocos-cddhc
+    cp ~/config/block.block.aegan_* /tmp/blocos-cddhc
+    cd /tmp/blocos-cddhc
+    rename 's/aegan/fflch_aegan/' *
+    find . -type f -exec sed -i.bak "s/aegan/fflch_aegan/g" {} \;
 
 - copiar os arquivos de yaml relativos as posições dos blocos do tema usado
 - remover ids dos arquivos yaml?
