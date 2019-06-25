@@ -132,6 +132,8 @@ Na interface:
  - Desabilitar slideshow
  - Corrigir nome do site
 
+Mandar para produção e copiar pasta files.
+
 # E-mails
 
 ## E-mail para agendamento:
