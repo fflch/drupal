@@ -121,12 +121,16 @@ Trocar profile:
     $config->clear("module.standard")->save();
     $config->set("module.flfchprofile", 1000)->save();
     drupal_flush_all_caches();
+    quit
+    
+    ./vendor/bin/drush en webform loginbytoken --yes
     
     mkdir /tmp/blocos-cddhc
     cp ~/config/block.block.aegan_* /tmp/blocos-cddhc
     cd /tmp/blocos-cddhc
     rename 's/aegan/fflch_aegan/' *
     find . -type f -exec sed -i.bak "s/aegan/fflch_aegan/g" {} \;
+
 
 - copiar os arquivos de yaml relativos as posições dos blocos do tema usado
 - remover ids dos arquivos yaml?
