@@ -130,7 +130,7 @@ Trocar profile:
     cp ~/config/block.block.aegan_* /tmp/blocos-cddhc
     cd /tmp/blocos-cddhc
     rename 's/aegan/fflch_aegan/' *
-    find . -type f -exec sed -i.bak "s/aegan/fflch_aegan/g" {} \;
+    find . -type f -exec sed -i "s/aegan/fflch_aegan/g" {} \;
     
     ./vendor/bin/drush config-set fflch_aegan.settings slideshow_display '0' --yes
     ./vendor/bin/drush config-set aegan.settings slideshow_display '0' --yes
