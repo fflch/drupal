@@ -126,13 +126,17 @@ Trocar profile:
     
 Na interface:   
 
- - Desabilitar agração de css e js
+ - Desabilitar agregação de css e js
  - Colocar tema FFLCH aegan como padrão
  - Remover bloco do logo antigo
  - Desabilitar slideshow
  - Corrigir nome do site
 
-Mandar para produção e copiar pasta files.
+Finalização:
+
+ - Mandar para produção e copiar pasta files e private.
+ - Testar login. Em alguns sites o módulo loginbytoken teve que ser ativado
+ - Enviar e-mail para usuário
 
 # E-mails
 
