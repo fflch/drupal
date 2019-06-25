@@ -124,12 +124,20 @@ Trocar profile:
     quit
     
     ./vendor/bin/drush en webform loginbytoken --yes
+    ./vendor/bin/drush config-set system.theme default fflch_aegan --yes
     
     mkdir /tmp/blocos-cddhc
     cp ~/config/block.block.aegan_* /tmp/blocos-cddhc
     cd /tmp/blocos-cddhc
     rename 's/aegan/fflch_aegan/' *
     find . -type f -exec sed -i.bak "s/aegan/fflch_aegan/g" {} \;
+    
+    ./vendor/bin/drush config-set fflch_aegan.settings slideshow_display '0' --yes
+    ./vendor/bin/drush config-set aegan.settings slideshow_display '0' --yes
+    
+    ./vendor/bin/drush cim --partial --source='/tmp/blocos'
+    
+    
 
 
 - copiar os arquivos de yaml relativos as posições dos blocos do tema usado
@@ -138,7 +146,7 @@ Trocar profile:
 - colocar fflch_aegan como tema default
 - Aplicar os arquivos de configurações de bloco, supondo que você colocouos arquivos yaml modificados em /tmp/blocos:
 
-    ./vendor/bin/drush cim --partial --source='/tmp/blocos'
+    
    
 Trocar profile para fflchprofile:
 
