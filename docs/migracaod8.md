@@ -124,26 +124,13 @@ Trocar profile:
     ./vendor/bin/drush switch-profile fflchprofile --yes
     ./vendor/bin/drush pm-uninstall profile_switcher --yes
     
-    
+Na interface:   
 
-
-- copiar os arquivos de yaml relativos as posições dos blocos do tema usado
-- remover ids dos arquivos yaml?
-- find and grep nos arquivos yaml trocando o tema que está para fflch_aegan
-- colocar fflch_aegan como tema default
-- Aplicar os arquivos de configurações de bloco, supondo que você colocouos arquivos yaml modificados em /tmp/blocos:
-
-    
-   
-Trocar profile para fflchprofile:
-
-1 - usar esse módulo https://www.drupal.org/project/profile_switcher ?
-
-2 - ou usar drupal shell:
-    
-    ./vendor/bin/drupal shell
-    ??
-
+ - Desabilitar agração de css e js
+ - Colocar tema FFLCH aegan como padrão
+ - Remover bloco do logo antigo
+ - Desabilitar slideshow
+ - Corrigir nome do site
 
 # E-mails
 
