@@ -117,6 +117,7 @@ Trocar profile:
     ./vendor/bin/drupal shell
     $config = \Drupal::service('config.factory')->getEditable('core.extension');
     $config->set('profile', 'fflchprofile')->save();
+    drupal_flush_all_caches();
     
     mkdir /tmp/blocos-cddhc
     cp ~/config/block.block.aegan_* /tmp/blocos-cddhc
