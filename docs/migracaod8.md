@@ -105,37 +105,24 @@ para produção:
 
 # Migração do Drupal 8 para o Drupal 8
 
-- Exportar e subir dump localmente
+Fazer uma instalação limpa localmente, exemplo:
 
-Comandos:
+    git clone git@github.com:fflch/drupal.git sti.fflch.usp.br
+    cd sti.fflch.usp.br
+    composer install
 
-    ./vendor/bin/drush updb --entity-updates
-    ./vendor/bin/drush pm-uninstall webform loginbytoken
+Rodar script de instalação para mysql e exportar dump da produção e subir localmente
+Atualizar banco de dados:
+
+    ./vendor/bin/drush updb --entity-updates --yes
+    ./vendor/bin/drush cr
     
 Trocar profile:
 
-    ./vendor/bin/drupal shell
-    $config = \Drupal::service('config.factory')->getEditable('core.extension');
-    $config->set('profile', 'fflchprofile')->save();
-    drupal_flush_all_caches();
-    $config->clear("module.standard")->save();
-    $config->set("module.flfchprofile", 1000)->save();
-    drupal_flush_all_caches();
-    quit
-    
-    ./vendor/bin/drush en webform loginbytoken --yes
-    ./vendor/bin/drush config-set system.theme default fflch_aegan --yes
-    
-    mkdir /tmp/blocos-cddhc
-    cp ~/config/block.block.aegan_* /tmp/blocos-cddhc
-    cd /tmp/blocos-cddhc
-    rename 's/aegan/fflch_aegan/' *
-    find . -type f -exec sed -i "s/aegan/fflch_aegan/g" {} \;
-    
-    ./vendor/bin/drush config-set fflch_aegan.settings slideshow_display '0' --yes
-    ./vendor/bin/drush config-set aegan.settings slideshow_display '0' --yes
-    
-    ./vendor/bin/drush cim --partial --source='/tmp/blocos'
+    composer require drupal/profile_switcher
+    ./vendor/bin/drush en profile_switcher --yes
+    ./vendor/bin/drush switch-profile fflchprofile --yes
+    ./vendor/bin/drush pm-uninstall profile_switcher --yes
     
     
 
