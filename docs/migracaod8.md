@@ -107,9 +107,12 @@ para produção:
 
 - Exportar configurações do site em produção
 - subir dump localmente
-- desativar módulo loginbytoken
-- updatedb
-- update entities?
+
+Comandos:
+
+    ./vendor/bin/drush updb --entity-updates
+    ./vendor/bin/drush pm-uninstall webform loginbytoken
+
 - copiar os arquivos de yaml relativos as posições dos blocos do tema usado
 - remover ids dos arquivos yaml?
 - find and grep nos arquivos yaml trocando o tema que está para fflch_aegan
