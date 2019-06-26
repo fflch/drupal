@@ -123,6 +123,7 @@ Trocar profile:
     ./vendor/bin/drush en profile_switcher --yes
     ./vendor/bin/drush switch-profile fflchprofile --yes
     ./vendor/bin/drush pm-uninstall profile_switcher --yes
+    ./vendor/bin/drush en loginbytoken --yes
     
 Na interface:   
 
