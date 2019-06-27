@@ -105,25 +105,21 @@ para produção:
 
 # Migração do Drupal 8 para o Drupal 8
 
-Fazer uma instalação limpa localmente, exemplo:
+ - Migrar site para d8 e gerar backup
+ - Instalação limpa, trocar banco, files e private
 
-    git clone git@github.com:fflch/drupal.git sti.fflch.usp.br
-    cd sti.fflch.usp.br
-    composer install
-
-Rodar script de instalação para mysql e exportar dump da produção e subir localmente
 Atualizar banco de dados:
 
-    ./vendor/bin/drush updb --entity-updates --yes
-    ./vendor/bin/drush cr
+    i='exemple.fflch.usp.r'
+    drush @$i updb --entity-updates --yes
+    drush @$i cr
     
 Trocar profile:
 
-    composer require drupal/profile_switcher
-    ./vendor/bin/drush en profile_switcher --yes
-    ./vendor/bin/drush switch-profile fflchprofile --yes
-    ./vendor/bin/drush pm-uninstall profile_switcher --yes
-    ./vendor/bin/drush en fflch_audit fflch_configs loginbytoken --yes
+    drush @$i en profile_switcher --yes
+    drush @$i switch-profile fflchprofile --yes
+    drush @$i pm-uninstall profile_switcher --yes
+    drush @$i en fflch_configs loginbytoken --yes
     
 Na interface:   
 
@@ -132,12 +128,6 @@ Na interface:
  - Remover bloco do logo antigo
  - Desabilitar slideshow
  - Corrigir nome do site
-
-Finalização:
-
- - Mandar para produção e copiar pasta files e private.
- - Testar login. Em alguns sites o módulo loginbytoken teve que ser ativado
- - Enviar e-mail para usuário
 
 # E-mails
 
