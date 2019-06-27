@@ -29,10 +29,6 @@
             "type": "git",
             "url": "https://github.com/fflch/custom-module-cem.git"
         },
-        "ckeditor_font_temp": {
-            "type": "git",
-            "url": "https://github.com/thiagogomesverissimo/ckeditor_font_temp.git"
-        },
         "aegan-subtheme": {
             "type": "git",
             "url": "https://github.com/fflch/aegan-subtheme.git"
@@ -66,12 +62,8 @@
         "drupal/at_tools": "3.2",
         "drupal/block_class": "1.0",
         "drupal/checklistapi": "1.8",
-        "drupal/colorbutton": "1.1",
         "drupal/conditional_fields": "1.0-alpha5",
         "drupal/console": "^1.0.2",
-        "drupal/contact_emails": "1.16",
-        "drupal/contact_storage": "1.0-beta9",
-        "drupal/contact_storage_export": "1.12",
         "drupal/contextual_range_filter": "1.0-rc1",
         "drupal/contribute": "1.0-beta7",
         "drupal/core": "8.7.3",
