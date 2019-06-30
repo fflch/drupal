@@ -15,6 +15,11 @@ Download e instalação das dependências:
     cd drupal8
     composer install
 
+Plugins ckeditor:
+
+    cd web/libraries
+    ln -s ckeditor/plugins/* .
+
 Instalação em pt-br usando o profile fflch com *sqlite*:
 
     ./vendor/bin/drupal site:install fflchprofile --db-type="sqlite" \
