@@ -163,6 +163,54 @@
             "time": "2018-01-25T01:37:12+00:00"
         },
         {
+            "name": "bower-asset/jquery.cycle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:kertal/cycle.git",
+                "reference": "82d45e8e8dbb68c07300ba207efacbcce555903f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kertal/cycle/zipball/82d45e8e8dbb68c07300ba207efacbcce555903f",
+                "reference": "82d45e8e8dbb68c07300ba207efacbcce555903f"
+            },
+            "type": "bower-asset",
+            "time": "2012-11-09T11:22:43+00:00"
+        },
+        {
+            "name": "bower-asset/jquery.hoverintent",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeMisterV/jquery.hoverintent.git",
+                "reference": "dda471d12d340606bbdb0966eab5bf91cdb8bc76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeMisterV/jquery.hoverintent/zipball/dda471d12d340606bbdb0966eab5bf91cdb8bc76",
+                "reference": "dda471d12d340606bbdb0966eab5bf91cdb8bc76"
+            },
+            "type": "bower-asset",
+            "time": "2013-02-17T13:56:52+00:00"
+        },
+        {
+            "name": "bower-asset/json2",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/douglascrockford/JSON-js.git",
+                "reference": "aef828bfcd7d5efaa41270f831f8d27d5eef3845"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/douglascrockford/JSON-js/zipball/aef828bfcd7d5efaa41270f831f8d27d5eef3845",
+                "reference": "aef828bfcd7d5efaa41270f831f8d27d5eef3845"
+            },
+            "type": "bower-asset",
+            "time": "2019-05-28T17:45:18+00:00"
+        },
+        {
             "name": "brumann/polyfill-unserialize",
             "version": "v1.0.3",
             "source": {
@@ -8593,7 +8641,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/aegan-subtheme.git",
-                "reference": "b006cfda496c4c69a2256b749ddc9513b6a17da6"
+                "reference": "1679c398e9d46c99404dec08474099a36584780c"
             },
             "require": {
                 "drupal/aegan": "1.0"
@@ -8618,7 +8666,7 @@
                 "issues": "https://github.com/fflch/aegan-subtheme/issues",
                 "source": "https://github.com/fflch/aegan-subtheme"
             },
-            "time": "2019-06-27T11:59:46+00:00"
+            "time": "2019-07-01T17:42:14+00:00"
         },
         {
             "name": "fflch/cem-theme",
@@ -8682,9 +8730,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/fflchprofile.git",
-                "reference": "7f3cfb07e432f4996d1f44d6352122bc7eddfe94"
+                "reference": "01fb2ba8d56fda27af6ae30112cf37d7b303c183"
             },
             "require": {
+                "bower-asset/jquery.cycle": "dev-master",
+                "bower-asset/jquery.hoverintent": "dev-master",
+                "bower-asset/json2": "dev-master",
                 "drupal/asset_injector": "2.4",
                 "drupal/captcha": "1.0-beta1",
                 "drupal/ckeditor_font": "1.0",
@@ -8736,7 +8787,7 @@
                 "issues": "https://github.com/fflch/fflchprofile/issues",
                 "source": "https://github.com/fflch/fflchprofile"
             },
-            "time": "2019-06-27T19:40:02+00:00"
+            "time": "2019-07-01T17:42:53+00:00"
         },
         {
             "name": "fflch/jethro-subtheme",
@@ -8955,33 +9006,37 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.5.2",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "9f83dded91781a01c63574e387eaa769be769115"
+                "reference": "dc784032a3f6f4e7a4b882e272b771f6fe4c37cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/9f83dded91781a01c63574e387eaa769be769115",
-                "reference": "9f83dded91781a01c63574e387eaa769be769115",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/dc784032a3f6f4e7a4b882e272b771f6fe4c37cf",
+                "reference": "dc784032a3f6f4e7a4b882e272b771f6fe4c37cf",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
                 "psr/http-message": "~1.0",
-                "ralouphie/getallheaders": "^2.0.5"
+                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
             },
             "provide": {
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
+                "ext-zlib": "*",
                 "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
+            },
+            "suggest": {
+                "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.6-dev"
                 }
             },
             "autoload": {
@@ -9018,7 +9073,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2018-12-04T20:46:45+00:00"
+            "time": "2019-06-30T00:37:05+00:00"
         },
         {
             "name": "html2text/html2text",
@@ -9415,9 +9470,7 @@
             "version": "4.11.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor/-/ckeditor-4.11.0.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/ckeditor/-/ckeditor-4.11.0.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -10042,24 +10095,24 @@
         },
         {
             "name": "ralouphie/getallheaders",
-            "version": "2.0.5",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ralouphie/getallheaders.git",
-                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa"
+                "reference": "120b605dfeb996808c31b6477290a714d356e822"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
-                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3"
+                "php": ">=5.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "~3.7.0",
-                "satooshi/php-coveralls": ">=1.0"
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5 || ^6.5"
             },
             "type": "library",
             "autoload": {
@@ -10078,7 +10131,7 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
-            "time": "2016-02-11T07:05:27+00:00"
+            "time": "2019-03-08T08:55:37+00:00"
         },
         {
             "name": "stack/builder",
