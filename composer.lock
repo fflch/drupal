@@ -5442,6 +5442,54 @@
             }
         },
         {
+            "name": "drupal/menu_manipulator",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_manipulator.git",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_manipulator-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "0280697fd74e3f26e859d5559e45ddaab715e7f5"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1560794585",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Matthieu SCARSET",
+                    "homepage": "http://matthieuscarset.com",
+                    "email": "m@matthieuscarset.com"
+                }
+            ],
+            "description": "Improve Drupal 8 menu management and rendering.",
+            "homepage": "https://www.drupal.org/project/menu_manipulator",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_manipulator"
+            }
+        },
+        {
             "name": "drupal/metatag",
             "version": "1.7.0",
             "source": {
@@ -8885,7 +8933,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/fflchprofile.git",
-                "reference": "bfcb01b6d8ec6cccc9f36cc8f2d0c380740ca7dd"
+                "reference": "a4f0c48fdc2aa71455333bfeabf92b0867604909"
             },
             "require": {
                 "bower-asset/jquery.cycle": "dev-master",
@@ -8910,6 +8958,7 @@
                 "drupal/google_analytics": "2.4",
                 "drupal/imce": "1.7",
                 "drupal/languageicons": "1.0.0-beta2",
+                "drupal/menu_manipulator": "2.0",
                 "drupal/pathauto": "1.4",
                 "drupal/senhaunicausp": "1.4",
                 "drupal/site_audit": "3.x-dev",
@@ -8944,7 +8993,7 @@
                 "issues": "https://github.com/fflch/fflchprofile/issues",
                 "source": "https://github.com/fflch/fflchprofile"
             },
-            "time": "2019-07-03T17:31:01+00:00"
+            "time": "2019-07-04T21:05:15+00:00"
         },
         {
             "name": "fflch/jethro-subtheme",
