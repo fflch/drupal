@@ -33,18 +33,6 @@
             "type": "git",
             "url": "https://github.com/fflch/aegan-subtheme.git"
         },
-        "jethro-subtheme": {
-            "type": "git",
-            "url": "https://github.com/fflch/jethro-subtheme.git"
-        },
-        "nexus-subtheme": {
-            "type": "git",
-            "url": "https://github.com/fflch/nexus-subtheme.git"
-        },
-        "paxton-subtheme": {
-            "type": "git",
-            "url": "https://github.com/fflch/paxton-subtheme.git"
-        },
         "cem-theme": {
             "type": "git",
             "url": "https://github.com/fflch/cem-theme.git"
@@ -55,6 +43,7 @@
         "balbuf/drupal-libraries-installer": "1.0",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
+        "dompdf/dompdf": "^0.8.3",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "1.4",
         "drupal/addtoany": "1.10",
@@ -66,14 +55,13 @@
         "drupal/console": "^1.0.2",
         "drupal/contextual_range_filter": "1.0-rc1",
         "drupal/contribute": "1.0-beta7",
-        "drupal/core": "8.7.3",
+        "drupal/core": "8.7.5",
         "drupal/cpf": "1.1",
         "drupal/crop": "1.5",
         "drupal/csv_serialization": "1.4",
         "drupal/date_range_formatter": "3.1",
         "drupal/draggableviews": "1.2",
         "drupal/ds": "3.2",
-        "drupal/time_field": "^1.12",
         "drupal/externalauth": "1.1",
         "drupal/facets": "1.2",
         "drupal/field_collection": "1.0.0-alpha1",
@@ -120,6 +108,7 @@
         "drupal/swiftmailer": "1.0-beta2",
         "drupal/tagadelic": "3.0-alpha2",
         "drupal/taxonomy_manager": "1.0-alpha2",
+        "drupal/time_field": "^1.12",
         "drupal/token": "1.5",
         "drupal/twig_tweak": "2.1",
         "drupal/typed_data": "1.0-alpha2",
