@@ -1,3 +1,5 @@
+# Migração do Drupal 6 para o Drupal 8
+
 ### Marisa ou Vitor:
 
 0 - Criação de super usuário no mysql:
@@ -95,19 +97,41 @@ para produção:
 
     mysql -uaegir_root treinamentofflchuspbr -h cloud.fflch.usp.br -p < treinamento_migrado.sql
 
-18- problemas encontrados
-
- - corrigir caminhos das imagens do bloco logo
- - desagregar js/css
-
 ### Marisa ou Vitor:
 
-19 - cadastrar o site e os responsáveis em: sites.fflch.usp.br
+18 - cadastrar o site e os responsáveis em: sites.fflch.usp.br
 
-20 - mandar e-mail comunicando a migração
+19 - mandar e-mail comunicando a migração
 
+# Migração do Drupal 8 para o Drupal 8
 
-E-mail para agendamento:
+ - Migrar site para d8 e gerar backup
+ - Instalação limpa, trocar banco, files e private
+
+Atualizar banco de dados:
+
+    i='exemple.fflch.usp.r'
+    drush @$i updb --entity-updates --yes
+    drush @$i cr
+    
+Trocar profile:
+
+    drush @$i en profile_switcher --yes
+    drush @$i switch-profile fflchprofile --yes
+    drush @$i pm-uninstall profile_switcher --yes
+    drush @$i en fflch_configs loginbytoken --yes
+    
+Na interface:   
+
+ - Desabilitar agregação de css e js
+ - Colocar tema FFLCH aegan como padrão
+ - Remover bloco do logo antigo
+ - Desabilitar slideshow
+ - Corrigir nome do site
+
+# E-mails
+
+## E-mail para agendamento:
 
 Prezado(a) __fulano(a)__
 
