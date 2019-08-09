@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the module.
+ */
+
+use Drupal\fflch_configs\Configs;
+
+/**
+ * Implements hook_install().
+ */
+function fflch_configs_install() {
+  if (!\Drupal::service('config.installer')->isSyncing()) {
+    \Drupal::classResolver(Configs::class)->doConfig();
+  }
+}

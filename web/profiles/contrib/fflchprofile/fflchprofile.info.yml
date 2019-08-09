@@ -1,0 +1,83 @@
+name: fflchprofile
+type: profile
+description: 'fflch profile'
+version: VERSION
+core: 8.x
+# Módulos default do profile standard
+# Os comentados, não vamos usar, por enquanto
+install:
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - colorbutton
+  - color
+  - config
+  - contextual
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - big_pipe
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - tour
+  - automated_cron
+#### módulos core usados na FFLCH
+  - language
+  - locale
+  - book
+  - config_translation
+  - content_translation
+#### módulos contrib usados na FFLCH
+  - captcha
+  - image_captcha
+  - smtp
+  - entity
+  - entity_clone
+  - asset_injector
+  - imce
+  - google_analytics
+  - pathauto
+  - webform
+  - webform_ui
+  - webform_attachment
+  - webform_scheduled_email
+  - theme_permission
+  - webform_node
+  - editor_advanced_link
+  - editor_file
+  - ckeditor_font
+  - conditional_fields
+  - ctools
+  - collapse_text
+  - config_perms
+  - cpf
+  - languageicons
+#### nossos módulos
+  - loginbytoken
+### contact
+  - contact
+  - contact_storage
+  - contact_emails
+themes:
+  - fflch_aegan
+  - seven
+

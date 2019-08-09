@@ -4,7 +4,6 @@
 /web/core/
 /web/modules/
 /web/themes/
-/web/profiles/
 /web/libraries/
 /config
 /drush/Commands/
@@ -29,3 +28,5 @@
 
 *~
 *.swp
+
+/web/profiles/contrib/third

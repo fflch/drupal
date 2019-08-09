@@ -1,0 +1,80 @@
+langcode: en
+status: true
+dependencies: {  }
+id: fflch
+label: FFLCH
+weight: 3
+is_admin: null
+permissions:
+# Aparência da administração mais agradável
+  - 'access toolbar'
+  - 'access administration pages'
+  - 'view the administration theme'
+  - 'access in-place editing'
+# Administração de nodes
+  - 'bypass node access'
+  - 'access content overview'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'administer nodes'
+  - 'administer content types'
+#  - 'administer node form display'
+# Campos condicionais
+  - 'delete conditional fields'
+  - 'edit conditional fields'
+  - 'view conditional fields'
+# Configurações globais liberadas
+  - 'Administer Inital Page'
+  - 'create url aliases'
+# Administração de blocos
+  - 'administer blocks'
+  - 'administer block_content display'
+  - 'administer block_content fields'
+# Administração de views
+  - 'administer views'
+# Administração de menus
+  - 'administer menu'
+# Módulos e configurações liberados para uso
+  - 'administer google analytics'
+  - 'administer css assets injector'
+  - 'administer js assets injector'
+  - 'csv importer'
+# Editor de texto
+  - 'use text format full_html'
+# Não digitar captcha
+  - 'skip CAPTCHA'
+# Sites Multi-idiomas
+  - 'administer languages'
+  - 'create content translations'
+  - 'delete content translations'
+  - 'translate any entity'
+  - 'translate block_content'
+  - 'translate book node'
+  - 'translate configuration'
+  - 'translate menu_link_content'
+  - 'translate page node'
+  - 'translate webform node'
+  - 'update content translations'
+# Temas liberados
+  - 'administer themes'
+  - 'administer themes fflch_aegan'
+# Webform
+  - 'administer webform'
+  - 'edit webform source'
+# Revisões
+  - 'revert all revisions'
+  - 'view all revisions'
+# Taxonomia
+  - 'access taxonomy overview'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'administer taxonomy'
+# Contact
+  - 'administer contact forms'
+  - 'access site-wide contact form'
+  - 'access user contact forms'
+  - 'manage contact form emails'
+
+# Search 
+  - 'search content'

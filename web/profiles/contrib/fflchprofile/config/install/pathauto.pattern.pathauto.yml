@@ -1,0 +1,22 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto
+label: pathauto
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  86355498-4e13-4bca-84a2-0b3fe355fcea:
+    id: node_type
+    bundles:
+      page: page
+      book: book
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 86355498-4e13-4bca-84a2-0b3fe355fcea
+selection_logic: and
+weight: -5
+relationships: {  }

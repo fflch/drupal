@@ -21,10 +21,6 @@
             "type": "git",
             "url": "https://github.com/fflch/custom-module-fflch.git"
         },
-        "fflchprofile": {
-            "type": "git",
-            "url": "https://github.com/fflch/fflchprofile.git"
-        },
         "custom-module-cem": {
             "type": "git",
             "url": "https://github.com/fflch/custom-module-cem.git"
@@ -122,7 +118,40 @@
         "fflch/cem-theme": "dev-master",
         "fflch/custom-module-cem": "dev-master",
         "fflch/custom-module-fflch": "dev-master",
-        "fflch/fflchprofile": "dev-master",
+        "drupal/ctools": "3.2",
+        "drupal/site_audit": "3.x-dev",
+        "drupal/asset_injector": "2.4",
+        "drupal/captcha": "1.0-beta1",
+        "drupal/ckeditor_font": "1.0",
+        "drupal/collapse_text": "1.0",
+        "drupal/title_length": "1.0",
+        "drupal/entity_print": "2.1",
+        "drupal/conditional_fields": "1.0-alpha5",
+        "drupal/editor_advanced_link": "1.4",
+        "drupal/editor_file": "1.4",
+        "drupal/menu_manipulator": "2.0",
+        "drupal/entity": "1.0-rc3",
+        "drupal/entity_clone": "1.0-beta3",
+        "drupal/google_analytics": "2.4",
+        "drupal/imce": "1.7",
+        "drupal/pathauto": "1.4",
+        "drupal/senhaunicausp": "1.4",
+        "drupal/config_perms": "2.0-beta2",
+        "drupal/smtp": "1.0-beta4",
+        "drupal/theme_permission": "1.1",
+        "drupal/webform": "5.3",
+        "drupal/csv_importer": "1.5",
+        "drupal/views_bulk_edit": "2.3",
+        "drupal/languageicons": "1.0.0-beta2",
+        "fflch/aegan-subtheme": "dev-master",
+        "npm-asset/ckeditor": "4.11",
+        "drupal/contact_emails": "1.16",
+        "drupal/contact_storage": "1.0-beta10",
+        "drupal/contact_storage_export": "1.13",
+        "drupal/colorbutton": "1.1",
+        "bower-asset/jquery.cycle": "dev-master",
+        "bower-asset/jquery.hoverintent": "dev-master",
+        "bower-asset/json2": "dev-master",
         "oomphinc/composer-installers-extender": "^1.1",
         "parsecsv/php-parsecsv": "1.0",
         "vlucas/phpdotenv": "^2.4",
@@ -182,7 +211,7 @@
             "web/modules/custom/{$name}": [
                 "type:drupal-custom-module"
             ],
-            "web/profiles/contrib/{$name}": [
+            "web/profiles/contrib/third/{$name}": [
                 "type:drupal-profile"
             ],
             "web/themes/contrib/{$name}": [

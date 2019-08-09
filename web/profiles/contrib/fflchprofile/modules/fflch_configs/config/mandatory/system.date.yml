@@ -1,0 +1,10 @@
+country:
+  default: 'BR'
+first_day: 0
+timezone:
+  default: America/Sao_Paulo
+  user:
+    configurable: false
+    warn: false
+    default: 0
+langcode: pt-br

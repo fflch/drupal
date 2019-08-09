@@ -1,0 +1,13 @@
+langcode: pt-br
+status: true
+dependencies:
+  enforced:
+    module:
+      - book
+name: 'Página Hierárquica'
+type: book
+description: 'Permite criação de paǵinas com relação de hierárquia'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

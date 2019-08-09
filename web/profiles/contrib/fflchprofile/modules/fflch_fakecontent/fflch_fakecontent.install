@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the module.
+ */
+
+use Drupal\fflch_fakecontent\InstallHelper;
+
+/**
+ * Implements hook_install().
+ */
+function fflch_fakecontent_install() {
+  if (!\Drupal::service('config.installer')->isSyncing()) {
+    \Drupal::classResolver(InstallHelper::class)->importContent();
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function fflch_fakecontent_uninstall() {
+  if (!\Drupal::service('config.installer')->isSyncing()) {
+    \Drupal::classResolver(InstallHelper::class)->deleteImportedContent();
+  }
+}

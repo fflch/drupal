@@ -1,0 +1,19 @@
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - fflch_aegan
+id: formulariodebusca
+theme: fflch_aegan
+region: header_right
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulário de busca'
+  provider: search
+  label_display: '0'
+visibility: {  }
