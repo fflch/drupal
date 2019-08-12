@@ -76,5 +76,11 @@ permissions:
   - 'access user contact forms'
   - 'manage contact form emails'
 
-# Search 
+# Search
   - 'search content'
+
+# Permissões para book
+  - 'add content to books'
+  - 'administer book outlines'
+  - 'create new books'
+
