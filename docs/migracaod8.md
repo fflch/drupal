@@ -1,4 +1,4 @@
-# Migração do Drupal 6 para o Drupal 8
+# Migração do Drupal 6/7 para o Drupal 8
 
 ### Marisa ou Vitor:
 
@@ -14,6 +14,9 @@
     git clone https://github.com/fflch/drupal.git treinamento.fflch.usp.br
     cd treinamento.fflch.usp.br
     composer install
+    cd web/libraries
+    ln -s ckeditor/plugins/* .
+    cd ../../
 
 ### Ricardo, Thiago ou Augusto:
 
