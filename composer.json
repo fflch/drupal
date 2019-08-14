@@ -47,7 +47,7 @@
         "drupal/at_tools": "3.2",
         "drupal/block_class": "1.0",
         "drupal/checklistapi": "1.8",
-        "drupal/console": "^1.0.2",
+        "drupal/console": "^1.9.1",
         "drupal/contextual_range_filter": "1.0-rc1",
         "drupal/contribute": "1.0-beta7",
         "drupal/core": "8.7.6",
@@ -203,6 +203,9 @@
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
+            ],
+            "vendor/drupal/{$name}": [
+                "drupal/console-en"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module",
