@@ -61,6 +61,8 @@ class Configs {
       'contact_storage',
       'menu_manipulator',
       'contact_emails',
+      'views_slideshow',
+      'views_slideshow_cycle',
     ];
 
     \Drupal::service('module_installer')->install($installed, TRUE);
