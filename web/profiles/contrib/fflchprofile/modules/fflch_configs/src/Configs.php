@@ -63,6 +63,7 @@ class Configs {
       'contact_emails',
       'views_slideshow',
       'views_slideshow_cycle',
+      'views_data_export',
     ];
 
     \Drupal::service('module_installer')->install($installed, TRUE);
