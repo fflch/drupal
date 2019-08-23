@@ -1,7 +1,7 @@
 # Procedimentos básicos para deploy em um ambiente dev:
 
     v='7.3'
-    apt-get install php$v php$v-common php$v-cli php$v-gd php$v-curl php$v-xml php$v-mbstring php-sqlite3
+    apt-get install php$v php$v-common php$v-cli php$v-gd php$v-curl php$v-xml php$v-mbstring php$v-zip php-sqlite3
     apt-get install sqlite3
 
 Composer:
