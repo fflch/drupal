@@ -29,6 +29,10 @@
             "type": "git",
             "url": "https://github.com/fflch/aegan-subtheme.git"
         },
+        "csvimporter": {
+            "type": "git",
+            "url": "https://gitlab.com/thiagogomesverissimo/csv_importer.git"
+        },
         "cem-theme": {
             "type": "git",
             "url": "https://github.com/fflch/cem-theme.git"
@@ -67,7 +71,7 @@
         "drupal/core": "8.7.6",
         "drupal/cpf": "1.1",
         "drupal/crop": "1.5",
-        "drupal/csv_importer": "1.5",
+        "drupal/csv_importer": "dev-fflch",
         "drupal/csv_serialization": "1.4",
         "drupal/ctools": "3.2",
         "drupal/date_range_formatter": "3.1",
