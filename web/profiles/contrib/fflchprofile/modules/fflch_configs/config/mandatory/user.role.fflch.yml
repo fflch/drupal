@@ -18,6 +18,8 @@ permissions:
   - 'administer node fields'
   - 'administer nodes'
   - 'administer content types'
+  - 'administer content translation'
+  - 'access files overview'
 #  - 'administer node form display'
 # Campos condicionais
   - 'delete conditional fields'
@@ -38,6 +40,7 @@ permissions:
   - 'administer google analytics'
   - 'administer css assets injector'
   - 'administer js assets injector'
+  - 'administer imce'
   - 'csv importer'
 # Editor de texto
   - 'use text format full_html'
@@ -61,6 +64,8 @@ permissions:
 # Webform
   - 'administer webform'
   - 'edit webform source'
+#Regras
+  - 'administer rules'
 # Revisões
   - 'revert all revisions'
   - 'view all revisions'
@@ -75,12 +80,9 @@ permissions:
   - 'access site-wide contact form'
   - 'access user contact forms'
   - 'manage contact form emails'
-
 # Search
   - 'search content'
-
 # Permissões para book
   - 'add content to books'
   - 'administer book outlines'
   - 'create new books'
-
