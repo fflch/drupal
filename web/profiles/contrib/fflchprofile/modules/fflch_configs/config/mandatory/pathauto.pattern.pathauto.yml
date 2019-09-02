@@ -13,6 +13,7 @@ selection_criteria:
     bundles:
       page: page
       book: book
+      webform: webform
     negate: false
     context_mapping:
       node: node

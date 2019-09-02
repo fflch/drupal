@@ -21,7 +21,10 @@ class Configs {
 
   private function modules(){
 
-    $uninstalled = ['update'];
+    $uninstalled = [
+      'update',
+      'comment',
+    ];
     $installed = [
     #### módulos core usados na FFLCH
       'language',
@@ -29,6 +32,7 @@ class Configs {
       'book',
       'config_translation',
       'content_translation',
+      'layout_builder',
     #### módulos contrib usados na FFLCH
       'captcha',
       'image_captcha',
@@ -64,6 +68,8 @@ class Configs {
       'views_slideshow',
       'views_slideshow_cycle',
       'views_data_export',
+      'editor_advanced_image',
+      'paragraphs',
     ];
 
     \Drupal::service('module_installer')->install($installed, TRUE);

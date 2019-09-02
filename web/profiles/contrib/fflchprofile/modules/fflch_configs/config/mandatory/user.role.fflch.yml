@@ -20,7 +20,7 @@ permissions:
   - 'administer content types'
   - 'administer content translation'
   - 'access files overview'
-#  - 'administer node form display'
+  - 'configure any layout'
 # Campos condicionais
   - 'delete conditional fields'
   - 'edit conditional fields'
@@ -40,7 +40,6 @@ permissions:
   - 'administer google analytics'
   - 'administer css assets injector'
   - 'administer js assets injector'
-  - 'administer imce'
   - 'csv importer'
 # Editor de texto
   - 'use text format full_html'
