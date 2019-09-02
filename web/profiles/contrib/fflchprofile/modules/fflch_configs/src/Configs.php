@@ -47,6 +47,8 @@ class Configs {
       'webform_ui',
       'webform_attachment',
       'webform_scheduled_email',
+      'webform_entity_print_attachment',
+      'webform_entity_print',
       'theme_permission',
       'webform_node',
       'editor_advanced_link',
