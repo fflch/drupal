@@ -52,6 +52,14 @@ Se quiser apagar o banco para fazer uma instalação zerada:
 
     # sqlite
     rm web/sites/default/files/.ht.sqlite*
+    
+
+Algumas configurações que já precisaram ser removidas: 
+
+    drush @cea.fflch.usp.br config-delete languageicons.settings
+    drush @cea.fflch.usp.br config-delete  captcha.captcha_point.user_pass
+    drush @cea.fflch.usp.br config-delete  captcha.settings
+    drush @cea.fflch.usp.br config-delete captcha.captcha_point.user_login_form
 
 ## Observação:
 
