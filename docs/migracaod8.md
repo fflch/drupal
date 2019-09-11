@@ -175,6 +175,8 @@ A nova identidade visual da Faculdade estipula que os demais sites - dos Departa
  - Webforms e Views não serão migrados devido a uma mudança de arquitetura entre as versões 6 e 8 do Drupal. Caso necessite de auxílio, podemos agendar data para suporte;
  - O site antigo ficará no ar por 10 dias para auxiliar nos ajustes pós migração no endereço __endereço__
  - O acesso como administrador(a) deve ser efetuado com senha única USP através do site https://sites.fflch.usp.br/ e depois na opção "Logon no site" correspondente ao seu site
+ - Neste tutorial é mostrado como abrir um chamado para seu site: https://www.youtube.com/watch?v=ZbloDQ59u-s
+ - Neste tutorial é mostrado como adicionar ou remover administradores: https://www.youtube.com/watch?v=Z1zUpHHeQgg
 
 [1] https://www.fflch.usp.br/1276
 [2] https://www.fflch.usp.br/sites/fflch.usp.br/files/2019-04/manual_identidade_fflch.pdf
