@@ -72,6 +72,7 @@ class Configs {
       'views_data_export',
       'editor_advanced_image',
       'paragraphs',
+      'redirect',
     ];
 
     \Drupal::service('module_installer')->install($installed, TRUE);
