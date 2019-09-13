@@ -85,3 +85,6 @@ permissions:
   - 'add content to books'
   - 'administer book outlines'
   - 'create new books'
+# Redirects
+  - 'administer redirects'
+  - 'administer redirect settings'
