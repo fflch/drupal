@@ -13,6 +13,7 @@ permissions:
   - 'access in-place editing'
 # Administração de nodes
   - 'bypass node access'
+  - 'administer node form display'
   - 'access content overview'
   - 'administer node display'
   - 'administer node fields'
