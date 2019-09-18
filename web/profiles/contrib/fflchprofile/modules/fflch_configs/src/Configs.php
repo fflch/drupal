@@ -73,6 +73,9 @@ class Configs {
       'editor_advanced_image',
       'paragraphs',
       'redirect',
+      'datetime_range',
+      'date_range_formatter',
+      'scheduler',
     ];
 
     \Drupal::service('module_installer')->install($installed, TRUE);
