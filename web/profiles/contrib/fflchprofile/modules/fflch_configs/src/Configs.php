@@ -11,10 +11,12 @@ use Drupal\user\RoleInterface;
 
 class Configs {
 
-  public function doConfig(){
+  public function doConfig($install = false){
     $this->modules();
     $this->mandatory();
-    $this->idiomas();
+    if($install) {
+        $this->idiomas();
+    }
     $this->user1();
     $this->smtp();
   }

@@ -12,6 +12,6 @@ use Drupal\fflch_configs\Configs;
  */
 function fflch_configs_install() {
   if (!\Drupal::service('config.installer')->isSyncing()) {
-    \Drupal::classResolver(Configs::class)->doConfig();
+    \Drupal::classResolver(Configs::class)->doConfig(true);
   }
 }

@@ -31,7 +31,11 @@
         },
         "csvimporter": {
             "type": "git",
-            "url": "https://gitlab.com/thiagogomesverissimo/csv_importer.git"
+            "url": "https://github.com/fflch/csv_importer.git"
+        },
+        "editorfile": {
+            "type": "git",
+            "url": "https://github.com/fflch/editor_file.git"
         },
         "cem-theme": {
             "type": "git",
@@ -68,7 +72,7 @@
         "drupal/contact_storage_export": "1.13",
         "drupal/contextual_range_filter": "1.0-rc1",
         "drupal/contribute": "1.0-beta7",
-        "drupal/core": "8.7.6",
+        "drupal/core": "8.7.8",
         "drupal/cpf": "1.1",
         "drupal/crop": "1.5",
         "drupal/csv_importer": "dev-fflch",
@@ -79,7 +83,7 @@
         "drupal/ds": "3.2",
         "drupal/editor_advanced_image": "1.0-beta5",
         "drupal/editor_advanced_link": "1.4",
-        "drupal/editor_file": "1.4",
+        "drupal/editor_file": "dev-fflch",
         "drupal/entity": "1.0-rc3",
         "drupal/entity_clone": "1.0-beta3",
         "drupal/entity_print": "2.1",
