@@ -37,6 +37,10 @@
             "type": "git",
             "url": "https://github.com/fflch/editor_file.git"
         },
+        "webform_boleto_usp": {
+            "type": "git",
+            "url": "https://github.com/fflch/webform_boleto_usp.git"
+        },
         "cem-theme": {
             "type": "git",
             "url": "https://github.com/fflch/cem-theme.git"
@@ -157,7 +161,7 @@
         "drupal/views_slideshow": "4.6",
         "drupal/visualn": "1.0-alpha17",
         "drupal/visualn_excel": "1.0-alpha1",
-        "drupal/webform": "5.4",
+        "drupal/webform": "5.5",
         "drupal/webform_views": "5.0-alpha7",
         "drupal/youtube": "1.0-beta3",
         "drush/drush": "^8.0.0",
@@ -165,6 +169,7 @@
         "fflch/cem-theme": "dev-master",
         "fflch/custom-module-cem": "dev-master",
         "fflch/custom-module-fflch": "dev-master",
+        "uspdev/webform_boleto_usp": "dev-master",
         "npm-asset/ckeditor": "4.11",
         "oomphinc/composer-installers-extender": "^1.1",
         "parsecsv/php-parsecsv": "1.0",
