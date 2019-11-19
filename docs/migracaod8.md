@@ -30,7 +30,8 @@
 
     mkdir d6
     cd d6
-    scp copia@aegirsti.fflch.usp.br:treinamento.tar.gz .
+    scp copia@aegirsti.fflch.usp.br:treinamento.tar.gz . 
+    *** Para o Drupal 7 USAR: scp -P 47112 copia@cloud.fflch.usp.br:treinamento.tar.gz .***
     tar -vzxf treinamento.tar.gz
 
 5 - Supondo que você tem usuário admin com senha admin, crie os bancos:
@@ -59,7 +60,9 @@
 
 9 - Executa a importação do conteúdo:
 
-    ./vendor/bin/drush migrate-manifest --legacy-db-url=mysql://admin:admin@localhost/treinamentod6 ../docs/manifestd6.yml
+    ./vendor/bin/drush migrate-manifest --legacy-db-url=mysql://admin:admin@localhost/treinamentod6 ../docs/d6manifest.yml
+    *** Para Drupal 7 ***
+    ./vendor/bin/drush migrate-manifest --legacy-db-url=mysql://admin:admin@localhost/treinamentod7 ../docs/d7manifest.yml
 
 10 - Procedimentos manuais:
 
