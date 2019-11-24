@@ -147,3 +147,13 @@ por exemplo, /tmp/novas/.yml e rode:
  - menus
  - views
 
+# Dicas
+
+## Corrigindo slogan que fica inalterável em alguns casos
+Com o patch disponínel em: https://www.drupal.org/project/drupal/issues/3011276#comment-13228934
+
+
+    ./vendor/bin/drush config-get language.pt-br:system.site
+    ./vendor/bin/drush config-delete language.pt-br:system.site slogan
+    ./vendor/bin/drush config-delete language.pt-br:system.site name
+    ./vendor/bin/drush config-delete language.pt-br:system.site page.front home-pt-br
