@@ -39,7 +39,7 @@
         },
         "webform_boleto_usp": {
             "type": "git",
-            "url": "https://github.com/fflch/webform_boleto_usp.git"
+            "url": "https://github.com/uspdev/webform_boleto_usp.git"
         },
         "cem-theme": {
             "type": "git",
@@ -169,7 +169,7 @@
         "fflch/cem-theme": "dev-master",
         "fflch/custom-module-cem": "dev-master",
         "fflch/custom-module-fflch": "dev-master",
-        "uspdev/webform_boleto_usp": "dev-master",
+        "uspdev/webform_boleto_usp": "1.0.1",
         "npm-asset/ckeditor": "4.11",
         "oomphinc/composer-installers-extender": "^1.1",
         "parsecsv/php-parsecsv": "1.0",

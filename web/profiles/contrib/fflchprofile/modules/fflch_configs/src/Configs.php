@@ -136,6 +136,18 @@ class Configs {
     }
   }
 
+  private function boleto(){
+
+    $config = \Drupal::service('config.factory')->getEditable('webform_boleto_usp.settings');
+
+    $filename = '/var/aegir/.boleto.txt';
+    if (file_exists($filename)) {
+        $token = file_get_contents($filename);
+        $config->set('user_id', 'fflch')->save();
+        $config->set('token', $token)->save();
+    }
+  }
+
   private function user1(){
 
     $user = \Drupal\user\Entity\User::load(1);
