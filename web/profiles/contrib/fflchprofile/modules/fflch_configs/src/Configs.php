@@ -19,6 +19,7 @@ class Configs {
     }
     $this->user1();
     $this->smtp();
+    $this->boleto();
   }
 
   private function modules(){
@@ -52,6 +53,7 @@ class Configs {
       'webform_entity_print',
       'theme_permission',
       'webform_node',
+      'webform_boleto_usp',
       'editor_advanced_link',
       'editor_file',
       'ckeditor_font',
