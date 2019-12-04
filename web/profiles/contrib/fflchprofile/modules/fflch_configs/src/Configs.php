@@ -145,7 +145,7 @@ class Configs {
     $filename = '/var/aegir/.boleto.txt';
     if (file_exists($filename)) {
         $token = file_get_contents($filename);
-        $config->set('user_id', 'fflch')->save();
+        $config->set('user_id', 'fflch');
         $config->set('token', $token)->save();
     }
   }
