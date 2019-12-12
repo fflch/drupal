@@ -61,8 +61,8 @@
 
 10 - Procedimentos manuais:
 
-
 Executar: ./vendor/bin/drupal server
+
 Acessar: http://127.0.0.1:8088
 
 
