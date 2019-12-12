@@ -21,14 +21,14 @@
 
 3 - Gerar backup no aegir e colocar na pasta /var/copia e corrigir dono/grupo. Exemplo:
 
-    /var/copia/[site_escolhido].tar.gz
+    /var/copia/[site_escolhido][sem fflch.usp.br].tar.gz
 ### .
 
 4 - Baixar estrutura do site, exemplo:
 
     mkdir d7
     cd d7
-    scp -P 47112 copia@cloud.fflch.usp.br:[site_escolhido].tar.gz .
+    scp -P 47112 copia@cloud.fflch.usp.br:[site_escolhido][sem fflch.usp.br].tar.gz .
     tar -vzxf [site_escolhido].tar.gz
 
 5 - Supondo que você tem usuário admin com senha admin, crie os bancos:
