@@ -88,13 +88,13 @@ senha: admin
 
 
 
-13 - No aegirsti migrar o site. Exemplo: d7[site_escolhido].fflch.usp.br
+13 - No aegirnuvem migrar o site. Exemplo: d7[site_escolhido].fflch.usp.br
 
 14 - Criar o mesmo site no aegird8. Exemplo: [site_escolhido].fflch.usp.br
 
 ### Ricardo, Thiago ou Augusto:
 
-15 - Copiar pasta files do aegirsti para aegird8
+15 - Copiar pasta files do aegirnuvem para aegird8
 
 16 - Dropar e recriar o banco de dados:
 
