@@ -19,9 +19,9 @@
 
 ### Ricardo, Thiago ou Augusto:
 
-3 - Gerar backup no aegir e colocar na pasta /home/copia e corrigir dono/grupo. Exemplo:
+3 - Gerar backup no aegir e colocar na pasta /var/copia e corrigir dono/grupo. Exemplo:
 
-    /home/copia/treinamento.tar.gz
+    /var/copia/[site_escolhido].tar.gz
 ###
 
 4 - Baixar estrutura do site, exemplo:
