@@ -22,7 +22,7 @@
 3 - Gerar backup no aegir e colocar na pasta /var/copia e corrigir dono/grupo. Exemplo:
 
     /var/copia/[site_escolhido].tar.gz
-###
+### .
 
 4 - Baixar estrutura do site, exemplo:
 
