@@ -61,6 +61,11 @@
 
 10 - Procedimentos manuais:
 
+
+Executar: ./vendor/bin/drupal server
+Acessar: http://127.0.0.1:8088
+
+
  - Substituir menu principal pelo primário e ativar submenus
  - Configurar o nome do site para aparecer na região do logo
  - redefinir a página inical
