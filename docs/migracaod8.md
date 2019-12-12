@@ -63,7 +63,10 @@
 
 Executar: ./vendor/bin/drupal server
 
-Acessar: http://127.0.0.1:8088
+Acessar: http://127.0.0.1:8088/user/login
+
+usuário: fflch
+senha: admin
 
 
  - Substituir menu principal pelo primário e ativar submenus
