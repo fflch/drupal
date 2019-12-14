@@ -146,7 +146,7 @@ class Configs {
     if (file_exists($filename)) {
         $token = file_get_contents($filename);
         $config->set('user_id', 'fflch');
-        $config->set('token', $token)->save();
+        $config->set('token', trim($token))->save();
     }
   }
 
