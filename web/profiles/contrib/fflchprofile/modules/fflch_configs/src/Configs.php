@@ -141,12 +141,56 @@ class Configs {
   private function boleto(){
 
     $config = \Drupal::service('config.factory')->getEditable('webform_boleto_usp.settings');
+    $centros = 
+        "\FFLCH\ATAC\SVALPGR 
+        \FFLCH\ATAC\SVCEXU 
+        \FFLCH\ATFN\SVCONT\SCCONV 
+        \FFLCH\ATFN\SVTESOU 
+        \FFLCH\CCINT 
+        \FFLCH\CEA 
+        \FFLCH\CELP 
+        \FFLCH\CITRAT 
+        \FFLCH\CL 
+        \FFLCH\CL\CL/ALEMÃO 
+        \FFLCH\CL\CL/ÁRABE 
+        \FFLCH\CL\CL/ESPANHOL 
+        \FFLCH\CL\CL/FRANCÊS 
+        \FFLCH\CL\CL/GREGO 
+        \FFLCH\CL\CL/INGLÊS 
+        \FFLCH\CL\CL/ITALIANO 
+        \FFLCH\CL\CL/JAPONÊS 
+        \FFLCH\CL\CL/LATIM 
+        \FFLCH\CL\CL/PORTUGUÊS 
+        \FFLCH\CONV CAT JAIME 
+        \FFLCH\CONVENIO 
+        \FFLCH\FLA 
+        \FFLCH\FLC 
+        \FFLCH\FLC\DLCV-FLP 
+        \FFLCH\FLC\FLPDOSTOIEVSK 
+        \FFLCH\FLG 
+        \FFLCH\FLG\DG-GF 
+        \FFLCH\FLH 
+        \FFLCH\FLL 
+        \FFLCH\FLM 
+        \FFLCH\FLM\DLM-LLFR 
+        \FFLCH\FLM\DLM-LLI 
+        \FFLCH\FLO 
+        \FFLCH\FLO\DLO LLH 
+        \FFLCH\FLO\DLO LLR 
+        \FFLCH\FLP 
+        \FFLCH\FLT 
+        \FFLCH\NAP - BRASIL AFRICA 
+        \FFLCH\SCINFOR 
+        \FFLCH\SCPUB";
 
     $filename = '/var/aegir/.boleto.txt';
     if (file_exists($filename)) {
         $token = file_get_contents($filename);
+        $token = trim( str_replace( PHP_EOL, '', $token ) );
         $config->set('user_id', 'fflch');
-        $config->set('token', trim($token))->save();
+        $config->set('codigoUnidadeDespesa', 8);
+        $config->set('estruturaHierarquica', $centros);
+        $config->set('token', $token)->save();
     }
   }
 
