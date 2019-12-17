@@ -142,46 +142,38 @@ class Configs {
 
     $config = \Drupal::service('config.factory')->getEditable('webform_boleto_usp.settings');
     $centros = 
-        "\FFLCH\ATAC\SVALPGR 
-        \FFLCH\ATAC\SVCEXU 
-        \FFLCH\ATFN\SVCONT\SCCONV 
-        \FFLCH\ATFN\SVTESOU 
-        \FFLCH\CCINT 
-        \FFLCH\CEA 
-        \FFLCH\CELP 
-        \FFLCH\CITRAT 
-        \FFLCH\CL 
-        \FFLCH\CL\CL/ALEMÃO 
-        \FFLCH\CL\CL/ÁRABE 
-        \FFLCH\CL\CL/ESPANHOL 
-        \FFLCH\CL\CL/FRANCÊS 
-        \FFLCH\CL\CL/GREGO 
-        \FFLCH\CL\CL/INGLÊS 
-        \FFLCH\CL\CL/ITALIANO 
-        \FFLCH\CL\CL/JAPONÊS 
-        \FFLCH\CL\CL/LATIM 
-        \FFLCH\CL\CL/PORTUGUÊS 
-        \FFLCH\CONV CAT JAIME 
-        \FFLCH\CONVENIO 
-        \FFLCH\FLA 
-        \FFLCH\FLC 
-        \FFLCH\FLC\DLCV-FLP 
-        \FFLCH\FLC\FLPDOSTOIEVSK 
-        \FFLCH\FLG 
-        \FFLCH\FLG\DG-GF 
-        \FFLCH\FLH 
-        \FFLCH\FLL 
-        \FFLCH\FLM 
-        \FFLCH\FLM\DLM-LLFR 
-        \FFLCH\FLM\DLM-LLI 
-        \FFLCH\FLO 
-        \FFLCH\FLO\DLO LLH 
-        \FFLCH\FLO\DLO LLR 
-        \FFLCH\FLP 
-        \FFLCH\FLT 
-        \FFLCH\NAP - BRASIL AFRICA 
-        \FFLCH\SCINFOR 
-        \FFLCH\SCPUB";
+"\FFLCH
+\FFLCH\ATAC\SVALPGR
+\FFLCH\ATAC\SVCEXU
+\FFLCH\ATFN\SVTESOU
+\FFLCH\CCINT
+\FFLCH\CEA
+\FFLCH\CELP
+\FFLCH\CITRAT
+\FFLCH\CL
+\FFLCH\CONVENIO
+\FFLCH\DIVERSITAS
+\FFLCH\DIVERSITAS PÓS
+\FFLCH\DIVERSITAS-PROAP
+\FFLCH\FLA
+\FFLCH\FLC
+\FFLCH\FLC\DLCV-FLP
+\FFLCH\FLC\FLPDOSTOIEVSK
+\FFLCH\FLG
+\FFLCH\FLG\DG-GF
+\FFLCH\FLH
+\FFLCH\FLL
+\FFLCH\FLM
+\FFLCH\FLM\DLM-LLFR
+\FFLCH\FLM\DLM-LLI
+\FFLCH\FLO
+\FFLCH\FLO\DLO LLH
+\FFLCH\FLO\DLO LLR
+\FFLCH\FLP
+\FFLCH\FLT
+\FFLCH\NAP - BRASIL AFRICA
+\FFLCH\SCINFOR
+\FFLCH\SCPUB";
 
     $filename = '/var/aegir/.boleto.txt';
     if (file_exists($filename)) {
