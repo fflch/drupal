@@ -141,7 +141,7 @@ class Configs {
   private function boleto(){
 
     $config = \Drupal::service('config.factory')->getEditable('webform_boleto_usp.settings');
-    $centros = 
+    $centros =
 "\FFLCH
 \FFLCH\ATAC\SVALPGR
 \FFLCH\ATAC\SVCEXU
@@ -171,6 +171,8 @@ class Configs {
 \FFLCH\FLO\DLO LLR
 \FFLCH\FLP
 \FFLCH\FLT
+\FFLCH\FLS
+\FFLCH\FLF
 \FFLCH\NAP - BRASIL AFRICA
 \FFLCH\SCINFOR
 \FFLCH\SCPUB";
