@@ -1,4 +1,6 @@
-# Procedimentos básicos para deploy em um ambiente dev:
+# Dependências básicas para deploy em um ambiente dev:
+
+Biblioteca do php:
 
     v='7.3'
     apt-get install php$v php$v-common php$v-cli php$v-gd php$v-curl php$v-xml php$v-mbstring php$v-zip php-sqlite3
@@ -8,6 +10,10 @@ Composer:
 
     curl -s https://getcomposer.org/installer | php
     sudo mv composer.phar /usr/local/bin/composer
+    
+Banco de daods mysql/sybase:
+
+    sudo apt install mariadb-server
 
 Download e instalação das dependências:
 
