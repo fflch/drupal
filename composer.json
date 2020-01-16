@@ -94,7 +94,7 @@
         "drupal/externalauth": "1.1",
         "drupal/facets": "1.2",
         "drupal/field_collection": "1.0.0-alpha1",
-        "drupal/field_group": "1.0",
+        "drupal/field_group": "3.0-rc2",
         "drupal/file_entity": "2.0-beta6",
         "drupal/form_placeholder": "1.0",
         "drupal/google_analytics": "2.4",
