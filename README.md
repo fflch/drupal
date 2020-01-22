@@ -1,18 +1,24 @@
-# Procedimentos para deploy no ambiente dev:
+# Dependências básicas para deploy em um ambiente dev:
+
+Biblioteca do php:
 
     v='7.3'
-    apt-get install php$v php$v-common php$v-cli php$v-gd php$v-curl php$v-xml php$v-mbstring php-sqlite3
+    apt-get install php$v php$v-common php$v-cli php$v-gd php$v-curl php$v-xml php$v-mbstring php$v-zip php-sqlite3
     apt-get install sqlite3
 
 Composer:
 
     curl -s https://getcomposer.org/installer | php
     sudo mv composer.phar /usr/local/bin/composer
+    
+Banco de daods mysql/sybase:
+
+    sudo apt install mariadb-server
 
 Download e instalação das dependências:
 
-    git clone git@github.com:SEU-USERNAME/drupal8.git
-    cd drupal8
+    git clone git@github.com:SEU-USERNAME/drupal.git
+    cd drupal
     composer install
 
 Plugins ckeditor:
@@ -38,7 +44,7 @@ Instalação em pt-br usando o profile fflch com *mysql*:
 
 Servidor http básico:
 
-    cd drupal8
+    cd drupal
     ./vendor/bin/drupal serve -vvv
 
 Caso queira escolher ip e porta:
@@ -52,6 +58,14 @@ Se quiser apagar o banco para fazer uma instalação zerada:
 
     # sqlite
     rm web/sites/default/files/.ht.sqlite*
+    
+
+Algumas configurações que já precisaram ser removidas: 
+
+    drush @cea.fflch.usp.br config-delete languageicons.settings
+    drush @cea.fflch.usp.br config-delete  captcha.captcha_point.user_pass
+    drush @cea.fflch.usp.br config-delete  captcha.settings
+    drush @cea.fflch.usp.br config-delete captcha.captcha_point.user_login_form
 
 ## Observação:
 
@@ -61,7 +75,7 @@ bibliotecas usados em apenas alguns sites.
 
 ## Exemplos de instalação de novos módulos:
 
-    cd drupal8
+    cd drupal
     composer require drupal/webform:5.1
     composer require drupal/smtp:1.0-beta4
 
@@ -71,14 +85,81 @@ Consulte o nome da biblioteca em https://asset-packagist.org e
 depois instale:
 
     composer require npm-asset/datetimepicker:0.1.38
-    
+
  ## Configurações
- 
+
  As vezes, novas configurações são incorporadas ao site modelo, para aplicar essa
  nova configuração pode-se fazer:
- 
+
      drush @cjc.fflch.usp.br config-set aegan.settings slideshow_display '0' --yes
- 
+
  Ou mesmo comando para todos sites na pasta sites:
- 
+
      for i in $(ls|grep fflch); do drush @$i config-set aegan.settings slideshow_display '0' --yes ;done
+     
+     
+     # Profile Drupal usado na FFLCH
+
+## Adicionando novas configurações
+
+Há dois tipos de configurações: instalação e sincronização.
+As configurações de instalação são carregadas assim que o site é criado
+e estão definidas em arquivos *.yml* no diretório *fflchprofile/config/install*.
+
+As configurações de sinconização são rodadas sempre no cron e estão
+em *modules/fflch_configs/config/mandatory*.
+
+Passos para fazer modificações no site modelo:
+
+ - Identificar os arquivos yml que executam a modificação
+ - Salvar e commitar esses arquivos na pasta *modules/fflch_configs/config/mandatory*
+
+ - Se quiser testar as configurações antes de mandar para a produção, coloque-a em um pasta,
+por exemplo, /tmp/novas/.yml e rode:
+
+    ./vendor/bin/drush cim --partial --source='/tmp/novas'
+
+## Configurações:
+
+### Editor de texto:
+
+ - Somente o full_html está disponível
+ - Botão com atríbutos do link usando módulo editor_advanced_link
+ - Botão de arquivo usando o módulo editor_file
+ - Tamanho e tipo de fonte usando editor_font
+
+### Segurança
+
+ - somente administradores podem criar novas contas
+ - role fflch pode alterar nome do site
+
+### Módulos disponíveis na role fflch:
+
+ - Google Analytics
+ - Assets
+
+### Formato de datas disponíveis:
+
+ - dia/mes/ano: d/m/Y
+ - extenso: l, j \d\e F \d\e Y
+
+### Gestão de conteúdo
+
+ - página básica (com url baseada no título)
+ - clone dos nodes
+ - conditional fields
+ - webform
+ - blocos
+ - menus
+ - views
+
+# Dicas
+
+## Corrigindo slogan que fica inalterável em alguns casos
+Com o patch disponínel em: https://www.drupal.org/project/drupal/issues/3011276#comment-13228934
+
+
+    ./vendor/bin/drush config-get language.pt-br:system.site
+    ./vendor/bin/drush config-delete language.pt-br:system.site slogan
+    ./vendor/bin/drush config-delete language.pt-br:system.site name
+    ./vendor/bin/drush config-delete language.pt-br:system.site page.front home-pt-br

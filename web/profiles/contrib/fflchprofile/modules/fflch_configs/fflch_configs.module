@@ -1,0 +1,13 @@
+<?php
+
+use Drupal\fflch_configs\Configs;
+
+/**
+ * Implements hook_cron().
+ */
+function fflch_configs_cron() {
+  if (!\Drupal::service('config.installer')->isSyncing()) {
+    \Drupal::classResolver(Configs::class)->doConfig();
+  }
+}
+

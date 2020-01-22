@@ -4,10 +4,10 @@
 /web/core/
 /web/modules/
 /web/themes/
-/web/profiles/
 /web/libraries/
 /config
 /drush/Commands/
+/console/
 
 !/drush/Commands/PolicyCommands.php
 
@@ -29,3 +29,5 @@
 
 *~
 *.swp
+
+/web/profiles/contrib/third

@@ -1,0 +1,9 @@
+{
+  "name": "drupal/fflch_configs",
+  "type": "drupal-module",
+  "description": "fflch configs",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": { }
+}

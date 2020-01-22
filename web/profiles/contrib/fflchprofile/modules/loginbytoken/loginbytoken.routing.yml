@@ -1,0 +1,10 @@
+
+loginbytoken.login_controller_login:
+  path: 'loginbytoken'
+  defaults:
+    _controller: '\Drupal\loginbytoken\Controller\LoginController::login'
+    _title: 'login'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: TRUE

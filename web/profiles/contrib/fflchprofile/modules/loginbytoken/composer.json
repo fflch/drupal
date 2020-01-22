@@ -1,0 +1,16 @@
+{
+  "name": "drupal/loginbytoken",
+  "type": "drupal-module",
+  "description": "Login By Token",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "authors": [{
+      "name": "Thiago Gomes Veríssimo",
+      "email": "thiago.verissimo@usp.br",
+      "homepage": "https://github.com/thiagogomesverissimo"
+  }],
+  "require": {
+    "guzzlehttp/guzzle": "^6.3@dev"
+  }
+}
