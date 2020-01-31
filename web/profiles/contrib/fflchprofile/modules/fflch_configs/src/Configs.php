@@ -35,6 +35,7 @@ class Configs {
       'book',
       'config_translation',
       'content_translation',
+      'admin_toolbar',
     #### módulos contrib usados na FFLCH
       'captcha',
       'image_captcha',
