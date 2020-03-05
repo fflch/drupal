@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e9472a8a7875d4fb723029da2193d43",
+    "content-hash": "51402fb0f3ff5a948b8307b56bd65063",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -9056,6 +9056,54 @@
             }
         },
         {
+            "name": "drupal/webform_submission_files_download",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_submission_files_download.git",
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_submission_files_download-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "c5ef21acf1ce98fb9964bcfd8dfd7cbab7bc1326"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "pclzip/pclzip": "^2.8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1554384781",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "p4trizio",
+                    "homepage": "https://www.drupal.org/user/400626"
+                }
+            ],
+            "description": "Allow to download webform submission managed files",
+            "homepage": "https://www.drupal.org/project/webform_submission_files_download",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_submission_files_download"
+            }
+        },
+        {
             "name": "drupal/webform_views",
             "version": "5.0.0-alpha7",
             "source": {
@@ -10553,6 +10601,43 @@
             ],
             "description": "CSV data parser for PHP",
             "time": "2018-03-03T11:01:45+00:00"
+        },
+        {
+            "name": "pclzip/pclzip",
+            "version": "2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ivanlanin/pclzip.git",
+                "reference": "19dd1de9d3f5fc4d7d70175b4c344dee329f45fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ivanlanin/pclzip/zipball/19dd1de9d3f5fc4d7d70175b4c344dee329f45fd",
+                "reference": "19dd1de9d3f5fc4d7d70175b4c344dee329f45fd",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "pclzip.lib.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Blavet"
+                }
+            ],
+            "description": "A PHP library that offers compression and extraction functions for Zip formatted archives",
+            "homepage": "http://www.phpconcept.net/pclzip",
+            "keywords": [
+                "php",
+                "zip"
+            ],
+            "time": "2014-06-05T11:42:24+00:00"
         },
         {
             "name": "pear/archive_tar",
