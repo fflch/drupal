@@ -35,6 +35,7 @@ class Configs {
       'book',
       'config_translation',
       'content_translation',
+      'admin_toolbar',
     #### módulos contrib usados na FFLCH
       'captcha',
       'image_captcha',
@@ -161,6 +162,7 @@ class Configs {
 \FFLCH\FLC\FLPDOSTOIEVSK
 \FFLCH\FLG
 \FFLCH\FLG\DG-GF
+\FFLCH\FLG\DG-GH
 \FFLCH\FLH
 \FFLCH\FLL
 \FFLCH\FLM
