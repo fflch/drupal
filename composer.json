@@ -164,6 +164,7 @@
         "drupal/visualn": "1.0-alpha17",
         "drupal/visualn_excel": "1.0-alpha1",
         "drupal/webform": "5.8",
+        "drupal/webform_analysis": "1.0-beta7",
         "drupal/webform_cpf": "1.0",
         "drupal/webform_submission_files_download": "1.0-alpha2",
         "drupal/webform_views": "5.0-alpha7",
