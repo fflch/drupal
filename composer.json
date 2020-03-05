@@ -102,6 +102,7 @@
         "drupal/imce": "1.7",
         "drupal/inline_responsive_images": "2.1",
         "drupal/jcarousel": "4.0",
+        "drupal/juicebox": "2.0-beta3",
         "drupal/languageicons": "1.0.0-beta2",
         "drupal/layout_plugin": "1.0-alpha23",
         "drupal/ldap": "3.0-beta5",
