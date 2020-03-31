@@ -167,3 +167,4 @@ Com o patch disponínel em: https://www.drupal.org/project/drupal/issues/3011276
 Taggeando versão:
 
     git tag -a v8.8.4a -m "v8.8.4a"
+    git push origin v8.8.4a
