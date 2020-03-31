@@ -1,0 +1,12 @@
+{
+    "name": "fflch/custom-module-fflch",
+    "description": "custom fflch module to generate unique id for sic requests",
+    "type": "drupal-custom-module",
+    "authors": [
+        {
+            "name": "Thiago Gomes Verissimo",
+            "email": "thiago.verissimo@usp.br"
+        }
+    ],
+    "require": {}
+}

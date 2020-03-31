@@ -17,14 +17,6 @@
             "type": "composer",
             "url": "https://asset-packagist.org"
         },
-        "custom-module-fflch": {
-            "type": "git",
-            "url": "https://github.com/fflch/custom-module-fflch.git"
-        },
-        "custom-module-cem": {
-            "type": "git",
-            "url": "https://github.com/fflch/custom-module-cem.git"
-        },
         "aegan-subtheme": {
             "type": "git",
             "url": "https://github.com/fflch/aegan-subtheme.git"
@@ -76,7 +68,7 @@
         "drupal/contact_storage_export": "1.13",
         "drupal/contextual_range_filter": "1.0-rc1",
         "drupal/contribute": "1.0-beta7",
-        "drupal/core": "8.8.3",
+        "drupal/core": "8.8.4",
         "drupal/cpf": "1.1",
         "drupal/crop": "1.5",
         "drupal/csv_importer": "dev-fflch",
@@ -172,8 +164,6 @@
         "drush/drush": "^8.0.0",
         "fflch/aegan-subtheme": "dev-master",
         "fflch/cem-theme": "dev-master",
-        "fflch/custom-module-cem": "dev-master",
-        "fflch/custom-module-fflch": "dev-master",
         "npm-asset/ckeditor": "4.11",
         "oomphinc/composer-installers-extender": "^1.1",
         "parsecsv/php-parsecsv": "1.0",
@@ -238,7 +228,7 @@
             "web/modules/custom/{$name}": [
                 "type:drupal-custom-module"
             ],
-            "web/profiles/contrib/third/{$name}": [
+            "web/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
             "web/themes/contrib/{$name}": [

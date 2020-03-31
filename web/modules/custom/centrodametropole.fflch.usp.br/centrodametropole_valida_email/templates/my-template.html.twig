@@ -1,0 +1,39 @@
+<section class="internas-container">
+    <div class="inner wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 internas-text">
+                    {% trans %}
+                        <h2 class="blue">Controle de acesso</h2>
+                    {% endtrans %}
+                    {% trans %}
+                    <p>Para ter acesso e fazer o download das bases de dados, você deve se identificar.<br> Informe seu email no campo abaixo e clique em continuar, caso seu email seja identificado em nossa base de cadastros, seu acesso será liberado
+                        imediatamente.
+                        <br> Caso seja o seu primeiro acesso, preencha o formulário e siga as instruções.</p>
+                    {% endtrans %}
+                    <div class="row">
+                        <form id="formulario_controle" method="post">
+                            <div class="form-line col-xs-12 same-line">
+                                <label>e-mail*</label>
+                                {% if lang == en %}
+                                    <input id="email" name="email" type="text" class="campo_texto" placeholder="example@email.com">
+                                    <input type="hidden" name="id_pagina" id="id_curso" value="{{ nid }}">
+                                    <input type="submit" name="enviar" value="Send">
+                                {% else %}
+                                    <input id="email" name="email" type="text" class="campo_texto" placeholder="exemplo@email.com">
+                                    <input type="hidden" name="id_pagina" id="id_curso" value="{{ nid }}">
+                                    <input type="submit" name="enviar" value="Enviar">
+                                {% endif %}
+                            </div>
+                        </form>
+                    </div>
+                    <p class="alert">
+                        {% trans %}
+                        Para esclarecer dúvidas e outras informações, escreva para <a href="mailto:centrodametropole@usp.br">centrodametropole@usp.br</a>
+                        {% endtrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

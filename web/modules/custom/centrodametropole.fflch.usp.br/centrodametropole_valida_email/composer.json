@@ -1,0 +1,14 @@
+{
+    "name": "fflch/custom-module-cem",
+    "description": "Módulo customizado para o WebSite do CEM baseado em Drupal 8",
+    "type": "drupal-custom-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DanielMM",
+            "email": "medeiros.danielm@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

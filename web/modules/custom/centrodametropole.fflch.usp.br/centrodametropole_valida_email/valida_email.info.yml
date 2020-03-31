@@ -1,0 +1,6 @@
+name: Valida Email
+type: module
+description: 'Módulo customizado para validação de email para controle de acesso a páginas específicas.'
+core: 8.x
+package: centrodametropole.fflch.usp.br
+type: module

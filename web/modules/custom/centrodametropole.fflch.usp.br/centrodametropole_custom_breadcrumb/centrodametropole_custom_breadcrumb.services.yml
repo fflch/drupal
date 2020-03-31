@@ -1,0 +1,6 @@
+services:
+  centrodametropole_custom_breadcrumb.breadcrumb:
+    class: Drupal\centrodametropole_custom_breadcrumb\BreadcrumbBuilder
+    arguments: ['@menu.active_trail', '@entity_type.manager', '@config.factory', '@path.validator', '@path.alias_manager', '@plugin.manager.menu.link', '@cache.menu', '@lock']
+    tags:
+      - { name: breadcrumb_builder, priority: 1 }
