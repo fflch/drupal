@@ -10,7 +10,7 @@ Composer:
 
     curl -s https://getcomposer.org/installer | php
     sudo mv composer.phar /usr/local/bin/composer
-    
+
 Banco de daods mysql/sybase:
 
     sudo apt install mariadb-server
@@ -58,9 +58,9 @@ Se quiser apagar o banco para fazer uma instalação zerada:
 
     # sqlite
     rm web/sites/default/files/.ht.sqlite*
-    
 
-Algumas configurações que já precisaram ser removidas: 
+
+Algumas configurações que já precisaram ser removidas:
 
     drush @cea.fflch.usp.br config-delete languageicons.settings
     drush @cea.fflch.usp.br config-delete  captcha.captcha_point.user_pass
@@ -96,8 +96,8 @@ depois instale:
  Ou mesmo comando para todos sites na pasta sites:
 
      for i in $(ls|grep fflch); do drush @$i config-set aegan.settings slideshow_display '0' --yes ;done
-     
-     
+
+
      # Profile Drupal usado na FFLCH
 
 ## Adicionando novas configurações
@@ -163,3 +163,7 @@ Com o patch disponínel em: https://www.drupal.org/project/drupal/issues/3011276
     ./vendor/bin/drush config-delete language.pt-br:system.site slogan
     ./vendor/bin/drush config-delete language.pt-br:system.site name
     ./vendor/bin/drush config-delete language.pt-br:system.site page.front home-pt-br
+
+Taggeando versão:
+
+    git tag -a v8.8.4a -m "v8.8.4a"
