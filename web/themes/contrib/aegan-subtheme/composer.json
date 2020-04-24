@@ -1,0 +1,21 @@
+{
+  "name": "fflch/aegan-subtheme",
+  "type": "drupal-theme",
+  "description": "Aegan FFLCH",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/fflch/aegan-subtheme",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://github.com/fflch/aegan-subtheme/issues",
+    "source": "https://github.com/fflch/aegan-subtheme"
+  },
+  "authors": [{
+      "name": "Thiago Gomes Veríssimo",
+      "email": "thiago.verissimo@usp.br",
+      "homepage": "https://github.com/thiagogomesverissimo"
+  }],
+  "require": {
+    "drupal/aegan": "1.0"
+  }
+}

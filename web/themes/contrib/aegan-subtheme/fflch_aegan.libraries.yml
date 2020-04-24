@@ -1,0 +1,15 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/cores.css: { weight: 50 }
+
+jquery-custom:
+  remote: https://github.com/jquery/jquery
+  version: "1.11.3"
+  license:
+    name: MIT
+    url: https://github.com/jquery/jquery/blob/master/LICENSE.txt
+    gpl-compatible: true
+  js:
+    https://code.jquery.com/jquery-1.12.3.min.js: { minified: true, weight: -20 }

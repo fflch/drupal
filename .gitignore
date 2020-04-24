@@ -34,5 +34,6 @@ web/modules/*
 web/profiles/*
 !web/profiles/contrib/fflchprofile
 
-web/themes/*
-!web/themes/contrib/aegan-subtheme
+!/web/themes/contrib/
+/web/themes/contrib/*
+!/web/themes/contrib/aegan-subtheme/

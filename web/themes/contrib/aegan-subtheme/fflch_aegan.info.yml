@@ -1,0 +1,31 @@
+name: FFLCH Aegan
+type: theme
+description: 'Aegan customizado para FFLCH'
+package: FFLCH
+core: 8.x
+
+libraries:
+  - fflch_aegan/global-styling
+
+libraries-override:
+  core/jquery: fflch_aegan/jquery-custom
+
+# Regions
+regions:
+  header: Header
+  header_right: Header Right
+  primary_menu: Primary Menu
+  breadcrumb: Breadcrumb
+  content_top: Content Top
+  sidebar_first: First Sidebar
+  content: Content
+  sidebar_second: Second Sidebar
+  sidebar_second_second: Second Second Sidebar
+  content_bottom: Content Bottom
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer_fourth: Footer Fourth
+  footer: Footer
+
+base theme: aegan
