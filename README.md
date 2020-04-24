@@ -168,3 +168,9 @@ Taggeando versão:
 
     git tag -a v8.8.4a -m "v8.8.4a"
     git push origin v8.8.4a
+
+Diretórios importantes:
+
+ - web/profiles/contrib/fflchprofile: profile de todos sites da FFLCH
+ - web/modules/custom: Módulos custom
+ - web/themes/contrib/aegan-subtheme: tema de todos sites da FFLCH

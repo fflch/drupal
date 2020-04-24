@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f07d52356babf61963e9519a255fef1f",
+    "content-hash": "d898d748c0f35f3784754631bfe6fd5f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1926,6 +1926,53 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/aegan",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/aegan.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/aegan-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "be1a88d6fc68cdcaa9de4738786ec500aa68f96e"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1473665339",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "leopathu",
+                    "homepage": "https://www.drupal.org/user/2761363"
+                }
+            ],
+            "description": "Aegan is a Responsive Drupal 8 business theme, Developed by <a href=\"http://dropthemes.in\">Dropthemes.in</a>.",
+            "homepage": "https://www.drupal.org/project/aegan",
+            "support": {
+                "source": "https://git.drupalcode.org/project/aegan"
             }
         },
         {

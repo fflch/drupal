@@ -1,0 +1,36 @@
+{#
+View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_verbetes
+  {% set linha =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ title }}'] %}
+#}
+
+{# Letras #}
+{% set letras = [] %}
+{% for row in rows %}
+  {% set letra =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_incial_do_verbete }}'] %}
+  {% set letra = letra|e|upper %}
+  {% if letra not in letras %}
+    {% set letras = letras|merge([letra]) %}
+  {% endif %}
+{% endfor %}
+{% set letras = letras|sort %}
+
+<div style="font-size: 2em">
+{% for letra in letras %}
+<span> <a href="#{{letra}}">{{letra}} </a></span>
+{% endfor %}
+</div>
+
+{# Mostra títulos #}
+{% for inicial in letras %}
+  <h1 id="{{inicial}}" style="font-size: 3em">{{ inicial }}</h1>
+  {% for row in rows %}
+    {% set letra =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_incial_do_verbete }}'] %}
+    {% set letra = letra|e|upper %}
+    {% set linha =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ title }}'] %}
+    {% if letra == inicial %}
+      <h2>{{ linha }}</h2>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+
