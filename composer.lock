@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9a8345acbd51c7b38aa0e72ab1566fc",
+    "content-hash": "f07d52356babf61963e9519a255fef1f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -904,16 +904,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.10.1",
+            "version": "1.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "5eb79f3dbdffed6544e1fc287572c0f462bd29bb"
+                "reference": "b9d758e831c70751155c698c2f7df4665314a1cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5eb79f3dbdffed6544e1fc287572c0f462bd29bb",
-                "reference": "5eb79f3dbdffed6544e1fc287572c0f462bd29bb",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/b9d758e831c70751155c698c2f7df4665314a1cb",
+                "reference": "b9d758e831c70751155c698c2f7df4665314a1cb",
                 "shasum": ""
             },
             "require": {
@@ -969,7 +969,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2020-04-02T12:33:25+00:00"
+            "time": "2020-04-20T09:18:32+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -1929,53 +1929,6 @@
             }
         },
         {
-            "name": "drupal/aegan",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/aegan.git",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/aegan-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "be1a88d6fc68cdcaa9de4738786ec500aa68f96e"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1473665339",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "leopathu",
-                    "homepage": "https://www.drupal.org/user/2761363"
-                }
-            ],
-            "description": "Aegan is a Responsive Drupal 8 business theme, Developed by <a href=\"http://dropthemes.in\">Dropthemes.in</a>.",
-            "homepage": "https://www.drupal.org/project/aegan",
-            "support": {
-                "source": "https://git.drupalcode.org/project/aegan"
-            }
-        },
-        {
             "name": "drupal/asset_injector",
             "version": "2.6.0",
             "source": {
@@ -2132,6 +2085,67 @@
                 "source": "https://git.drupalcode.org/project/authorization"
             },
             "time": "2019-12-29T14:06:29+00:00"
+        },
+        {
+            "name": "drupal/better_exposed_filters",
+            "version": "4.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/better_exposed_filters.git",
+                "reference": "8.x-4.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-4.0-beta1.zip",
+                "reference": "8.x-4.0-beta1",
+                "shasum": "16eccfd4356e8d281d4e54a1358af17e065454a5"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-4.0-beta1",
+                    "datestamp": "1587154928",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Keran",
+                    "homepage": "https://www.drupal.org/u/mikeker"
+                },
+                {
+                    "name": "Martin Keereman",
+                    "homepage": "https://www.drupal.org/u/etroid"
+                },
+                {
+                    "name": "jkopel",
+                    "homepage": "https://www.drupal.org/user/66207"
+                },
+                {
+                    "name": "mikeker",
+                    "homepage": "https://www.drupal.org/user/192273"
+                },
+                {
+                    "name": "rlhawk",
+                    "homepage": "https://www.drupal.org/user/352283"
+                }
+            ],
+            "description": "Replaces the Views default single- or multi-select boxes with more advanced options.",
+            "homepage": "https://www.drupal.org/project/better_exposed_filters",
+            "support": {
+                "source": "https://git.drupalcode.org/project/better_exposed_filters",
+                "issues": "https://www.drupal.org/project/issues/better_exposed_filters"
+            }
         },
         {
             "name": "drupal/block_class",
@@ -9687,45 +9701,12 @@
             "time": "2020-02-13T22:36:52+00:00"
         },
         {
-            "name": "fflch/aegan-subtheme",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fflch/aegan-subtheme.git",
-                "reference": "df22b8043af03c12c40a69fd5ef0a1ccc627d5c1"
-            },
-            "require": {
-                "drupal/aegan": "1.0"
-            },
-            "type": "drupal-theme",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Thiago Gomes Veríssimo",
-                    "email": "thiago.verissimo@usp.br",
-                    "homepage": "https://github.com/thiagogomesverissimo"
-                }
-            ],
-            "description": "Aegan FFLCH",
-            "homepage": "https://github.com/fflch/aegan-subtheme",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "issues": "https://github.com/fflch/aegan-subtheme/issues",
-                "source": "https://github.com/fflch/aegan-subtheme"
-            },
-            "time": "2019-12-02T01:02:19+00:00"
-        },
-        {
             "name": "fflch/cem-theme",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/cem-theme.git",
-                "reference": "c9956592f5444be188b959f1cc8f64834c661ba8"
+                "reference": "e74b5412b0c07cc268123b0fe4133ede6346c3f1"
             },
             "type": "drupal-theme",
             "authors": [
@@ -9734,7 +9715,7 @@
                     "email": "medeiros.danielm@gmail.com"
                 }
             ],
-            "time": "2020-04-14T03:28:48+00:00"
+            "time": "2020-04-20T20:06:36+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -14070,7 +14051,6 @@
         "drupal/csv_importer": 20,
         "drupal/editor_file": 20,
         "drupal/site_audit": 20,
-        "fflch/aegan-subtheme": 20,
         "fflch/cem-theme": 20,
         "drupal/youtube_playlist": 20
     },
@@ -14079,5 +14059,6 @@
     "platform": {
         "php": ">=5.6"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

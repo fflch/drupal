@@ -17,10 +17,6 @@
             "type": "composer",
             "url": "https://asset-packagist.org"
         },
-        "aegan-subtheme": {
-            "type": "git",
-            "url": "https://github.com/fflch/aegan-subtheme.git"
-        },
         "csvimporter": {
             "type": "git",
             "url": "https://github.com/fflch/csv_importer.git"
@@ -63,12 +59,14 @@
         "drupal/checklistapi": "1.8",
         "drupal/ckeditor_font": "1.0",
         "drupal/collapse_text": "1.0",
+        "drupal/aegan": "1.0",
         "drupal/colorbutton": "1.1",
         "drupal/conditional_fields": "1.0-alpha5",
         "drupal/config_perms": "2.0-beta2",
         "drupal/console": "^1.9.1",
         "drupal/contact_emails": "1.16",
         "drupal/contact_storage": "1.0-beta10",
+        "drupal/better_exposed_filters": "4.0-beta1",
         "drupal/contact_storage_export": "1.13",
         "drupal/contextual_range_filter": "1.0-rc1",
         "drupal/contribute": "1.0-beta7",
@@ -167,7 +165,6 @@
         "drupal/webform_views": "5.0-alpha7",
         "drupal/youtube": "1.0",
         "drush/drush": "^8.0.0",
-        "fflch/aegan-subtheme": "dev-master",
         "fflch/cem-theme": "dev-master",
         "drupal/youtube_playlist": "dev-master",
         "npm-asset/ckeditor": "4.11",

@@ -2,7 +2,6 @@
 /drush/contrib/
 /vendor/
 /web/core/
-/web/themes/
 /web/libraries/
 /config
 /drush/Commands/
@@ -34,3 +33,6 @@ web/modules/*
 
 web/profiles/*
 !web/profiles/contrib/fflchprofile
+
+web/themes/*
+!web/themes/contrib/aegan-subtheme
