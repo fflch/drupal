@@ -50,6 +50,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "1.4",
         "drupal/addtoany": "1.10",
+        "drupal/field_formatter_class": "1.1",
         "drupal/admin_toolbar": "1.26",
         "drupal/asset_injector": "2.6",
         "drupal/at_tools": "3.2",
