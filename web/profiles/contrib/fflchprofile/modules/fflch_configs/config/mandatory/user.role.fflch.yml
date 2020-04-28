@@ -64,7 +64,7 @@ permissions:
 # Webform
   - 'administer webform'
   - 'edit webform source'
-#Regras
+# Regras
   - 'administer rules'
 # Revisões
   - 'revert all revisions'
@@ -89,3 +89,5 @@ permissions:
 # Redirects
   - 'administer redirects'
   - 'administer redirect settings'
+# Fonts
+  - 'administer font entities'

@@ -1,19 +1,26 @@
-# Dependências básicas para deploy em um ambiente dev:
+## Drupal FFLCH
+
+Plataforma Drupal usada nos sites da FFLCH. Os módulos e bibliotecas
+estão em composer.json. Principais diretórios:
+
+ - web/profiles/contrib/fflchprofile: profile com módulos internos
+ - web/modules/custom: módulos especifíco de cada site
+ - web/themes/contrib/aegan-subtheme: tema default
+
+## deploy em um ambiente dev:
 
 Biblioteca do php:
 
-    v='7.3'
-    apt-get install php$v php$v-common php$v-cli php$v-gd php$v-curl php$v-xml php$v-mbstring php$v-zip php-sqlite3
-    apt-get install sqlite3
+    apt-get install php php-common php-cli php-gd php-curl php-xml php-mbstring php-zip php-sybase
 
-Composer:
+Bancos de dados:
+
+    apt-get install mariadb-server php-mysql sqlite3 php-sqlite3
+
+Instalação do composer:
 
     curl -s https://getcomposer.org/installer | php
     sudo mv composer.phar /usr/local/bin/composer
-
-Banco de daods mysql/sybase:
-
-    sudo apt install mariadb-server
 
 Download e instalação das dependências:
 
@@ -29,17 +36,17 @@ Plugins ckeditor:
 Instalação em pt-br usando o profile fflch com *sqlite*:
 
     ./vendor/bin/drupal site:install fflchprofile --db-type="sqlite" \
-           --site-name="tests" --site-mail="admin@example.com" \
-           --account-name="admin" --account-mail="admin@example.com" --account-pass="admin" \
+           --site-name="fflch" --site-mail="admin@example.com" \
+           --account-name="fflch" --account-mail="admin@example.com" --account-pass="fflch" \
            --no-interaction
 
 Instalação em pt-br usando o profile fflch com *mysql*:
 
     ./vendor/bin/drupal site:install fflchprofile --db-type="mysql" \
-           --db-port="3306" --db-user="master" --db-pass="master"   \
-           --db-host="127.0.0.1" --db-name="drupal8site" \
-           --site-name="tests" --site-mail="admin@example.com" \
-           --account-name="admin" --account-mail="admin@example.com" --account-pass="admin" \
+           --db-port="3306" --db-user="fflch" --db-pass="fflch"   \
+           --db-host="127.0.0.1" --db-name="fflch" \
+           --site-name="fflch" --site-mail="admin@example.com" \
+           --account-name="fflch" --account-mail="admin@example.com" --account-pass="fflch" \
            --no-interaction
 
 Servidor http básico:
@@ -49,7 +56,15 @@ Servidor http básico:
 
 Caso queira escolher ip e porta:
 
-    ./vendor/bin/drupal server 0.0.0.0:8000 -vvv
+    ./vendor/bin/drupal serve 0.0.0.0:8000 -vvv
+
+Criando nodes aleatórios:
+
+    ./vendor/bin/drupal create:nodes
+
+Deletando todos nodes:
+
+./vendor/bin/drupal entity:delete node --all
 
 Se quiser apagar o banco para fazer uma instalação zerada:
 
@@ -59,91 +74,88 @@ Se quiser apagar o banco para fazer uma instalação zerada:
     # sqlite
     rm web/sites/default/files/.ht.sqlite*
 
+## Adicionando temas, módulos e bibliotecas
 
-Algumas configurações que já precisaram ser removidas:
-
-    drush @cea.fflch.usp.br config-delete languageicons.settings
-    drush @cea.fflch.usp.br config-delete  captcha.captcha_point.user_pass
-    drush @cea.fflch.usp.br config-delete  captcha.settings
-    drush @cea.fflch.usp.br config-delete captcha.captcha_point.user_login_form
-
-## Observação:
-
-Os módulos, temas e bibliotecas realmente requeridos, isto é, que por default são instalados e configurados no site modelo entregue aos usuários estão no profile fflch,
-disponível em [https://github.com/fflch/fflchprofile](https://github.com/fflch/fflchprofile). Neste repositório estão apenas os módulos, temas e
-bibliotecas usados em apenas alguns sites.
-
-## Exemplos de instalação de novos módulos:
+Exemplos de instalação de novos módulos:
 
     cd drupal
     composer require drupal/webform:5.1
     composer require drupal/smtp:1.0-beta4
 
-## libraries são instaladas usando assest-packgist:
-
-Consulte o nome da biblioteca em https://asset-packagist.org e
-depois instale:
+Libraries são instaladas usando assest-packgist, assim,
+consulte o nome da biblioteca em https://asset-packagist.org e
+depois instale desta forma:
 
     composer require npm-asset/datetimepicker:0.1.38
 
- ## Configurações
+## Configurações
 
- As vezes, novas configurações são incorporadas ao site modelo, para aplicar essa
- nova configuração pode-se fazer:
+As vezes, novas configurações são incorporadas ao site modelo, para aplicar essa
+nova configuração npode-se fazer:
 
-     drush @cjc.fflch.usp.br config-set aegan.settings slideshow_display '0' --yes
+    drush @cjc.fflch.usp.br config-set aegan.settings slideshow_display '0' --yes
 
- Ou mesmo comando para todos sites na pasta sites:
+O mesmo comando para todos sites na pasta sites:
+    
+    for i in $(ls|grep fflch); do drush @$i config-set aegan.settings slideshow_display '0' --yes ;done
 
-     for i in $(ls|grep fflch); do drush @$i config-set aegan.settings slideshow_display '0' --yes ;done
+Situação contrária: configurações que precisaram ser removidas,
+algumas recorrentes:
 
+    drush @cea.fflch.usp.br config-delete languageicons.settings
+    drush @cea.fflch.usp.br config-delete captcha.captcha_point.user_pass
+    drush @cea.fflch.usp.br config-delete captcha.settings
+    drush @cea.fflch.usp.br config-delete captcha.captcha_point.user_login_form
 
-     # Profile Drupal usado na FFLCH
+## Adicionando novas configurações no fflchprofile
 
-## Adicionando novas configurações
+Há dois tipos de configurações:
 
-Há dois tipos de configurações: instalação e sincronização.
-As configurações de instalação são carregadas assim que o site é criado
-e estão definidas em arquivos *.yml* no diretório *fflchprofile/config/install*.
+ - instalação: aplicada somente na criação do site
+ - sincronização: aplicadas a cada rodada do cron
 
-As configurações de sinconização são rodadas sempre no cron e estão
+As configurações de *instalação* estão definidas em arquivos 
+*.yml* no diretório *fflchprofile/config/install*.
+
+As configurações de *sinconização* estão 
 em *modules/fflch_configs/config/mandatory*.
 
-Passos para fazer modificações no site modelo:
+Passos para fazer modificações:
 
- - Identificar os arquivos yml que executam a modificação
- - Salvar e commitar esses arquivos na pasta *modules/fflch_configs/config/mandatory*
+ - Identificar os arquivos *.yml* que executam a modificação
+ - Salvar e commitar esses arquivos na pasta *modules/fflch_configs/config/mandatory* ou *fflchprofile/config/install*
 
- - Se quiser testar as configurações antes de mandar para a produção, coloque-a em um pasta,
-por exemplo, /tmp/novas/.yml e rode:
+Se quiser testar o carregamento das novas configurações antes
+de mandar para a produção, coloque-a em um pasta, por exemplo, 
+/tmp/novas/.yml e rode:
 
     ./vendor/bin/drush cim --partial --source='/tmp/novas'
 
-## Configurações:
+## Documentação básica das configurações 
 
-### Editor de texto:
+Editor de texto:
 
  - Somente o full_html está disponível
  - Botão com atríbutos do link usando módulo editor_advanced_link
  - Botão de arquivo usando o módulo editor_file
  - Tamanho e tipo de fonte usando editor_font
 
-### Segurança
+Segurança
 
  - somente administradores podem criar novas contas
  - role fflch pode alterar nome do site
 
-### Módulos disponíveis na role fflch:
+Configurações disponíveis para usuários da role fflch:
 
  - Google Analytics
  - Assets
 
-### Formato de datas disponíveis:
+Formato de datas disponíveis:
 
  - dia/mes/ano: d/m/Y
  - extenso: l, j \d\e F \d\e Y
 
-### Gestão de conteúdo
+Gestão de conteúdo
 
  - página básica (com url baseada no título)
  - clone dos nodes
@@ -153,24 +165,22 @@ por exemplo, /tmp/novas/.yml e rode:
  - menus
  - views
 
-# Dicas
+## Problemas conhecidos e soluções
 
-## Corrigindo slogan que fica inalterável em alguns casos
-Com o patch disponínel em: https://www.drupal.org/project/drupal/issues/3011276#comment-13228934
 
+### sitename e slogan inalteráveis
+
+Essa correção dever ser feita no ambiente dev e depois
+transposta para produção. Aplicar o patch disponínel
+https://www.drupal.org/project/drupal/issues/3011276#comment-13228934
+e depois rodar:
 
     ./vendor/bin/drush config-get language.pt-br:system.site
     ./vendor/bin/drush config-delete language.pt-br:system.site slogan
     ./vendor/bin/drush config-delete language.pt-br:system.site name
     ./vendor/bin/drush config-delete language.pt-br:system.site page.front home-pt-br
 
-Taggeando versão:
 
-    git tag -a v8.8.4a -m "v8.8.4a"
-    git push origin v8.8.4a
 
-Diretórios importantes:
 
- - web/profiles/contrib/fflchprofile: profile de todos sites da FFLCH
- - web/modules/custom: Módulos custom
- - web/themes/contrib/aegan-subtheme: tema de todos sites da FFLCH
+

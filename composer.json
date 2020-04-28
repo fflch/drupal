@@ -59,6 +59,8 @@
         "drupal/charts": "3.0-beta3",
         "drupal/checklistapi": "1.8",
         "drupal/ckeditor_font": "1.0",
+        "drupal/smart_trim": "1.2",
+        "drupal/fontyourface": "3.2",
         "drupal/collapse_text": "1.0",
         "drupal/aegan": "1.0",
         "drupal/colorbutton": "1.1",
