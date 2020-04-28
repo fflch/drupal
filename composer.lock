@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22f502aa80d0fe5d08c8fb83f36dafba",
+    "content-hash": "58f83efcf90e785117822ac323b745b8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2356,6 +2356,57 @@
             "homepage": "https://www.drupal.org/project/captcha",
             "support": {
                 "source": "https://git.drupalcode.org/project/captcha"
+            }
+        },
+        {
+            "name": "drupal/cck_select_other",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cck_select_other.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cck_select_other-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "d0973218e363a0ddb4ab497468c1129e76a1b7e6"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1573573984",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mradcliffe",
+                    "homepage": "https://www.drupal.org/user/157079"
+                },
+                {
+                    "name": "smokris",
+                    "homepage": "https://www.drupal.org/user/161913"
+                }
+            ],
+            "description": "Provides a new select widget for text (and related field types) that allows users to input either with a select list or a textfield.",
+            "homepage": "https://www.drupal.org/project/cck_select_other",
+            "support": {
+                "source": "https://git.drupalcode.org/project/cck_select_other"
             }
         },
         {

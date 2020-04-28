@@ -75,6 +75,7 @@
         "drupal/contribute": "1.0-beta7",
         "drupal/core": "8.8.5",
         "drupal/cpf": "1.1",
+        "drupal/cck_select_other": "1.4",
         "drupal/crop": "1.5",
         "drupal/csv_importer": "dev-fflch",
         "drupal/csv_serialization": "1.4",

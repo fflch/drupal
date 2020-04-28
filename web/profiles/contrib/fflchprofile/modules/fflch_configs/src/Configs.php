@@ -64,6 +64,7 @@ class Configs {
       'collapse_text',
       'config_perms',
       'cpf',
+      'webform_cpf',
       'languageicons',
       'loginbytoken',
       'csv_importer',
