@@ -38,6 +38,8 @@ class Configs {
       'admin_toolbar',
     #### módulos contrib usados na FFLCH
       'captcha',
+      'fontyourface',
+      'google_fonts_api',
       'image_captcha',
       'smtp',
       'entity',
