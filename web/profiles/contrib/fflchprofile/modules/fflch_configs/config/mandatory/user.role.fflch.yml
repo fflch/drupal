@@ -28,6 +28,9 @@ permissions:
   - 'view conditional fields'
 # Configurações globais liberadas
   - 'Administer Inital Page'
+# Administração de urls
+  - 'administer pathauto'
+  - 'administer url aliases'
   - 'create url aliases'
 # Administração de blocos
   - 'administer blocks'
