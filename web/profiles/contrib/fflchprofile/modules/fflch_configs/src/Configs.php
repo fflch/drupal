@@ -83,6 +83,8 @@ class Configs {
       'datetime_range',
       'date_range_formatter',
       'scheduler',
+      'video_embed_field',
+      'video_embed_wysiwyg',
     ];
 
     \Drupal::service('module_installer')->install($installed, TRUE);

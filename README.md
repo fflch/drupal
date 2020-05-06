@@ -96,7 +96,7 @@ nova configuração npode-se fazer:
     drush @cjc.fflch.usp.br config-set aegan.settings slideshow_display '0' --yes
 
 O mesmo comando para todos sites na pasta sites:
-    
+
     for i in $(ls|grep fflch); do drush @$i config-set aegan.settings slideshow_display '0' --yes ;done
 
 Situação contrária: configurações que precisaram ser removidas,
@@ -114,24 +114,31 @@ Há dois tipos de configurações:
  - instalação: aplicada somente na criação do site
  - sincronização: aplicadas a cada rodada do cron
 
-As configurações de *instalação* estão definidas em arquivos 
+As configurações de *instalação* estão definidas em arquivos
 *.yml* no diretório *fflchprofile/config/install*.
 
-As configurações de *sinconização* estão 
+As configurações de *sinconização* estão
 em *modules/fflch_configs/config/mandatory*.
 
 Passos para fazer modificações:
 
  - Identificar os arquivos *.yml* que executam a modificação
  - Salvar e commitar esses arquivos na pasta *modules/fflch_configs/config/mandatory* ou *fflchprofile/config/install*
+Dica para capturar os arquivos yml que estão relacionados as configurações:
 
-Se quiser testar o carregamento das novas configurações antes
-de mandar para a produção, coloque-a em um pasta, por exemplo, 
-/tmp/novas/.yml e rode:
+    ./vendor/bin/drush config-export --destination="~/antes"
+    # fazer mudanças na interface do site
+    ./vendor/bin/drush config-export --destination="~/depois"
 
-    ./vendor/bin/drush cim --partial --source='/tmp/novas'
+Vejam os arquivos alterados:
 
-## Documentação básica das configurações 
+    diff -qr ~/antes/ ~/depois
+
+Suponha que teve alteração em editor.editor.full_html.yml:
+
+    vimdiff ~/antes/editor.editor.full_html.yml ~/depois/editor.editor.full_html.yml
+
+## Documentação básica das configurações
 
 Editor de texto:
 
@@ -167,7 +174,6 @@ Gestão de conteúdo
 
 ## Problemas conhecidos e soluções
 
-
 ### sitename e slogan inalteráveis
 
 Essa correção dever ser feita no ambiente dev e depois
@@ -179,8 +185,3 @@ e depois rodar:
     ./vendor/bin/drush config-delete language.pt-br:system.site slogan
     ./vendor/bin/drush config-delete language.pt-br:system.site name
     ./vendor/bin/drush config-delete language.pt-br:system.site page.front home-pt-br
-
-
-
-
-

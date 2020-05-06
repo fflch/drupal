@@ -22,6 +22,9 @@ settings:
         -
           name: Formatting
           items:
+            - Undo
+            - Redo
+            - Cut
             - Bold
             - Italic
             - Underline
@@ -30,11 +33,13 @@ settings:
             - Subscript
             - '-'
             - RemoveFormat
+            - Language
         -
           name: Linking
           items:
             - DrupalLink
             - DrupalUnlink
+            - ImceLink
             - DrupalFile
         -
           name: Lists
@@ -46,8 +51,10 @@ settings:
         -
           name: Media
           items:
+            - ImceImage
             - Blockquote
             - DrupalImage
+            - video_embed
             - Table
             - HorizontalRule
         -
@@ -80,11 +87,17 @@ settings:
       styles: ''
     language:
       language_list: un
-    font:
-      font_names: ''
-      font_sizes: ''
     colorbutton:
       colors: ''
+    editoradvancedimage:
+      default_class: ''
+    video_embed:
+      defaults:
+        children:
+          autoplay: true
+          responsive: true
+          width: '854'
+          height: '480'
 image_upload:
   status: true
   scheme: public
