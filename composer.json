@@ -177,7 +177,7 @@
         "drupal/youtube_playlist": "dev-master",
         "drush/drush": "^8.0.0",
         "fflch/cem-theme": "dev-master",
-        "npm-asset/ckeditor": "4.11",
+        "bower-asset/ckeditor": "4.14.0",
         "oomphinc/composer-installers-extender": "^1.1",
         "parsecsv/php-parsecsv": "1.0",
         "uspdev/replicado_drupal": "dev-master",

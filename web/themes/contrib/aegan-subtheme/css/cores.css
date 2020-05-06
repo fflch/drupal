@@ -188,3 +188,12 @@ h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, h3 a:active, h4 a:
     border-color: #273e74;
 }
 */
+
+/* fotos no nodes */
+img.align-left {
+  margin: 10px;
+}
+
+.caption > figcaption  {
+  background-color: white;
+}
