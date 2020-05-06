@@ -127,7 +127,9 @@ Passos para fazer modificações:
 Dica para capturar os arquivos yml que estão relacionados as configurações:
 
     ./vendor/bin/drush config-export --destination="~/antes"
-    # fazer mudanças na interface do site
+
+Fazer mudanças na interface do site e exportar nova configuração:
+
     ./vendor/bin/drush config-export --destination="~/depois"
 
 Vejam os arquivos alterados:
