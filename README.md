@@ -122,8 +122,10 @@ em *modules/fflch_configs/config/mandatory*.
 
 Passos para fazer modificações:
 
- - Identificar os arquivos *.yml* que executam a modificação
- - Salvar e commitar esses arquivos na pasta *modules/fflch_configs/config/mandatory* ou *fflchprofile/config/install*
+- Identificar os arquivos *.yml* que executam a modificação
+- Salvar e commitar esses arquivos na pasta *modules/fflch_configs/config/mandatory* ou *fflchprofile/config/install
+
+
 Dica para capturar os arquivos yml que estão relacionados as configurações:
 
     ./vendor/bin/drush config-export --destination="~/antes"
