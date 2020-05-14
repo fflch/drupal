@@ -1,6 +1,6 @@
 administration_mode: true
 allow_on_admin_pages: false
-default_challenge: image_captcha/Image
+#default_challenge: image_captcha/Image
 add_captcha_description: false
 description: ''
 default_validation: 0
