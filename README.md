@@ -92,6 +92,10 @@ Verificando atualizações para os módulos/temas/biliotecas:
 
     composer outdated -D
 
+Módulos que estão em composer.json para avaliar:
+
+    composer show -D | tr -s ' ' | cut -d' ' -f1| grep ^drupal | cut -d'/' -f2
+
 ## Configurações
 
 As vezes, novas configurações são incorporadas ao site modelo, para aplicar essa
@@ -164,3 +168,4 @@ e depois rodar:
     ./vendor/bin/drush config-delete language.pt-br:system.site slogan
     ./vendor/bin/drush config-delete language.pt-br:system.site name
     ./vendor/bin/drush config-delete language.pt-br:system.site page.front home-pt-br
+
