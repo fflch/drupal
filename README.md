@@ -3,17 +3,9 @@
 Plataforma Drupal usada nos sites da FFLCH. Os módulos e bibliotecas
 estão em composer.json. Principais diretórios:
 
- - web/profiles/contrib/fflchprofile: profile com módulos internos
- - web/modules/custom: módulos especifíco de cada site
+ - web/profiles/contrib/fflchprofile: profile com módulos e configurações customizações
+ - web/modules/custom: módulos especifícos de cada site
  - web/themes/contrib/aegan-subtheme: tema default
- 
-Verificando atualizações:
-
-    composer outdated -D
-
-Verificando atualizações incluindo dev-master:
-
-    composer outdated -aD
 
 ## deploy em um ambiente dev:
 
@@ -72,7 +64,7 @@ Criando nodes aleatórios:
 
 Deletando todos nodes:
 
-./vendor/bin/drupal entity:delete node --all
+    ./vendor/bin/drupal entity:delete node --all
 
 Se quiser apagar o banco para fazer uma instalação zerada:
 
@@ -96,10 +88,14 @@ depois instale desta forma:
 
     composer require npm-asset/datetimepicker:0.1.38
 
+Verificando atualizações para os módulos/temas/biliotecas:
+
+    composer outdated -D
+
 ## Configurações
 
 As vezes, novas configurações são incorporadas ao site modelo, para aplicar essa
-nova configuração npode-se fazer:
+nova configuração pode-se fazer:
 
     drush @cjc.fflch.usp.br config-set aegan.settings slideshow_display '0' --yes
 
@@ -125,8 +121,8 @@ Há dois tipos de configurações:
 As configurações de *instalação* estão definidas em arquivos
 *.yml* no diretório *fflchprofile/config/install*.
 
-As configurações de *sinconização* estão
-em *modules/fflch_configs/config/mandatory*.
+As configurações de *sincronização* estão
+em *fflchprofile/modules/fflch_configs/config/mandatory*.
 
 Passos para fazer modificações:
 
@@ -150,39 +146,10 @@ Suponha que teve alteração em editor.editor.full_html.yml:
 
     vimdiff ~/antes/editor.editor.full_html.yml ~/depois/editor.editor.full_html.yml
 
-## Documentação básica das configurações
+Usando o meld para fazer as comparações:
 
-Editor de texto:
-
- - Somente o full_html está disponível
- - Botão com atríbutos do link usando módulo editor_advanced_link
- - Botão de arquivo usando o módulo editor_file
- - Tamanho e tipo de fonte usando editor_font
-
-Segurança
-
- - somente administradores podem criar novas contas
- - role fflch pode alterar nome do site
-
-Configurações disponíveis para usuários da role fflch:
-
- - Google Analytics
- - Assets
-
-Formato de datas disponíveis:
-
- - dia/mes/ano: d/m/Y
- - extenso: l, j \d\e F \d\e Y
-
-Gestão de conteúdo
-
- - página básica (com url baseada no título)
- - clone dos nodes
- - conditional fields
- - webform
- - blocos
- - menus
- - views
+    sudo apt install meld
+    meld ~/antes ~/depois
 
 ## Problemas conhecidos e soluções
 
