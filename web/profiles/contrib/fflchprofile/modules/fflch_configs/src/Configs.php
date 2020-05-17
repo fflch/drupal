@@ -23,73 +23,15 @@ class Configs {
   }
 
   private function modules(){
-
-    $uninstalled = [
-      'update',
-      'comment',
-    ];
-    $installed = [
-    #### módulos core usados na FFLCH
-      'language',
-      'locale',
-      'book',
-      'config_translation',
-      'content_translation',
-      'admin_toolbar',
-    #### módulos contrib usados na FFLCH
-      'captcha',
-      'fontyourface',
-      'google_fonts_api',
-      'image_captcha',
-      'smtp',
-      'entity',
-      'entity_clone',
-      'asset_injector',
-      'imce',
-      'google_analytics',
-      'pathauto',
-      'webform',
-      'webform_ui',
-      'webform_attachment',
-      'webform_scheduled_email',
-      'webform_entity_print_attachment',
-      'webform_entity_print',
-      'theme_permission',
-      'webform_node',
-      'webform_boleto_usp',
-      'editor_advanced_link',
-      'editor_file',
-      'ckeditor_font',
-      'colorbutton',
-      'conditional_fields',
-      'ctools',
-      'collapse_text',
-      'config_perms',
-      'cpf',
-      'webform_cpf',
-      'languageicons',
-      'loginbytoken',
-      'csv_importer',
-      'contact',
-      'contact_storage',
-      'menu_manipulator',
-      'contact_emails',
-      'views_slideshow',
-      'views_slideshow_cycle',
-      'views_data_export',
-      'editor_advanced_image',
-      'paragraphs',
-      'redirect',
-      'datetime_range',
-      'date_range_formatter',
-      'scheduler',
-      'video_embed_field',
-      'video_embed_wysiwyg',
-    ];
-
-    \Drupal::service('module_installer')->install($installed, TRUE);
+    /* Módulos que não devem estar instalados */
+    $uninstalled = [ 'update', 'comment'];
     \Drupal::service('module_installer')->uninstall($uninstalled, TRUE);
 
+    /* Módulos que devem estar instalados */
+    $installed = file_get_contents(__DIR__. '/' . 'installed.txt');
+    $installed = explode("\n",$installed);
+    $installed = array_unique($installed);
+    \Drupal::service('module_installer')->install($installed, TRUE);
   }
 
   private function mandatory(){
