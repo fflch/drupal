@@ -16,7 +16,7 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
 
 <div style="font-size: 2em">
 {% for letra in letras %}
-<span> <a href="#{{letra}}">{{letra}} </a></span>
+<span class="eafflchuspbr_letra"> <a href="#{{letra}}"> {{letra}} </a></span>
 {% endfor %}
 </div>
 
@@ -28,7 +28,7 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
     {% set letra = letra|e|upper %}
     {% set linha =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ title }}'] %}
     {% if letra == inicial %}
-      <h2>{{ linha }}</h2>
+      <h2 class="eafflchuspbr_titulo">{{ linha }}</h2>
     {% endif %}
   {% endfor %}
 {% endfor %}

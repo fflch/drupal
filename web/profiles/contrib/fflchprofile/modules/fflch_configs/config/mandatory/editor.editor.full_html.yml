@@ -22,6 +22,10 @@ settings:
         -
           name: Formatting
           items:
+            - PasteFromWord
+            - PasteText
+            - Paste
+            - Copy
             - Undo
             - Redo
             - Cut
@@ -34,6 +38,7 @@ settings:
             - '-'
             - RemoveFormat
             - Language
+            - Styles
         -
           name: Linking
           items:
@@ -83,10 +88,10 @@ settings:
             - JustifyRight
             - JustifyBlock
   plugins:
-    stylescombo:
-      styles: ''
     language:
       language_list: un
+    stylescombo:
+      styles: ''
     colorbutton:
       colors: ''
     editoradvancedimage:
