@@ -1,9 +1,11 @@
+uuid: null
 langcode: pt-br
 status: true
 dependencies:
   module:
     - collapse_text
     - editor
+    - video_embed_wysiwyg
 name: 'HTML completo'
 format: full_html
 weight: -10
@@ -49,3 +51,9 @@ filters:
     settings:
       default_title: 'Click here to expand or collapse this section'
       form: '1'
+  video_embed_wysiwyg:
+    id: video_embed_wysiwyg
+    provider: video_embed_wysiwyg
+    status: true
+    weight: 0
+    settings: {  }
