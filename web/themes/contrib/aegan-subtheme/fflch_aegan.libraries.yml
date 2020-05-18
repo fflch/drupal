@@ -1,8 +1,12 @@
-global-styling:
+global-styles-and-scripts:
   version: VERSION
   css:
     theme:
-      css/cores.css: { weight: 50 }
+      css/global.css: { weight: 50 }
+      css/ea.fflch.usp.br.css: { weight: 50 }
+  js:
+    js/global.js: {}
+    js/ea.fflch.usp.br.js: {}
 
 jquery-custom:
   remote: https://github.com/jquery/jquery

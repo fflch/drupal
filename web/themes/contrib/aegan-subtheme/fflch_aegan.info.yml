@@ -5,7 +5,7 @@ package: FFLCH
 core: 8.x
 
 libraries:
-  - fflch_aegan/global-styling
+  - fflch_aegan/global-styles-and-scripts
 
 libraries-override:
   core/jquery: fflch_aegan/jquery-custom
