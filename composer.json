@@ -113,7 +113,6 @@
         "drupal/migrate_plus": "5.1",
         "drupal/migrate_tools": "5.0",
         "drupal/migrate_upgrade": "3.2",
-        "drupal/ng_lightbox": "^1.0@beta",
         "drupal/nice_menus": "1.0-beta2",
         "drupal/page_manager": "4.0-beta5",
         "drupal/panelbutton": "1.2",
