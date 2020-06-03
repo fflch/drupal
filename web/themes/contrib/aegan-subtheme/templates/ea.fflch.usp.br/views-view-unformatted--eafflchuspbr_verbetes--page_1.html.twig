@@ -28,7 +28,9 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
     {% set letra = letra|e|upper %}
     {% set linha =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ title }}'] %}
     {% set link =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ view_node }}'] %}
-    {% set corpo =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ body }}'] %}
+    {% set verbete =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_verbete }}'] %}
+    {% set autor =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_autoria }}'] %}
+    {% set tags =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_palavras_chave }}'] %}
     {% set numero =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ nid }}'] %}
     {% if letra == inicial %}
 
@@ -37,21 +39,22 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
       <h2 class="eafflchuspbr_titulo">{{ linha }} </h2>
       <button onclick="document.getElementById('{{ numero }}').style.display='block'" class="eafflchuspbr_previa">PRÉVIA</button>
  
-      <div id="{{ numero }}" class="modal">
-        <div class="modal-content">
-            <span onclick="document.getElementById('{{ numero }}').style.display='none'" class="close">&times;</span>
+      <div id="{{ numero }}" class="eafflchuspbr_modal">
+        <div class="eafflchuspbr_modal-content">
+            <span onclick="document.getElementById('{{ numero }}').style.display='none'" class="eafflchuspbr_close">&times;</span>
 
             <div class="eafflchuspbr_flexcontainer">     
             <div class="eafflchuspbr_flexsumario>    
-              <p class="eafflchuspbr_titulo_modal">{{ linha }}</p>          
-              <p class="eafflchuspbr_corpo_modal">{{ corpo }}</p>
-              <p class="eafflchuspbr_completo_modal">{{ link }}</p>            
+              <p class="eafflchuspbr_modal-content_titulo">{{ linha }}</p>          
+              <p class="eafflchuspbr_modal-content_verbete">{{ verbete }}</p>
+              <p class="eafflchuspbr_modal-content_link">{{ link }}</p>            
             </div>
             <div class="eafflchuspbr_flexletra">
               {{ letra }}
             </div>
             <div class=eafflchuspbr_flexinfo>
-            blah blah whiskas sachê
+              <p class="eafflchuspbr_modal-content_autor">{{ autor }}</p>
+              <p class="eafflchuspbr_modal-content_tags">{{ tags }}</p>     
             </div>
           </div>     
         </div>

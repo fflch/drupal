@@ -6,11 +6,11 @@
 
 
 /* The Modal (background) */
-.modal {
+.eafflchuspbr_modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 501; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 200px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -21,7 +21,7 @@
   }
   
   /* Modal Content */
-  .modal-content {
+  .eafflchuspbr_modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -30,15 +30,15 @@
   }
   
   /* The Close Button */
-  .close {
+  .eafflchuspbr_close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
+  .eafflchuspbr_close:hover,
+  .eafflchuspbr_close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -63,24 +63,29 @@
 .eafflchuspbr_flexcontainer {
     display:flex;
     justify-content: space-evenly;
-    background-color: paleturquoise;
+    background-color: #fff;
 }
 .eafflchuspbr_flexcontainer > div {
-    background-color: #f1f1f1;
+    background-color: #fff;
     width:auto;
     margin: 10px;
     vertical-align: -webkit-baseline-middle;
     line-height: normal !important;
 }
+.eafflchuspbr_flexinfo {
+    max-width:300px;
+    text-align: left;
+}
 
-/* Letra no modal */
+/* conteúdo no modal */
+.eafflchuspbr_flexsumario {
+    text-align: left;
+}
 .eafflchuspbr_flexletra {
     font-size: 320px;
+    color: rgb (40,55,140);
     max-width: min-content;
     vertical-align: middle;
     padding:15px;
 }
 
-.eafflchuspbr_flexinfo {
-    max-width:35%;
-}
