@@ -1,4 +1,14 @@
-.eafflchuspbr_letra {    
+/* ÍNDICE DE VERBETES */
+
+.eafflchuspbr_letra {  
+  background-color: whitesmoke;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
 }
 
 .eafflchuspbr_titulo {
@@ -44,9 +54,17 @@
     cursor: pointer;
   }
 
+  /* Prévia */
 
-
-
+  .eafflchuspbr_previa, .eafflchuspbr_previa a {
+    color: #aaaaaa;
+  }
+  .eafflchuspbr_previa:hover, .eafflchuspbr_previa:focus, 
+  .eafflchuspbr_previa a:hover, .eafflchuspbr_previa a:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 /* Flex box*/
 
 @media only screen and (min-width:768px) {
@@ -70,7 +88,6 @@
     width:auto;
     margin: 10px;
     vertical-align: -webkit-baseline-middle;
-    line-height: normal !important;
 }
 .eafflchuspbr_flexinfo {
     max-width:300px;
@@ -87,5 +104,128 @@
     max-width: min-content;
     vertical-align: middle;
     padding:15px;
+    line-height: normal !important;
+    text-transform: uppercase;
 }
 
+/* ---------------------------------------- */
+
+/* LISTA DE VERBETES */
+
+div.eafflchuspbr_grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div.eafflchuspbr_grid-item {
+  margin: 5px;
+  height: 320px;
+  width: 320px;
+  position: relative; 
+  overflow: hidden;
+}
+
+div.eafflchuspbr_box {
+  display: none;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+span.eafflchuspbr_box:hover div.eafflchuspbr_box{
+  display: block;
+  text-align: center;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+}
+
+/* LETRA BOX */
+.eafflchuspbr_box_letra {
+  text-align: center;
+  font-size: 320px;
+  text-transform: uppercase;
+  line-height: 0.8em !important;
+  position: relative !important;
+  z-index: -1 !important;
+  top: 35px;
+  left: 0;
+}
+
+/* PRÉVIA BOX */
+.eafflchuspbr_box_previa {
+  cursor: pointer;
+  /*color: #aaaaaa;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 132px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  opacity: .5;
+  display: block;  
+}
+
+.eafflchuspbr_box_previa:hover {
+  /*color: #000;*/
+  opacity: 1.0;
+}
+
+/* COMPLETO BOX */
+.eafflchuspbr_box_completo {
+  cursor: pointer;
+  /*color:#aaaaaa;*/
+  position: absolute;
+  top: 153px;
+  left: 0;
+  padding-top: 132px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  opacity: .5;
+  display: block;
+}
+
+.eafflchuspbr_box_completo:hover {
+  /*color: #000;*/
+  opacity: 1.0;
+}
+
+/* ÍNDICE ALFABÉTICO */
+.eafflchuspbr_inicial {
+  /*não mexer*/
+}
+
+.eafflchuspbr_inicial-table {
+ 
+  display: table;
+}
+
+.eafflchuspbr_inicial-tr {
+ 
+  display: table-row;
+}
+
+.eafflchuspbr_inicial-td-letra {
+  
+  display: table-cell;
+  width: 300px;
+  font-size: 320px;
+  line-height: normal;
+  text-align: center;
+  min-height: 320px;
+  }
+
+.eafflchuspbr_inicial-td-verbete {
+  
+  display: table-cell;
+  width: auto;
+  vertical-align: top;  
+  }
+
+.eafflchuspbr_verbete {
+  
+}
