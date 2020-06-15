@@ -4,7 +4,6 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
   {% set linha =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ title }}'] %}
 #}
 
-{# gross but it works! #}
 
 {# Letras #}
 {% set letras = [] %}
@@ -17,9 +16,9 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
 {% endfor %}
 {% set letras = letras|sort %}
 
-<div style="font-size: 2em">
+<div class="eafflchuspbr_letra_inline>
 {% for letra in letras %}
-<span class="eafflchuspbr_letra_inline"> <a href="#{{letra}}"> {{letra}} </a></span>
+<span class="eafflchuspbr_letra"> <a href="#{{letra}}"> {{letra}} </a></span>
 {% endfor %}
 </div>
 
@@ -46,7 +45,7 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
 
           {# MODAL #}
           <div class="eafflchuspbr_verbete"> 
-            <div>
+            <div class="eafflchuspbr_titulo-previa">
               <h2 class="eafflchuspbr_titulo">{{ linha }} </h2>
               <span class="eafflchuspbr_previa" onclick="document.getElementById('{{ numero }}').style.display='block'">PRÉVIA</span>
             </div>

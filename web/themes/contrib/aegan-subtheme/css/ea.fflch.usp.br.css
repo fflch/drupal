@@ -1,12 +1,14 @@
 /* ÍNDICE DE VERBETES */
 
-.eafflchuspbr_letra_inline {  
+.eafflchuspbr_letra {  
   background-color: whitesmoke;
   display: inline-block;
   height: 30px;
   width: 30px;
   text-align: center;
-  margin-bottom: 50px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
 }
 
 .eafflchuspbr_titulo {
