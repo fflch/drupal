@@ -201,7 +201,7 @@ img.align-left {
 /* Novo Layout FFLCH - issue 111 */
 
 /* bloco logo do modelo ***/
-/*
+
 #logodefault {
   margin-bottom: 10px;
   display: table;
@@ -212,6 +212,7 @@ img.align-left {
 }
 
 #logodefault .first {
+  /* background-color: blue; */
    display: table-cell;
    width: 25%;
  }
@@ -268,4 +269,3 @@ img.align-left {
       line-height: 1em;
     }
 }
-*/
