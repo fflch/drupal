@@ -74,10 +74,10 @@
 
   <div id="header-region">
     <div class="row">
-      <div class="col-md-4 col-sm-4">
+      <div class="col-md-4 col-sm-4 idioma">
         {{ page.header }}
       </div>
-      <div class="col-md-8 col-sm-8">
+      <div class="col-md-8 col-sm-8 busca">
         {{ page.header_right }}
       </div>
     </div>
@@ -89,19 +89,19 @@
 
   <div class="first">
     <a href="{{front_page}}">
-      <img alt="fflch" src="{{ base_path ~ directory }}/images/logo.png" />
+      <img class="logo_fflch" align="left" alt="fflch" src="{{ base_path ~ directory }}/images/logo.png" />
     </a>
   </div>
 
   <div class="second">
-    <div class="site_name">
-        <a class="site_name" href="{{front_page}}">{{site_name}} </a>
-    </div>
-    <div class="slogan"> {{site_slogan}}</div>
+      <p class="site_name">{{site_name}}</p>
+      <p class="site_slogan">{{site_slogan}}</p>
   </div>  
 
   <div class="third">  
-    <a href="https://www.usp.br" target="_blank"><img src="{{ base_path ~ directory }}/images/usp.png" /></a>
+    <a href="https://www.usp.br" target="_blank">
+      <img class="logo_usp" align="right" src="{{ base_path ~ directory }}/images/usp.png" />
+    </a>
   </div>
 
 </div>
