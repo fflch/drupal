@@ -31,7 +31,8 @@ Download e instalação das dependências:
 Plugins ckeditor:
 
     cd web/libraries
-    ln -s ckeditor/plugins/* .
+    ln -s ckeditor/plugins/colorbutton .
+    ln -s ckeditor/plugins/panelbutton .
 
 Instalação em pt-br usando o profile fflch com *sqlite*:
 
