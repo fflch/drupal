@@ -20,16 +20,21 @@ class LoginController extends ControllerBase {
     // Verifica se o usuário em questão tem permissão para logar
     $site = $request->server->get('HTTP_HOST');
 
-    $client = new Client([
-        'base_uri' => 'https://sites.fflch.usp.br/',
-    ]);
-    
     $filename = '/var/aegir/.secretkey.txt';
     if (file_exists($filename)) {
+        # ambiente prod
         $secretkey = file_get_contents($filename);
+        $base_uri = 'https://sites.fflch.usp.br/';
+
     } else {
+        # ambiente dev
         $secretkey = '123';
+        $base_uri = 'http://127.0.0.1:8000/';
     }
+
+    $client = new Client([
+        'base_uri' => $base_uri,
+    ]);
 
     $res = $client->request('GET',"/check/",
         ['query' => ['secretkey'  => $secretkey,
@@ -74,7 +79,7 @@ class LoginController extends ControllerBase {
       user_login_finalize($user);
       $this->messenger()->addMessage('Login efetuado com sucesso');
     } else {
-        $this->messenger()->addMessage('Desculpe-nos! Você não permissão para logar nesse site.');
+        $this->messenger()->addMessage("Desculpe-nos! Você não permissão para logar nesse site. {$response[1]}");
     }
     return $this->redirect('<front>');
 

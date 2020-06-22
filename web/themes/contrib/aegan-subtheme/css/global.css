@@ -14,7 +14,7 @@ body {
 }
 
 /* bloco logo do modelo ***/
-
+/*
 #logodefault {
   margin-bottom: 6px;
   display: table;
@@ -24,12 +24,12 @@ body {
   line-height: 2.8em;
 }
 
-#logodefault .first {
+#logodefault .first {*/
  /* background-color: blue; */
-  display: table-cell;
+  /*display: table-cell;
   width: 25%;
-}
-
+}*/
+/*
 #logodefault .second {
   display: table-cell;
   vertical-align: top;
@@ -65,6 +65,7 @@ body {
       line-height: 1em;
     }
 }
+*/
 
 /* unvisited link */
 a:link .logo {
@@ -202,44 +203,105 @@ img.align-left {
 
 /* bloco logo do modelo ***/
 
-#logodefault {
-  margin-bottom: 10px;
+#logodefault{
   display: table;
   width: 100%;
   table-layout: auto;
-  border-spacing: 5px 0;
-  line-height: 2.2em;
+  margin-bottom:20px;
 }
 
-#logodefault .first {
-  /* background-color: blue; */
+/*DIV do logo da FFLCH*/
+#logodefault .first{
    display: table-cell;
-   width: 25%;
+   width: 20%;
+   padding-right: 5px;
  }
 
- #logodefault .first img{
-   height: 20%;
- }
-
- #logodefault .second {
+ /*DIV do nome do site e slogan*/
+#logodefault .second {
   display: table-cell;
-  margin-top: 0 auto;
-  vertical-align: top;
-  width: 60%;
-  font-size: 30px;
-  font-family: "Arial Narrow", Arial, serif;
+  width: 65%;
+  vertical-align: middle;
+}
+
+/*DIV do Logo da USP*/
+#logodefault .third {
+  display: table-cell;
+  width: 15%;
+}
+
+/*Controle de DIV de Idioma/Busca*/
+#header-region{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/*Controle de DIV de Idioma*/
+.idioma{
+  padding: 0em;
+  float:left;
+}
+
+.links{
+  padding: 0em;
+}
+
+/*Controle de DIV de Busca*/
+.busca{
+  padding: 0em;
+}
+
+
+/*Controle de tamanho de logo da FFLCH, USP e das fontes do nome do site e do slogan*/
+.logo_fflch{
+  width:25em;
+  height: 5em;
+}
+
+.logo_usp{
+  width: 12em;
+  height: 4em;
+  position: right;
 }
 
 .site_name{
-  margin-top: 0;
-  font-size: 100%;
-  width: 70%;
+  width: 14em;
+  font-size: 1.9em;
+  font-family: "Arial Narrow", Arial, serif;
+  color: #273e74;
+  margin-bottom: 0em;
+  margin-top: 0em;
+  line-height: 0.9em;
 }
 
-#logodefault .second .slogan{
-  font-size: 100%;
+.site_slogan{
+  width: 14em;
+  font-size: 1.9em;
+  font-family: "Arial Narrow", Arial, serif;
   color: #273e74;
-  margin-bottom: 6px;
+  line-height: 0.9em;
+}
+
+
+/*** Configuração para a página dos departamentos ***/
+/*
+#logodefault{
+  display: table;
+  width: 100%;
+  table-layout: auto;
+  margin-bottom:20px;
+}
+
+#logodefault .first{
+   display: table-cell;
+   width: 18%;
+   padding-right: 5px;
+ }
+
+#logodefault .second {
+  display: table-cell;
+  width: 67%;
+  vertical-align: middle;
 }
 
 #logodefault .third {
@@ -247,25 +309,51 @@ img.align-left {
   width: 15%;
 }
 
-#logodefault .third img{
-  margin-top: 17%;
-  width: 20em;
-  height: 4em;
+#header-region{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.idioma{
+  padding: 0em;
+  float:left;
+}
+
+.links{
+  padding: 0em;
+}
+
+.busca{
+  padding: 0em;
 }
 
 
-.language-icon {
-  height: 19.75px;
-  width: 28px;
+.logo_fflch{
+  width:15em;
+  height: 5.1em;
 }
 
-@media only screen and (max-width: 600px) {
-    .site_name{
-      font-size: 13px;
-      color: #273e74;
-    }
-
-    #logodefault {
-      line-height: 1em;
-    }
+.logo_usp{
+  width: 9.5em;
+  height: 3.7em;
+  position: right;
 }
+
+.site_name{
+  font-size: 1.8em;
+  font-family: "Arial Narrow", Arial, serif;
+  color: #273e74;
+  margin-bottom: 0em;
+  margin-top: 0em;
+  line-height: 1em;
+  float: top;
+}
+
+.site_slogan{
+  font-size: 2.9em;
+  font-family: "Arial Narrow", Arial, serif;
+  color: #273e74;
+  line-height: 1.5em;
+  float: top;
+}
+*/
