@@ -16,6 +16,7 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
     {% set linha =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ title }}'] %}
     {% set link =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ view_node }}'] %}
     {% set verbete =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_verbete }}'] %}
+    {% set trimverbete =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_verbete_1 }}'] %}
     {% set autor =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_autoria }}'] %}
     {% set tags =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_palavras_chave }}'] %}
     {% set numero =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ nid }}'] %}
@@ -27,8 +28,8 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
 <div class="eafflchuspbr_grid-item">
 <span class="eafflchuspbr_box">
 	<div class="eafflchuspbr_box_none">
-    	<p>{{ linha }}</p>
-      <p>{{ verbete }}</p>
+    	<p class="eafflchuspbr_box_titulo">{{ linha }}</p>
+      <p class="eafflchuspbr_box_verbete">{{ trimverbete }}</p>
     </div> 
        <div class="eafflchuspbr_box">
 
@@ -52,12 +53,16 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
                       <p class="eafflchuspbr_modal-content_verbete">{{ verbete }}</p>
                       <p class="eafflchuspbr_modal-content_link">{{ link }}</p>            
                     </div>
-                  <div class="eafflchuspbr_flexletra">
-                    {{ letra }}
-                  </div>
-                  <div class=eafflchuspbr_flexinfo>
-                    <p class="eafflchuspbr_modal-content_autor">{{ autor }}</p>
-                    <p class="eafflchuspbr_modal-content_tags">{{ tags }}</p>     
+                  <div class="eafflchuspbr_flexletrainfo">
+                    <div class="eafflchuspbr_flexletra">
+                      {{ letra }}
+                    </div>
+                    <div class=eafflchuspbr_flexinfo>
+                      <p class="eafflchuspbr_modal-content_autor_rotulo">Autoria</p>
+                      <p class="eafflchuspbr_modal-content_autor">{{ autor }}</p>
+                      <p class="eafflchuspbr_modal-content_tags_rotulo">Palavras Chave</p>
+                      <p class="eafflchuspbr_modal-content_tags">{{ tags }}</p>      
+                    </div>
                   </div>
                 </div>     
               </div>
