@@ -94,3 +94,11 @@ permissions:
   - 'administer redirect settings'
 # Fonts
   - 'administer font entities'
+# Paragraphs:
+  - 'Administer Paragraphs types'
+  - 'Edit behavior plugin settings'
+  - 'View unpublished paragraphs'
+  - 'Administer Paragraphs settings'
+# Layout Builder
+  - 'Configure any layout'
+  - 'Create and edit custom blocks'
