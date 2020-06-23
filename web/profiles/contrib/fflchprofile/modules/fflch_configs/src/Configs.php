@@ -31,6 +31,7 @@ class Configs {
     $installed = file_get_contents(__DIR__. '/' . 'installed.txt');
     $installed = explode("\n",$installed);
     $installed = array_unique($installed);
+    array_pop($installed);
     \Drupal::service('module_installer')->install($installed, TRUE);
   }
 

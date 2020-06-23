@@ -103,6 +103,5 @@ permissions:
   - 'configure any layout'
   - 'create and edit custom blocks'
 # scheduler
- - 'administer scheduler'
- - 'schedule publishing of nodes'
- - 'view scheduled content'
+  - 'schedule publishing of nodes'
+  - 'view scheduled content'
