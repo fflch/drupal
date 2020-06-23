@@ -95,10 +95,14 @@ permissions:
 # Fonts
   - 'administer font entities'
 # Paragraphs:
-  - 'Administer Paragraphs types'
-  - 'Edit behavior plugin settings'
-  - 'View unpublished paragraphs'
-  - 'Administer Paragraphs settings'
+  - 'administer paragraphs types'
+  - 'edit behavior plugin settings'
+  - 'view unpublished paragraphs'
+  - 'administer paragraphs settings'
 # Layout Builder
-  - 'Configure any layout'
-  - 'Create and edit custom blocks'
+  - 'configure any layout'
+  - 'create and edit custom blocks'
+# scheduler
+ - 'administer scheduler'
+ - 'schedule publishing of nodes'
+ - 'view scheduled content'
