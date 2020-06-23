@@ -74,10 +74,10 @@
 
   <div id="header-region">
     <div class="row">
-      <div class="col-md-4 col-sm-4 idioma">
+      <div class="col-md-4 col-sm-4">
         {{ page.header }}
       </div>
-      <div class="col-md-8 col-sm-8 busca">
+      <div class="col-md-8 col-sm-8">
         {{ page.header_right }}
       </div>
     </div>
@@ -89,19 +89,105 @@
 
   <div class="first">
     <a href="{{front_page|t}}">
-      <img class="logo_fflch" align="left" alt="fflch" src="{{ base_path ~ directory }}/images/logo.png" />
+      <img alt="fflch" src="{{ base_path ~ directory }}/images/logo.png" />
     </a>
   </div>
 
   <div class="second">
-      <p class="site_name">{{site_name|t}}</p>
-      <p class="site_slogan">{{site_slogan|t}}</p>
+    <a href="{{front_page|t}}">{{site_name|t}} </a>
+    <div class="slogan"> {{site_slogan|t}}</div>
   </div>  
 
   <div class="third">  
-    <a href="https://www.usp.br" target="_blank">
-      <img class="logo_usp" align="right" src="{{ base_path ~ directory }}/images/usp.png" />
+    <a href="https://www.usp.br" target="_blank"><img src="{{ base_path ~ directory }}/images/usp.png" /></a>
+  </div>
+
+</div>
+
+  {% if page.primary_menu %}
+      {{ page.primary_menu }}
+  {% endif %}
+  </div>
+
+  {# Include a slider. #}
+  {% if slider %}
+    <div class="flexslider">
+      <ul class="slides">
+        {% for slide in slider %}
+          <li>
+            <a href="{{ slide.url | t }}"><img src="{{ slide.src }}" alt="{{ slide.name }}"></a>
+            {% if slide.description %}
+              <p class="flex-caption">{{ slide.description | raw | t }}</p>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if page.breadcrumb %}
+    <div id="breadcrumb-region">
+      {{ page.breadcrumb }}
+    </div>
+  {% endif %}
+
+  {% if page.content_top %}
+    <div id="content-top-region" class="dark-blue-bg">{{ page.content_top }}</div>
+  {% endif %}
+
+  <main id="main" class="clearfix">
+    {% if page.sidebar_first %}
+      <div id="sidebar-first" class="sidebar {{ sidebarfirst }}" role="complementary">
+        {{ page.sidebar_first }}
+      </div>
+    {% endif %}
+
+    <div class="{{ contentlayout }}" role="main">
+
+      {{ page.content }}
+
+    </div>{# /#post-content #}
+
+    {% if page.sidebar_second_second %}
+      <div id="sidebar-second-second" class="sidebar {{ sidebarsecondsecond }}" role="complementary">
+        {{ page.sidebar_second_second }}
+      </div>
+    {% endif %}
+
+    {% if page.sidebar_second %}
+      <div id="sidebar-second" class="sidebar {{ 
+<div id="page-wrapper" class="container">
+
+  <div id="header-region">
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        {{ page.header }}
+      </div>
+      <div class="col-md-8 col-sm-8">
+        {{ page.header_right }}
+      </div>
+    </div>
+  </div>
+
+    <div id="primary-menu-region">
+
+<div id="logodefault">
+
+  <div class="first">
+    <a href="{{front_page}}">
+      <img alt="fflch" src="{{ base_path ~ directory }}/images/logo.png" />
     </a>
+  </div>
+
+  <div class="second">
+    <div class="site_name">
+        <a class="site_name" href="{{front_page}}">{{site_name}} </a>
+    </div>
+    <div class="slogan"> {{site_slogan}}</div>
+  </div>  
+
+  <div class="third">  
+    <a href="https://www.usp.br" target="_blank"><img src="{{ base_path ~ directory }}/images/usp.png" /></a>
   </div>
 
 </div>
@@ -166,6 +252,41 @@
 
   {% if page.content_bottom %}
     <div id="content-bottom-region">{{ page.content_bottom }}</div>
+  {% endif %}
+
+  {# Bottom regions. #}
+  {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+    <div id="footer-column" class="gray-bg">
+      <div class="row">
+        {% if page.footer_first %}
+          <div class="footer-1 col-md-3">{{ page.footer_first }}</div>
+        {% endif %}
+        {% if page.footer_second %}
+          <div class="footer-2 col-md-3">{{ page.footer_second }}</div>
+        {% endif %}
+        {% if page.footer_third %}
+          <div class="footer-3 col-md-3">{{ page.footer_third }}</div>
+        {% endif %}
+        {% if page.footer_fourth %}
+          <div class="footer-4 col-md-3">{{ page.footer_fourth }}</div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="clear"></div>
+  {% endif %}
+
+  <footer role="contentinfo" id="footer" class="dark-blue-bg">
+    {% if page.footer %}
+      {{ page.footer }}
+    {% endif %}
+    <hr>
+    <span class="credits">Developed by <a href="http://dropthemes.in" target="_blank">Dropthemes.in</a></span>
+    {{ socialicons |raw }}
+  </footer>
+  <a href="#Top" class="btn-btt" title="Back to Top" style="display: block;"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+
+</div>{# /#wrap #}
+nt_bottom }}</div>
   {% endif %}
 
   {# Bottom regions. #}
