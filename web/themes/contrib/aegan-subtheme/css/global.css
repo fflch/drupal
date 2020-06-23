@@ -1,3 +1,4 @@
+
 div.language-switcher-language-url  ul.links li {
   display:inline;
 }
@@ -196,3 +197,75 @@ img.align-left {
 .caption > figcaption  {
   background-color: white;
 }
+
+/* Novo Layout FFLCH - issue 111 */
+
+/* bloco logo do modelo ***/
+/*
+#logodefault {
+  margin-bottom: 10px;
+  display: table;
+  width: 100%;
+  table-layout: auto;
+  border-spacing: 5px 0;
+  line-height: 2.2em;
+}
+
+#logodefault .first {
+   display: table-cell;
+   width: 25%;
+ }
+
+ #logodefault .first img{
+   height: 20%;
+ }
+
+ #logodefault .second {
+  display: table-cell;
+  margin-top: 0 auto;
+  vertical-align: top;
+  width: 60%;
+  font-size: 30px;
+  font-family: "Arial Narrow", Arial, serif;
+}
+
+.site_name{
+  margin-top: 0;
+  font-size: 100%;
+  width: 70%;
+}
+
+#logodefault .second .slogan{
+  font-size: 100%;
+  color: #273e74;
+  margin-bottom: 6px;
+}
+
+#logodefault .third {
+  display: table-cell;
+  width: 15%;
+}
+
+#logodefault .third img{
+  margin-top: 17%;
+  width: 20em;
+  height: 4em;
+}
+
+
+.language-icon {
+  height: 19.75px;
+  width: 28px;
+}
+
+@media only screen and (max-width: 600px) {
+    .site_name{
+      font-size: 13px;
+      color: #273e74;
+    }
+
+    #logodefault {
+      line-height: 1em;
+    }
+}
+*/
