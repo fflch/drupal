@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0bbd3068392b8155341b39a745078aa",
+    "content-hash": "bd40c843886860f9f9dcd84ff6022a13",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2272,6 +2272,50 @@
                 "source": "https://git.drupalcode.org/project/block_class",
                 "issues": "https://www.drupal.org/project/issues/block_class",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/cache_control_override",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cache_control_override.git",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cache_control_override-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "df503266bf7be5d0bf02b222677564e69f57fd4a"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1501518842",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "asgorobets",
+                    "homepage": "https://www.drupal.org/user/1399950"
+                }
+            ],
+            "description": "Override page Cache-Control header based on bubbled cacheability metadata.",
+            "homepage": "https://www.drupal.org/project/cache_control_override",
+            "support": {
+                "source": "https://git.drupalcode.org/project/cache_control_override"
             }
         },
         {
@@ -5248,6 +5292,23 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/jcarousel"
             }
+        },
+        {
+            "name": "drupal/jquery_countdown_timer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fflch/jquery_countdown_timer.git",
+                "reference": "7c6caa50a8dba8265185341f74ebb2bea7ece043"
+            },
+            "type": "drupal-module",
+            "authors": [
+                {
+                    "name": "Thiago Gomes Verissimo",
+                    "email": "thiago.verissimo@usp.br"
+                }
+            ],
+            "time": "2020-06-24T18:46:59+00:00"
         },
         {
             "name": "drupal/jquery_ui",
@@ -8867,6 +8928,61 @@
             }
         },
         {
+            "name": "drupal/webform_invitation",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_invitation.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_invitation-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "56d01bef036ee6b0503060167e36d49b07278027"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/token": "~1.0",
+                "drupal/webform": "~5.0",
+                "drupal/webform_ui": "^5.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1573305184",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Paul Bruhn (paul-broon)",
+                    "homepage": "https://www.drupal.org/u/paul-broon",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Vit Hovezak (kyberman)",
+                    "homepage": "https://www.drupal.org/u/kyberman",
+                    "role": "Co-maintainer"
+                }
+            ],
+            "description": "Provides random strings that can be used as codes for accessing a specific webform.",
+            "homepage": "https://www.drupal.org/project/webform_invitation",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform_invitation",
+                "issues": "https://www.drupal.org/project/issues/webform_invitation",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/webform_migrate",
             "version": "1.1.0",
             "source": {
@@ -9046,6 +9162,76 @@
             }
         },
         {
+            "name": "drupal/webform_ui",
+            "version": "5.17.0",
+            "require": {
+                "drupal/core": "^8.8",
+                "drupal/webform": "self.version"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-5.17",
+                    "datestamp": "1592841189",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DanChadwick",
+                    "homepage": "https://www.drupal.org/user/504278"
+                },
+                {
+                    "name": "Liam Morland",
+                    "homepage": "https://www.drupal.org/user/493050"
+                },
+                {
+                    "name": "bucefal91",
+                    "homepage": "https://www.drupal.org/user/504128"
+                },
+                {
+                    "name": "fenstrat",
+                    "homepage": "https://www.drupal.org/user/362649"
+                },
+                {
+                    "name": "jrockowitz",
+                    "homepage": "https://www.drupal.org/user/371407"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                },
+                {
+                    "name": "sanchiz",
+                    "homepage": "https://www.drupal.org/user/1671246"
+                },
+                {
+                    "name": "tedbow",
+                    "homepage": "https://www.drupal.org/user/240860"
+                },
+                {
+                    "name": "torotil",
+                    "homepage": "https://www.drupal.org/user/865256"
+                }
+            ],
+            "description": "Provides a user interface for building and maintaining webforms.",
+            "homepage": "https://www.drupal.org/project/webform",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform"
+            }
+        },
+        {
             "name": "drupal/webform_views",
             "version": "5.0.0-alpha7",
             "source": {
@@ -9103,6 +9289,56 @@
             "homepage": "https://www.drupal.org/project/webform_views",
             "support": {
                 "source": "https://git.drupalcode.org/project/webform_views"
+            }
+        },
+        {
+            "name": "drupal/webform_xlsx_export",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_xlsx_export.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_xlsx_export-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "155c3e33e5c83d1df06f0d6e5774ccc727c502fc"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/webform": "*",
+                "phpoffice/phpspreadsheet": "^1.9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1576504091",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "GaëlG",
+                    "homepage": "https://www.drupal.org/user/431210"
+                },
+                {
+                    "name": "prudloff",
+                    "homepage": "https://www.drupal.org/user/3611858"
+                }
+            ],
+            "description": "Exports Webform submissions in the Office Open XML format.",
+            "homepage": "https://www.drupal.org/project/webform_xlsx_export",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_xlsx_export"
             }
         },
         {
@@ -14615,6 +14851,7 @@
         "bower-asset/json2": 20,
         "drupal/csv_importer": 20,
         "drupal/editor_file": 20,
+        "drupal/jquery_countdown_timer": 20,
         "drupal/site_audit": 20,
         "drupal/youtube_playlist": 20,
         "fflch/cem-theme": 20,

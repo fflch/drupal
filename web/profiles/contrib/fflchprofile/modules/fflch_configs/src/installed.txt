@@ -52,3 +52,9 @@ webform_entity_print_attachment
 webform_node
 webform_scheduled_email
 webform_ui
+webform_analysis
+webform_node_analysis
+webform_invitation
+webform_xlsx_export
+webform_submission_files_download
+cache_control_override
