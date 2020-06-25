@@ -16,9 +16,9 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
 {% endfor %}
 {% set letras = letras|sort %}
 
-<div class="eafflchuspbr_letra_inline">
+<div class="eafflchuspbr_letra_inline eafflchuspbr-{{ letra }}">
 {% for letra in letras %}
-<span class="eafflchuspbr_letra"> <a href="#{{letra}}"> {{letra}} </a></span>
+<span class="eafflchuspbr_letra eafflchuspbr-cores-bg"> <a href="#{{letra}}"> {{letra}} </a></span>
 {% endfor %}
 </div>
 
@@ -26,9 +26,9 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
 
 {# Mostra títulos #}
 {% for inicial in letras %}
-<div class="eafflchuspbr_inicial-table"> {# 2 #}
+<div class="eafflchuspbr_inicial-table eafflchuspbr-{{ letra }}"> {# 2 #}
   <div class="eafflchuspbr_inicial-tr"> {# 3 #}
-    <div class="eafflchuspbr_inicial-td-letra" id="{{inicial}}">{{ inicial }}</div> {# 4 #}
+    <div class="eafflchuspbr_inicial-td-letra eafflchuspbr-cores" id="{{inicial}}">{{ inicial }}</div> {# 4 #}
     <div class="eafflchuspbr_inicial-td-verbete">{# 5 #}
       {% for row in rows %}
     
@@ -44,29 +44,29 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
         {% if letra == inicial %}
 
           {# MODAL #}
-          <div class="eafflchuspbr_verbete"> 
+          <div class="eafflchuspbr_verbete eafflchuspbr-{{ letra }}"> 
             <div class="eafflchuspbr_titulo-previa">
-              <h2 class="eafflchuspbr_titulo">{{ linha }} </h2>
+              <h2 class="eafflchuspbr_titulo eafflchuspbr eafflchuspbr-cores">{{ linha }} </h2>
               <span class="eafflchuspbr_previa" onclick="document.getElementById('{{ numero }}').style.display='block'">PRÉVIA</span>
             </div>
             <div id="{{ numero }}" class="eafflchuspbr_modal">
-              <div class="eafflchuspbr_modal-content">
-                <span onclick="document.getElementById('{{ numero }}').style.display='none'" class="eafflchuspbr_close">&times;</span>
+              <div class="eafflchuspbr_modal-content eafflchuspbr-{{ letra }}">
+                <span class="eafflchuspbr_close eafflchuspbr-cores" onclick="document.getElementById('{{ numero }}').style.display='none'">&times;</span>
 
                 <div class="eafflchuspbr_flexcontainer">     
                   <div class="eafflchuspbr_flexsumario">    
-                    <p class="eafflchuspbr_modal-content_titulo">{{ linha }}</p>          
+                    <p class="eafflchuspbr_modal-content_titulo eafflchuspbr-cores">{{ linha }}</p>          
                     <p class="eafflchuspbr_modal-content_verbete">{{ verbete }}</p>
-                    <p class="eafflchuspbr_modal-content_link">{{ link }}</p>            
+                    <p class="eafflchuspbr_modal-content_link eafflchuspbr-cores">{{ link }}</p>            
                   </div>
                   <div class="eafflchuspbr_flexletrainfo">
                     <div class="eafflchuspbr_flexletra">
                       {{ letra }}
                     </div>
                     <div class=eafflchuspbr_flexinfo>
-                      <p class="eafflchuspbr_modal-content_autor_rotulo">AUTORIA</p>
+                      <p class="eafflchuspbr_modal-content_autor_rotulo eafflchuspbr-cores">AUTORIA</p>
                       <p class="eafflchuspbr_modal-content_autor">{{ autor }}</p>
-                      <p class="eafflchuspbr_modal-content_tags_rotulo">PALAVRAS-CHAVE</p>
+                      <p class="eafflchuspbr_modal-content_tags_rotulo eafflchuspbr-cores">PALAVRAS-CHAVE</p>
                       <p class="eafflchuspbr_modal-content_tags">{{ tags }}</p>      
                     </div>
                   </div>
