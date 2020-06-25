@@ -27,40 +27,40 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
    
 <div class="eafflchuspbr_grid-item">
 <span class="eafflchuspbr_box">
-	<div class="eafflchuspbr_box_none">
-    	<p class="eafflchuspbr_box_titulo">{{ linha }}</p>
+	<div class="eafflchuspbr_box_none eafflchuspbr-{{ letra }}">
+    	<p class="eafflchuspbr_box_titulo eafflchuspbr-cores">{{ linha }}</p>
       <p class="eafflchuspbr_box_verbete">{{ trimverbete }}</p>
+      <p class="eafflchuspbr_box_verbete eafflchuspbr-cores">{{ completo }}</p>
     </div> 
-       <div class="eafflchuspbr_box">
 
-         <!-- conteúdo -->
+        <!-- conteúdo -->
+       <div class="eafflchuspbr_box eafflchuspbr-{{ letra }}">         
           
-         	  <div class="eafflchuspbr_box_previa" onclick="document.getElementById('container_{{ numero }}').style.display='block'">PRÉVIA</div>
-            <div class="eafflchuspbr_box_letra">{{ letra }}</div>
-            <div class="eafflchuspbr_box_completo">{{ completo }}</div>
-            
-        
+         	  <div class="eafflchuspbr_box_previa eafflchuspbr-cores" onclick="document.getElementById('container_{{ numero }}').style.display='block'">PRÉVIA</div>
+            <div class="eafflchuspbr_box_letra eafflchuspbr-cores">{{ letra }}</div>
+            <div class="eafflchuspbr_box_completo eafflchuspbr-cores">{{ completo }}</div>
+                    
       </div>
               
               {# CONTAINER FLEXBOX PRÉVIA #}
               <div id="container_{{ numero }}" class="eafflchuspbr_modal">
-                <div class="eafflchuspbr_modal-content">
-                  <span onclick="document.getElementById('container_{{ numero }}').style.display='none'" class="eafflchuspbr_close">&times;</span>
+                <div class="eafflchuspbr_modal-content eafflchuspbr-{{ letra }}">
+                  <span class="eafflchuspbr_close eafflchuspbr-cores" onclick="document.getElementById('container_{{ numero }}').style.display='none'">&times;</span>
 
                   <div class="eafflchuspbr_flexcontainer">     
                     <div class="eafflchuspbr_flexsumario">    
-                      <p class="eafflchuspbr_modal-content_titulo">{{ linha }}</p>          
+                      <p class="eafflchuspbr_modal-content_titulo eafflchuspbr-cores">{{ linha }}</p>          
                       <p class="eafflchuspbr_modal-content_verbete">{{ verbete }}</p>
-                      <p class="eafflchuspbr_modal-content_link">{{ link }}</p>            
+                      <p class="eafflchuspbr_modal-content_link eafflchuspbr-cores">{{ link }}</p>            
                     </div>
                   <div class="eafflchuspbr_flexletrainfo">
-                    <div class="eafflchuspbr_flexletra">
+                    <div class="eafflchuspbr_flexletra eafflchuspbr-cores">
                       {{ letra }}
                     </div>
                     <div class=eafflchuspbr_flexinfo>
-                      <p class="eafflchuspbr_modal-content_autor_rotulo">AUTORIA</p>
+                      <p class="eafflchuspbr_modal-content_autor_rotulo eafflchuspbr-cores">AUTORIA</p>
                       <p class="eafflchuspbr_modal-content_autor">{{ autor }}</p>
-                      <p class="eafflchuspbr_modal-content_tags_rotulo">PALAVRAS-CHAVE</p>
+                      <p class="eafflchuspbr_modal-content_tags_rotulo eafflchuspbr-cores">PALAVRAS-CHAVE</p>
                       <p class="eafflchuspbr_modal-content_tags">{{ tags }}</p>      
                     </div>
                   </div>
