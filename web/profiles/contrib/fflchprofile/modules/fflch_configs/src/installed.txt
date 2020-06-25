@@ -27,6 +27,7 @@ google_analytics
 google_fonts_api
 image_captcha
 imce
+jquery_countdown_timer
 language
 languageicons
 locale
