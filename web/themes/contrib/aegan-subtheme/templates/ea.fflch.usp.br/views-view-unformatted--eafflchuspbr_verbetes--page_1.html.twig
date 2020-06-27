@@ -26,8 +26,8 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
 
 {# Mostra títulos #}
 {% for inicial in letras %}
-<div class="eafflchuspbr_inicial-table eafflchuspbr-{{ letra }}"> {# 2 #}
-  <div class="eafflchuspbr_inicial-tr"> {# 3 #}
+<div class="eafflchuspbr_inicial-table "> {# 2 #}
+  <div class="eafflchuspbr_inicial-tr eafflchuspbr-{{ letra }}"> {# 3 #}
     <div class="eafflchuspbr_inicial-td-letra eafflchuspbr-cores" id="{{inicial}}">{{ inicial }}</div> {# 4 #}
     <div class="eafflchuspbr_inicial-td-verbete">{# 5 #}
       {% for row in rows %}
@@ -60,7 +60,7 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
                     <p class="eafflchuspbr_modal-content_link eafflchuspbr-cores">{{ link }}</p>            
                   </div>
                   <div class="eafflchuspbr_flexletrainfo">
-                    <div class="eafflchuspbr_flexletra">
+                    <div class="eafflchuspbr_flexletra eafflchuspbr-cores">
                       {{ letra }}
                     </div>
                     <div class=eafflchuspbr_flexinfo>
