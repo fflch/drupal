@@ -22,19 +22,20 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
     {% set numero =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ nid }}'] %}
     {% set caixa =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ nothing }}'] %}
     {% set completo =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ view_node_1 }}'] %}
+    {% set tipo =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_tipo_de_verbete }}'] %}
 
 
    
 <div class="eafflchuspbr_grid-item">
 <span class="eafflchuspbr_box">
-	<div class="eafflchuspbr_box_none eafflchuspbr-{{ letra }}">
+	<div class="eafflchuspbr_box_none eafflchuspbr-{{ tipo }}">
     	<p class="eafflchuspbr_box_titulo eafflchuspbr-cores">{{ linha }}</p>
       <p class="eafflchuspbr_box_verbete">{{ trimverbete }}</p>
       <p class="eafflchuspbr_box_boxcompleto eafflchuspbr-cores">{{ completo }}</p>
     </div> 
 
         <!-- conteúdo -->
-       <div class="eafflchuspbr_box eafflchuspbr-{{ letra }}">         
+       <div class="eafflchuspbr_box eafflchuspbr-{{ tipo }}">         
           
          	  <div class="eafflchuspbr_box_previa eafflchuspbr-cores" onclick="document.getElementById('container_{{ numero }}').style.display='block'">PRÉVIA</div>
             <div class="eafflchuspbr_box_letra eafflchuspbr-cores">{{ letra }}</div>
@@ -44,7 +45,7 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
               
               {# CONTAINER FLEXBOX PRÉVIA #}
               <div id="container_{{ numero }}" class="eafflchuspbr_modal">
-                <div class="eafflchuspbr_modal-content eafflchuspbr-{{ letra }}">
+                <div class="eafflchuspbr_modal-content eafflchuspbr-{{ tipo }}">
                   <span class="eafflchuspbr_close eafflchuspbr-cores" onclick="document.getElementById('container_{{ numero }}').style.display='none'">&times;</span>
 
                   <div class="eafflchuspbr_flexcontainer">     
