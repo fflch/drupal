@@ -170,3 +170,6 @@ e depois rodar:
     ./vendor/bin/drush config-delete language.pt-br:system.site name
     ./vendor/bin/drush config-delete language.pt-br:system.site page.front home-pt-br
 
+Para subir um dump na máquina local, algumas configurações devem ser deletadas:
+
+    ./vendor/bin/drush config-delete system.file path
