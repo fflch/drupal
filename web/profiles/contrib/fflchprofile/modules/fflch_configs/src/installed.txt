@@ -23,6 +23,7 @@ editor_file
 entity
 entity_clone
 fontyourface
+local_fonts
 google_analytics
 google_fonts_api
 image_captcha
