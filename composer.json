@@ -49,7 +49,7 @@
     "require": {
         "php": ">=5.6",
         "balbuf/drupal-libraries-installer": "^1.0",
-        "bower-asset/ckeditor": "4.14.0",
+        "bower-asset/ckeditor": "4.14.1",
         "bower-asset/jquery.cycle": "dev-master",
         "bower-asset/jquery.hoverintent": "dev-master",
         "bower-asset/json2": "dev-master",
@@ -157,7 +157,7 @@
         "drupal/views_bulk_operations": "3.8",
         "drupal/views_data_export": "1.0",
         "drupal/views_slideshow": "4.7",
-        "drupal/webform": "5.18",
+        "drupal/webform": "5.19",
         "drupal/webform_analysis": "1.0-beta7",
         "drupal/webform_cpf": "1.0",
         "drupal/webform_invitation": "1.1",
