@@ -16,9 +16,9 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
 {% endfor %}
 {% set letras = letras|sort %}
 
-<div class="eafflchuspbr_letra_inline eafflchuspbr-{{ letra }}">
+<div class="eafflchuspbr_letra_inline">
 {% for letra in letras %}
-<span class="eafflchuspbr_letra eafflchuspbr-cores-bg"> <a href="#{{letra}}"> {{letra}} </a></span>
+<span class="eafflchuspbr-ancora eafflchuspbr_letra eafflchuspbr-{{ letra }} eafflchuspbr-cores"> <a class="eafflchuspbr-ancora-link" href="#{{letra}}"> {{letra}} </a></span>
 {% endfor %}
 </div>
 
@@ -26,9 +26,9 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
 
 {# Mostra títulos #}
 {% for inicial in letras %}
-<div class="eafflchuspbr_inicial-table eafflchuspbr-{{ letra }}"> {# 2 #}
-  <div class="eafflchuspbr_inicial-tr"> {# 3 #}
-    <div class="eafflchuspbr_inicial-td-letra eafflchuspbr-cores" id="{{inicial}}">{{ inicial }}</div> {# 4 #}
+<div class="eafflchuspbr_inicial-table"> {# 2 #}
+  <div class="eafflchuspbr_inicial-tr"> {# 3 #} 
+    <div class="eafflchuspbr_inicial-td-letra" id="{{inicial}}">{{ inicial }}</div> {# 4 #}
     <div class="eafflchuspbr_inicial-td-verbete">{# 5 #}
       {% for row in rows %}
     
@@ -41,16 +41,17 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
         {% set tags =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_palavras_chave }}'] %}
         {% set caixa =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ nothing }}'] %}
         {% set numero =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ nid }}'] %}
+        {% set tipo =  row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_tipo_de_verbete }}'] %}
         {% if letra == inicial %}
 
           {# MODAL #}
-          <div class="eafflchuspbr_verbete eafflchuspbr-{{ letra }}"> 
+          <div class="eafflchuspbr_verbete eafflchuspbr-{{ tipo }}"> 
             <div class="eafflchuspbr_titulo-previa">
               <h2 class="eafflchuspbr_titulo eafflchuspbr eafflchuspbr-cores">{{ linha }} </h2>
               <span class="eafflchuspbr_previa" onclick="document.getElementById('{{ numero }}').style.display='block'">PRÉVIA</span>
             </div>
             <div id="{{ numero }}" class="eafflchuspbr_modal">
-              <div class="eafflchuspbr_modal-content eafflchuspbr-{{ letra }}">
+              <div class="eafflchuspbr_modal-content eafflchuspbr-{{ tipo }}">
                 <span class="eafflchuspbr_close eafflchuspbr-cores" onclick="document.getElementById('{{ numero }}').style.display='none'">&times;</span>
 
                 <div class="eafflchuspbr_flexcontainer">     
@@ -60,7 +61,7 @@ View afetada: http://ea.fflch.usp.br/admin/structure/views/view/eafflchuspbr_ver
                     <p class="eafflchuspbr_modal-content_link eafflchuspbr-cores">{{ link }}</p>            
                   </div>
                   <div class="eafflchuspbr_flexletrainfo">
-                    <div class="eafflchuspbr_flexletra">
+                    <div class="eafflchuspbr_flexletra eafflchuspbr-cores">
                       {{ letra }}
                     </div>
                     <div class=eafflchuspbr_flexinfo>
