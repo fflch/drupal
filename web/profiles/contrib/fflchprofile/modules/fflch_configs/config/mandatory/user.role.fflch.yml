@@ -99,6 +99,11 @@ permissions:
   - 'edit behavior plugin settings'
   - 'view unpublished paragraphs'
   - 'administer paragraphs settings'
+  - 'administer paragraphs library'
+  - 'create paragraph library item'
+  - 'edit paragraph library item'
+  - 'administer paragraph fields'
+  - 'administer paragraph form display'
 # Layout Builder
   - 'configure any layout'
   - 'create and edit custom blocks'

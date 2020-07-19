@@ -72,38 +72,55 @@
 #}
 <div id="page-wrapper" class="container">
 
-  <div id="header-region">
-    <div class="row">
-      <div class="col-md-4 col-sm-4">
+  <div id="header-region" class="fflch-header-region">
+    <div class="row fflch-row">
+      <div class="col-md-4 col-sm-4 fflch-header-left">
         {{ page.header }}
+              <div class="fflch-header-center">
+        <a class="fflch-header-center-logo-usp-link" href="https://www.usp.br" target="_blank">
+          <img class="fflch-header-center-logo-usp-img" src="{{ base_path ~ directory }}/images/usp.png" />
+        </a>
       </div>
-      <div class="col-md-8 col-sm-8">
+      </div>
+
+      <div class="col-md-8 col-sm-8 fflch-header-right">
         {{ page.header_right }}
       </div>
     </div>
   </div>
 
-    <div id="primary-menu-region">
+    <div id="primary-menu-region fflch-primary-menu-region">
 
-<div id="logodefault">
+<div class="fflch-logodefault"> {# id="logodefault" #}
 
-  <div class="first">
-    <a href="{{front_page|t}}">
-      <img alt="fflch" src="{{ base_path ~ directory }}/images/logo.png" />
-    </a>
-  </div>
+  <div class="fflch-firstsecondthird">
 
-  <div class="second">
-    <div class="site_name">
-        <a class="site_name" href="{{front_page|t}}">{{site_name|t}} </a>
+    <div class="fflch-first"> {# class="first" #}
+      <div class="fflch-item">
+        <a class="fflch-logo-link" href="{{front_page|t}}">
+          <img class="fflch-logo-img" alt="fflch" src="{{ base_path ~ directory }}/images/logo.png" />
+        </a>
+      </div>
     </div>
-    <div class="slogan"> {{site_slogan|t}}</div>
+    <div class="fflch-second"> {# class="second" #}
+      <div class="fflch-item">
+        <div class="fflch-slogan"> {# class="slogan" #}
+            <a class="fflch-slogan-link" href="{{front_page|t}}">{{site_slogan|t}}</a>
+        </div>
+        <div class="fflch-site-name"> {# class="site_name" #}
+            <a class="fflch-site-name-link" href="{{front_page|t}}">{{site_name|t}} </a>
+        </div>
+      </div>
+    </div>
+    <div class="fflch-third"> {# class="third" #}
+      <div class="fflch-item">
+        <a class="fflch-logo-usp-link" href="https://www.usp.br" target="_blank">
+          <img class="fflch-logo-usp-img" src="{{ base_path ~ directory }}/images/usp.png" />
+        </a>  
+      </div>
+    </div>
+  
   </div>
-
-  <div class="third">
-    <a href="https://www.usp.br" target="_blank"><img src="{{ base_path ~ directory }}/images/usp.png" /></a>
-  </div>
-
 </div>
 
   {% if page.primary_menu %}
