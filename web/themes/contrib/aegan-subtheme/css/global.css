@@ -54,7 +54,7 @@ body {
   width: 28px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     #logodefault .second {
       font-size: 1em;
     }
@@ -193,8 +193,16 @@ img.align-left {
 /*------------TEMA CABEÇALHO FFLCH -------------------*/
 
 
-/*--------------------------600px+------------------------*/
-@media only screen and (min-width:600px){
+/*--------------------------768px+------------------------*/
+@media only screen and (min-width:768px){
+    /*NAVBAR (divisória)*/
+    .nav>li {
+      border-right: 1px solid white;
+    }
+    .nav>li:last-child{
+      border-right: 0;
+    }
+  
     /*HEADER*/
     #header-region.fflch-header-region {
       padding:10px 0 0 0;
@@ -329,8 +337,8 @@ img.align-left {
     }
   }
   
-  /*--------------------------(-)599px------------------------*/
-  @media only screen and (max-width:599px){
+  /*--------------------------(-)767px------------------------*/
+  @media only screen and (max-width:767px){
   
   /*HEADER*/
   #header-region.fflch-header-region {
