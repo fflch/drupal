@@ -149,6 +149,7 @@
         "drupal/theme_permission": "1.2",
         "drupal/time_field": "1.13",
         "drupal/token": "1.7",
+        "drupal/tooltip_ckeditor": "^2.0",
         "drupal/twig_tweak": "2.6",
         "drupal/typed_data": "1.0-alpha5",
         "drupal/video_embed_field": "2.4",

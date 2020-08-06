@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db9e1a1f10996839885543d64eaf9a02",
+    "content-hash": "36234b3e28c8a57fe6c7403c89d8e30d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -167,12 +167,12 @@
             "version": "4.14.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ckeditor/ckeditor4-releases.git",
+                "url": "git@github.com:ckeditor/ckeditor-releases.git",
                 "reference": "8eccaf31ad9832a113757d379758996ed2150f60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ckeditor/ckeditor4-releases/zipball/8eccaf31ad9832a113757d379758996ed2150f60",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/8eccaf31ad9832a113757d379758996ed2150f60",
                 "reference": "8eccaf31ad9832a113757d379758996ed2150f60"
             },
             "type": "bower-asset",
@@ -8178,6 +8178,50 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
+            }
+        },
+        {
+            "name": "drupal/tooltip_ckeditor",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tooltip_ckeditor.git",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tooltip_ckeditor-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "1daf8d797f20954c40ceab3e7acd7f801046fd99"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1573195384",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Revathi.B",
+                    "homepage": "https://www.drupal.org/user/3389442"
+                }
+            ],
+            "description": "This module provides tooltip functionality in ckeditor.",
+            "homepage": "https://www.drupal.org/project/tooltip_ckeditor",
+            "support": {
+                "source": "https://git.drupalcode.org/project/tooltip_ckeditor"
             }
         },
         {

@@ -60,3 +60,4 @@ webform_invitation
 webform_xlsx_export
 webform_submission_files_download
 cache_control_override
+tooltip_ckeditor
