@@ -35,6 +35,7 @@ permissions:
 # Administração de blocos
   - 'administer blocks'
   - 'administer block_content display'
+  - 'administer block_content form display'
   - 'administer block_content fields'
 # Administração de views
   - 'administer views'
@@ -104,9 +105,12 @@ permissions:
   - 'edit paragraph library item'
   - 'administer paragraph fields'
   - 'administer paragraph form display'
+  - 'administer paragraph display'
 # Layout Builder
   - 'configure any layout'
   - 'create and edit custom blocks'
 # scheduler
   - 'schedule publishing of nodes'
   - 'view scheduled content'
+# display modes
+  - 'administer display modes'

@@ -4,6 +4,8 @@ dependencies:
   module:
     - collapse_text
     - editor
+    - markdown
+    - token_filter
     - video_embed_wysiwyg
 name: 'HTML completo'
 format: full_html
@@ -56,3 +58,24 @@ filters:
     status: true
     weight: 0
     settings: {  }
+  token_filter:
+    id: token_filter
+    provider: token_filter
+    status: true
+    weight: 0
+    settings:
+      replace_empty: '0'
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  markdown:
+    id: markdown
+    provider: markdown
+    status: true
+    weight: 0
+    settings:
+      markdown_library: php-markdown

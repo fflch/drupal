@@ -87,15 +87,28 @@ settings:
             - JustifyCenter
             - JustifyRight
             - JustifyBlock
+      -
+        -
+          name: Extra
+          items:
+            - Tooltip
+            - tokenbrowser
   plugins:
-    language:
-      language_list: un
     stylescombo:
       styles: ''
+    language:
+      language_list: all
+    font:
+      font_names: ''
+      font_sizes: ''
     colorbutton:
       colors: ''
     editoradvancedimage:
       default_class: ''
+    tokenbrowser:
+      token_types: {  }
+    tooltip_ckeditor:
+      tooltip_text: 1
     video_embed:
       defaults:
         children:

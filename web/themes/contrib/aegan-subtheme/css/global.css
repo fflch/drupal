@@ -478,3 +478,13 @@ img.align-left {
     border: 0;
     background-repeat: no-repeat;
   }
+
+.button {
+  background-color: #273e74;
+  border-color: #273e74;
+}
+
+.button:hover {
+  background-color: #273e74;
+  border-color: #273e74;
+}
