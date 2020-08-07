@@ -54,7 +54,7 @@ body {
   width: 28px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     #logodefault .second {
       font-size: 1em;
     }
@@ -193,8 +193,16 @@ img.align-left {
 /*------------TEMA CABEÇALHO FFLCH -------------------*/
 
 
-/*--------------------------600px+------------------------*/
-@media only screen and (min-width:600px){
+/*--------------------------768px+------------------------*/
+@media only screen and (min-width:768px){
+    /*NAVBAR (divisória)*/
+    .nav>li {
+      border-right: 1px solid white;
+    }
+    .nav>li:last-child{
+      border-right: 0;
+    }
+  
     /*HEADER*/
     #header-region.fflch-header-region {
       padding:10px 0 0 0;
@@ -249,16 +257,10 @@ img.align-left {
     
     /*CONTAINER DE LOGOS E NOMES*/
     .fflch-firstsecondthird {
-      display:table;
-      table-layout: auto;
-      width:100%;
-    }
-    
-    /*ITEM (CELULAS) DE LOGOS E NOMES*/
-    .fflch-first, .fflch-second, .fflch-third {
-      display:table-cell;
-      position:relative;
-    }
+      display: grid;
+      grid-template-columns: 157px auto 95px;
+      width: 100%;
+      }
     
     /*LOGO FFLCH*/
     .fflch-first{
@@ -279,13 +281,11 @@ img.align-left {
       width: 95px; 
       height:51px;
     }
+
+    .fflch-logo-usp-img {
+      padding-top: 15px;
+      }
     
-    /*CONTAINER DENTRO DE FIRST, SECOND E THIRD*/
-    .fflch-item {
-      display:block;
-      position:absolute;
-      bottom:0;
-    }
     
     /*CONTEÙDO DO SECOND (SITE E SLOGAN)*/
     /*FONTE*/
@@ -299,8 +299,9 @@ img.align-left {
     /*SLOGAN*/
     .fflch-slogan {
       font-size: 13pt;
-      line-height:1em;
+      line-height: 1em;
       padding-left: 2px;
+      margin-bottom: -1px;
     }
     
     /*NOME DO SITE*/
@@ -336,8 +337,8 @@ img.align-left {
     }
   }
   
-  /*--------------------------(-)599px------------------------*/
-  @media only screen and (max-width:599px){
+  /*--------------------------(-)767px------------------------*/
+  @media only screen and (max-width:767px){
   
   /*HEADER*/
   #header-region.fflch-header-region {
@@ -369,7 +370,7 @@ img.align-left {
   
   /*HEADER-CENTER*/
   .fflch-header-center {
-    width: 10%;
+    width: 11%;
     min-width: 34px;
     float:right;
   }
@@ -397,22 +398,16 @@ img.align-left {
   
   /*CONTAINER DE LOGOS E NOMES*/
   .fflch-firstsecondthird {
-    display:table;
-    table-layout: auto;
-    width:100%;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  /*ITEM (CELULAS) DE LOGOS E NOMES*/
-  .fflch-first, .fflch-second {
-    display:table-cell;
-    position:relative;
+    display: flex;
+    flex-wrap: nowrap;    
+    width: 100%;    
+    padding-left: 10px;    
+    padding-right: 10px; 
   }
   
   /*LOGO FFLCH*/
   .fflch-first{
-    width: 26.7%;
+    width: 84px;
     min-width: 84px;
   }
   
@@ -424,14 +419,7 @@ img.align-left {
   .fflch-third {
     display:none;
   }
-  
-  /*CONTAINER DENTRO DE FIRST, SECOND E THIRD*/
-  .fflch-item {
-    display:block;
-    position:relative;
-    top:0;
 
-  }
   
   /*CONTEÙDO DO SECOND (SITE E SLOGAN)*/
   /*FONTE*/
@@ -444,17 +432,15 @@ img.align-left {
   
   /*SLOGAN*/
   .fflch-slogan {
-    font-size:  calc(8px + (20 - 13) * ((100vw - 300px) / (599 - 300)));
-    line-height: 1.2em;
-    margin-bottom: calc((-3px) + (-5 - (-3)) * ((100vw - 300px) / (599 - 300)));
-  }
+    font-size: 13px;
+    line-height: 85%;
+    }
   
   /*NOME DO SITE*/
   .fflch-site-name {
-    font-size: calc(13px + (40 - 24) * ((100vw - 300px) / (599 - 300)));
+    font-size: 3vh; 
     line-height: 1em;
-    margin-bottom: calc((-4px) + (-7 - (-4)) * ((100vw - 300px) / (599 - 300)));
-  }
+    }    
   
   
   /*SELETOR DE IDIOMA*/
@@ -481,9 +467,14 @@ img.align-left {
   }
   /*tamanho do campo - linha 99 de global*/
   .region-header-right .search-block-form .form-item .form-search {
-      width: 90%;
+      width: 100%;
       height: 30px;
       
   }
-
+  }
+  /*BUSCA (ambos)*/
+  .search-block-form .form-submit {
+    width: 30px;
+    border: 0;
+    background-repeat: no-repeat;
   }
