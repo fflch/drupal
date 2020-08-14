@@ -488,3 +488,8 @@ img.align-left {
   background-color: #273e74;
   border-color: #273e74;
 }
+
+/*  azul padrão nos headers das tabelas */
+th {
+  background-color: #273e74;
+}
