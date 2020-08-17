@@ -79,11 +79,6 @@ permissions:
   - 'administer taxonomy_term fields'
   - 'administer taxonomy_term form display'
   - 'administer taxonomy'
-# Contact
-  - 'administer contact forms'
-  - 'access site-wide contact form'
-  - 'access user contact forms'
-  - 'manage contact form emails'
 # Search
   - 'search content'
 # Permissões para book
