@@ -8,9 +8,6 @@ colorbutton
 conditional_fields
 config_perms
 config_translation
-contact
-contact_emails
-contact_storage
 content_translation
 cpf
 csv_importer
