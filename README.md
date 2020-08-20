@@ -156,9 +156,9 @@ Usando o meld para fazer as comparações:
     sudo apt install meld
     meld ~/antes ~/depois
 
-## Problemas conhecidos e soluções
+## Problemas conhecidos, patches e workarounds
 
-### sitename e slogan inalteráveis
+### quando o sitename e slogan ficam inalteráveis
 
 Essa correção dever ser feita no ambiente dev e depois
 transposta para produção. Aplicar o patch disponínel
@@ -170,7 +170,8 @@ e depois rodar:
     ./vendor/bin/drush config-delete language.pt-br:system.site name
     ./vendor/bin/drush config-delete language.pt-br:system.site page.front home-pt-br
     
-Patch no webform até atualizarmos para 6.x:
-    
+### Patch no webform para exportar pdfs do tipo attachments (até atualizarmos para 6.x):
+
+- https://www.drupal.org/project/webform/issues/3165998#comment-13794557
 - https://www.drupal.org/files/issues/2020-08-19/3165998-10.patch
 
