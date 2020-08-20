@@ -169,4 +169,8 @@ e depois rodar:
     ./vendor/bin/drush config-delete language.pt-br:system.site slogan
     ./vendor/bin/drush config-delete language.pt-br:system.site name
     ./vendor/bin/drush config-delete language.pt-br:system.site page.front home-pt-br
+    
+Patch no webform até atualizarmos para 6.x:
+    
+- https://www.drupal.org/files/issues/2020-08-19/3165998-10.patch
 
