@@ -96,6 +96,14 @@ Verificando atualizações para os módulos/temas/biliotecas:
 Módulos que estão em composer.json para avaliar:
 
     composer show -D | tr -s ' ' | cut -d' ' -f1| grep ^drupal | cut -d'/' -f2
+    
+Removendo módulo:
+    
+- Remover do /web/profiles/contrib/fflchprofile/modules/fflch_configs/src/installed.txt caso lá ele esteja
+- Remover do composer.json
+- "A quente" remover da plataforma que está no ar em web/profiles/contrib/fflchprofile/modules/fflch_configs/src/installed.txt para ele não ser instalado novamente na rodada do cron
+- com drush pm-uninstall desabilitar o módulos de todos sites que estão no ar
+- subir nova plataforma já sem o módulo e migrar os sites
 
 ## Configurações
 
