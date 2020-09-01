@@ -68,6 +68,7 @@ permissions:
 # Webform
   - 'administer webform'
   - 'edit webform source'
+  - 'access webform overview'  
 # Regras
   - 'administer rules'
 # Revisões
