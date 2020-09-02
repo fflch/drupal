@@ -55,7 +55,7 @@ webform_analysis
 webform_node_analysis
 webform_invitation
 webform_xlsx_export
-webform_submission_files_download
+webform_templates
 cache_control_override
 tooltip_ckeditor
 field_token_value
