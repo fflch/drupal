@@ -69,6 +69,7 @@ permissions:
   - 'administer webform'
   - 'edit webform source'
   - 'access webform overview'  
+  - 'entity print access type webform_submission'
 # Regras
   - 'administer rules'
 # Revisões
