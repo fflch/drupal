@@ -217,6 +217,10 @@
             "drupal/editor_file": {
                 "3057895 - Uploaded files are not permanent":
                     "https://www.drupal.org/files/issues/2019-05-29/file-upload-marked-permanent-3057895-2.patch"
+            },
+            "drupal/webform": {
+                "3165998 -Allow to export Attachment PDF fields as pdfs in Download options":
+                    "https://www.drupal.org/files/issues/2020-08-19/3165998-10.patch"
             }
         },
         "installer-types": [

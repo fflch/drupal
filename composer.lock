@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "680fe02d8a23ae85ac220bcba7f03415",
+    "content-hash": "5ffec58581eea4119086d52b0fd2e509",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -8794,6 +8794,9 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
+                },
+                "patches_applied": {
+                    "3165998 -Allow to export Attachment PDF fields as pdfs in Download options": "https://www.drupal.org/files/issues/2020-08-19/3165998-10.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

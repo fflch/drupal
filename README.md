@@ -89,9 +89,12 @@ depois instale desta forma:
 
     composer require npm-asset/datetimepicker:0.1.38
 
-Verificando atualizações para os módulos/temas/biliotecas:
+Verificando se há atualizações para os módulos/temas/biliotecas:
 
     composer outdated -D
+
+Lembre-se que ao alterar a versão de um módulo deve-se verificar se há 
+patches aplicados no mesmo na seção extra.patches do composer.json.
 
 Módulos que estão em composer.json para avaliar:
 
@@ -175,7 +178,7 @@ Modelo de como acrescentar patches no composer.json:
         }
     }
 
-## Problemas conhecidos, patches e workarounds
+## Problemas conhecidos e workarounds
 
 ### quando o sitename e slogan ficam inalteráveis
 
@@ -188,9 +191,3 @@ e depois rodar:
     ./vendor/bin/drush config-delete language.pt-br:system.site slogan
     ./vendor/bin/drush config-delete language.pt-br:system.site name
     ./vendor/bin/drush config-delete language.pt-br:system.site page.front home-pt-br
-    
-### Patch no webform para exportar pdfs do tipo attachments (até atualizarmos para 6.x):
-
-- https://www.drupal.org/project/webform/issues/3165998#comment-13794557
-- https://www.drupal.org/files/issues/2020-08-19/3165998-10.patch
-
