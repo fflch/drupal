@@ -21,10 +21,6 @@
             "type": "git",
             "url": "https://github.com/fflch/csv_importer.git"
         },
-        "editorfile": {
-            "type": "git",
-            "url": "https://github.com/fflch/editor_file.git"
-        },
         "jquery_countdown_timer": {
             "type": "git",
             "url": "https://github.com/fflch/jquery_countdown_timer.git"
@@ -54,7 +50,7 @@
         "bower-asset/jquery.hoverintent": "dev-master",
         "bower-asset/json2": "dev-master",
         "composer/installers": "^1.2",
-        "cweagans/composer-patches": "^1.6.5",
+        "cweagans/composer-patches": "^1.6",
         "dompdf/dompdf": "0.8.5",
         "drupal/address": "1.8",
         "drupal/admin_toolbar": "2.3",
@@ -63,7 +59,6 @@
         "drupal/at_tools": "3.2",
         "drupal/better_exposed_filters": "4.0-beta1",
         "drupal/block_class": "1.2",
-        "drupal/field_token_value": "1.0",
         "drupal/cache_control_override": "1.0-alpha1",
         "drupal/calendar": "1.0-alpha2",
         "drupal/captcha": "1.1",
@@ -89,7 +84,7 @@
         "drupal/ds": "3.8",
         "drupal/editor_advanced_image": "2.0-beta1",
         "drupal/editor_advanced_link": "1.8",
-        "drupal/editor_file": "dev-fflch",
+        "drupal/editor_file": "1.5",
         "drupal/entity": "1.1",
         "drupal/entity_clone": "1.0-beta4",
         "drupal/entity_print": "2.2",
@@ -98,6 +93,7 @@
         "drupal/field_collection": "1.0.0-alpha1",
         "drupal/field_formatter_class": "1.4",
         "drupal/field_group": "3.1",
+        "drupal/field_token_value": "1.0",
         "drupal/file_entity": "2.0-beta7",
         "drupal/fontyourface": "3.2",
         "drupal/form_placeholder": "1.0",
@@ -216,6 +212,12 @@
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
+        },
+        "patches": {
+            "drupal/editor_file": {
+                "3057895 - Uploaded files are not permanent":
+                    "https://www.drupal.org/files/issues/2019-05-29/file-upload-marked-permanent-3057895-2.patch"
+            }
         },
         "installer-types": [
             "npm-asset",

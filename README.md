@@ -164,6 +164,17 @@ Usando o meld para fazer as comparações:
     sudo apt install meld
     meld ~/antes ~/depois
 
+Modelo de como acrescentar patches no composer.json:
+
+  "extra": {
+      "patches": {
+            "drupal/editor_file": {
+                "3057895 - Uploaded files are not permanent":
+                    "https://www.drupal.org/files/issues/2019-05-29/file-upload-marked-permanent-3057895-2.patch"
+            }
+        }
+    }
+
 ## Problemas conhecidos, patches e workarounds
 
 ### quando o sitename e slogan ficam inalteráveis
