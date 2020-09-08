@@ -22,6 +22,7 @@ permissions:
   - 'administer content translation'
   - 'access files overview'
   - 'configure any layout'
+  - 'entity print access type node'
 # Campos condicionais
   - 'delete conditional fields'
   - 'edit conditional fields'
