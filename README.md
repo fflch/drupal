@@ -36,19 +36,13 @@ Plugins ckeditor:
 
 Instalação em pt-br usando o profile fflch com *sqlite*:
 
-    ./vendor/bin/drupal site:install fflchprofile --db-type="sqlite" \
-           --site-name="fflch" --site-mail="admin@example.com" \
-           --account-name="fflch" --account-mail="admin@example.com" --account-pass="fflch" \
-           --no-interaction
-
-Instalação em pt-br usando o profile fflch com *mysql*:
-
-    ./vendor/bin/drupal site:install fflchprofile --db-type="mysql" \
-           --db-port="3306" --db-user="fflch" --db-pass="fflch"   \
-           --db-host="127.0.0.1" --db-name="fflch" \
-           --site-name="fflch" --site-mail="admin@example.com" \
-           --account-name="fflch" --account-mail="admin@example.com" --account-pass="fflch" \
-           --no-interaction
+    ./vendor/bin/drush site-install fflchprofile \
+        --db-url=sqlite://sites/default/files/.ht.sqlite \
+        --site-name="fflch" \
+        --site-mail="fflch@localhost" \
+        --account-name="fflch" \
+        --account-pass="fflch" \
+        --account-mail="fflch@localhost" --yes
 
 Servidor http básico:
 
