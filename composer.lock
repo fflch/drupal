@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ffec58581eea4119086d52b0fd2e509",
+    "content-hash": "989bfd8acea6a3292dfe3b8708a018fe",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -426,16 +426,16 @@
         },
         {
             "name": "composer/semver",
-            "version": "1.5.1",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "c6bea70230ef4dd483e6bbcab6005f682ed3a8de"
+                "reference": "114f819054a2ea7db03287f5efb757e2af6e4079"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/c6bea70230ef4dd483e6bbcab6005f682ed3a8de",
-                "reference": "c6bea70230ef4dd483e6bbcab6005f682ed3a8de",
+                "url": "https://api.github.com/repos/composer/semver/zipball/114f819054a2ea7db03287f5efb757e2af6e4079",
+                "reference": "114f819054a2ea7db03287f5efb757e2af6e4079",
                 "shasum": ""
             },
             "require": {
@@ -483,7 +483,21 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2020-01-13T12:06:48+00:00"
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-09-09T09:34:06+00:00"
         },
         {
             "name": "consolidation/annotated-command",
@@ -3331,16 +3345,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.9.3",
+            "version": "8.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "ee02fd4cbe4ac148b4d7e297ec63b3459983862e"
+                "reference": "c9b9643663b80f02c038f9dea15b8717a22c3339"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/ee02fd4cbe4ac148b4d7e297ec63b3459983862e",
-                "reference": "ee02fd4cbe4ac148b4d7e297ec63b3459983862e",
+                "url": "https://api.github.com/repos/drupal/core/zipball/c9b9643663b80f02c038f9dea15b8717a22c3339",
+                "reference": "c9b9643663b80f02c038f9dea15b8717a22c3339",
                 "shasum": ""
             },
             "require": {
@@ -3558,7 +3572,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2020-08-05T21:49:40+00:00"
+            "time": "2020-09-03T21:07:45+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -14683,16 +14697,16 @@
         },
         {
             "name": "uspdev/boleto",
-            "version": "1.0.3",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/boleto.git",
-                "reference": "6b3bfdcfba54d903b694196933cf3643d9b3473a"
+                "reference": "60a6e96c2f14f7d1e329742a448fc9ac815ab2c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/boleto/zipball/6b3bfdcfba54d903b694196933cf3643d9b3473a",
-                "reference": "6b3bfdcfba54d903b694196933cf3643d9b3473a",
+                "url": "https://api.github.com/repos/uspdev/boleto/zipball/60a6e96c2f14f7d1e329742a448fc9ac815ab2c3",
+                "reference": "60a6e96c2f14f7d1e329742a448fc9ac815ab2c3",
                 "shasum": ""
             },
             "require": {
@@ -14717,20 +14731,20 @@
             ],
             "description": "Classe PHP para uso de boleto na USP",
             "homepage": "https://github.com/uspdev/boleto",
-            "time": "2019-12-14T11:33:39+00:00"
+            "time": "2020-09-09T13:34:03+00:00"
         },
         {
             "name": "uspdev/replicado",
-            "version": "1.5.7",
+            "version": "1.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/replicado.git",
-                "reference": "d3c63a81bf26034f4ed50081a788d7e01245b622"
+                "reference": "01321d4b0e1fac69955c869d86ebc4dfcea73cc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/replicado/zipball/d3c63a81bf26034f4ed50081a788d7e01245b622",
-                "reference": "d3c63a81bf26034f4ed50081a788d7e01245b622",
+                "url": "https://api.github.com/repos/uspdev/replicado/zipball/01321d4b0e1fac69955c869d86ebc4dfcea73cc2",
+                "reference": "01321d4b0e1fac69955c869d86ebc4dfcea73cc2",
                 "shasum": ""
             },
             "require": {
@@ -14757,7 +14771,7 @@
             ],
             "description": "Classes PHP que consome dados do Replicado USP",
             "homepage": "https://github.com/uspdev/replicado",
-            "time": "2020-08-25T19:51:29+00:00"
+            "time": "2020-09-08T18:29:12+00:00"
         },
         {
             "name": "uspdev/replicado_drupal",
@@ -14782,15 +14796,15 @@
         },
         {
             "name": "uspdev/webform_boleto_usp",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/webform_boleto_usp.git",
-                "reference": "92a1ecb23187d834d0cbae63c8a79491b3f462fd"
+                "reference": "1383f2adfedd2d87b71a52285cdf8c6381391b1a"
             },
             "require": {
                 "drupal/cpf": "^1.1",
-                "uspdev/boleto": "1.0.3"
+                "uspdev/boleto": "1.0.6"
             },
             "type": "drupal-module",
             "authors": [
@@ -14800,7 +14814,7 @@
                 }
             ],
             "description": "Gera boletos usando api USP",
-            "time": "2020-07-09T04:40:53+00:00"
+            "time": "2020-09-09T13:40:28+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

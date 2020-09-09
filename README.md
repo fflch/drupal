@@ -34,7 +34,7 @@ Plugins ckeditor:
     ln -s ckeditor/plugins/colorbutton .
     ln -s ckeditor/plugins/panelbutton .
 
-Instalação em pt-br usando o profile fflch com *sqlite*:
+Instalação usando o profile fflch com *sqlite*:
 
     ./vendor/bin/drush site-install fflchprofile \
         --db-url=sqlite://sites/default/files/.ht.sqlite \

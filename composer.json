@@ -73,7 +73,7 @@
         "drupal/contact_emails": "1.19",
         "drupal/contact_storage": "1.1",
         "drupal/contact_storage_export": "1.14",
-        "drupal/core": "8.9.3",
+        "drupal/core": "8.9.5",
         "drupal/core-composer-scaffold": "^8.8.5",
         "drupal/cpf": "1.2",
         "drupal/crop": "2.1",
