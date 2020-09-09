@@ -170,7 +170,7 @@
         "oomphinc/composer-installers-extender": "^1.1",
         "parsecsv/php-parsecsv": "1.2.1",
         "uspdev/replicado_drupal": "dev-master",
-        "uspdev/webform_boleto_usp": "1.0.4",
+        "uspdev/webform_boleto_usp": "1.0.5",
         "vlucas/phpdotenv": "^2.0",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
