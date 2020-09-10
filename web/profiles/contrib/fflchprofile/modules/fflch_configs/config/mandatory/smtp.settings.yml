@@ -3,7 +3,7 @@ smtp_host: smtp.gmail.com
 smtp_hostbackup: ''
 smtp_port: '587'
 smtp_protocol: tls
-smtp_username: noreply.fflch@usp.br
+smtp_username: 'noreply.sites.fflch@usp.br'
 smtp_password: '__senha_noreply__'
 smtp_from: ''
 smtp_fromname: ''
