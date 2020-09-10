@@ -163,7 +163,7 @@ Usando o meld para fazer as comparações:
 
 Modelo de como acrescentar patches no composer.json:
 
-  "extra": {
+    "extra": {
       "patches": {
             "drupal/editor_file": {
                 "3057895 - Uploaded files are not permanent":
