@@ -1,5 +1,6 @@
 admin_toolbar
 asset_injector
+auto_entitylabel
 book
 captcha
 ckeditor_font

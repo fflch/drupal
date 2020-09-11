@@ -50,6 +50,7 @@
         "drupal/aegan": "1.0",
         "drupal/asset_injector": "2.7",
         "drupal/at_tools": "3.2",
+        "drupal/auto_entitylabel": "3.0.0-beta3",
         "drupal/better_exposed_filters": "4.0-beta1",
         "drupal/block_class": "1.2",
         "drupal/cache_control_override": "1.0-alpha1",
