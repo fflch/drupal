@@ -1,0 +1,48 @@
+diff --git a/src/Plugin/Block/YoutubePlaylistBlock.php b/src/Plugin/Block/YoutubePlaylistBlock.php
+index 1082862..8e066d0 100644
+--- a/src/Plugin/Block/YoutubePlaylistBlock.php
++++ b/src/Plugin/Block/YoutubePlaylistBlock.php
+@@ -136,9 +136,10 @@ class YoutubePlaylistBlock extends BlockBase {
+       'GET',
+       '/youtube/v3/playlistItems',
+           [
+-            'maxResults' =>  '25',
++            'maxResults' =>  '50',
++            'order'=> 'date',
+             'part' =>  'snippet,contentDetails',
+-            'playlistId' =>  'PLO66Zj1D35H2D_2BOzp7AqHzLDuaP8OuN',
++            'playlistId' =>  $playlist_id,
+           ]);
+     if($status_code != 200) {
+       return [
+@@ -157,7 +158,9 @@ class YoutubePlaylistBlock extends BlockBase {
+         ];
+       }
+ 
++      $data['items'] = array_reverse($data['items']);
+       foreach ($data['items'] as $i => $v) {
++
+         $video_id = $data['items'][$i]['snippet']['resourceId']['videoId'];
+         $title = $data['items'][$i]['snippet']['title'];
+         $date = \strtotime($data['items'][$i]['snippet']['publishedAt']);
+@@ -182,6 +185,7 @@ class YoutubePlaylistBlock extends BlockBase {
+         $duration = $this->YTDurationToSeconds($duration);
+           $videos[$video_info['items'][0]['id']]['duration'] = $duration;
+           $video = $videos[$video_info['items'][0]['id']];
++
+           if($video['index'] == 0) {
+             $first_video = $video;
+           }
+@@ -204,9 +208,8 @@ class YoutubePlaylistBlock extends BlockBase {
+         ],
+       ],
+       '#cache' => [
+-        'max-age' => 3600,
++        'max-age' => 86400,
+       ],
+     ];
+   }
+-
+-}
+\ No newline at end of file
++}

@@ -28,10 +28,6 @@
             "type": "git",
             "url": "https://github.com/uspdev/replicado_drupal.git"
         },
-        "youtube_playlist": {
-            "type": "git",
-            "url": "https://github.com/fflch/youtube_playlist.git"
-        },
         "cem-theme": {
             "type": "git",
             "url": "https://github.com/fflch/cem-theme.git"
@@ -158,7 +154,7 @@
         "drupal/webform_xlsx_export": "1.0",
         "drupal/xls_serialization": "1.2",
         "drupal/youtube": "1.2",
-        "drupal/youtube_playlist": "dev-master",
+        "drupal/youtube_playlist": "1.x-dev#2e033f41",
         "drush/drush": "8.x",
         "fflch/cem-theme": "dev-master",
         "oomphinc/composer-installers-extender": "^2.0",
@@ -183,6 +179,10 @@
             "drupal/editor_file": {
                 "3057895 - Uploaded files are not permanent":
                     "https://www.drupal.org/files/issues/2019-05-29/file-upload-marked-permanent-3057895-2.patch"
+            },
+            "drupal/youtube_playlist": {
+                "Mudanças temporárias para uso na FFLCH":
+                    "patches/youtube_playlist/2e033f41.patch"
             }
         },
         "installer-types": [
