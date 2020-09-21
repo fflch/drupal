@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43576c4849dc8ffddcb7efcbd2179025",
+    "content-hash": "27157d0c52c9104d51876575b4b56e52",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1822,6 +1822,10 @@
                 {
                     "name": "Martin Keereman",
                     "homepage": "https://www.drupal.org/u/etroid"
+                },
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
                 },
                 {
                     "name": "jkopel",
@@ -8545,8 +8549,7 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -9198,6 +9201,9 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "Mudanças temporárias para uso na FFLCH": "patches/youtube_playlist/2e033f41.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
