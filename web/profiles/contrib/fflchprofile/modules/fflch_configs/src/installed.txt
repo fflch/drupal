@@ -38,8 +38,6 @@ redirect
 scheduler
 smtp
 theme_permission
-video_embed_field
-video_embed_wysiwyg
 views_data_export
 views_slideshow
 views_slideshow_cycle
