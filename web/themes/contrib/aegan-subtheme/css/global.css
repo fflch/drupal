@@ -493,3 +493,21 @@ img.align-left {
 th {
   background-color: #273e74;
 }
+
+/* configuração do ckeditor_accordion*/
+.ckeditor-accordion-container > dl dt.active > a {
+  background-color: #273e74;
+}
+
+.ckeditor-accordion-container > dl dt > a:hover {
+  background-color: #273e74;
+}
+
+.ckeditor-accordion-container > dl dt > a {
+  background-color: #273e74;
+}
+
+/* ckeditor_images_gallery */
+.cke-ig {
+  border: 0px;
+}

@@ -4,6 +4,11 @@ auto_entitylabel
 book
 captcha
 ckeditor_font
+ckeditor_accordion
+ckeditor_bootstrap_tabs
+ckeditor_bootstrap_grid
+ckeditor_tabletoolstoolbar
+ckeditor_images_gallery
 collapse_text
 colorbutton
 conditional_fields
@@ -21,6 +26,7 @@ editor_file
 entity
 entity_clone
 fontyourface
+fontawesome
 local_fonts
 google_analytics
 google_fonts_api

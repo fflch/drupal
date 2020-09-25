@@ -22,6 +22,7 @@ settings:
         -
           name: Formatting
           items:
+            - Maximize
             - Undo
             - Redo
             - Cut
@@ -36,16 +37,11 @@ settings:
             - Blockquote
             - Language
         -
-          name: Alinhamento
-          items:
-            - JustifyLeft
-            - JustifyCenter
-            - JustifyRight
-            - JustifyBlock
-        -
           name: 'Block Formatting'
           items:
             - Format
+            - Font
+            - FontSize
         -
           name: Fonte
           items:
@@ -58,14 +54,15 @@ settings:
           items:
             - Source
             - tokenbrowser
-            - Maximize
             - ShowBlocks
         -
           name: Linking
           items:
+            - Gallery
             - ImceImage
             - DrupalLink
             - DrupalUnlink
+            - DrupalFile
         -
           name: Listas
           items:
@@ -78,7 +75,44 @@ settings:
         -
           name: Tabelas
           items:
-            - Table
+            - tableinsert
+            - tabledelete
+            - tableproperties
+            - tablerowinsertbefore
+            - tablerowinsertafter
+            - tablecolumninsertbefore
+            - tablecolumninsertafter
+            - tablecellinsertbefore
+            - tablecellsmerge
+            - tablecellmergedown
+            - tablecellsplithorizontal
+            - tablecellsplitvertical
+            - tablecolumndelete
+            - tablecellmergeright
+            - tablecellproperties
+            - tablecelldelete
+            - tablecellinsertafter
+            - tablerowdelete
+      -
+        -
+          name: Extras
+          items:
+            - bootstrapTabs
+            - Boxout
+            - DrupalFontAwesome
+            - Accordion
+        -
+          name: Alinhamento
+          items:
+            - WidgetTemplateMenu
+            - JustifyLeft
+            - JustifyBlock
+            - JustifyRight
+            - JustifyCenter
+            - widgetbootstrapLeftCol
+            - widgetbootstrapTwoCol
+            - widgetbootstrapThreeCol
+            - widgetbootstrapRightCol
   plugins:
     stylescombo:
       styles: ''
@@ -93,13 +127,6 @@ settings:
       default_class: ''
     tokenbrowser:
       token_types: {  }
-    video_embed:
-      defaults:
-        children:
-          autoplay: true
-          responsive: true
-          width: '854'
-          height: '480'
 image_upload:
   status: true
   scheme: public
