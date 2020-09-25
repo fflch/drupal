@@ -2,6 +2,7 @@ admin_toolbar
 asset_injector
 auto_entitylabel
 book
+boxout
 captcha
 ckeditor_font
 ckeditor_accordion
