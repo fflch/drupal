@@ -31,18 +31,6 @@
         "cem-theme": {
             "type": "git",
             "url": "https://github.com/fflch/cem-theme.git"
-        },
-        "tabletoolstoolbar" : {
-            "type": "package",
-            "package": {
-                "name": "ckeditor/tabletoolstoolbar",
-                "version": "0.0.1",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://download.ckeditor.com/tabletoolstoolbar/releases/tabletoolstoolbar_0.0.1.zip",
-                    "type": "zip"
-                }
-            }
         }
     },
     "require": {
@@ -50,7 +38,7 @@
         "bower-asset/jquery.cycle": "dev-master",
         "bower-asset/jquery.hoverintent": "dev-master",
         "bower-asset/json2": "dev-master",
-        "ckeditor/tabletoolstoolbar": "0.0.1",
+        "npm-asset/tabletoolstoolbar": "0.0.1",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "dompdf/dompdf": "^0.8.5",
@@ -202,6 +190,14 @@
             "drupal/youtube_playlist": {
                 "Mudanças temporárias para uso na FFLCH":
                     "patches/youtube_playlist/2e033f41.patch"
+            },
+            "drupal/panelbutton": {
+                "3105283 - fix location":
+                    "https://www.drupal.org/files/issues/2020-09-30/3105283-4.patch"
+            },
+            "drupal/colorbutton": {
+                "3046766 - fix location":
+                    "https://www.drupal.org/files/issues/2020-08-07/colorbutton-default-library-path-3046766.patch"
             }
         },
         "installer-types": [
