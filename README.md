@@ -28,12 +28,6 @@ Download e instalação das dependências:
     cd drupal
     composer install
 
-Plugins ckeditor:
-
-    cd web/libraries
-    ln -s ckeditor/plugins/colorbutton .
-    ln -s ckeditor/plugins/panelbutton .
-
 Instalação usando o profile fflch com *sqlite*:
 
     ./vendor/bin/drush site-install fflchprofile \
