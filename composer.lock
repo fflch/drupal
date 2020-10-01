@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "244b999a46fa5f3b444fa7a4951c2527",
+    "content-hash": "8d2bd1a37a4bf06ea25cd60408267143",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -11091,11 +11091,23 @@
             "time": "2020-09-26T10:30:38+00:00"
         },
         {
-            "name": "npm-asset/tabletoolstoolbar",
-            "version": "1.0.0",
+            "name": "npm-asset/juicebox_lite",
+            "version": "1.5.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/tabletoolstoolbar/-/tabletoolstoolbar-1.0.0.tgz"
+                "url": "https://registry.npmjs.org/juicebox_lite/-/juicebox_lite-1.5.1.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "ISC"
+            ]
+        },
+        {
+            "name": "npm-asset/tabletoolstoolbar",
+            "version": "0.0.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/tabletoolstoolbar/-/tabletoolstoolbar-0.0.1.tgz"
             },
             "type": "npm-asset",
             "license": [
