@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d2bd1a37a4bf06ea25cd60408267143",
+    "content-hash": "dfa7128438a1480d96652f3689553769",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -123,22 +123,19 @@
             "time": "2019-12-24T22:41:47+00:00"
         },
         {
-            "name": "bower-asset/ckeditor",
+            "name": "bower-asset/ckeditor-dev",
             "version": "4.15.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:ckeditor/ckeditor-releases.git",
-                "reference": "f233b056a20528c442576e661486170a7d84a7b9"
+                "url": "git@github.com:ckeditor/ckeditor-dev.git",
+                "reference": "cc4885b5311fed18d9931da236c1ef7f7146da9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/f233b056a20528c442576e661486170a7d84a7b9",
-                "reference": "f233b056a20528c442576e661486170a7d84a7b9"
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-dev/zipball/cc4885b5311fed18d9931da236c1ef7f7146da9a",
+                "reference": "cc4885b5311fed18d9931da236c1ef7f7146da9a"
             },
-            "type": "bower-asset",
-            "license": [
-                "For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license/."
-            ]
+            "type": "bower-asset"
         },
         {
             "name": "bower-asset/jquery.cycle",
@@ -1621,6 +1618,63 @@
             }
         },
         {
+            "name": "drupal/anchor_link",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/anchor_link.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/anchor_link-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "d37becfde799c5e03faf9ba16fd0848a1a487d41"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/fakeobjects": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1582628297",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                },
+                "patches_applied": {
+                    "fix location": "patches/anchor_link/2.4.patch"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Vardot",
+                    "homepage": "https://www.drupal.org/vardot",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "RajabNatshah",
+                    "homepage": "https://www.drupal.org/user/1414312"
+                }
+            ],
+            "description": "This plugin module adds the better link dialog and anchor related features to CKEditor in Drupal 8.",
+            "homepage": "https://www.drupal.org/project/anchor_link",
+            "support": {
+                "source": "http://cgit.drupalcode.org/anchor_link",
+                "issues": "https://www.drupal.org/project/issues/anchor_link"
+            }
+        },
+        {
             "name": "drupal/asset_injector",
             "version": "2.7.0",
             "source": {
@@ -2625,6 +2679,55 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/ckeditor_tabletoolstoolbar",
                 "issues": "http://drupal.org/project/issues/ckeditor_tabletoolstoolbar"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_uploadimage",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_uploadimage.git",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_uploadimage-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "5ef494654bfa2b8a502f2ac8953e36e15a41ae00"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1587641759",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Roland Michael dela Peña (arpeggio)",
+                    "homepage": "https://www.webfoobar.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "mertres",
+                    "homepage": "https://www.drupal.org/user/3513520"
+                }
+            ],
+            "description": "Integrates CKEditor's Upload Image plugin to Drupal. This enables Drupal's default WYSIWYG text editor capable of uploading images that were dropped or pasted from clipboard into the editor as inline image.",
+            "homepage": "https://drupal.org/project/ckeditor_uploadimage",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_uploadimage"
             }
         },
         {
@@ -4515,6 +4618,59 @@
             }
         },
         {
+            "name": "drupal/fakeobjects",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fakeobjects.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fakeobjects-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "0a7a3ead609d1efd62f4f4803a41317970d8292d"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1592829875",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "kevinquillen",
+                    "homepage": "https://www.drupal.org/user/317279"
+                }
+            ],
+            "description": "Adds the FakeObjects plugin to CKEditor. This plugin is a utility plugin that is required by certain user-facing CKEditor plugins.",
+            "homepage": "http://drupal.org/project/fakeobjects",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/fakeobjects",
+                "issues": "http://drupal.org/project/issues/fakeobjects"
+            }
+        },
+        {
             "name": "drupal/field_collection",
             "version": "1.0.0-alpha1",
             "source": {
@@ -4929,17 +5085,17 @@
         },
         {
             "name": "drupal/fontyourface",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/fontyourface.git",
-                "reference": "8.x-3.4"
+                "reference": "8.x-3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/fontyourface-8.x-3.4.zip",
-                "reference": "8.x-3.4",
-                "shasum": "747c710edd301f47be3c5fb3377a4c422a1f487c"
+                "url": "https://ftp.drupal.org/files/projects/fontyourface-8.x-3.5.zip",
+                "reference": "8.x-3.5",
+                "shasum": "cacc3e4710a2de05c7fee8fe3d2ef978b93e44f0"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -4947,8 +5103,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.4",
-                    "datestamp": "1599818817",
+                    "version": "8.x-3.5",
+                    "datestamp": "1601309657",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7807,21 +7963,21 @@
         },
         {
             "name": "drupal/smtp",
-            "version": "1.0.0-rc4",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/smtp.git",
-                "reference": "8.x-1.0-rc4"
+                "reference": "8.x-1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/smtp-8.x-1.0-rc4.zip",
-                "reference": "8.x-1.0-rc4",
-                "shasum": "2879396e26bb356b1d17646c324d455eda3044af"
+                "url": "https://ftp.drupal.org/files/projects/smtp-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "c40cc7a3c20d3f743e3a4e53f4cc296748da89fd"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9",
-                "phpmailer/phpmailer": "^6.1.5"
+                "drupal/core": "^8.8 || ^9",
+                "phpmailer/phpmailer": "^6.1.7"
             },
             "suggest": {
                 "drupal/mailsystem": "Allows using SMTP alongside other mail modules."
@@ -7829,11 +7985,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc4",
-                    "datestamp": "1595628445",
+                    "version": "8.x-1.0",
+                    "datestamp": "1601070985",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "branch-alias": {
@@ -7860,6 +8016,10 @@
                 {
                     "name": "oadaeh",
                     "homepage": "https://www.drupal.org/user/4649"
+                },
+                {
+                    "name": "sadashiv",
+                    "homepage": "https://www.drupal.org/user/1773304"
                 },
                 {
                     "name": "wundo",
@@ -8359,17 +8519,17 @@
         },
         {
             "name": "drupal/twig_tweak",
-            "version": "2.6.0",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/twig_tweak.git",
-                "reference": "8.x-2.6"
+                "reference": "8.x-2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/twig_tweak-8.x-2.6.zip",
-                "reference": "8.x-2.6",
-                "shasum": "a877de315bbf8603f146b55e7ca345d8fe70e234"
+                "url": "https://ftp.drupal.org/files/projects/twig_tweak-8.x-2.7.zip",
+                "reference": "8.x-2.7",
+                "shasum": "fcae9c94996022af9e8f993aee11e4b0cbd5ed98"
             },
             "require": {
                 "drupal/core": "^8.7 || ^9.0",
@@ -8381,8 +8541,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.6",
-                    "datestamp": "1589992479",
+                    "version": "8.x-2.7",
+                    "datestamp": "1601530189",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8710,17 +8870,17 @@
         },
         {
             "name": "drupal/views_slideshow",
-            "version": "4.7.0",
+            "version": "4.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_slideshow.git",
-                "reference": "8.x-4.7"
+                "reference": "8.x-4.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_slideshow-8.x-4.7.zip",
-                "reference": "8.x-4.7",
-                "shasum": "d8ca1b5e01f5481a34fe425a2cf3c18d46d15f5c"
+                "url": "https://ftp.drupal.org/files/projects/views_slideshow-8.x-4.8.zip",
+                "reference": "8.x-4.8",
+                "shasum": "88104843df5e2eaa7e70b796a80573d844583e42"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -8728,8 +8888,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.7",
-                    "datestamp": "1587026408",
+                    "version": "8.x-4.8",
+                    "datestamp": "1601309225",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8738,16 +8898,21 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "See contributors",
-                    "homepage": "https://www.drupal.org/node/160350/committers"
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "NickDickinsonWilde",
                     "homepage": "https://www.drupal.org/user/3094661"
+                },
+                {
+                    "name": "aaron",
+                    "homepage": "https://www.drupal.org/user/33420"
                 },
                 {
                     "name": "redndahead",
@@ -8812,17 +8977,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.20.0",
+            "version": "5.21.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "8.x-5.20"
+                "reference": "8.x-5.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.20.zip",
-                "reference": "8.x-5.20",
-                "shasum": "986dc0ba571e926a156390aca8138602dfc285e9"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.21.zip",
+                "reference": "8.x-5.21",
+                "shasum": "5505c8b85e73fbb1a4a55635b8a9568d143697c0"
             },
             "require": {
                 "drupal/core": "^8.8"
@@ -8863,8 +9028,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.20",
-                    "datestamp": "1599851752",
+                    "version": "8.x-5.21",
+                    "datestamp": "1601385690",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8874,8 +9039,7 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -11089,6 +11253,18 @@
                 "php"
             ],
             "time": "2020-09-26T10:30:38+00:00"
+        },
+        {
+            "name": "npm-asset/fakeobjects",
+            "version": "4.15.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/fakeobjects/-/fakeobjects-4.15.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "ISC"
+            ]
         },
         {
             "name": "npm-asset/juicebox_lite",

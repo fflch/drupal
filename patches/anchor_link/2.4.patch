@@ -1,0 +1,70 @@
+diff --git a/anchor_link.install b/anchor_link.install
+index f2a78ef..28d3eec 100644
+--- a/anchor_link.install
++++ b/anchor_link.install
+@@ -14,12 +14,12 @@ function anchor_link_requirements($phase) {
+   if ($phase == 'install' || $phase == 'runtime') {
+ 
+     // Is the library found in the root libraries path.
+-    $library_found = file_exists(DRUPAL_ROOT . '/libraries/link');
++    $library_found = file_exists(DRUPAL_ROOT . '/libraries/ckeditor/plugins/link');
+ 
+     // If library is not found, then look in the current profile libraries path.
+     if (!$library_found) {
+       $profile_path = drupal_get_path('profile', \Drupal::installProfile());
+-      $profile_path .= '/libraries/link';
++      $profile_path .= '/libraries/ckeditor/plugins/link';
+       // Is the library found in the current profile libraries path.
+       $library_found = file_exists(DRUPAL_ROOT . $profile_path);
+     }
+@@ -36,7 +36,7 @@ function anchor_link_requirements($phase) {
+         'title' => t('CKEditor Anchor Link'),
+         'value' => t('CKEditor Anchor Link library missing'),
+         'severity' => REQUIREMENT_ERROR,
+-        'description' => t('Before you can use the Anchor Link module, you need to download the plugin from ckeditor.com and place it in /libraries/link. Check the README.md for more information. <a href=":plugin_url">Get the plugin here</a>.', [':plugin_url' => 'https://ckeditor.com/addon/link']),
++        'description' => t('Before you can use the Anchor Link module, you need to download the plugin from ckeditor.com and place it in /libraries/ckeditor/plugins/link. Check the README.md for more information. <a href=":plugin_url">Get the plugin here</a>.', [':plugin_url' => 'https://ckeditor.com/addon/link']),
+       ];
+     }
+   }
+diff --git a/src/Plugin/CKEditorPlugin/AnchorLink.php b/src/Plugin/CKEditorPlugin/AnchorLink.php
+index 036eb06..b9d38bb 100755
+--- a/src/Plugin/CKEditorPlugin/AnchorLink.php
++++ b/src/Plugin/CKEditorPlugin/AnchorLink.php
+@@ -105,7 +105,7 @@ class AnchorLink extends CKEditorPluginBase {
+       }
+     }
+ 
+-    return 'libraries/link';
++    return 'libraries/ckeditor/plugins/link';
+   }
+ 
+   /**
+@@ -115,8 +115,8 @@ class AnchorLink extends CKEditorPluginBase {
+ 
+     $originUrl = \Drupal::request()->getSchemeAndHttpHost() . \Drupal::request()->getBaseUrl();
+ 
+-    $librarayPath = DRUPAL_ROOT . '/libraries/link';
+-    $librarayUrl = $originUrl . '/libraries/link';
++    $librarayPath = DRUPAL_ROOT . '/libraries/ckeditor/plugins/link';
++    $librarayUrl = $originUrl . '/libraries/ckeditor/plugins/link';
+ 
+     // Is the library found in the root libraries path.
+     $libraryFound = file_exists($librarayPath . '/plugin.js');
+@@ -125,7 +125,7 @@ class AnchorLink extends CKEditorPluginBase {
+     if (!$libraryFound) {
+       if ($installProfile = \Drupal::installProfile()) {
+         $profilePath = drupal_get_path('profile', $installProfile);
+-        $profilePath .= '/libraries/link';
++        $profilePath .= '/libraries/ckeditor/plugins/link';
+ 
+         // Is the library found in the current profile libraries path.
+         if (file_exists(DRUPAL_ROOT . '/' . $profilePath . '/plugin.js')) {
+@@ -139,7 +139,7 @@ class AnchorLink extends CKEditorPluginBase {
+       return $librarayUrl;
+     }
+     else {
+-      return $originUrl . '/libraries/link';
++      return $originUrl . '/libraries/ckeditor/plugins/link';
+     }
+   }
+ 

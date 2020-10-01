@@ -1,3 +1,4 @@
+anchor_link
 admin_toolbar
 asset_injector
 auto_entitylabel
@@ -10,6 +11,7 @@ ckeditor_bootstrap_tabs
 ckeditor_bootstrap_grid
 ckeditor_tabletoolstoolbar
 ckeditor_images_gallery
+ckeditor_uploadimage
 collapse_text
 colorbutton
 conditional_fields

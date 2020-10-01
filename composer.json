@@ -34,12 +34,13 @@
         }
     },
     "require": {
-        "bower-asset/ckeditor": "4.15.0",
+        "bower-asset/ckeditor-dev": "4.15.0",
         "bower-asset/jquery.cycle": "dev-master",
         "bower-asset/jquery.hoverintent": "dev-master",
         "bower-asset/json2": "dev-master",
         "npm-asset/tabletoolstoolbar": "0.0.1",
         "npm-asset/juicebox_lite": "1.5.1",
+        "npm-asset/fakeobjects": "4.15.0",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "dompdf/dompdf": "^0.8.5",
@@ -57,8 +58,11 @@
         "drupal/cck_select_other": "1.4",
         "drupal/checklistapi": "1.11",
         "drupal/ckeditor_accordion": "1.3",
+        "drupal/fakeobjects": "1.1",
+        "drupal/anchor_link": "2.4",
         "drupal/ckeditor_bootstrap_grid": "1.3",
         "drupal/ckeditor_bootstrap_tabs": "1.1",
+        "drupal/ckeditor_uploadimage": "2.0",
         "drupal/ckeditor_font": "1.1",
         "drupal/ckeditor_images_gallery": "1.4",
         "drupal/ckeditor_tabletoolstoolbar": "1.0",
@@ -94,7 +98,7 @@
         "drupal/field_token_value": "1.0",
         "drupal/file_entity": "2.0-beta7",
         "drupal/fontawesome": "2.17",
-        "drupal/fontyourface": "3.4",
+        "drupal/fontyourface": "3.5",
         "drupal/form_placeholder": "1.0",
         "drupal/geolocation": "3.2",
         "drupal/google_analytics": "3.1",
@@ -137,7 +141,7 @@
         "drupal/simplify_menu": "2.0",
         "drupal/site_audit": "3.x-dev",
         "drupal/smart_trim": "1.3",
-        "drupal/smtp": "1.0-rc4",
+        "drupal/smtp": "1.0.0",
         "drupal/social_media": "1.8",
         "drupal/tagadelic": "3.0-alpha2",
         "drupal/taxonomy_manager": "1.0-alpha2",
@@ -146,14 +150,14 @@
         "drupal/time_field": "1.13",
         "drupal/token": "1.7",
         "drupal/token_filter": "1.2",
-        "drupal/twig_tweak": "2.6",
+        "drupal/twig_tweak": "2.7",
         "drupal/typed_data": "1.0-alpha5",
         "drupal/views_autocomplete_filters": "1.3",
         "drupal/views_bulk_edit": "2.4",
         "drupal/views_bulk_operations": "3.9",
         "drupal/views_data_export": "1.0",
-        "drupal/views_slideshow": "4.7",
-        "drupal/webform": "5.20",
+        "drupal/views_slideshow": "4.8",
+        "drupal/webform": "5.21",
         "drupal/webform_analysis": "1.0-beta7",
         "drupal/webform_cpf": "2.0",
         "drupal/webform_invitation": "1.1",
@@ -199,6 +203,10 @@
             "drupal/colorbutton": {
                 "3046766 - fix location":
                     "patches/colorbutton/1.2.patch"
+            },
+            "drupal/anchor_link": {
+                "fix location":
+                    "patches/anchor_link/2.4.patch"
             }
         },
         "installer-types": [
@@ -212,8 +220,8 @@
             "web/libraries/juicebox": [
                 "npm-asset/juicebox_lite"
             ],
-            "vendor/drupal/{$name}": [
-                "drupal/console-en"
+            "web/libraries/ckeditor": [
+                "bower-asset/ckeditor-dev"
             ],
             "web/libraries/{$name}": [
                 "type:drupal-library",

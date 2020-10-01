@@ -60,9 +60,12 @@ settings:
           items:
             - Gallery
             - ImceImage
+            - DrupalImage
             - DrupalLink
+            - Link
             - DrupalUnlink
             - DrupalFile
+            - Anchor
         -
           name: Listas
           items:

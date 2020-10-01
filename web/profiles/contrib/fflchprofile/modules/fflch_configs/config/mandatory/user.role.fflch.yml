@@ -120,3 +120,6 @@ permissions:
   - 'administer shortcut_set labels'
   - 'administer taxonomy_vocabulary labels'
   - 'administer webform labels'
+# ckditor
+  - 'use ckeditor_uploadimage'
+  - 'administer ckeditor accordion'
