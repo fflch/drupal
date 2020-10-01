@@ -1,0 +1,24 @@
+diff --git a/panelbutton.install b/panelbutton.install
+index 8d4c5de..3ed31b1 100644
+--- a/panelbutton.install
++++ b/panelbutton.install
+@@ -23,6 +23,7 @@ function panelbutton_requirements($phase) {
+       $path = libraries_get_path('panelbutton') . '/plugin.js';
+     }
+   }
++  $path = DRUPAL_ROOT . '/libraries/ckeditor/plugins/panelbutton/plugin.js';
+ 
+   if (!file_exists($path)) {
+     $requirements['panelbutton'] = [
+diff --git a/src/Plugin/CKEditorPlugin/PanelButton.php b/src/Plugin/CKEditorPlugin/PanelButton.php
+index 91294e9..7174b7a 100644
+--- a/src/Plugin/CKEditorPlugin/PanelButton.php
++++ b/src/Plugin/CKEditorPlugin/PanelButton.php
+@@ -31,6 +31,7 @@ class PanelButton extends CKEditorPluginBase {
+     else {
+       $path = 'libraries/panelbutton/plugin.js';
+     }
++    $path = 'libraries/ckeditor/plugins/panelbutton/plugin.js';
+     return $path;
+   }
+ 
