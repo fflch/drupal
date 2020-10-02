@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74431ebb402923ab16f8d26f00b11a93",
+    "content-hash": "4066c0e0e8308ecba85486471ce86c87",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -10412,7 +10412,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/cem-theme.git",
-                "reference": "019fe0ba802480bd7dacdb9cd555e26ed50bd81f"
+                "reference": "80774fef59410c5836c8fb7690bbbe44fd049ea6"
             },
             "type": "drupal-theme",
             "authors": [
@@ -10421,7 +10421,7 @@
                     "email": "medeiros.danielm@gmail.com"
                 }
             ],
-            "time": "2020-09-24T12:53:47+00:00"
+            "time": "2020-10-02T17:40:55+00:00"
         },
         {
             "name": "gasparesganga/php-shapefile",

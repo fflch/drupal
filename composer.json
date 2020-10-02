@@ -237,9 +237,6 @@
             "web/libraries/juicebox": [
                 "npm-asset/juicebox_lite"
             ],
-            "web/libraries/youtube": [
-                "npm-asset/ckeditor-youtube-plugin"
-            ],
             "web/libraries/ckeditor": [
                 "bower-asset/ckeditor-dev"
             ],
