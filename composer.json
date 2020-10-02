@@ -41,7 +41,7 @@
         "npm-asset/tabletoolstoolbar": "0.0.1",
         "npm-asset/juicebox_lite": "1.5.1",
         "npm-asset/fakeobjects": "4.15.0",
-        "npm-asset/ckeditor-youtube-plugin": "2.1.15",
+        "npm-asset/ckeditor_youtube": "2.1.15",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "dompdf/dompdf": "^0.8.5",
@@ -236,6 +236,9 @@
             ],
             "web/libraries/juicebox": [
                 "npm-asset/juicebox_lite"
+            ],
+            "web/libraries/youtube": [
+                "npm-asset/ckeditor_youtube"
             ],
             "web/libraries/ckeditor": [
                 "bower-asset/ckeditor-dev"
