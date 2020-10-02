@@ -9,9 +9,17 @@ ckeditor_font
 ckeditor_accordion
 ckeditor_bootstrap_tabs
 ckeditor_bootstrap_grid
+ckeditor_bgimage
+ckeditor_youtube
 ckeditor_tabletoolstoolbar
+ckeditor_markdown
 ckeditor_images_gallery
+ckeditor_tableresize
+ckeditor_readmore
 ckeditor_uploadimage
+ckeditor_bootstrap_table
+ckeditor_resize
+insert_view_adv
 collapse_text
 colorbutton
 conditional_fields

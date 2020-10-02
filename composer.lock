@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfa7128438a1480d96652f3689553769",
+    "content-hash": "74431ebb402923ab16f8d26f00b11a93",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2427,6 +2427,54 @@
             }
         },
         {
+            "name": "drupal/ckeditor_bgimage",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_bgimage.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_bgimage-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "80e7e43975b1f3aa97b5127066216f36433b887f"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1600193948",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "rafmagsou",
+                    "homepage": "https://www.drupal.org/user/3593445"
+                },
+                {
+                    "name": "thalles",
+                    "homepage": "https://www.drupal.org/user/3589086"
+                }
+            ],
+            "description": "This plugin module adds background image to CKEditor in Drupal 8",
+            "homepage": "https://www.drupal.org/project/ckeditor_bgimage",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_bgimage"
+            }
+        },
+        {
             "name": "drupal/ckeditor_bootstrap_grid",
             "version": "1.3.0",
             "source": {
@@ -2472,6 +2520,50 @@
             "homepage": "https://www.drupal.org/project/ckeditor_bootstrap_grid",
             "support": {
                 "source": "https://git.drupalcode.org/project/ckeditor_bootstrap_grid"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_bootstrap_table",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_bootstrap_table.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_bootstrap_table-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "6d18dc4a1eaeadb3613a103d33210e3c16842d02"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1591104808",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "majid.ali",
+                    "homepage": "https://www.drupal.org/user/1271330"
+                }
+            ],
+            "description": "Adds Bootstrap Table to CKEditor",
+            "homepage": "https://www.drupal.org/project/ckeditor_bootstrap_table",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_bootstrap_table"
             }
         },
         {
@@ -2629,6 +2721,201 @@
             }
         },
         {
+            "name": "drupal/ckeditor_markdown",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_markdown.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_markdown-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "73efabe8c4d86ab73b21bd0b8f5cece8688c1b48"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1580498736",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "JeroenT",
+                    "homepage": "https://www.drupal.org/user/2228934"
+                }
+            ],
+            "description": "Enables Markdown Plugin for CKEditor.",
+            "homepage": "https://www.drupal.org/project/ckeditor_markdown",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_markdown"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_readmore",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_readmore.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_readmore-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "52cf2a69e82e88061b75e8fa77e5450779dba213"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1600332442",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "durifal",
+                    "homepage": "https://www.drupal.org/user/862848"
+                },
+                {
+                    "name": "tinamrak",
+                    "homepage": "https://www.drupal.org/user/3233725"
+                },
+                {
+                    "name": "zanvidmar",
+                    "homepage": "https://www.drupal.org/user/3003243"
+                }
+            ],
+            "description": "Adds read more button to CKEditor panel",
+            "homepage": "https://www.drupal.org/project/ckeditor_readmore",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_readmore"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_resize",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_resize.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_resize-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "d5f6c0ab8d16003004f9a4302103086c7d9e89ce"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1594138946",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "patches_applied": {
+                    "fix location": "patches/ckeditor_resize/1.3.patch"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "julien",
+                    "homepage": "https://www.drupal.org/user/177445"
+                }
+            ],
+            "description": "Adds the Resize plugin to CKEditor.",
+            "homepage": "https://www.drupal.org/project/ckeditor_resize",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_resize"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_tableresize",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_tableresize.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_tableresize-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "60669e34c94343f4a077d8eb24169218a00d51d3"
+            },
+            "require": {
+                "drupal/core": "^8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1503931144",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "patches_applied": {
+                    "fix location": "patches/ckeditor_tableresize/1.0.patch"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Oleksandr Milkovskyi (a.milkovsky)",
+                    "homepage": "https://www.drupal.org/u/amilkovsky",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Integrates the CKEditor \"Table Resize\" plugin.",
+            "homepage": "http://drupal.org/project/ckeditor_tableresize",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_tableresize",
+                "issues": "http://drupal.org/project/issues/ckeditor_tableresize"
+            }
+        },
+        {
             "name": "drupal/ckeditor_tabletoolstoolbar",
             "version": "1.0.0",
             "source": {
@@ -2728,6 +3015,60 @@
             "homepage": "https://drupal.org/project/ckeditor_uploadimage",
             "support": {
                 "source": "https://git.drupalcode.org/project/ckeditor_uploadimage"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_youtube",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_youtube.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_youtube-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "18b5da4328c3ffee5b3c9b280e48d6195c519c54"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "php": "^7.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1587581152",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mauricio Dinarte (dinarcon)",
+                    "homepage": "https://www.drupal.org/u/dinarcon",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "gnuget",
+                    "homepage": "https://www.drupal.org/user/992990"
+                }
+            ],
+            "description": "Adds the Youtube plugin to CKEditor.",
+            "homepage": "http://drupal.org/project/ckeditor_youtube",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_youtube",
+                "issues": "http://drupal.org/project/issues/ckeditor_youtube"
             }
         },
         {
@@ -5600,6 +5941,55 @@
             "homepage": "https://www.drupal.org/project/inline_responsive_images",
             "support": {
                 "source": "https://git.drupalcode.org/project/inline_responsive_images"
+            }
+        },
+        {
+            "name": "drupal/insert_view_adv",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/insert_view_adv.git",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/insert_view_adv-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "1378c78b7ff75d7988534b73f7167a100e9860d7"
+            },
+            "require": {
+                "drupal/core": "^8.0||^9.0"
+            },
+            "require-dev": {
+                "drupal/bueditor": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1590137407",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Artem Dmitriiev (a.dmitriiev)",
+                    "homepage": "https://www.drupal.org/u/a.dmitriiev",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Allows to include the views displays into WYSIWYG editors.",
+            "homepage": "https://www.drupal.org/project/insert_view_adv",
+            "support": {
+                "source": "https://git.drupalcode.org/project/insert_view_adv",
+                "issues": "https://drupal.org/project/issues/insert_view_adv"
             }
         },
         {
@@ -11253,6 +11643,15 @@
                 "php"
             ],
             "time": "2020-09-26T10:30:38+00:00"
+        },
+        {
+            "name": "npm-asset/ckeditor-youtube-plugin",
+            "version": "2.1.15",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/ckeditor-youtube-plugin/-/ckeditor-youtube-plugin-2.1.15.tgz"
+            },
+            "type": "npm-asset"
         },
         {
             "name": "npm-asset/fakeobjects",
