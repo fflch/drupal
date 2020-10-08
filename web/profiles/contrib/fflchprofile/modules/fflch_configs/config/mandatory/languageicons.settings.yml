@@ -2,10 +2,4 @@ show_node: true
 show_block: true
 placement: replace
 size: 28x21
-path: 'modules/contrib/languageicons/flags/*.png'
-langcode: pt-br
-show: null
-actions: null
-form_build_id: form-zTSUiATzv3ozwIDOJyATDhC0XpiA6a_hzT3X8If0y8E
-form_token: 513DO8XoREr0Tp_N9GADDIzZ8RUxPhJsHsUxJYLDpCc
-form_id: languageicons_settings
+
