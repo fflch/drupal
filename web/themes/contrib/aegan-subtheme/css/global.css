@@ -511,3 +511,8 @@ th {
 .cke-ig {
   border: 0px;
 }
+
+/* Troca cor do cabeçalho das tabelas */
+th {
+  background-color: #9d9daf;
+}
