@@ -1,0 +1,33 @@
+diff --git a/ckeditor_resize.install b/ckeditor_resize.install
+index 94b6abd..8345e41 100755
+--- a/ckeditor_resize.install
++++ b/ckeditor_resize.install
+@@ -12,7 +12,7 @@ function ckeditor_resize_requirements($phase) {
+   $requirements = [];
+ 
+   if ($phase == 'install' || $phase == 'runtime') {
+-    $path = '/libraries/resize/';
++    $path = '/libraries/ckeditor/plugins/resize/';
+     $plugin_detected = file_exists(DRUPAL_ROOT . $path . 'plugin.js');
+ 
+     if ($plugin_detected) {
+diff --git a/src/Plugin/CKEditorPlugin/CKEditorResize.php b/src/Plugin/CKEditorPlugin/CKEditorResize.php
+index 615a8db..c48a1e5 100755
+--- a/src/Plugin/CKEditorPlugin/CKEditorResize.php
++++ b/src/Plugin/CKEditorPlugin/CKEditorResize.php
+@@ -19,12 +19,12 @@ class CKEditorResize extends CKEditorPluginBase {
+    * {@inheritdoc}
+    */
+   public function getFile() {
+-    $path = 'libraries/resize/plugin.js';
++    $path = 'libraries/ckeditor/plugins/resize/plugin.js';
+     if (file_exists($path)) {
+-      return 'libraries/resize/plugin.js';
++      return 'libraries/ckeditor/plugins/resize/plugin.js';
+     }
+     else {
+-      \Drupal::messenger()->addMessage(t("The plugin.js file can't be found in libraries/resize. Please check README for installation."), 'error');
++      \Drupal::messenger()->addMessage(t("The plugin.js file can't be found in libraries/ckeditor/plugins/resize. Please check README for installation."), 'error');
+     }
+   }
+ 

@@ -5,6 +5,7 @@ dependencies:
     - filter.format.full_html
   module:
     - ckeditor
+    - ckeditor_bgimage
     - editor_file
 third_party_settings:
   editor_file:
@@ -13,6 +14,11 @@ third_party_settings:
     directory: inline-files
     extensions: 'txt doc docx xls xlsx odt ods odp ppt pptx pdf'
     max_size: '10 MB'
+  ckeditor_bgimage:
+    status: true
+    scheme: public
+    directory: inline-files
+    extensions: 'png jpg'
 format: full_html
 editor: ckeditor
 settings:
@@ -22,10 +28,7 @@ settings:
         -
           name: Formatting
           items:
-            - PasteFromWord
-            - PasteText
-            - Paste
-            - Copy
+            - Maximize
             - Undo
             - Redo
             - Cut
@@ -37,72 +40,118 @@ settings:
             - Subscript
             - '-'
             - RemoveFormat
-            - Language
-            - Styles
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
-            - ImceLink
-            - DrupalFile
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-            - Outdent
-            - Indent
-        -
-          name: Media
-          items:
-            - ImceImage
             - Blockquote
-            - DrupalImage
-            - video_embed
-            - Table
-            - HorizontalRule
+            - Language
         -
           name: 'Block Formatting'
           items:
             - Format
-        -
-          name: Tools
-          items:
-            - ShowBlocks
-            - Source
-            - Maximize
+            - Font
+            - FontSize
         -
           name: Fonte
           items:
-            - Font
-            - FontSize
             - TextColor
             - BGColor
             - SpecialChar
+      -
+        -
+          name: Avançados
+          items:
+            - tokenbrowser
+            - ShowBlocks
+        -
+          name: Linking
+          items:
+            - Gallery
+            - ImceImage
+            - DrupalImage
+            - DrupalLink
+            - Link
+            - DrupalUnlink
+            - DrupalFile
+            - Anchor
+            - Youtube
+        -
+          name: Listas
+          items:
+            - Outdent
+            - Indent
+            - BulletedList
+            - NumberedList
+            - HorizontalRule
+      -
+        -
+          name: Tabelas
+          items:
+            - Table
+            - tableinsert
+            - tabledelete
+            - tableproperties
+            - tablerowinsertbefore
+            - tablerowinsertafter
+            - tablecolumninsertbefore
+            - tablecolumninsertafter
+            - tablecellinsertbefore
+            - tablecellsmerge
+            - tablecellmergedown
+            - tablecellsplithorizontal
+            - tablecellsplitvertical
+            - tablecolumndelete
+            - tablecellmergeright
+            - tablecellproperties
+            - tablecelldelete
+            - tablecellinsertafter
+            - tablerowdelete
+      -
+        -
+          name: Extras
+          items:
+            - bootstrapTabs
+            - Boxout
+            - DrupalFontAwesome
+            - Accordion
+            - btn_readmore
         -
           name: Alinhamento
           items:
+            - WidgetTemplateMenu
             - JustifyLeft
-            - JustifyCenter
-            - JustifyRight
             - JustifyBlock
+            - JustifyRight
+            - JustifyCenter
+            - widgetbootstrapLeftCol
+            - widgetbootstrapTwoCol
+            - widgetbootstrapThreeCol
+            - widgetbootstrapRightCol
+      -
+        -
+          name: code
+          items:
+            - Source
+            - Markdown
+            - insert_view_adv
+            - Resize
   plugins:
-    language:
-      language_list: un
     stylescombo:
       styles: ''
+    language:
+      language_list: all
+    font:
+      font_names: ''
+      font_sizes: ''
+    readmore:
+      type: text
+      more_text: 'Read more'
+      less_text: 'Show less'
     colorbutton:
       colors: ''
     editoradvancedimage:
       default_class: ''
-    video_embed:
-      defaults:
-        children:
-          autoplay: true
-          responsive: true
-          width: '854'
-          height: '480'
+    insert_view_adv:
+      enable_live_preview: true
+    tokenbrowser:
+      token_types: {  }
 image_upload:
   status: true
   scheme: public

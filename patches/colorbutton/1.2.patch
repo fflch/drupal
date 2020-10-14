@@ -1,0 +1,25 @@
+diff --git a/colorbutton.install b/colorbutton.install
+index dd97eb2..cf97a04 100644
+--- a/colorbutton.install
++++ b/colorbutton.install
+@@ -16,6 +16,7 @@ function colorbutton_requirements($phase) {
+     $path = libraries_get_path('colorbutton') . '/plugin.js';
+   }
+   $path = DRUPAL_ROOT . '/' . $path;
++  $path = 'libraries/ckeditor/plugins/colorbutton/plugin.js';
+ 
+   if (!file_exists($path)) {
+     $requirements['colorbutton'] = [
+diff --git a/src/Plugin/CKEditorPlugin/ColorButton.php b/src/Plugin/CKEditorPlugin/ColorButton.php
+index 44f4914..e1f37ac 100644
+--- a/src/Plugin/CKEditorPlugin/ColorButton.php
++++ b/src/Plugin/CKEditorPlugin/ColorButton.php
+@@ -25,7 +25,7 @@ class ColorButton extends CKEditorPluginBase implements CKEditorPluginConfigurab
+     if (\Drupal::moduleHandler()->moduleExists('libraries')) {
+       $path = libraries_get_path('colorbutton');
+     }
+-
++    $path = 'libraries/ckeditor/plugins/colorbutton';
+     return $path;
+   }
+ 

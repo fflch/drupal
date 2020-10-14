@@ -28,27 +28,15 @@ Download e instalação das dependências:
     cd drupal
     composer install
 
-Plugins ckeditor:
+Instalação usando o profile fflch com *sqlite*:
 
-    cd web/libraries
-    ln -s ckeditor/plugins/colorbutton .
-    ln -s ckeditor/plugins/panelbutton .
-
-Instalação em pt-br usando o profile fflch com *sqlite*:
-
-    ./vendor/bin/drupal site:install fflchprofile --db-type="sqlite" \
-           --site-name="fflch" --site-mail="admin@example.com" \
-           --account-name="fflch" --account-mail="admin@example.com" --account-pass="fflch" \
-           --no-interaction
-
-Instalação em pt-br usando o profile fflch com *mysql*:
-
-    ./vendor/bin/drupal site:install fflchprofile --db-type="mysql" \
-           --db-port="3306" --db-user="fflch" --db-pass="fflch"   \
-           --db-host="127.0.0.1" --db-name="fflch" \
-           --site-name="fflch" --site-mail="admin@example.com" \
-           --account-name="fflch" --account-mail="admin@example.com" --account-pass="fflch" \
-           --no-interaction
+    ./vendor/bin/drush site-install fflchprofile \
+        --db-url=sqlite://sites/default/files/.ht.sqlite \
+        --site-name="fflch" \
+        --site-mail="fflch@localhost" \
+        --account-name="fflch" \
+        --account-pass="fflch" \
+        --account-mail="fflch@localhost" --yes
 
 Servidor http básico:
 
@@ -89,13 +77,24 @@ depois instale desta forma:
 
     composer require npm-asset/datetimepicker:0.1.38
 
-Verificando atualizações para os módulos/temas/biliotecas:
+Verificando se há atualizações para os módulos/temas/biliotecas:
 
     composer outdated -D
+
+Lembre-se que ao alterar a versão de um módulo deve-se verificar se há 
+patches aplicados no mesmo na seção extra.patches do composer.json.
 
 Módulos que estão em composer.json para avaliar:
 
     composer show -D | tr -s ' ' | cut -d' ' -f1| grep ^drupal | cut -d'/' -f2
+    
+Removendo módulo:
+    
+- Remover do /web/profiles/contrib/fflchprofile/modules/fflch_configs/src/installed.txt caso lá ele esteja
+- Remover do composer.json
+- "A quente" remover da plataforma que está no ar em web/profiles/contrib/fflchprofile/modules/fflch_configs/src/installed.txt para ele não ser instalado novamente na rodada do cron
+- com drush pm-uninstall desabilitar o módulos de todos sites que estão no ar
+- subir nova plataforma já sem o módulo e migrar os sites
 
 ## Configurações
 
@@ -156,9 +155,20 @@ Usando o meld para fazer as comparações:
     sudo apt install meld
     meld ~/antes ~/depois
 
-## Problemas conhecidos e soluções
+Modelo de como acrescentar patches no composer.json:
 
-### sitename e slogan inalteráveis
+    "extra": {
+      "patches": {
+            "drupal/editor_file": {
+                "3057895 - Uploaded files are not permanent":
+                    "https://www.drupal.org/files/issues/2019-05-29/file-upload-marked-permanent-3057895-2.patch"
+            }
+        }
+    }
+
+## Problemas conhecidos e workarounds
+
+### quando o sitename e slogan ficam inalteráveis
 
 Essa correção dever ser feita no ambiente dev e depois
 transposta para produção. Aplicar o patch disponínel

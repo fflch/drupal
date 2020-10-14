@@ -1,6 +1,0 @@
-name: FFLCH SIC
-description: Drupal 8  module for FFLCH
-package: fflch.usp.br
-type: module
-version: 1.0
-core: 8.x

@@ -1,0 +1,13 @@
+diff --git a/src/Plugin/CKEditorPlugin/CkeditorTableResize.php b/src/Plugin/CKEditorPlugin/CkeditorTableResize.php
+index bd1dbcb..638cd4b 100644
+--- a/src/Plugin/CKEditorPlugin/CkeditorTableResize.php
++++ b/src/Plugin/CKEditorPlugin/CkeditorTableResize.php
+@@ -31,7 +31,7 @@ class CkeditorTableResize extends PluginBase implements CKEditorPluginInterface,
+    *   Relative path to the ckeditor plugin folder
+    */
+   private function getPluginPath() {
+-    return 'libraries/tableresize';
++    return 'libraries/ckeditor/plugins/tableresize';
+   }
+ 
+   /**

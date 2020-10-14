@@ -22,6 +22,7 @@ permissions:
   - 'administer content translation'
   - 'access files overview'
   - 'configure any layout'
+  - 'entity print access type node'
 # Campos condicionais
   - 'delete conditional fields'
   - 'edit conditional fields'
@@ -35,6 +36,7 @@ permissions:
 # Administração de blocos
   - 'administer blocks'
   - 'administer block_content display'
+  - 'administer block_content form display'
   - 'administer block_content fields'
 # Administração de views
   - 'administer views'
@@ -67,6 +69,8 @@ permissions:
 # Webform
   - 'administer webform'
   - 'edit webform source'
+  - 'access webform overview'  
+  - 'entity print access type webform_submission'
 # Regras
   - 'administer rules'
 # Revisões
@@ -78,11 +82,6 @@ permissions:
   - 'administer taxonomy_term fields'
   - 'administer taxonomy_term form display'
   - 'administer taxonomy'
-# Contact
-  - 'administer contact forms'
-  - 'access site-wide contact form'
-  - 'access user contact forms'
-  - 'manage contact form emails'
 # Search
   - 'search content'
 # Permissões para book
@@ -99,9 +98,28 @@ permissions:
   - 'edit behavior plugin settings'
   - 'view unpublished paragraphs'
   - 'administer paragraphs settings'
+  - 'administer paragraphs library'
+  - 'create paragraph library item'
+  - 'edit paragraph library item'
+  - 'administer paragraph fields'
+  - 'administer paragraph form display'
+  - 'administer paragraph display'
 # Layout Builder
   - 'configure any layout'
   - 'create and edit custom blocks'
 # scheduler
   - 'schedule publishing of nodes'
   - 'view scheduled content'
+# display modes
+  - 'administer display modes'
+# automatic entity label
+  - 'administer block_content_type labels'
+  - 'administer contact_form labels'
+  - 'administer node_type labels'
+  - 'administer paragraphs_type labels'
+  - 'administer shortcut_set labels'
+  - 'administer taxonomy_vocabulary labels'
+  - 'administer webform labels'
+# ckditor
+  - 'use ckeditor_uploadimage'
+  - 'administer ckeditor accordion'

@@ -1,29 +1,20 @@
 {
-    "name": "drupal-composer/drupal-project",
-    "description": "Drupal 8 FFLCH USP",
+    "name": "drupal/fflch",
+    "description": "Distribuição Drupal da FFLCH",
     "type": "project",
     "license": "GPL-2.0-or-later",
-    "authors": [{
-        "name": "Thiago Gomes Veríssimo",
-        "email": "thiago.verissimo@usp.br",
-        "homepage": "https://github.com/thiagogomesverissimo"
-    }],
     "repositories": {
         "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-       "assets": {
+        "assets": {
             "type": "composer",
             "url": "https://asset-packagist.org"
         },
         "csvimporter": {
             "type": "git",
             "url": "https://github.com/fflch/csv_importer.git"
-        },
-        "editorfile": {
-            "type": "git",
-            "url": "https://github.com/fflch/editor_file.git"
         },
         "jquery_countdown_timer": {
             "type": "git",
@@ -37,85 +28,105 @@
             "type": "git",
             "url": "https://github.com/uspdev/replicado_drupal.git"
         },
-        "youtube_playlist": {
-            "type": "git",
-            "url": "https://github.com/fflch/youtube_playlist.git"
-        },
         "cem-theme": {
             "type": "git",
             "url": "https://github.com/fflch/cem-theme.git"
         }
     },
     "require": {
-        "php": ">=5.6",
-        "balbuf/drupal-libraries-installer": "^1.0",
-        "bower-asset/ckeditor": "4.14.0",
+        "bower-asset/ckeditor-dev": "4.15.0",
         "bower-asset/jquery.cycle": "dev-master",
         "bower-asset/jquery.hoverintent": "dev-master",
         "bower-asset/json2": "dev-master",
+        "npm-asset/tabletoolstoolbar": "0.0.1",
+        "npm-asset/juicebox_lite": "1.5.1",
+        "npm-asset/fakeobjects": "4.15.0",
+        "npm-asset/ckeditor_youtube": "2.1.15",
         "composer/installers": "^1.2",
-        "cweagans/composer-patches": "^1.6.5",
-        "dompdf/dompdf": "0.8.5",
+        "cweagans/composer-patches": "^1.6",
+        "dompdf/dompdf": "^0.8.5",
         "drupal/address": "1.8",
         "drupal/admin_toolbar": "2.3",
         "drupal/aegan": "1.0",
         "drupal/asset_injector": "2.7",
         "drupal/at_tools": "3.2",
+        "drupal/auto_entitylabel": "3.0.0-beta3",
         "drupal/better_exposed_filters": "4.0-beta1",
         "drupal/block_class": "1.2",
-        "drupal/cache_control_override": "1.0-alpha1",
-        "drupal/calendar": "1.0-alpha2",
+        "drupal/cache_control_override": "1.0-alpha2",
+        "drupal/calendar": "1.0-alpha3",
         "drupal/captcha": "1.1",
         "drupal/cck_select_other": "1.4",
         "drupal/checklistapi": "1.11",
+        "drupal/ckeditor_accordion": "1.3",
+        "drupal/fakeobjects": "1.1",
+        "drupal/anchor_link": "2.4",
+        "drupal/ckeditor_bootstrap_grid": "1.3",
+        "drupal/ckeditor_bootstrap_tabs": "1.1",
+        "drupal/ckeditor_uploadimage": "2.0",
         "drupal/ckeditor_font": "1.1",
+        "drupal/ckeditor_bootstrap_table": "1.2",
+        "drupal/ckeditor_readmore": "2.0",
+        "drupal/ckeditor_images_gallery": "1.4",
+        "drupal/ckeditor_tabletoolstoolbar": "1.0",
+        "drupal/ckeditor_tableresize": "1.0",
+        "drupal/ckeditor_resize": "1.3",
+        "drupal/ckeditor_markdown": "1.2",
+        "drupal/ckeditor_bgimage": "2.0",
+        "drupal/ckeditor_youtube": "1.3",
         "drupal/collapse_text": "1.0",
         "drupal/colorbutton": "1.2",
-        "drupal/conditional_fields": "1.0-alpha8",
+        "drupal/boxout": "1.0",
+        "drupal/insert_view_adv": "1.0-beta1",
+        "drupal/conditional_fields": "1.0-alpha9",
         "drupal/config_perms": "2.0",
-        "drupal/console": "^1.0.0",
+        "drupal/console": "^1.9",
         "drupal/contact_emails": "1.19",
         "drupal/contact_storage": "1.1",
         "drupal/contact_storage_export": "1.14",
-        "drupal/core": "8.9.1",
-        "drupal/core-composer-scaffold": "^8.8.5",
+        "drupal/core-composer-scaffold": "8.9.6",
+        "drupal/core-recommended": "8.9.6",
         "drupal/cpf": "1.2",
         "drupal/crop": "2.1",
         "drupal/csv_importer": "dev-fflch",
         "drupal/csv_serialization": "1.4",
         "drupal/ctools": "3.4",
         "drupal/date_range_formatter": "3.1",
-        "drupal/ds": "3.7",
-        "drupal/editor_advanced_image": "1.0-beta5",
+        "drupal/ds": "3.9",
+        "drupal/editor_advanced_image": "2.0-beta1",
         "drupal/editor_advanced_link": "1.8",
-        "drupal/editor_file": "dev-fflch",
-        "drupal/entity": "1.0",
+        "drupal/editor_file": "1.5",
+        "drupal/entity": "1.1",
         "drupal/entity_clone": "1.0-beta4",
         "drupal/entity_print": "2.2",
         "drupal/externalauth": "1.3",
-        "drupal/facets": "1.4",
+        "drupal/facets": "1.5",
         "drupal/field_collection": "1.0.0-alpha1",
         "drupal/field_formatter_class": "1.4",
         "drupal/field_group": "3.1",
+        "drupal/field_token_value": "1.0",
         "drupal/file_entity": "2.0-beta7",
-        "drupal/fontyourface": "3.2",
+        "drupal/fontawesome": "2.17",
+        "drupal/fontyourface": "3.5",
         "drupal/form_placeholder": "1.0",
+        "drupal/geolocation": "3.2",
         "drupal/google_analytics": "3.1",
         "drupal/image_widget_crop": "2.3",
-        "drupal/imce": "2.2",
-        "drupal/inline_entity_form": "1.0-rc6",
+        "drupal/imce": "2.3",
+        "drupal/inline_entity_form": "1.0-rc7",
         "drupal/inline_responsive_images": "2.1",
         "drupal/jcarousel": "4.0",
         "drupal/jquery_countdown_timer": "dev-master",
-        "drupal/juicebox": "2.0-beta3",
+        "drupal/juicebox": "2.0-beta4",
         "drupal/languageicons": "1.0.0-beta2",
         "drupal/mailsystem": "4.3",
-        "drupal/markdown": "^1.3",
+        "drupal/markdown": "1.3",
         "drupal/masked_input": "1.1",
+        "drupal/module_missing_message_fixer": "1.2",
         "drupal/media_entity": "1.8",
         "drupal/media_entity_slideshow": "2.0",
         "drupal/menu_manipulator": "2.0",
-        "drupal/metatag": "1.13",
+        "drupal/metatag": "1.14",
         "drupal/migrate_manifest": "1.9",
         "drupal/migrate_plus": "5.1",
         "drupal/migrate_tools": "5.0",
@@ -126,13 +137,12 @@
         "drupal/panels": "4.6",
         "drupal/paragraphs": "1.12",
         "drupal/pathauto": "1.8",
-        "drupal/recaptcha": "2.5",
+        "drupal/recaptcha": "3.0",
         "drupal/redirect": "1.6",
         "drupal/rules": "3.0-alpha5",
         "drupal/samara": "1.0",
         "drupal/scheduler": "1.3",
         "drupal/search_api": "1.17",
-        "drupal/select_or_other": "1.0-alpha4",
         "drupal/semanticviews": "2.3",
         "drupal/seo_checklist": "4.1",
         "drupal/share_everywhere": "1.21",
@@ -141,7 +151,7 @@
         "drupal/simplify_menu": "2.0",
         "drupal/site_audit": "3.x-dev",
         "drupal/smart_trim": "1.3",
-        "drupal/smtp": "1.0-rc3",
+        "drupal/smtp": "1.0.0",
         "drupal/social_media": "1.8",
         "drupal/tagadelic": "3.0-alpha2",
         "drupal/taxonomy_manager": "1.0-alpha2",
@@ -149,37 +159,30 @@
         "drupal/theme_permission": "1.2",
         "drupal/time_field": "1.13",
         "drupal/token": "1.7",
-        "drupal/twig_tweak": "2.6",
+        "drupal/token_filter": "1.2",
+        "drupal/twig_tweak": "2.7",
         "drupal/typed_data": "1.0-alpha5",
         "drupal/video_embed_field": "2.4",
         "drupal/views_autocomplete_filters": "1.3",
         "drupal/views_bulk_edit": "2.4",
-        "drupal/views_bulk_operations": "3.8",
+        "drupal/views_bulk_operations": "3.9",
         "drupal/views_data_export": "1.0",
-        "drupal/views_slideshow": "4.7",
-        "drupal/webform": "5.18",
+        "drupal/views_slideshow": "4.8",
+        "drupal/webform": "5.22",
         "drupal/webform_analysis": "1.0-beta7",
-        "drupal/webform_cpf": "1.0",
+        "drupal/webform_cpf": "2.0",
         "drupal/webform_invitation": "1.1",
         "drupal/webform_migrate": "1.1",
-        "drupal/webform_submission_files_download": "1.0-alpha2",
         "drupal/webform_views": "5.0-alpha7",
         "drupal/webform_xlsx_export": "1.0",
         "drupal/xls_serialization": "1.2",
         "drupal/youtube": "1.2",
-        "drupal/youtube_playlist": "dev-master",
-        "drush/drush": "^8.0.0",
+        "drupal/youtube_playlist": "1.x-dev#2e033f41",
+        "drush/drush": "8.x",
         "fflch/cem-theme": "dev-master",
-        "oomphinc/composer-installers-extender": "^1.1",
-        "parsecsv/php-parsecsv": "1.2.1",
+        "oomphinc/composer-installers-extender": "^2.0",
         "uspdev/replicado_drupal": "dev-master",
-        "uspdev/webform_boleto_usp": "1.0.3",
-        "vlucas/phpdotenv": "^2.0",
-        "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
-    },
-    "require-dev": {
+        "uspdev/webform_boleto_usp": "1.0.6"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -189,32 +192,41 @@
     "config": {
         "sort-packages": true
     },
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ],
-        "files": [
-            "load.environment.php"
-        ]
-    },
-    "scripts": {
-        "pre-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "pre-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ]
-    },
     "extra": {
-        "composer-exit-on-patch-failure": true,
-        "patchLevel": {
-            "drupal/core": "-p2"
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "patches": {
+            "drupal/editor_file": {
+                "3057895 - Uploaded files are not permanent":
+                    "https://www.drupal.org/files/issues/2019-05-29/file-upload-marked-permanent-3057895-2.patch"
+            },
+            "drupal/youtube_playlist": {
+                "Mudanças temporárias para uso na FFLCH":
+                    "patches/youtube_playlist/2e033f41.patch"
+            },
+            "drupal/panelbutton": {
+                "3105283 - fix location":
+                    "patches/panelbutton/1.3.patch"
+            },
+            "drupal/colorbutton": {
+                "3046766 - fix location":
+                    "patches/colorbutton/1.2.patch"
+            },
+            "drupal/anchor_link": {
+                "fix location":
+                    "patches/anchor_link/2.4.patch"
+            },
+            "drupal/ckeditor_tableresize": {
+                "fix location":
+                    "patches/ckeditor_tableresize/1.0.patch"
+            },
+            "drupal/ckeditor_resize": {
+                "fix location":
+                    "patches/ckeditor_resize/1.3.patch"
+            }
         },
         "installer-types": [
             "npm-asset",
@@ -224,15 +236,22 @@
             "web/core": [
                 "type:drupal-core"
             ],
-            "vendor/drupal/{$name}": [
-                "drupal/console-en"
+            "web/libraries/juicebox": [
+                "npm-asset/juicebox_lite"
+            ],
+            "web/libraries/youtube": [
+                "npm-asset/ckeditor_youtube"
+            ],
+            "web/libraries/ckeditor": [
+                "bower-asset/ckeditor-dev"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:npm-asset",
+                "type:bower-asset"
             ],
             "web/modules/contrib/{$name}": [
-                "type:drupal-module",
-                "type:drupal-drush"
-            ],
-            "web/modules/custom/{$name}": [
-                "type:drupal-custom-module"
+                "type:drupal-module"
             ],
             "web/profiles/contrib/{$name}": [
                 "type:drupal-profile"
@@ -240,20 +259,15 @@
             "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
-            "web/libraries/{$name}": [
-                "type:drupal-library",
-                "type:npm-asset",
-                "type:bower-asset"
-            ],
-            "drush/Commands/{$name}": [
+            "drush/Commands/contrib/{$name}": [
                 "type:drupal-drush"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
             ]
-        },
-        "drupal-scaffold": {
-            "initial": {
-                ".editorconfig": "../.editorconfig",
-                ".gitattributes": "../.gitattributes"
-            }
         }
     }
 }

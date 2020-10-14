@@ -1,4 +1,4 @@
-administration_mode: true
+administration_mode: false
 allow_on_admin_pages: false
 #default_challenge: image_captcha/Image
 add_captcha_description: false

@@ -1,4 +1,3 @@
-
 div.language-switcher-language-url  ul.links li {
   display:inline;
 }
@@ -35,7 +34,6 @@ body {
   vertical-align: top;
   width: 60%;
   font-size: 2.8em;
-  font-family: "Arial", serif;
 }
 
 #logodefault .second .slogan{
@@ -56,7 +54,7 @@ body {
   width: 28px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     #logodefault .second {
       font-size: 1em;
     }
@@ -181,14 +179,6 @@ h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, h3 a:active, h4 a:
     background-color: #273e74;
 }
 
-/* Não usadas */
-/*
-.button {
-    background-color: #273e74;
-    border-color: #273e74;
-}
-*/
-
 /* fotos no nodes */
 img.align-left {
   margin: 10px;
@@ -200,72 +190,324 @@ img.align-left {
 
 /* Novo Layout FFLCH - issue 111 */
 
-/* bloco logo do modelo ***/
-/*
-#logodefault {
-  margin-bottom: 10px;
-  display: table;
-  width: 100%;
-  table-layout: auto;
-  border-spacing: 5px 0;
-  line-height: 2.2em;
-}
-
-#logodefault .first {
-   display: table-cell;
-   width: 25%;
- }
-
- #logodefault .first img{
-   height: 20%;
- }
-
- #logodefault .second {
-  display: table-cell;
-  margin-top: 0 auto;
-  vertical-align: top;
-  width: 60%;
-  font-size: 30px;
-  font-family: "Arial Narrow", Arial, serif;
-}
-
-.site_name{
-  margin-top: 0;
-  font-size: 100%;
-  width: 70%;
-}
-
-#logodefault .second .slogan{
-  font-size: 100%;
-  color: #273e74;
-  margin-bottom: 6px;
-}
-
-#logodefault .third {
-  display: table-cell;
-  width: 15%;
-}
-
-#logodefault .third img{
-  margin-top: 17%;
-  width: 20em;
-  height: 4em;
-}
+/*------------TEMA CABEÇALHO FFLCH -------------------*/
 
 
-.language-icon {
-  height: 19.75px;
-  width: 28px;
-}
+/*--------------------------768px+------------------------*/
+@media only screen and (min-width:768px){
+    /*NAVBAR (divisória)*/
+    .nav>li {
+      border-right: 1px solid white;
+    }
+    .nav>li:last-child{
+      border-right: 0;
+    }
+  
+    /*HEADER*/
+    #header-region.fflch-header-region {
+      padding:10px 0 0 0;
 
-@media only screen and (max-width: 600px) {
-    .site_name{
-      font-size: 13px;
-      color: #273e74;
+    }
+    
+    
+    /*---------HEADERS----------------*/
+    
+    
+    /*CONTAINER DOS HEADERS*/
+    .fflch-row {
+      display:table;
+      width:100%;
+      margin:0;
+
+    }
+    
+    /*HEADER-LEFT*/
+    .fflch-header-left{
+      display:table-cell;
+      float:left;
+      width:auto;
+      position:relative;
+      padding:0;
+    }
+    
+    /*HEADER-CENTER*/
+    .fflch-header-center {
+      display:none;
+    }
+    
+    /*HEADER RIGHT*/
+    .fflch-header-right {
+      display:table-cell;
+      float:right;
+      width:auto;
+      position:relative;
+      padding:0;
+    }
+    
+    /*----------LOGOS E NOMES-----------*/
+    
+    /*LOGODEFAULT*/
+    .fflch-logodefault{
+      display:block;
+      position:relative;
+      padding-bottom: 30px;
+      padding-top: 30px;
+
+    }
+    
+    /*CONTAINER DE LOGOS E NOMES*/
+    .fflch-firstsecondthird {
+      display: grid;
+      grid-template-columns: 157px auto 95px;
+      width: 100%;
+      }
+    
+    /*LOGO FFLCH*/
+    .fflch-first{
+      width: 157px;
+      height:51px;
+      min-width: 84px;
+
+    }
+    
+    /*NOME E SLOGAN*/
+    .fflch-second{
+      padding-left: 10px;
+      padding-right: 10px;
+
+    }
+    /*LOGO USP*/
+    .fflch-third {
+      width: 95px; 
+      height:51px;
     }
 
-    #logodefault {
+    .fflch-logo-usp-img {
+      padding-top: 15px;
+      }
+    
+    
+    /*CONTEÙDO DO SECOND (SITE E SLOGAN)*/
+    /*FONTE*/
+    .fflch-second a{
+      Font-family: "Arial Narrow", "Arial" , Sans-serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: rgb(39, 62, 116);
+    }
+    
+    /*SLOGAN*/
+    .fflch-slogan {
+      font-size: 13pt;
       line-height: 1em;
+      padding-left: 2px;
+      margin-bottom: -1px;
     }
+    
+    /*NOME DO SITE*/
+    .fflch-site-name {
+      font-size: 30pt;
+      line-height: 1em;
+      margin-bottom: -6px;
+    }
+    
+    /*SELETOR DE IDIOMA*/
+    #block-seletordeidioma ul{
+      float:left;
+      padding-inline-start: 0px;
+      margin-block-end: auto;
+    }
+    /*linha 2 global*/
+    div.language-switcher-language-url ul.links li {
+        display: inline;
+        padding-right: 6px;
+    }
+    
+    /*tamanho icone*/
+    .language-icon {
+        height: 14px;
+        width: 18px;
+    }
+    /*BUSCA*/
+    /*tamanho do campo - linha 99 de global*/
+    .region-header-right .search-block-form .form-item .form-search {
+        width: 100%;
+        height: 30px;
+
+    }
+  }
+  
+  /*--------------------------(-)767px------------------------*/
+  @media only screen and (max-width:767px){
+  
+  /*HEADER*/
+  #header-region.fflch-header-region {
+    padding:10px;
+  }
+  
+  /*---------HEADERS----------------*/
+  
+  
+  /*CONTAINER DOS HEADERS*/
+  .fflch-row {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    position:relative;
+    margin:0;
+  }
+  
+  /*HEADER-LEFT*/
+  .fflch-header-left{
+     width: 100%;
+      height:auto;
+      display: flex;
+      justify-content:space-between;
+      position:relative;
+      padding-left: 0px;
+      padding-right:0px;
+  }
+  
+  /*HEADER-CENTER*/
+  .fflch-header-center {
+    width: 11%;
+    min-width: 34px;
+    float:right;
+  }
+  
+  /*HEADER RIGHT*/
+  .fflch-header-right {
+    width: 100%;
+    height:auto;
+    display: block;
+    position:relative;
+    float:right;
+    padding-right: 0px;
+    padding-left:0px;
+  }
+  
+  /*----------LOGOS E NOMES-----------*/
+  
+  /*LOGODEFAULT*/
+  .fflch-logodefault{
+    display:block;
+    position:relative;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  
+  /*CONTAINER DE LOGOS E NOMES*/
+  .fflch-firstsecondthird {
+    display: flex;
+    flex-wrap: nowrap;    
+    width: 100%;    
+    padding-left: 10px;    
+    padding-right: 10px; 
+  }
+  
+  /*LOGO FFLCH*/
+  .fflch-first{
+    width: 84px;
+    min-width: 84px;
+  }
+  
+  /*NOME E SLOGAN*/
+  .fflch-second{
+    padding-left: 6px;
+  }
+  /*LOGO USP*/
+  .fflch-third {
+    display:none;
+  }
+
+  
+  /*CONTEÙDO DO SECOND (SITE E SLOGAN)*/
+  /*FONTE*/
+  .fflch-second a{
+    Font-family: "Arial Narrow", "Arial" , Sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(39, 62, 116);
+  }
+  
+  /*SLOGAN*/
+  .fflch-slogan {
+    font-size: 13px;
+    line-height: 85%;
+    }
+  
+  /*NOME DO SITE*/
+  .fflch-site-name {
+    font-size: 3vh; 
+    line-height: 1em;
+    }    
+  
+  
+  /*SELETOR DE IDIOMA*/
+  #block-seletordeidioma ul{
+    padding-inline-start: 0px;
+    margin-block-end: auto;
+  }
+  /*linha 2 global*/
+  div.language-switcher-language-url ul.links li {
+      display: inline;
+      padding-right: 6px;
+  }
+  
+  /*tamanho icone*/
+  .language-icon {
+      height: 14px;
+      width: 18px;
+  }
+  
+  /*BUSCA*/
+  /*container de busca*/
+  .fflch-header-right > .region-header-right {
+    width: 100%;
+  }
+  /*tamanho do campo - linha 99 de global*/
+  .region-header-right .search-block-form .form-item .form-search {
+      width: 100%;
+      height: 30px;
+      
+  }
+  }
+  /*BUSCA (ambos)*/
+  .search-block-form .form-submit {
+    width: 30px;
+    border: 0;
+    background-repeat: no-repeat;
+  }
+
+.button {
+  background-color: #273e74;
+  border-color: #273e74;
 }
-*/
+
+.button:hover {
+  background-color: #273e74;
+  border-color: #273e74;
+}
+
+/*  azul padrão nos headers das tabelas */
+th {
+  background-color: #273e74;
+}
+
+/* configuração do ckeditor_accordion*/
+.ckeditor-accordion-container > dl dt.active > a {
+  background-color: #273e74;
+}
+
+.ckeditor-accordion-container > dl dt > a:hover {
+  background-color: #273e74;
+}
+
+.ckeditor-accordion-container > dl dt > a {
+  background-color: #273e74;
+}
+
+/* ckeditor_images_gallery */
+.cke-ig {
+  border: 0px;
+}
