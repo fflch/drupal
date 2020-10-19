@@ -489,10 +489,6 @@ img.align-left {
   border-color: #273e74;
 }
 
-/*  azul padrão nos headers das tabelas */
-th {
-  background-color: #273e74;
-}
 
 /* configuração do ckeditor_accordion*/
 .ckeditor-accordion-container > dl dt.active > a {
@@ -511,3 +507,52 @@ th {
 .cke-ig {
   border: 0px;
 }
+
+
+
+/** ALTERAÇÃO NO ESTILO DAS TABLEAS EM GERAL (GLOBAL) **/
+      /*estilo do cabeçalho*/
+body table.table tr th, body table tr th{
+  background-color: rgb(83 83 83);
+  color: #fff;
+  border-bottom: 0;
+}
+      /*remove o aspecto listrado das tabelas*/
+body table tr:nth-child(2n) {
+  background: transparent;
+}
+body table tr td{
+  padding: 12px 16px;
+}
+body table tbody tr td, body table.table tbody tr td{
+  border-top: solid rgb(80, 80, 80) 1px;
+  border-bottom: none; 
+  border-right: solid rgb(80, 80, 80) 1px;
+}
+body table tbody tr td:last-child, body table.table tbody tr td:last-child{
+  border-right: 0;
+}
+body table tbody tr vb:hover{
+  background-color: rgba(185, 184, 184, 0.596);
+}
+body table thead tr{
+  border-bottom: solid rgb(80, 80, 80) 2px;
+}
+body table{
+  border-collapse:separate;
+  border:solid rgb(80, 80, 80) 1px;
+  border-radius:6px;
+  -moz-border-radius:6px;
+  overflow: hidden;
+}
+@media(max-width: 600px){
+  .view-content, .table-responsive{
+    overflow-x: auto;
+  }
+  table a, table p, table *{
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+/** FIM ALTERAÇÃO NO ESTILO DAS TABLEAS EM GERAL (GLOBAL) **/
+
