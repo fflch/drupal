@@ -72,6 +72,8 @@ webform_node_analysis
 webform_invitation
 webform_xlsx_export
 webform_templates
+webform_views
+webform_submission_export_import
 cache_control_override
 field_token_value
 token_filter
