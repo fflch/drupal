@@ -513,7 +513,7 @@ img.align-left {
 /** ALTERAÇÃO NO ESTILO DAS TABLEAS EM GERAL (GLOBAL) **/
       /*estilo do cabeçalho*/
 body table.table tr th, body table tr th{
-  background-color: rgb(83 83 83);
+  background-color: #2e5984;
   color: #fff;
   border-bottom: 0;
 }
