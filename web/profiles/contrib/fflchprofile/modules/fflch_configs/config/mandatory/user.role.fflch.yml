@@ -123,5 +123,7 @@ permissions:
 # ckditor
   - 'use ckeditor_uploadimage'
   - 'administer ckeditor accordion'
-# nao classificada
+# Configurações
   - 'access site reports'
+# copyprevention
+  - 'administer copy prevention'
