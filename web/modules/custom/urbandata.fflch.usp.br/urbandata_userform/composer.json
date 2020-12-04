@@ -1,0 +1,15 @@
+{
+    "name": "fflch/custom-module-cem",
+    "type": "drupal-custom-module",
+    "license": "MIT",
+    "description": "Custom module for Urbandata Project",
+    "authors": [
+        {
+            "name": "DanielMM",
+            "email": "medeiros.danielm@gmail.com"
+        }
+    ],
+    "keywords": [
+    ],
+    "minimum-stability": "dev"
+}

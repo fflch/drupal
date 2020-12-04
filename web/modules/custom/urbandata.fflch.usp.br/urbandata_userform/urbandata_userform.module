@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ * Contains urbandata_userform.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Component\Utility\Html;
+
+/**
+ * Implements hook_help().
+ */
+function urbandata_userform_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the urbandata_userform module.
+    case 'help.page.urbandata_userform':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom module for Urbandata Project') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function urbandata_userform_theme() {
+  return [
+    'urbandata_template' => [
+      'render element' => 'form'
+    ],
+  ];
+}
+
+/**
+ * {@inheritdoc}
+ */
+function urbandata_userform_page_attachments(&$attachments) {
+  $path = \drupal::request()->getPathInfo();
+  if ($path === '/cadastre-se' || $path === '/form/user') {
+    $attachments['#attached']['library'][] = 'urbandata_userform/form';
+  }
+}
+
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function urbandata_userform_node_presave(EntityInterface $node) {
+
+  if (($node->isNew())) {
+    $session = \Drupal::request()->getSession();
+    $value = $session->get('usuario_validado');
+    $value = Html::escape($value);
+    $node->set('field_autor', $value);
+  }
+}

@@ -1,0 +1,8 @@
+name: 'Urbandata UserForm'
+type: module
+description: 'Custom module for Urbandata Project'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Custom'
+dependencies:
+  - webform

@@ -1,0 +1,6 @@
+services:
+  urbandata_userform.redirect_new_users:
+    class: Drupal\urbandata_userform\EventSubscriber\RedirectNewUsersSubscriber
+    arguments: ['@path.current']
+    tags:
+      - { name: event_subscriber }
