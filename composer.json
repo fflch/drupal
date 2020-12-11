@@ -164,7 +164,7 @@
         "drupal/views_bulk_edit": "2.4",
         "drupal/views_bulk_operations": "3.9",
         "drupal/views_data_export": "1.0",
-        "drupal/views_field_view": "1.0@beta",
+        "drupal/views_field_view": "1.0.0-beta3",
         "drupal/views_slideshow": "4.8",
         "drupal/webform": "5.22",
         "drupal/webform_analysis": "1.0-beta7",
