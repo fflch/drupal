@@ -50,6 +50,7 @@ languageicons
 locale
 loginbytoken
 menu_manipulator
+metatag
 paragraphs
 pathauto
 redirect

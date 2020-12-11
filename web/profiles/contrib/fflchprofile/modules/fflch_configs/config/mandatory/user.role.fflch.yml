@@ -127,3 +127,5 @@ permissions:
   - 'access site reports'
 # copyprevention
   - 'administer copy prevention'
+# metatag
+  - 'administer meta tags'
