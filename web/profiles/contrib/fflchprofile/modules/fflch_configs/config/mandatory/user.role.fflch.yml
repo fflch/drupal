@@ -129,3 +129,7 @@ permissions:
   - 'administer copy prevention'
 # metatag
   - 'administer meta tags'
+# views_send
+  - 'administer views_send'
+  - 'mass mailing with views_send'
+  - 'attachments with views_send'
