@@ -250,9 +250,6 @@
             "web/libraries/ckeditor": [
                 "bower-asset/ckeditor-dev"
             ],
-            "web/libraries/colorbox": [
-                "bower-asset/colorbox"
-            ],
             "web/libraries/{$name}": [
                 "type:drupal-library",
                 "type:npm-asset",
