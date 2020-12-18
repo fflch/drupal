@@ -50,6 +50,7 @@ languageicons
 locale
 loginbytoken
 menu_manipulator
+metatag
 paragraphs
 pathauto
 redirect
@@ -57,6 +58,7 @@ scheduler
 smtp
 theme_permission
 views_data_export
+views_send
 views_slideshow
 views_slideshow_cycle
 webform

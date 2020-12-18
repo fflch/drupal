@@ -1,24 +1,37 @@
 diff --git a/panelbutton.install b/panelbutton.install
-index 8d4c5de..3ed31b1 100644
+index 8d4c5de..b02f476 100644
 --- a/panelbutton.install
 +++ b/panelbutton.install
-@@ -23,6 +23,7 @@ function panelbutton_requirements($phase) {
+@@ -15,10 +15,10 @@ function panelbutton_requirements($phase) {
+   //   requirement to 8.9.0. See https://www.drupal.org/node/3099614
+   if (\Drupal::hasService('library.libraries_directory_file_finder')) {
+     /** @var \Drupal\Core\Asset\LibrariesDirectoryFileFinder $library_file_finder */
+-    $path = \Drupal::service('library.libraries_directory_file_finder')->find('panelbutton/plugin.js');
++    $path = \Drupal::service('library.libraries_directory_file_finder')->find('ckeditor/plugins/panelbutton/plugin.js');
+   }
+   else {
+-    $path = DRUPAL_ROOT . '/libraries/panelbutton/plugin.js';
++    $path = DRUPAL_ROOT . '/libraries/ckeditor/plugins/panelbutton/plugin.js';
+     if (\Drupal::moduleHandler()->moduleExists('libraries')) {
        $path = libraries_get_path('panelbutton') . '/plugin.js';
      }
-   }
-+  $path = DRUPAL_ROOT . '/libraries/ckeditor/plugins/panelbutton/plugin.js';
- 
-   if (!file_exists($path)) {
-     $requirements['panelbutton'] = [
 diff --git a/src/Plugin/CKEditorPlugin/PanelButton.php b/src/Plugin/CKEditorPlugin/PanelButton.php
-index 91294e9..7174b7a 100644
+index 91294e9..72b710f 100644
 --- a/src/Plugin/CKEditorPlugin/PanelButton.php
 +++ b/src/Plugin/CKEditorPlugin/PanelButton.php
-@@ -31,6 +31,7 @@ class PanelButton extends CKEditorPluginBase {
-     else {
-       $path = 'libraries/panelbutton/plugin.js';
+@@ -23,13 +23,13 @@ class PanelButton extends CKEditorPluginBase {
+     //   requirement to 8.9.0. See https://www.drupal.org/node/3099614
+     if (\Drupal::hasService('library.libraries_directory_file_finder')) {
+       /** @var \Drupal\Core\Asset\LibrariesDirectoryFileFinder $library_file_finder */
+-      $path = \Drupal::service('library.libraries_directory_file_finder')->find('panelbutton/plugin.js');
++      $path = \Drupal::service('library.libraries_directory_file_finder')->find('ckeditor/plugins/panelbutton/plugin.js');
      }
-+    $path = 'libraries/ckeditor/plugins/panelbutton/plugin.js';
+     elseif (\Drupal::moduleHandler()->moduleExists('libraries')) {
+       $path = libraries_get_path('panelbutton') . '/plugin.js';
+     }
+     else {
+-      $path = 'libraries/panelbutton/plugin.js';
++      $path = '/libraries/ckeditor/plugins/panelbutton/plugin.js';
+     }
      return $path;
    }
- 
