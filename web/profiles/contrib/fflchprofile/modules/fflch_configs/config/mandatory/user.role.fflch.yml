@@ -133,3 +133,6 @@ permissions:
   - 'administer views_send'
   - 'mass mailing with views_send'
   - 'attachments with views_send'
+# administrar captcha
+  - 'administer CAPTCHA settings'
+  - 'administer recaptcha'

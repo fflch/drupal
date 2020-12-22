@@ -53,6 +53,7 @@ menu_manipulator
 metatag
 paragraphs
 pathauto
+recaptcha
 redirect
 scheduler
 smtp
