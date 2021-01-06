@@ -128,6 +128,12 @@
   {% endif %}
   </div>
 
+  {% if page.slideshow_top %}
+    <div id="slideshow_top">
+      {{ page.slideshow_top }}
+    </div>
+  {% endif %}
+
   {# Include a slider. #}
   {% if slider %}
     <div class="flexslider">
