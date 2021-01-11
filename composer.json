@@ -20,6 +20,10 @@
             "type": "git",
             "url": "https://github.com/uspdev/webform_boleto_usp.git"
         },
+        "webform_ficha_catalografica": {
+            "type": "git",
+            "url": "https://github.com/fflch/webform_ficha_catalografica.git"
+        },
         "replicado_drupal": {
             "type": "git",
             "url": "https://github.com/uspdev/replicado_drupal.git"
@@ -81,8 +85,8 @@
         "drupal/contact_storage": "1.1",
         "drupal/contact_storage_export": "1.14",
         "drupal/copyprevention": "1.2",
-        "drupal/core-composer-scaffold": "8.9.11",
-        "drupal/core-recommended": "8.9.11",
+        "drupal/core-composer-scaffold": "8.9.12",
+        "drupal/core-recommended": "8.9.12",
         "drupal/cpf": "1.2",
         "drupal/crop": "2.1",
         "drupal/csv_importer": "1.11",
@@ -100,7 +104,7 @@
         "drupal/facets": "1.6",
         "drupal/fakeobjects": "1.1",
         "drupal/field_collection": "1.0.0-alpha1",
-        "drupal/field_formatter_class": "1.4",
+        "drupal/field_formatter_class": "1.5",
         "drupal/field_group": "3.1",
         "drupal/field_token_value": "1.0",
         "drupal/file_entity": "2.0-beta8",
@@ -187,7 +191,8 @@
         "npm-asset/tabletoolstoolbar": "0.0.1",
         "oomphinc/composer-installers-extender": "^2.0",
         "uspdev/replicado_drupal": "dev-master",
-        "uspdev/webform_boleto_usp": "1.0.6"
+        "uspdev/webform_boleto_usp": "1.0.6",
+        "fflch/webform_ficha_catalografica": "1.0.1"
     },
     "conflict": {
         "drupal/drupal": "*"

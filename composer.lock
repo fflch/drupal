@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "16bd0d191b96eb8f13cc3c731be24a47",
+    "content-hash": "5097ba9b337420da55c54d909417e9ed",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3930,16 +3930,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.9.11",
+            "version": "8.9.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "8fc1d510b8fcff90e2f3a7c96a893ba16bbdc62d"
+                "reference": "ec7ac2bd2b7fa7f06df654c637b7f29f019d356f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/8fc1d510b8fcff90e2f3a7c96a893ba16bbdc62d",
-                "reference": "8fc1d510b8fcff90e2f3a7c96a893ba16bbdc62d",
+                "url": "https://api.github.com/repos/drupal/core/zipball/ec7ac2bd2b7fa7f06df654c637b7f29f019d356f",
+                "reference": "ec7ac2bd2b7fa7f06df654c637b7f29f019d356f",
                 "shasum": ""
             },
             "require": {
@@ -4157,11 +4157,11 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2020-12-03T20:57:10+00:00"
+            "time": "2021-01-06T23:44:11+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "8.9.11",
+            "version": "8.9.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -4208,16 +4208,16 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "8.9.11",
+            "version": "8.9.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "c8e6bfedd8fcec50ddc9e96e0f5f3d0779e3accb"
+                "reference": "06d3680bf56fda259679f538ef90da44770f92a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/c8e6bfedd8fcec50ddc9e96e0f5f3d0779e3accb",
-                "reference": "c8e6bfedd8fcec50ddc9e96e0f5f3d0779e3accb",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/06d3680bf56fda259679f538ef90da44770f92a8",
+                "reference": "06d3680bf56fda259679f538ef90da44770f92a8",
                 "shasum": ""
             },
             "require": {
@@ -4229,7 +4229,7 @@
                 "doctrine/common": "v2.7.3",
                 "doctrine/inflector": "v1.2.0",
                 "doctrine/lexer": "1.0.2",
-                "drupal/core": "8.9.11",
+                "drupal/core": "8.9.12",
                 "easyrdf/easyrdf": "0.9.1",
                 "egulias/email-validator": "2.1.17",
                 "guzzlehttp/guzzle": "6.5.4",
@@ -4286,7 +4286,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
-            "time": "2020-12-03T20:57:10+00:00"
+            "time": "2021-01-06T23:44:11+00:00"
         },
         {
             "name": "drupal/cpf",
@@ -5311,17 +5311,17 @@
         },
         {
             "name": "drupal/field_formatter_class",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/field_formatter_class.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_formatter_class-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "158a1151c37e6aed76702528269fe4a53378de8e"
+                "url": "https://ftp.drupal.org/files/projects/field_formatter_class-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "a51e0078615791a285250693a4e88775fac87b70"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -5329,8 +5329,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1592471596",
+                    "version": "8.x-1.5",
+                    "datestamp": "1610334141",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10844,6 +10844,31 @@
             "time": "2020-10-02T17:40:55+00:00"
         },
         {
+            "name": "fflch/webform_ficha_catalografica",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fflch/webform_ficha_catalografica.git",
+                "reference": "bfd6956a03063917b395476b778f8fdb5d3e83e9"
+            },
+            "require": {
+                "rospdf/pdf-php": "^0.12.63"
+            },
+            "type": "drupal-module",
+            "authors": [
+                {
+                    "name": "Thiago Gomes Verissimo",
+                    "email": "verissimotgv@gmail.com"
+                },
+                {
+                    "name": "Ricardo Fernando dos Santos",
+                    "email": "ricardo_santos@usp.br"
+                }
+            ],
+            "description": "ficha catalográfica",
+            "time": "2021-01-11T15:07:44+00:00"
+        },
+        {
             "name": "gasparesganga/php-shapefile",
             "version": "v3.3.3",
             "source": {
@@ -13127,6 +13152,75 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
+            "name": "rospdf/pdf-php",
+            "version": "0.12.63",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rospdf/pdf-php.git",
+                "reference": "f957e49ddfa6b7891de62c48b1de965a74db6c44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rospdf/pdf-php/zipball/f957e49ddfa6b7891de62c48b1de965a74db6c44",
+                "reference": "f957e49ddfa6b7891de62c48b1de965a74db6c44",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.38",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-experimental": "0.13.x-dev",
+                    "dev-master": "0.12.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Cpdf.php",
+                    "src/Cezpdf.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ole Koeckemann",
+                    "email": "ole.k@web.de",
+                    "role": "Project Head / Developer"
+                },
+                {
+                    "name": "Lars Olesen",
+                    "email": "lars@intraface.dk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sune Jensen",
+                    "email": "sj@sunet.dk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Nicola Asuni",
+                    "email": "info@tecnick.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Wayne Munro",
+                    "email": "pdf@ros.co.nz",
+                    "role": "Founder / Inactive"
+                }
+            ],
+            "description": "The R&OS Pdf class supports the creation of PDF documents without any adiditional modules or extensions.",
+            "homepage": "https://github.com/rospdf/pdf-php",
+            "time": "2020-09-20T06:15:20+00:00"
+        },
+        {
             "name": "sabberworm/php-css-parser",
             "version": "8.3.1",
             "source": {
@@ -14549,16 +14643,16 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.20.0",
+            "version": "v1.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "e70aa8b064c5b72d3df2abd5ab1e90464ad009de"
+                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/e70aa8b064c5b72d3df2abd5ab1e90464ad009de",
-                "reference": "e70aa8b064c5b72d3df2abd5ab1e90464ad009de",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/dc3063ba22c2a1fd2f45ed856374d79114998f91",
+                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91",
                 "shasum": ""
             },
             "require": {
@@ -14567,7 +14661,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.20-dev"
+                    "dev-main": "1.22-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -14611,7 +14705,21 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-10-23T14:02:19+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-07T16:49:33+00:00"
         },
         {
             "name": "symfony/polyfill-util",
