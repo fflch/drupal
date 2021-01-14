@@ -197,7 +197,7 @@
         "uspdev/replicado_drupal": "dev-master",
         "uspdev/webform_boleto_usp": "1.0.6",
         "fflch/webform_ficha_catalografica": "1.0.1",
-        "fflch/fflch-theme": "1.0.1"
+        "fflch/fflch-theme": "1.0.2"
     },
     "conflict": {
         "drupal/drupal": "*"
