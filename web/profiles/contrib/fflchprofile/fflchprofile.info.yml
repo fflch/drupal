@@ -78,6 +78,6 @@ install:
   - contact_storage
   - contact_emails
 themes:
-  - fflch_aegan
+  - fflch
   - seven
 

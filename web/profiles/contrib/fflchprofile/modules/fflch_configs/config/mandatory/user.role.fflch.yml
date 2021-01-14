@@ -65,7 +65,7 @@ permissions:
   - 'update content translations'
 # Temas liberados
   - 'administer themes'
-  - 'administer themes fflch_aegan'
+  - 'administer themes fflch'
 # Webform
   - 'administer webform'
   - 'edit webform source'

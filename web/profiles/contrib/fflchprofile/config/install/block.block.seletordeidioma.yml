@@ -4,9 +4,9 @@ dependencies:
   module:
     - language
   theme:
-    - fflch_aegan
+    - fflch
 id: seletordeidioma
-theme: fflch_aegan
+theme: fflch
 region: header
 weight: -2
 provider: null
