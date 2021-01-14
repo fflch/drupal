@@ -4,7 +4,7 @@ description: 'fflch profile'
 version: VERSION
 core: 8.x
 # Módulos default do profile standard FFLCH
-# Os comentados, não vamos usar, por enquanto
+# Os comentados, não vamos usar, por enquanto 
 install:
   - node
   - history
