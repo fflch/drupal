@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7880243ad7e0b2aafda4fc935344849d",
+    "content-hash": "8629188db5d2e483a88aedd72213dcc6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -10902,11 +10902,11 @@
         },
         {
             "name": "fflch/fflch-theme",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/fflch-theme.git",
-                "reference": "28f318347bccfa823a160c2a1bc0209a3616daad"
+                "reference": "6f8485f99776d61b138d6bf7f460fee42b4b43d8"
             },
             "type": "drupal-theme",
             "license": [
@@ -10921,7 +10921,7 @@
                 "issues": "https://github.com/fflch/fflch-theme/issues",
                 "source": "https://github.com/fflch/fflch-theme"
             },
-            "time": "2021-01-14T22:23:46+00:00"
+            "time": "2021-01-15T00:16:35+00:00"
         },
         {
             "name": "fflch/webform_ficha_catalografica",
@@ -16140,8 +16140,8 @@
         "drupal/site_audit": 20,
         "drupal/webform_invitation": 20,
         "drupal/youtube_playlist": 20,
-        "fflch/cem-theme": 20,
-        "uspdev/replicado_drupal": 20
+        "uspdev/replicado_drupal": 20,
+        "fflch/cem-theme": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

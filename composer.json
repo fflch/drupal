@@ -188,7 +188,6 @@
         "drupal/youtube": "1.2",
         "drupal/youtube_playlist": "1.x-dev#2e033f41",
         "drush/drush": "8.x",
-        "fflch/cem-theme": "dev-master",
         "npm-asset/ckeditor_youtube": "2.1.15",
         "npm-asset/fakeobjects": "4.15.0",
         "npm-asset/juicebox_lite": "1.5.1",
@@ -196,8 +195,9 @@
         "oomphinc/composer-installers-extender": "^2.0",
         "uspdev/replicado_drupal": "dev-master",
         "uspdev/webform_boleto_usp": "1.0.6",
+        "fflch/cem-theme": "dev-master",
         "fflch/webform_ficha_catalografica": "1.0.1",
-        "fflch/fflch-theme": "1.0.2"
+        "fflch/fflch-theme": "1.0.3"
     },
     "conflict": {
         "drupal/drupal": "*"

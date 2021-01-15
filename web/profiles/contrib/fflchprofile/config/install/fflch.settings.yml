@@ -1,1 +1,12 @@
-slideshow_display: '0'
+slideshow_display: 0
+slideshow_count: '3'
+slideshow_animation: slide
+slideshow_slide_speed: '7000'
+slideshow_animation_speed: '600'
+slide_description_1: 'Suporte em Drupal'
+slide_url_1: 'http://sti.fflch.usp.br/'
+slide_description_2: 'Treinamentos de Informática na FFLCH'
+slide_url_2: 'https://www.fflch.usp.br/'
+slide_description_3: 'Suporte e Manutenção em computadores patrimoniados'
+slide_url_3: 'http://www.sti.fflch.usp.br/'
+slideshow_visiblity: ''
