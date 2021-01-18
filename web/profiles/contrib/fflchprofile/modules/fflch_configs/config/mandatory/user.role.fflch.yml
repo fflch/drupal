@@ -114,7 +114,6 @@ permissions:
   - 'administer display modes'
 # automatic entity label
   - 'administer block_content_type labels'
-  - 'administer contact_form labels'
   - 'administer node_type labels'
   - 'administer paragraphs_type labels'
   - 'administer shortcut_set labels'

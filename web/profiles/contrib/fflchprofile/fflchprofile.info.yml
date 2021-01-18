@@ -3,25 +3,26 @@ type: profile
 description: 'fflch profile'
 version: VERSION
 core: 8.x
-# Módulos default do profile standard FFLCH
-# Os comentados, não vamos usar, por enquanto 
+# Módulos do core usado no profile FFLCH
 install:
-  - node
-  - history
+  - book
   - block
+  - block_content
   - breakpoint
   - ckeditor
-  - colorbutton
   - color
   - config
+  - content_translation
+  - config_translation
   - contextual
-  - menu_link_content
   - datetime
-  - block_content
-  - quickedit
   - editor
   - help
+  - history 
+  - quickedit
   - image
+  - language
+  - locale
   - menu_ui
   - options
   - path
@@ -40,44 +41,8 @@ install:
   - views_ui
   - tour
   - automated_cron
-#### módulos core usados na FFLCH
-  - language
-  - locale
-  - book
-  - config_translation
-  - content_translation
-#### módulos contrib usados na FFLCH
-  - captcha
-  - image_captcha
-  - smtp
-  - entity
-  - entity_clone
-  - asset_injector
-  - imce
-  - google_analytics
-  - pathauto
-  - webform
-  - webform_ui
-  - webform_attachment
-  - webform_scheduled_email
-  - theme_permission
-  - webform_node
-  - editor_advanced_link
-  - editor_file
-  - ckeditor_font
-  - conditional_fields
-  - ctools
-  - collapse_text
-  - config_perms
-  - cpf
-  - languageicons
-#### nossos módulos
-  - loginbytoken
-### contact
-  - contact
-  - contact_storage
-  - contact_emails
+  - node
+  - menu_link_content
 themes:
   - fflch
   - seven
-

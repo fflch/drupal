@@ -7,6 +7,4 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
-  - 'access content'
   - 'search content'
-  - 'access site-wide contact form'
