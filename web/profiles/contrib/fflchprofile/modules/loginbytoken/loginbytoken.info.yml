@@ -1,5 +1,5 @@
 name: 'loginbytoken'
 type: module
 description: 'Login By Token'
-core: 8.x
+core_version_requirement: ^8 || ^9
 package: 'FFLCH'
