@@ -5,7 +5,6 @@ estão em composer.json. Principais diretórios:
 
  - web/profiles/contrib/fflchprofile: profile com módulos e configurações customizações
  - web/modules/custom: módulos especifícos de cada site
- - web/themes/contrib/aegan-subtheme: tema default
 
 ## deploy em um ambiente dev:
 
