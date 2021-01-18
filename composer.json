@@ -185,7 +185,7 @@
         "uspdev/webform_boleto_usp": "1.0.6",
         "fflch/cem-theme": "dev-master",
         "fflch/webform_ficha_catalografica": "1.0.2",
-        "fflch/fflch-theme": "1.0.4"
+        "fflch/fflch-theme": "1.0.5"
     },
     "conflict": {
         "drupal/drupal": "*"
