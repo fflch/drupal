@@ -11,6 +11,7 @@ permissions:
   - 'access administration pages'
   - 'view the administration theme'
   - 'access in-place editing'
+  - 'access contextual links'
 # Administração de nodes
   - 'bypass node access'
   - 'administer node form display'
