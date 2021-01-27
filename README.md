@@ -182,3 +182,4 @@ e depois rodar:
 Para subir um dump na máquina local, algumas configurações devem ser deletadas:
 
     ./vendor/bin/drush config-delete system.file path
+
