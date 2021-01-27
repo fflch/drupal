@@ -157,7 +157,7 @@
         "oomphinc/composer-installers-extender": "^2.0",
         "uspdev/replicado_drupal": "1.0.0",
         "uspdev/webform_boleto_usp": "1.0.9",
-        "fflch/cem-theme": "dev-master",
+        "fflch/cem-theme": "1.0.1",
         "fflch/webform_ficha_catalografica": "1.0.2",
         "fflch/fflch-theme": "1.0.5"
     },
