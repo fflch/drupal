@@ -1,3 +1,5 @@
+settings:
+  default_form_file_limit: '22 MB'
 html_editor:
   tidy: true
   disabled: true
