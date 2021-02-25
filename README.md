@@ -182,4 +182,11 @@ e depois rodar:
 Para subir um dump na máquina local, algumas configurações devem ser deletadas:
 
     ./vendor/bin/drush config-delete system.file path
+    
+#### campos que não podem ser traduzidos
+
+sites migrados do d7 contém um problema de campos não poderem ser 
+traduzidos pois o langcode está com und (undefinided). Para corrigir:
+
+    drush @filosofia.fflch.usp.br config-set  field.storage.node.field_banca langcode pt-br --yes
 
