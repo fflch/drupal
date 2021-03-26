@@ -45,7 +45,7 @@ class Configs {
     $files = file_scan_directory($dir,'/^.*\.yml$/i',[]);
     foreach ($files as $file) {
         $yml = $dir . $file->name . '.yml';
-        $configs = Yaml::parse(file_get_contents($yml));
+        $configs = $this->flatten(Yaml::parse(file_get_contents($yml)));
         $original_config = \Drupal::service('config.factory')->getEditable($file->name);
         foreach($configs as $name=>$config) {
             $original_config->set($name, $config);
@@ -154,6 +154,19 @@ class Configs {
         $user->setPassword($senha);
     }
     $user->save();
+  }
+
+  private function flatten($array, $prefix = '') {
+      $result = array();
+      foreach($array as $key=>$value) {
+          if(is_array($value)) {
+              $result = $result + $this->flatten($value, $prefix . $key . '.');
+          }
+          else {
+              $result[$prefix . $key] = $value;
+          }
+      }
+      return $result;
   }
 
 }
