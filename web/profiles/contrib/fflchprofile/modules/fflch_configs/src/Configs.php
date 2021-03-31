@@ -9,6 +9,8 @@ use Drupal\language\Entity\ConfigurableLanguage;
 use Drupal\user\Entity\Role;
 use Drupal\user\RoleInterface;
 
+use Uspdev\Utils;
+
 class Configs {
 
   public function doConfig($install = false){
@@ -45,7 +47,7 @@ class Configs {
     $files = file_scan_directory($dir,'/^.*\.yml$/i',[]);
     foreach ($files as $file) {
         $yml = $dir . $file->name . '.yml';
-        $configs = $this->flatten(Yaml::parse(file_get_contents($yml)));
+        $configs = Utils::flatten(Yaml::parse(file_get_contents($yml)));
         $original_config = \Drupal::service('config.factory')->getEditable($file->name);
         foreach($configs as $name=>$config) {
             $original_config->set($name, $config);
@@ -90,42 +92,7 @@ class Configs {
   private function boleto(){
 
     $config = \Drupal::service('config.factory')->getEditable('webform_boleto_usp.settings');
-    $centros =
-"\FFLCH
-\FFLCH\ATAC\SVALPGR
-\FFLCH\ATAC\SVCEXU
-\FFLCH\ATFN\SVTESOU
-\FFLCH\CCINT
-\FFLCH\CEA
-\FFLCH\CELP
-\FFLCH\CITRAT
-\FFLCH\CL
-\FFLCH\CONVENIO
-\FFLCH\DIVERSITAS
-\FFLCH\DIVERSITAS PÓS
-\FFLCH\DIVERSITAS-PROAP
-\FFLCH\FLA
-\FFLCH\FLC
-\FFLCH\FLC\DLCV-FLP
-\FFLCH\FLC\FLPDOSTOIEVSK
-\FFLCH\FLG
-\FFLCH\FLG\DG-GF
-\FFLCH\FLG\DG-GH
-\FFLCH\FLH
-\FFLCH\FLL
-\FFLCH\FLM
-\FFLCH\FLM\DLM-LLFR
-\FFLCH\FLM\DLM-LLI
-\FFLCH\FLO
-\FFLCH\FLO\DLO LLH
-\FFLCH\FLO\DLO LLR
-\FFLCH\FLP
-\FFLCH\FLT
-\FFLCH\FLS
-\FFLCH\FLF
-\FFLCH\NAP - BRASIL AFRICA
-\FFLCH\SCINFOR
-\FFLCH\SCPUB";
+    $centros = file_get_contents(__DIR__. '/' . 'centros.txt');
 
     $filename = '/var/aegir/.boleto.txt';
     if (file_exists($filename)) {
@@ -154,19 +121,6 @@ class Configs {
         $user->setPassword($senha);
     }
     $user->save();
-  }
-
-  private function flatten($array, $prefix = '') {
-      $result = array();
-      foreach($array as $key=>$value) {
-          if(is_array($value)) {
-              $result = $result + $this->flatten($value, $prefix . $key . '.');
-          }
-          else {
-              $result[$prefix . $key] = $value;
-          }
-      }
-      return $result;
   }
 
 }
