@@ -16346,16 +16346,16 @@
         },
         {
             "name": "uspdev/utils",
-            "version": "1.0.0",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/utils.git",
-                "reference": "2cf51bff88c232fccd2547d3868c1a03f50a471c"
+                "reference": "0bab82baa2d2bb0f19759f5867718f96d72ab900"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/utils/zipball/2cf51bff88c232fccd2547d3868c1a03f50a471c",
-                "reference": "2cf51bff88c232fccd2547d3868c1a03f50a471c",
+                "url": "https://api.github.com/repos/uspdev/utils/zipball/0bab82baa2d2bb0f19759f5867718f96d72ab900",
+                "reference": "0bab82baa2d2bb0f19759f5867718f96d72ab900",
                 "shasum": ""
             },
             "require-dev": {
@@ -16378,7 +16378,7 @@
                 }
             ],
             "description": "Diversos métodos estáticos em PHP para as coisas mais úteis ou inúteis...",
-            "time": "2020-05-16T21:20:34+00:00"
+            "time": "2021-03-31T03:36:47+00:00"
         },
         {
             "name": "uspdev/webform_boleto_usp",
