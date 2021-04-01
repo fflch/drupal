@@ -9,7 +9,7 @@ use Drupal\language\Entity\ConfigurableLanguage;
 use Drupal\user\Entity\Role;
 use Drupal\user\RoleInterface;
 
-use Uspdev\Utils;
+use Uspdev\Utils\Generic;
 
 class Configs {
 
@@ -47,7 +47,7 @@ class Configs {
     $files = file_scan_directory($dir,'/^.*\.yml$/i',[]);
     foreach ($files as $file) {
         $yml = $dir . $file->name . '.yml';
-        $configs = Utils::flatten(Yaml::parse(file_get_contents($yml)));
+        $configs = Generic::flatten(Yaml::parse(file_get_contents($yml)));
         $original_config = \Drupal::service('config.factory')->getEditable($file->name);
         foreach($configs as $name=>$config) {
             $original_config->set($name, $config);
