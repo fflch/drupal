@@ -1,0 +1,32 @@
+<section class="internas-container">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-12 internas-text">
+          {% trans %}
+            <h2 class="blue">Controle de acesso</h2>
+          {% endtrans %}
+          {% trans %}
+            <p>Para poder publicar no Urbandata, você deve se identificar.<br> Informe seu email no campo abaixo e clique em continuar, caso seu email seja identificado em nossa base de cadastros,
+              <br>seu acesso será liberado imediatamente.
+              <br> Caso seja o seu primeiro acesso, preencha o formulário e siga as instruções.</p>
+          {% endtrans %}
+
+            <form id="controle-acesso" method="post">
+              <div class="form-group">
+                <label for="exampleInputEmail">e-mail*</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="seunome@seuemail.com.br">
+                <small id="emailHelp" class="form-text text-muted">Nós nunca iremos compartilhar seu email com mais ninguém!</small>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+
+          <p>{% trans %}
+              <br>
+            Para esclarecer dúvidas e outras informações, escreva para <a href="mailto:contato@urbandata.org.br">contato@urbandata.org.br</a>
+            {% endtrans %}</p>
+        </div>
+
+      </div>
+  </div>
+</section>

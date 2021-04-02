@@ -1,0 +1,64 @@
+<?php
+
+/**
+ * @file
+ * Contains urbandatabrasil_userform.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Component\Utility\Html;
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_help().
+ */
+function urbandatabrasil_userform_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the urbandatabrasil_userform module.
+    case 'help.page.urbandatabrasil_userform':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom module for Urbandata Project') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function urbandatabrasil_userform_theme() {
+  return [
+    'urbandata_template' => [
+      'render element' => 'form'
+    ],
+  ];
+}
+
+/**
+ * {@inheritdoc}
+ */
+function urbandatabrasil_userform_page_attachments(&$attachments) {
+  $path = \drupal::request()->getPathInfo();
+  if ($path === '/cadastre-se' || $path === '/form/user') {
+    $attachments['#attached']['library'][] = 'urbandatabrasil_userform/form';
+  }
+}
+
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function urbandatabrasil_userform_node_presave(EntityInterface $node) {
+
+  if (($node->isNew())) {
+    $session = \Drupal::request()->getSession();
+    if (method_exists($session, 'get')) {
+      $value = $session->get('usuario_validado');
+      $value = Html::escape($value);
+      $node->set('field_autor', $value);
+    }
+  }
+}

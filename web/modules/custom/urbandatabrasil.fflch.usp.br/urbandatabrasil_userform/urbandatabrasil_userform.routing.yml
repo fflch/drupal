@@ -1,0 +1,22 @@
+urbandatabrasil_userform.default_form:
+  path: '/cadastre-se'
+  defaults:
+    _form: '\Drupal\urbandatabrasil_userform\Form\DefaultForm'
+  requirements:
+    _access: 'TRUE'
+
+urbandatabrasil_userform.valida_email_controller_validate:
+  path: '/valida_email'
+  defaults:
+    _controller: '\Drupal\urbandatabrasil_userform\Controller\ValidaEmailController::validate'
+    _title: 'Validar Email'
+  requirements:
+    _permission: 'access content'
+
+urbandatabrasil_userform.sessao:
+  path: '/configura_sessao'
+  defaults:
+    _controller: '\Drupal\urbandatabrasil_userform\Controller\ValidaEmailController::sessao'
+    _title: 'Página configura sessão'
+  requirements:
+    _permission: 'access content'
