@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b17ec25fadc045e663f9e07c4ecf0130",
+    "content-hash": "1128f9d8c96d9ad870d884a6417170ba",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -10045,11 +10045,11 @@
         },
         {
             "name": "drupal/webform_invitation",
-            "version": "dev-main",
+            "version": "1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fflch/webform_invitation_temporario.git",
-                "reference": "1783e1066a25e70e339ae882eadf33dd02afde2d"
+                "url": "https://git.drupalcode.org/project/webform_invitation.git",
+                "reference": "8.x-1.1"
             },
             "require": {
                 "drupal/token": "~1.0",
@@ -10657,20 +10657,30 @@
         },
         {
             "name": "fflch/cem-theme",
-            "version": "dev-master",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/cem-theme.git",
-                "reference": "8fdd4986b45c51730a57230d97e77db1318e5822"
+                "reference": "8e92d6af559317fd540b9f0d52d2ecad3f24f2f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fflch/cem-theme/zipball/8e92d6af559317fd540b9f0d52d2ecad3f24f2f3",
+                "reference": "8e92d6af559317fd540b9f0d52d2ecad3f24f2f3",
+                "shasum": ""
             },
             "type": "drupal-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
             "authors": [
                 {
                     "name": "DanielMM",
                     "email": "medeiros.danielm@gmail.com"
                 }
             ],
-            "time": "2021-01-21T18:04:18+00:00"
+            "time": "2021-04-09T01:55:17+00:00"
         },
         {
             "name": "fflch/fflch-theme",
@@ -10679,6 +10689,12 @@
                 "type": "git",
                 "url": "https://github.com/fflch/fflch-theme.git",
                 "reference": "9520a04a33da2df3593c80a8959c86563e3e7e3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fflch/fflch-theme/zipball/9520a04a33da2df3593c80a8959c86563e3e7e3a",
+                "reference": "9520a04a33da2df3593c80a8959c86563e3e7e3a",
+                "shasum": ""
             },
             "type": "drupal-theme",
             "license": [
@@ -10694,6 +10710,34 @@
                 "source": "https://github.com/fflch/fflch-theme"
             },
             "time": "2021-01-19T20:08:12+00:00"
+        },
+        {
+            "name": "fflch/urbandatabrasil_userform",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fflch/urbandatabrasil_userform.git",
+                "reference": "c1343754f7aed92aa5a71e123efd05760ed926f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fflch/urbandatabrasil_userform/zipball/c1343754f7aed92aa5a71e123efd05760ed926f8",
+                "reference": "c1343754f7aed92aa5a71e123efd05760ed926f8",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DanielMM",
+                    "email": "medeiros.danielm@gmail.com"
+                }
+            ],
+            "description": "Custom module for Urbandata Project",
+            "time": "2021-04-09T02:01:28+00:00"
         },
         {
             "name": "fflch/webform_ficha_catalografica",
@@ -10927,7 +10971,7 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.166.0",
+            "version": "v0.167.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
@@ -11249,6 +11293,112 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "illuminate/contracts",
+            "version": "v7.30.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/contracts.git",
+                "reference": "7d964384f0283bd7525ae7b5baa7ad32e5503b8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/7d964384f0283bd7525ae7b5baa7ad32e5503b8e",
+                "reference": "7d964384f0283bd7525ae7b5baa7ad32e5503b8e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5|^8.0",
+                "psr/container": "^1.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Contracts\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Contracts package.",
+            "homepage": "https://laravel.com",
+            "time": "2020-12-18T14:19:44+00:00"
+        },
+        {
+            "name": "illuminate/support",
+            "version": "v7.10.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/support.git",
+                "reference": "cd11fa914c52a2249c48cde08d03a871597e8781"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/cd11fa914c52a2249c48cde08d03a871597e8781",
+                "reference": "cd11fa914c52a2249c48cde08d03a871597e8781",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "^1.1",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "illuminate/contracts": "^7.0",
+                "nesbot/carbon": "^2.17",
+                "php": "^7.2.5",
+                "voku/portable-ascii": "^1.4.8"
+            },
+            "conflict": {
+                "tightenco/collect": "<5.5.33"
+            },
+            "suggest": {
+                "illuminate/filesystem": "Required to use the composer class (^7.0).",
+                "moontoast/math": "Required to use ordered UUIDs (^1.1).",
+                "ramsey/uuid": "Required to use Str::uuid() (^3.7|^4.0).",
+                "symfony/process": "Required to use the composer class (^5.0).",
+                "symfony/var-dumper": "Required to use the dd function (^5.0).",
+                "vlucas/phpdotenv": "Required to use the Env class and env helper (^4.0)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Support\\": ""
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Support package.",
+            "homepage": "https://laravel.com",
+            "time": "2020-05-05T16:21:56+00:00"
         },
         {
             "name": "laminas/laminas-diactoros",
@@ -12248,6 +12398,95 @@
             "time": "2021-02-15T16:11:48+00:00"
         },
         {
+            "name": "nesbot/carbon",
+            "version": "2.46.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/briannesbitt/Carbon.git",
+                "reference": "2fd2c4a77d58a4e95234c8a61c5df1f157a91bf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/2fd2c4a77d58a4e95234c8a61c5df1f157a91bf4",
+                "reference": "2fd2c4a77d58a4e95234c8a61c5df1f157a91bf4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.1.8 || ^8.0",
+                "symfony/polyfill-mbstring": "^1.0",
+                "symfony/translation": "^3.4 || ^4.0 || ^5.0"
+            },
+            "require-dev": {
+                "doctrine/orm": "^2.7",
+                "friendsofphp/php-cs-fixer": "^2.14 || ^3.0",
+                "kylekatarnls/multi-tester": "^2.0",
+                "phpmd/phpmd": "^2.9",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^0.12.54",
+                "phpunit/phpunit": "^7.5.20 || ^8.5.14",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "bin": [
+                "bin/carbon"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev",
+                    "dev-3.x": "3.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Carbon\\Laravel\\ServiceProvider"
+                    ]
+                },
+                "phpstan": {
+                    "includes": [
+                        "extension.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Carbon\\": "src/Carbon/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Nesbitt",
+                    "email": "brian@nesbot.com",
+                    "homepage": "http://nesbot.com"
+                },
+                {
+                    "name": "kylekatarnls",
+                    "homepage": "http://github.com/kylekatarnls"
+                }
+            ],
+            "description": "An API extension for DateTime that supports 281 different languages.",
+            "homepage": "http://carbon.nesbot.com",
+            "keywords": [
+                "date",
+                "datetime",
+                "time"
+            ],
+            "funding": [
+                {
+                    "url": "https://opencollective.com/Carbon",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/nesbot/carbon",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-02-24T17:30:44+00:00"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v4.10.4",
             "source": {
@@ -12863,16 +13102,16 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.3.0",
+            "version": "v6.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "4a08cf4cdd2c38d12ee2b9fa69e5d235f37a6dcb"
+                "reference": "050d430203105c27c30efd1dce7aa421ad882d01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/4a08cf4cdd2c38d12ee2b9fa69e5d235f37a6dcb",
-                "reference": "4a08cf4cdd2c38d12ee2b9fa69e5d235f37a6dcb",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/050d430203105c27c30efd1dce7aa421ad882d01",
+                "reference": "050d430203105c27c30efd1dce7aa421ad882d01",
                 "shasum": ""
             },
             "require": {
@@ -12890,7 +13129,7 @@
                 "yoast/phpunit-polyfills": "^0.2.0"
             },
             "suggest": {
-                "ext-mbstring": "Needed to send email in multibyte encoding charset",
+                "ext-mbstring": "Needed to send email in multibyte encoding charset or decode encoded addresses",
                 "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
                 "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
                 "psr/log": "For optional PSR-3 debug logging",
@@ -12931,7 +13170,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-02-19T15:28:08+00:00"
+            "time": "2021-03-31T20:06:42+00:00"
         },
         {
             "name": "phpoffice/phpspreadsheet",
@@ -13032,16 +13271,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.6",
+            "version": "3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "906a5fafabe5e6ba51ef3dc65b2722a677908837"
+                "reference": "d369510df0ebd5e1a5d0fe3d4d23c55fa87a403d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/906a5fafabe5e6ba51ef3dc65b2722a677908837",
-                "reference": "906a5fafabe5e6ba51ef3dc65b2722a677908837",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/d369510df0ebd5e1a5d0fe3d4d23c55fa87a403d",
+                "reference": "d369510df0ebd5e1a5d0fe3d4d23c55fa87a403d",
                 "shasum": ""
             },
             "require": {
@@ -13135,7 +13374,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-10T13:58:31+00:00"
+            "time": "2021-04-06T14:00:11+00:00"
         },
         {
             "name": "psr/cache",
@@ -16243,16 +16482,16 @@
         },
         {
             "name": "uspdev/cache",
-            "version": "0.7.2",
+            "version": "0.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/cache.git",
-                "reference": "766bac22955267f3f1eaed1313caab28344de899"
+                "reference": "5ac05e7c2913ddb1e35f5652b0930f19b5fb283c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/cache/zipball/766bac22955267f3f1eaed1313caab28344de899",
-                "reference": "766bac22955267f3f1eaed1313caab28344de899",
+                "url": "https://api.github.com/repos/uspdev/cache/zipball/5ac05e7c2913ddb1e35f5652b0930f19b5fb283c",
+                "reference": "5ac05e7c2913ddb1e35f5652b0930f19b5fb283c",
                 "shasum": ""
             },
             "require": {
@@ -16276,27 +16515,28 @@
             ],
             "description": "Library to connect to cache server",
             "homepage": "https://github.com/uspdev/cache",
-            "time": "2021-01-27T13:56:38+00:00"
+            "time": "2021-04-07T23:14:52+00:00"
         },
         {
             "name": "uspdev/replicado",
-            "version": "1.6.11",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/replicado.git",
-                "reference": "fb9b29e0a16c3fbbe535c8c159820795f8af1e56"
+                "reference": "bf0257b3a12d2ac116e3d80e38bdc4f42ff471ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/replicado/zipball/fb9b29e0a16c3fbbe535c8c159820795f8af1e56",
-                "reference": "fb9b29e0a16c3fbbe535c8c159820795f8af1e56",
+                "url": "https://api.github.com/repos/uspdev/replicado/zipball/bf0257b3a12d2ac116e3d80e38bdc4f42ff471ad",
+                "reference": "bf0257b3a12d2ac116e3d80e38bdc4f42ff471ad",
                 "shasum": ""
             },
             "require": {
                 "ext-pdo_dblib": "*",
+                "illuminate/support": "^5 || ^6 || ^7 || ^8",
                 "monolog/monolog": "^1.25 || ^2",
                 "php": ">=7.0",
-                "uspdev/cache": "^0.7.1"
+                "uspdev/cache": "^0.7"
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.0 || ^9.0",
@@ -16321,7 +16561,7 @@
             ],
             "description": "Classes PHP que consome dados do Replicado USP",
             "homepage": "https://github.com/uspdev/replicado",
-            "time": "2021-03-24T18:35:51+00:00"
+            "time": "2021-04-07T23:14:14+00:00"
         },
         {
             "name": "uspdev/replicado_drupal",
@@ -16400,6 +16640,76 @@
             ],
             "description": "Gera boletos usando api USP",
             "time": "2021-01-20T13:06:25+00:00"
+        },
+        {
+            "name": "voku/portable-ascii",
+            "version": "1.5.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/portable-ascii.git",
+                "reference": "80953678b19901e5165c56752d087fc11526017c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/80953678b19901e5165c56752d087fc11526017c",
+                "reference": "80953678b19901e5165c56752d087fc11526017c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
+            },
+            "suggest": {
+                "ext-intl": "Use Intl for transliterator_transliterate() support"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "voku\\": "src/voku/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Moelleken",
+                    "homepage": "http://www.moelleken.org/"
+                }
+            ],
+            "description": "Portable ASCII library - performance optimized (ascii) string functions for php.",
+            "homepage": "https://github.com/voku/portable-ascii",
+            "keywords": [
+                "ascii",
+                "clean",
+                "php"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/moelleken",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/voku",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/portable-ascii",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://www.patreon.com/voku",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/voku/portable-ascii",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-11-12T00:07:28+00:00"
         },
         {
             "name": "webflo/drupal-finder",
@@ -16549,9 +16859,7 @@
         "bower-asset/jquery.cycle": 20,
         "bower-asset/jquery.hoverintent": 20,
         "bower-asset/json2": 20,
-        "drupal/webform_invitation": 20,
-        "drupal/youtube_playlist": 20,
-        "fflch/cem-theme": 20
+        "drupal/youtube_playlist": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

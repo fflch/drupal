@@ -1,7 +1,0 @@
-name: centrodametropole Custom Breadcrumb
-type: module
-description: Alters the breadcrumb trail so it uses main menu
-version: '8.x-1.0'
-core: '8.x'
-package: centrodametropole.fflch.usp.br
-project: 'centrodametropole_custom_breadcrumb'

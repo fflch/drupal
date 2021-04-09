@@ -1,9 +1,0 @@
-services:
-  valida_email.redirectmycontenttype:
-    class: Drupal\valida_email\EventSubscriber\valida_emailRedirectSubscriber
-    tags:
-      - { name: event_subscriber }
-  valida_email.route_subscriber:
-    class: Drupal\valida_email\EventSubscriber\valida_emailRouteSubscriber
-    tags:
-      - { name: event_subscriber }

@@ -16,25 +16,13 @@
             "type": "git",
             "url": "https://github.com/uspdev/webform_boleto_usp.git"
         },
-        "webform_ficha_catalografica": {
-            "type": "git",
-            "url": "https://github.com/fflch/webform_ficha_catalografica.git"
-        },
-        "replicado_drupal": {
-            "type": "git",
-            "url": "https://github.com/uspdev/replicado_drupal.git"
-        },
         "webform_invitation_temporario": {
             "type": "git",
             "url": "https://github.com/fflch/webform_invitation_temporario.git"
         },
-        "cem-theme": {
+        "replicado_drupal": {
             "type": "git",
-            "url": "https://github.com/fflch/cem-theme.git"
-        },
-        "fflch-theme": {
-            "type": "git",
-            "url": "https://github.com/fflch/fflch-theme.git"
+            "url": "https://github.com/uspdev/replicado_drupal.git"
         }
     },
     "require": {
@@ -167,14 +155,15 @@
         "drupal/webform": "6.0.2",
         "drupal/webform_analysis": "1.0-beta7",
         "drupal/webform_cpf": "2.0.2",
-        "drupal/webform_invitation": "dev-main",
+        "drupal/webform_invitation": "1.1",
         "drupal/webform_views": "5.0-alpha8",
         "drupal/webform_xlsx_export": "1.0",
         "drupal/youtube": "1.2",
         "drupal/youtube_playlist": "1.x-dev#2e033f41",
         "drush/drush": "8.x",
-        "fflch/cem-theme": "dev-master",
+        "fflch/cem-theme": "1.0.3",
         "fflch/fflch-theme": "1.0.7",
+        "fflch/urbandatabrasil_userform": "1.0.0",
         "fflch/webform_ficha_catalografica": "1.0.2",
         "npm-asset/ckeditor_youtube": "2.1.15",
         "npm-asset/fakeobjects": "4.15.0",
