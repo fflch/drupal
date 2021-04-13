@@ -4,7 +4,6 @@ Plataforma Drupal usada nos sites da FFLCH. Os módulos e bibliotecas
 estão em composer.json. Principais diretórios:
 
  - web/profiles/contrib/fflchprofile: profile com módulos e configurações customizações
- - web/modules/custom: módulos especifícos de cada site
 
 ## deploy em um ambiente dev:
 
