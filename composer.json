@@ -164,6 +164,8 @@
         "fflch/cem-theme": "1.0.3",
         "fflch/fflch-theme": "1.0.7",
         "fflch/urbandatabrasil_userform": "1.0.0",
+        "fflch/centrodametropole_valida_email": "1.0.0",
+        "fflch/centrodametropole_breadcrumb": "1.0.1",
         "fflch/webform_ficha_catalografica": "1.0.2",
         "npm-asset/ckeditor_youtube": "2.1.15",
         "npm-asset/fakeobjects": "4.15.0",

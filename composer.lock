@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1128f9d8c96d9ad870d884a6417170ba",
+    "content-hash": "cacff8914a98728d994fdb666e45aafd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -10683,6 +10683,56 @@
             "time": "2021-04-09T01:55:17+00:00"
         },
         {
+            "name": "fflch/centrodametropole_breadcrumb",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fflch/centrodametropole_breadcrumb.git",
+                "reference": "b9d3f7d961a7b79eb401733503d51deee3b66418"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fflch/centrodametropole_breadcrumb/zipball/b9d3f7d961a7b79eb401733503d51deee3b66418",
+                "reference": "b9d3f7d961a7b79eb401733503d51deee3b66418",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "centrodametropole_breadcrumb",
+            "time": "2021-04-09T01:51:14+00:00"
+        },
+        {
+            "name": "fflch/centrodametropole_valida_email",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fflch/centrodametropole_valida_email.git",
+                "reference": "8e2353940798cb76fe64b9c3fb1efe7dcb3f5d16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fflch/centrodametropole_valida_email/zipball/8e2353940798cb76fe64b9c3fb1efe7dcb3f5d16",
+                "reference": "8e2353940798cb76fe64b9c3fb1efe7dcb3f5d16",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DanielMM",
+                    "email": "medeiros.danielm@gmail.com"
+                }
+            ],
+            "description": "Módulo CEM",
+            "time": "2021-04-09T01:51:40+00:00"
+        },
+        {
             "name": "fflch/fflch-theme",
             "version": "1.0.7",
             "source": {
@@ -10746,6 +10796,12 @@
                 "type": "git",
                 "url": "https://github.com/fflch/webform_ficha_catalografica.git",
                 "reference": "093d8d426b77af1d59f30211fb0bd671fcd2c4c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fflch/webform_ficha_catalografica/zipball/093d8d426b77af1d59f30211fb0bd671fcd2c4c1",
+                "reference": "093d8d426b77af1d59f30211fb0bd671fcd2c4c1",
+                "shasum": ""
             },
             "require": {
                 "rospdf/pdf-php": "^0.12.63"
