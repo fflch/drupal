@@ -136,3 +136,7 @@ permissions:
 # administrar captcha
   - 'administer CAPTCHA settings'
   - 'administer recaptcha'
+# feeds
+  - 'access feed overview'
+  - 'administer feeds'
+  - 'administer feeds_tamper'
