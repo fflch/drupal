@@ -161,6 +161,7 @@
         "drupal/youtube": "1.2",
         "drupal/youtube_playlist": "1.x-dev#2e033f41",
         "drush/drush": "8.x",
+        "markbaker/matrix": "2.0.0",
         "fflch/cem-theme": "1.0.3",
         "fflch/fflch-theme": "1.0.7",
         "fflch/urbandatabrasil_userform": "1.0.0",
