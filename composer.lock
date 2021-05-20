@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f2cdf7093fd74cee358f21a9fbbd1a0",
+    "content-hash": "25504d89aa1790239feb9702093906ca",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -223,16 +223,16 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "00c263fa945e7f78524bbb6b99d331f3b493be2a"
+                "reference": "311040bd78ea2ea82105dd1f17205c449ac8de47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/00c263fa945e7f78524bbb6b99d331f3b493be2a",
-                "reference": "00c263fa945e7f78524bbb6b99d331f3b493be2a",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/311040bd78ea2ea82105dd1f17205c449ac8de47",
+                "reference": "311040bd78ea2ea82105dd1f17205c449ac8de47",
                 "shasum": ""
             },
             "require": {
@@ -278,7 +278,7 @@
                 "localization",
                 "postal"
             ],
-            "time": "2021-03-14T20:04:10+00:00"
+            "time": "2021-05-17T08:05:21+00:00"
         },
         {
             "name": "composer/installers",
@@ -10810,34 +10810,6 @@
             "time": "2021-04-09T01:51:14+00:00"
         },
         {
-            "name": "fflch/centrodametropole_valida_email",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fflch/centrodametropole_valida_email.git",
-                "reference": "8e2353940798cb76fe64b9c3fb1efe7dcb3f5d16"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fflch/centrodametropole_valida_email/zipball/8e2353940798cb76fe64b9c3fb1efe7dcb3f5d16",
-                "reference": "8e2353940798cb76fe64b9c3fb1efe7dcb3f5d16",
-                "shasum": ""
-            },
-            "type": "drupal-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "DanielMM",
-                    "email": "medeiros.danielm@gmail.com"
-                }
-            ],
-            "description": "Módulo CEM",
-            "time": "2021-04-09T01:51:40+00:00"
-        },
-        {
             "name": "fflch/fflch-theme",
             "version": "1.0.7",
             "source": {
@@ -11084,16 +11056,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.174.0",
+            "version": "v0.175.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "004c5280f5a26a8acbb6f6af6a792e4872b7648a"
+                "reference": "316cbf9b02c575a140d8cbeca48a3ca0070fcd5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/004c5280f5a26a8acbb6f6af6a792e4872b7648a",
-                "reference": "004c5280f5a26a8acbb6f6af6a792e4872b7648a",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/316cbf9b02c575a140d8cbeca48a3ca0070fcd5a",
+                "reference": "316cbf9b02c575a140d8cbeca48a3ca0070fcd5a",
                 "shasum": ""
             },
             "require": {
@@ -11117,7 +11089,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2021-05-08T11:20:03+00:00"
+            "time": "2021-05-15T11:18:02+00:00"
         },
         {
             "name": "google/auth",
@@ -14493,16 +14465,16 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v4.4.22",
+            "version": "v4.4.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "01c77324d1d47efbfd7891f62a7c256c69330115"
+                "reference": "947cacaf1b3a2af6f13a435392873d5ddaba5f70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/01c77324d1d47efbfd7891f62a7c256c69330115",
-                "reference": "01c77324d1d47efbfd7891f62a7c256c69330115",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/947cacaf1b3a2af6f13a435392873d5ddaba5f70",
+                "reference": "947cacaf1b3a2af6f13a435392873d5ddaba5f70",
                 "shasum": ""
             },
             "require": {
@@ -14551,7 +14523,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-07T15:47:03+00:00"
+            "time": "2021-05-16T09:52:47+00:00"
         },
         {
             "name": "symfony/debug",
@@ -14903,16 +14875,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.23",
+            "version": "v4.4.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "67b77716f517e3f864759232e1201e7aa2ab0e82"
+                "reference": "a96bc19ed87c88eec78e1a4c803bdc1446952983"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/67b77716f517e3f864759232e1201e7aa2ab0e82",
-                "reference": "67b77716f517e3f864759232e1201e7aa2ab0e82",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/a96bc19ed87c88eec78e1a4c803bdc1446952983",
+                "reference": "a96bc19ed87c88eec78e1a4c803bdc1446952983",
                 "shasum": ""
             },
             "require": {
@@ -14957,7 +14929,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-09T09:13:09+00:00"
+            "time": "2021-05-16T12:27:45+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -16665,17 +16637,20 @@
         },
         {
             "name": "uspdev/utils",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/utils.git",
-                "reference": "3cb2c5734f5ac77867a389ab9eb808da105fd788"
+                "reference": "59a52c9006e3f8933947f0670ffd9b4c514ffcc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/utils/zipball/3cb2c5734f5ac77867a389ab9eb808da105fd788",
-                "reference": "3cb2c5734f5ac77867a389ab9eb808da105fd788",
+                "url": "https://api.github.com/repos/uspdev/utils/zipball/59a52c9006e3f8933947f0670ffd9b4c514ffcc2",
+                "reference": "59a52c9006e3f8933947f0670ffd9b4c514ffcc2",
                 "shasum": ""
+            },
+            "require": {
+                "nesbot/carbon": "^2.48"
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.5 || ^9.0"
@@ -16697,7 +16672,7 @@
                 }
             ],
             "description": "Diversos métodos estáticos em PHP para as coisas mais úteis ou inúteis...",
-            "time": "2021-04-01T15:11:11+00:00"
+            "time": "2021-05-19T20:58:41+00:00"
         },
         {
             "name": "uspdev/webform_boleto_usp",
