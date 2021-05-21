@@ -83,3 +83,4 @@ cache_control_override
 field_token_value
 token_filter
 token
+fancy_file_delete

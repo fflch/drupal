@@ -140,3 +140,10 @@ permissions:
   - 'access feed overview'
   - 'administer feeds'
   - 'administer feeds_tamper'
+# fancy_file_delete
+  - 'administer fancy file delete'
+  - 'add unmanaged files entities'
+  - 'administer unmanaged files entities'
+  - 'delete unmanaged files entities'
+  - 'edit unmanaged files entities'
+  - 'view unmanaged files entities'
