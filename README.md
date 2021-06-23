@@ -189,3 +189,12 @@ traduzidos pois o langcode está com und (undefinided). Para corrigir:
 
     drush @filosofia.fflch.usp.br config-set  field.storage.node.field_banca langcode pt-br --yes
 
+### problema downloads nas traduções
+
+Muitos sites migrados do drupal 6 ou 7 estavam com o valor de path em locale.settings.yml como *sites/default/files/translations*. Para verificar todos:
+
+    for i in $(ls | grep fflch.usp.br);do drush @$i config-get locale.settings translation.path; done
+    
+Para corrigir todos:
+
+    for i in $(ls | grep fflch.usp.br);do drush @$i config-set locale.settings translation.path sites/$i/files/translations --yes; done
