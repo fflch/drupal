@@ -147,4 +147,5 @@ permissions:
   - 'delete unmanaged files entities'
   - 'edit unmanaged files entities'
   - 'view unmanaged files entities'
+# module: header_and_footer_scripts
   - 'header_and_footer_scripts_settings'
