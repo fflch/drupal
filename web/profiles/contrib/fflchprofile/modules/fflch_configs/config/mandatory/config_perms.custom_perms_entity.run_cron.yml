@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: run_cron
+label: 'Run cron'
+route: system.run_cron

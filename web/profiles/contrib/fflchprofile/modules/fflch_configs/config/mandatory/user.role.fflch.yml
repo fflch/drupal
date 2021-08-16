@@ -149,3 +149,8 @@ permissions:
   - 'view unmanaged files entities'
 # module: header_and_footer_scripts
   - 'header_and_footer_scripts_settings'
+# rotas para limpar o cache e executar cron
+  - 'Performance settings'
+  - 'Cron settings'
+  - 'Run cron'
+  - 'Cron'

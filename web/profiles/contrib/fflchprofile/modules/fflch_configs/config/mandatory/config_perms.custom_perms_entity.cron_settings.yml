@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: cron_settings
+label: 'Cron settings'
+route: system.cron_settings

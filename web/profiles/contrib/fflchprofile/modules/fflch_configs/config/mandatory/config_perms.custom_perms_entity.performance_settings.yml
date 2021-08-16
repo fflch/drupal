@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: performance_settings
+label: 'Performance settings'
+route: system.performance_settings
