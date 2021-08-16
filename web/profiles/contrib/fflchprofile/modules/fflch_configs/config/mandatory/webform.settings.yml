@@ -8,3 +8,4 @@ file:
   delete_temporary_managed_files: true
   file_public: true
   file_private_redirect: true
+  default_max_filesize: '22 MB'
