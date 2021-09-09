@@ -154,3 +154,11 @@ permissions:
   - 'Cron settings'
   - 'Run cron'
   - 'Cron'
+#Facets
+  - 'administer facets'
+#Workflows
+  - 'administer workflows'
+  - 'use editor transition archived'
+  - 'use editor transition publish'
+  - 'view any unpublished content'
+  - 'view latest version'
