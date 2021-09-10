@@ -162,3 +162,5 @@ permissions:
   - 'use editor transition publish'
   - 'view any unpublished content'
   - 'view latest version'
+#Search API
+  - 'administer search_api'
