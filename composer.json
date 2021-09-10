@@ -196,6 +196,10 @@
                 "Define um novo filtro de parser de data no tamper":
                     "https://www.drupal.org/files/issues/2020-09-13/3018621-5.patch"
             },
+            "drupal/views_data_export": {
+                "Problema com https no chrome":
+                    "https://www.drupal.org/files/issues/2021-02-16/3189135-feed-icon-url-absolute-false-4.patch"
+            },
             "drupal/youtube_playlist": {
                 "Mudanças temporárias para uso na FFLCH":
                     "patches/youtube_playlist/2e033f41.patch"
