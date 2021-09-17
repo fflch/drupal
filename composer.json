@@ -200,6 +200,10 @@
                 "Problema com https no chrome":
                     "https://www.drupal.org/files/issues/2021-02-16/3189135-feed-icon-url-absolute-false-4.patch"
             },
+            "drupal/core": {
+                "Problema HTML5 Validation":
+                    "https://www.drupal.org/files/issues/2020-12-26/1870006-html5-validation-scroll-64-8.9.x.patch"
+            },
             "drupal/youtube_playlist": {
                 "Mudanças temporárias para uso na FFLCH":
                     "patches/youtube_playlist/2e033f41.patch"
