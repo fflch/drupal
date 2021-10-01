@@ -34,6 +34,8 @@ class LoginController extends ControllerBase {
 
     $client = new Client([
         'base_uri' => $base_uri,
+        // Fix temporário para SSL
+        'verify' => false,
     ]);
 
     $res = $client->request('GET',"/check/",
