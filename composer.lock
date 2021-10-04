@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "996d83281de9bbdff3d43a5bf598124d",
+    "content-hash": "fff37a9dc73f53d92a03c8e39a9d681a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6211,6 +6211,55 @@
             "homepage": "https://www.drupal.org/project/header_and_footer_scripts",
             "support": {
                 "source": "https://git.drupalcode.org/project/header_and_footer_scripts"
+            }
+        },
+        {
+            "name": "drupal/help_text",
+            "version": "1.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/help_text.git",
+                "reference": "8.x-1.14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/help_text-8.x-1.14.zip",
+                "reference": "8.x-1.14",
+                "shasum": "40e0e94ab414e8f94ec1c764ad5f4a7de3a5b981"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/fontawesome": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.14",
+                    "datestamp": "1592263285",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gopivignesh.m",
+                    "homepage": "https://www.drupal.org/user/2356262"
+                },
+                {
+                    "name": "lee.cocklin",
+                    "homepage": "https://www.drupal.org/user/3522070"
+                }
+            ],
+            "description": "Provides a toggle option for help text in forms.",
+            "homepage": "https://www.drupal.org/project/help_text",
+            "support": {
+                "source": "https://git.drupalcode.org/project/help_text"
             }
         },
         {
@@ -17362,5 +17411,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
