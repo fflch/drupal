@@ -159,6 +159,7 @@
         "drupal/youtube_playlist": "1.x-dev#2e033f41",
         "drush/drush": "8.x",
         "fflch/cem-theme": "1.0.3",
+        "fflch/boletim": "1.0.1",
         "fflch/centrodametropole_breadcrumb": "1.0.1",
         "fflch/fflch-theme": "1.0.7",
         "fflch/urbandatabrasil_userform": "1.0.0",
