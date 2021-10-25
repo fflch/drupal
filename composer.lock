@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "996d83281de9bbdff3d43a5bf598124d",
+    "content-hash": "19b1639358265100a6424f3b99e5b519",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6028,6 +6028,58 @@
             }
         },
         {
+            "name": "drupal/formtips",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/formtips.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/formtips-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "0897bfc6df942535e46d48ee536c1ab13e938afd"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1603251672",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "psynaptic",
+                    "homepage": "https://www.drupal.org/user/93429"
+                },
+                {
+                    "name": "sudeepg",
+                    "homepage": "https://www.drupal.org/user/368521"
+                }
+            ],
+            "description": "Form Tips module unclutters forms by turning form descriptions into hover-activated tooltips.",
+            "homepage": "https://www.drupal.org/project/formtips",
+            "support": {
+                "source": "https://git.drupalcode.org/project/formtips"
+            }
+        },
+        {
             "name": "drupal/geolocation",
             "version": "3.7.0",
             "source": {
@@ -6960,6 +7012,59 @@
             "homepage": "https://www.drupal.org/project/jquery_ui_slider",
             "support": {
                 "source": "https://git.drupalcode.org/project/jquery_ui_slider"
+            }
+        },
+        {
+            "name": "drupal/jquery_ui_sortable",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jquery_ui_sortable.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui_sortable-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "dbb64f4e8f57b08a3e0ddd2e5cc3ba8d27d2722f"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/jquery_ui": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1583174744",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "zrpnr",
+                    "homepage": "https://www.drupal.org/user/1448368"
+                }
+            ],
+            "description": "Provides jQuery UI Sortable library.",
+            "homepage": "https://www.drupal.org/project/jquery_ui_sortable",
+            "support": {
+                "source": "https://git.drupalcode.org/project/jquery_ui_sortable"
             }
         },
         {
@@ -10985,6 +11090,41 @@
                 "source": "https://github.com/ezyang/htmlpurifier/tree/master"
             },
             "time": "2020-06-29T00:56:53+00:00"
+        },
+        {
+            "name": "fflch/boletim",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fflch/boletim.git",
+                "reference": "02c998437affc0f7084e0b2dd29ab0a89a6eb267"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fflch/boletim/zipball/02c998437affc0f7084e0b2dd29ab0a89a6eb267",
+                "reference": "02c998437affc0f7084e0b2dd29ab0a89a6eb267",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/jquery_ui_sortable": "^1.1"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Gomes Verissimo",
+                    "email": "verissimotgv@gmail.com"
+                }
+            ],
+            "description": "Custom module for Boletim FFLCH",
+            "support": {
+                "issues": "https://github.com/fflch/boletim/issues",
+                "source": "https://github.com/fflch/boletim/tree/1.0.1"
+            },
+            "time": "2021-10-19T15:53:19+00:00"
         },
         {
             "name": "fflch/cem-theme",
@@ -17362,5 +17502,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
