@@ -164,3 +164,5 @@ permissions:
   - 'view latest version'
 #Search API
   - 'administer search_api'
+#Form Tips 
+  - 'administer formtips'  
