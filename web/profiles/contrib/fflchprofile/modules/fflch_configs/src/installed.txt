@@ -84,3 +84,4 @@ field_token_value
 token_filter
 token
 fancy_file_delete
+webform_captcha_mandatory
