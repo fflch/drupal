@@ -1,0 +1,12 @@
+diff --git a/src/Feeds/Fetcher/HttpFetcher.php b/src/Feeds/Fetcher/HttpFetcher.php
+index 548c8245..755ca3a3 100644
+--- a/src/Feeds/Fetcher/HttpFetcher.php
++++ b/src/Feeds/Fetcher/HttpFetcher.php
+@@ -140,6 +140,7 @@ class HttpFetcher extends PluginBase implements ClearableInterface, FetcherInter
+     $url = Feed::translateSchemes($url);
+ 
+     $options = [RequestOptions::SINK => $sink];
++    $options['verify'] = false;
+ 
+     // Adding User-Agent header from the default guzzle client config for feeds
+     // that require that.
