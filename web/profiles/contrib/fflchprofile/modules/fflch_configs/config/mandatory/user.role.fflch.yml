@@ -45,6 +45,7 @@ permissions:
   - 'administer menu'
 # Módulos e configurações liberados para uso
   - 'administer google analytics'
+  - 'administer image styles'
   - 'administer css assets injector'
   - 'administer js assets injector'
   - 'csv importer'
