@@ -58,6 +58,7 @@ redirect
 scheduler
 smtp
 theme_permission
+verf
 views_bootstrap
 views_data_export
 views_send
