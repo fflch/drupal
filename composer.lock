@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfcb4c86f053d6d03cc28d6cc14eacb9",
+    "content-hash": "6e58f772151f77274f1cbbb78eab8b5a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -8377,6 +8377,50 @@
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect"
+            }
+        },
+        {
+            "name": "drupal/rest_api_access_token",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/rest_api_access_token.git",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/rest_api_access_token-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "404dd271cba3cd969fc4eaa8035ccf92773ffc18"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1614004617",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "marcinkazmierski",
+                    "homepage": "https://www.drupal.org/user/3616253"
+                }
+            ],
+            "description": "REST API Access Token module.",
+            "homepage": "https://www.drupal.org/project/rest_api_access_token",
+            "support": {
+                "source": "https://git.drupalcode.org/project/rest_api_access_token"
             }
         },
         {
@@ -17386,5 +17430,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
