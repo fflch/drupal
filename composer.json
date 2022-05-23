@@ -65,6 +65,7 @@
         "drupal/core-recommended": "8.9.20",
         "drupal/cpf": "1.2",
         "drupal/crop": "2.1",
+        "drupal/imagefield_slideshow": "2.0.1",
         "drupal/csv_importer": "1.12",
         "drupal/csv_serialization": "2.0",
         "drupal/ctools": "3.7",
