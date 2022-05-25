@@ -239,6 +239,10 @@
             "drupal/feeds": {
                 "Desligando ssl temporariamente - mandar patch tornando opção configurável no feeds":
                     "patches/feeds/turn-off-https-cert-verify.patch"
+            },
+            "drupal/imagefield_slideshow": {
+                "Melhorando caption: https://www.drupal.org/project/imagefield_slideshow/issues/3282184":
+                    "https://www.drupal.org/files/issues/2022-05-24/imagefield_slideshow-display-title-as-caption.patch"
             }
         },
         "installer-types": [
