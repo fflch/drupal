@@ -89,6 +89,7 @@
         "drupal/field_group": "3.2",
         "drupal/field_token_value": "1.0",
         "drupal/file_entity": "2.0-beta9",
+        "drupal/file_download_link": "1.1",
         "drupal/fontawesome": "2.19",
         "drupal/fontyourface": "3.6",
         "drupal/form_placeholder": "1.0",
