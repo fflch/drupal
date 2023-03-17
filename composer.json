@@ -117,6 +117,7 @@
         "drupal/media_entity": "1.8",
         "drupal/media_entity_slideshow": "2.4",
         "drupal/menu_manipulator": "2.1",
+        "drupal/menu_item_extras": "2.17",
         "drupal/metatag": "1.16",
         "drupal/page_manager": "4.0-beta6",
         "drupal/panelbutton": "1.4",
