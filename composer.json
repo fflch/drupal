@@ -5,10 +5,6 @@
     "license": "GPL-2.0-or-later",
     "repositories": {
         "0": {
-            "type": "git",
-            "url": "https://github.com/fflch/webform_invitation_temporario.git"
-        },
-        "1": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
