@@ -21,164 +21,15 @@
         "bower-asset/json2": "dev-master",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
-        "dompdf/dompdf": "v0.8.5",
         "drupal/address": "1.9",
-        "drupal/admin_toolbar": "3.0.3",
-        "drupal/anchor_link": "2.5",
-        "drupal/asset_injector": "2.8",
-        "drupal/auto_entitylabel": "3.0.0-beta4",
-        "drupal/better_exposed_filters": "5.0",
-        "drupal/block_class": "1.3",
-        "drupal/bootstrap_horizontal_tabs": "1.4",
-        "drupal/boxout": "1.2",
-        "drupal/cache_control_override": "1.0-alpha2",
-        "drupal/calendar": "1.0-alpha4",
-        "drupal/captcha": "1.2",
-        "drupal/cck_select_other": "1.4",
-        "drupal/checklistapi": "2.0.0",
-        "drupal/ckeditor_accordion": "1.3",
-        "drupal/ckeditor_bgimage": "2.0",
-        "drupal/ckeditor_bootstrap_grid": "1.4",
-        "drupal/ckeditor_bootstrap_table": "1.2",
-        "drupal/ckeditor_bootstrap_tabs": "1.2",
-        "drupal/ckeditor_font": "1.2",
-        "drupal/ckeditor_images_gallery": "1.6",
-        "drupal/ckeditor_markdown": "1.2",
-        "drupal/ckeditor_readmore": "2.0",
-        "drupal/ckeditor_resize": "1.3",
-        "drupal/ckeditor_tableresize": "1.1",
-        "drupal/ckeditor_tabletoolstoolbar": "1.0",
-        "drupal/ckeditor_uploadimage": "2.0",
-        "drupal/ckeditor_youtube": "1.3",
-        "drupal/collapse_text": "2.0",
-        "drupal/colorbox": "1.7",
-        "drupal/colorbutton": "1.3",
-        "drupal/conditional_fields": "1.0-alpha10",
-        "drupal/config_perms": "2.0",
-        "drupal/console": "^1.9",
-        "drupal/copyprevention": "1.3",
-        "drupal/core-composer-scaffold": "8.9.20",
-        "drupal/core-recommended": "8.9.20",
-        "drupal/cpf": "1.2",
-        "drupal/crop": "2.1",
-        "drupal/imagefield_slideshow": "2.0.1",
-        "drupal/csv_importer": "1.12",
-        "drupal/csv_serialization": "2.0",
-        "drupal/ctools": "3.7",
-        "drupal/date_range_formatter": "3.1",
-        "drupal/ds": "3.13",
-        "drupal/editor_advanced_image": "2.0-beta1",
-        "drupal/editor_advanced_link": "1.8",
-        "drupal/editor_file": "1.6",
-        "drupal/entity": "1.2",
-        "drupal/entity_clone": "1.0-beta6",
-        "drupal/entity_print": "2.4",
-        "drupal/externalauth": "1.4",
-        "drupal/facets": "1.8",
-        "drupal/fakeobjects": "1.1",
-        "drupal/fancy_file_delete": "2.0.6",
-        "drupal/feeds_ex": "1.0-alpha5",
-        "drupal/feeds_tamper": "2.0-beta2",
-        "drupal/feeds_youtube": "1.0-alpha1",
-        "drupal/field_collection": "1.0.0-alpha1",
-        "drupal/field_formatter_class": "1.5",
-        "drupal/field_group": "3.2",
-        "drupal/field_token_value": "1.0",
-        "drupal/file_entity": "2.0-beta9",
-        "drupal/file_download_link": "1.1",
-        "drupal/fontawesome": "2.19",
-        "drupal/fontyourface": "3.6",
-        "drupal/form_placeholder": "1.0",
-        "drupal/formtips": "1.5",
-        "drupal/geolocation": "3.7",
-        "drupal/google_analytics": "3.1",
-        "drupal/header_and_footer_scripts": "2.2",
-        "drupal/image_widget_crop": "2.3",
-        "drupal/imce": "2.4",
-        "drupal/inline_entity_form": "1.0-rc9",
-        "drupal/inline_responsive_images": "2.2.0",
-        "drupal/insert_view_adv": "1.0-beta2",
-        "drupal/jcarousel": "4.0",
-        "drupal/jquery_countdown_timer": "1.3",
-        "drupal/jquery_ui_sortable": "1.1",
-        "drupal/jquery_ui_touch_punch": "1.0",
-        "drupal/juicebox": "2.0-beta4",
-        "drupal/languageicons": "1.0.0-beta3",
-        "drupal/link_attributes": "1.11",
-        "drupal/login_tracker": "1.4",
-        "drupal/mail_safety": "1.2",
-        "drupal/mailsystem": "4.3",
-        "drupal/markdown": "1.3",
-        "drupal/masked_input": "1.1",
-        "drupal/media_entity": "1.8",
-        "drupal/media_entity_slideshow": "2.4",
-        "drupal/menu_manipulator": "2.1",
-        "drupal/menu_item_extras": "2.17",
-        "drupal/metatag": "1.16",
-        "drupal/page_manager": "4.0-beta6",
-        "drupal/panelbutton": "1.4",
-        "drupal/panels": "4.6",
-        "drupal/paragraphs": "1.12",
-        "drupal/pathauto": "1.8",
-        "drupal/recaptcha": "3.0",
-        "drupal/redirect": "1.6",
-        "drupal/rules": "3.0-alpha5",
-        "drupal/scheduler": "1.3",
-        "drupal/search_api": "1.19",
-        "drupal/semanticviews": "2.3",
-        "drupal/send_email_tab": "1.0.0",
-        "drupal/share_everywhere": "2.0.0",
-        "drupal/simple_gmap": "3.0.1",
-        "drupal/simplenews": "2.0-beta2",
-        "drupal/simplify_menu": "2.1",
-        "drupal/smart_trim": "1.3",
-        "drupal/smtp": "1.0.0",
-        "drupal/tagclouds": "2.0.0",
-        "drupal/taxonomy_manager": "2.0.4",
-        "drupal/term_reference_tree": "1.0",
-        "drupal/theme_permission": "1.2",
-        "drupal/time_field": "1.13",
-        "drupal/token": "1.9",
-        "drupal/token_filter": "1.2",
-        "drupal/twig_tweak": "2.9",
-        "drupal/typed_data": "1.0-alpha5",
-        "drupal/vefl": "3.0",
-        "drupal/verf": "1.0",
-        "drupal/video_embed_field": "2.4",
-        "drupal/views_autocomplete_filters": "1.3",
-        "drupal/views_bootstrap": "4.3",
-        "drupal/views_bulk_edit": "2.6",
-        "drupal/views_bulk_operations": "3.13",
-        "drupal/views_data_export": "1.0",
-        "drupal/views_field_view": "1.0.0-beta3",
-        "drupal/views_send": "1.5",
-        "drupal/views_slideshow": "4.8",
-        "drupal/visitors": "2.7",
-        "drupal/webform": "6.0.4",
-        "drupal/webform_analysis": "1.0-beta7",
-        "drupal/webform_captcha_mandatory": "1.0.1",
-        "drupal/webform_cpf": "2.0.2",
-        "drupal/webform_invitation": "2.0.0",
-        "drupal/webform_views": "5.0-alpha8",
-        "drupal/webform_xlsx_export": "1.0",
-        "drupal/youtube": "1.2",
-        "drupal/youtube_playlist": "1.x-dev#2e033f41",
         "drush/drush": "8.x",
-        "fflch/boletim": "1.0.1",
-        "fflch/cem-theme": "1.0.4",
-        "fflch/centrodametropole_breadcrumb": "1.0.1",
-        "fflch/fflch-theme": "1.0.8",
-        "fflch/urbandatabrasil_userform": "1.0.2",
-        "fflch/webform_ficha_catalografica": "1.0.2",
         "markbaker/matrix": "2.0.0",
         "npm-asset/ckeditor_youtube": "2.1.15",
         "npm-asset/fakeobjects": "4.15.0",
         "npm-asset/jquery-ui-touch-punch": "0.2.3",
         "npm-asset/juicebox_lite": "1.5.1",
         "npm-asset/tabletoolstoolbar": "0.0.1",
-        "oomphinc/composer-installers-extender": "^2.0",
-        "uspdev/utils": "^1.0",
-        "uspdev/webform_boleto_usp": "1.0.10"
+        "oomphinc/composer-installers-extender": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -199,48 +50,6 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
-            }
-        },
-        "patches": {
-            "drupal/editor_file": {
-                "3057895 - Uploaded files are not permanent":
-                    "https://www.drupal.org/files/issues/2019-05-29/file-upload-marked-permanent-3057895-2.patch"
-            },
-            "drupal/tamper": {
-                "Define um novo filtro de parser de data no tamper":
-                    "https://www.drupal.org/files/issues/2020-09-13/3018621-5.patch"
-            },
-            "drupal/views_data_export": {
-                "Problema com https no chrome":
-                    "https://www.drupal.org/files/issues/2021-02-16/3189135-feed-icon-url-absolute-false-4.patch"
-            },
-            "drupal/youtube_playlist": {
-                "Mudanças temporárias para uso na FFLCH":
-                    "patches/youtube_playlist/2e033f41.patch"
-            },
-            "drupal/panelbutton": {
-                "3105283 - fix location":
-                    "patches/panelbutton/1.3.patch"
-            },
-            "drupal/anchor_link": {
-                "fix location":
-                    "patches/anchor_link/2.4.patch"
-            },
-            "drupal/ckeditor_tableresize": {
-                "fix location":
-                    "patches/ckeditor_tableresize/1.0.patch"
-            },
-            "drupal/ckeditor_resize": {
-                "fix location":
-                    "patches/ckeditor_resize/1.3.patch"
-            },
-            "drupal/feeds": {
-                "Desligando ssl temporariamente - mandar patch tornando opção configurável no feeds":
-                    "patches/feeds/turn-off-https-cert-verify.patch"
-            },
-            "drupal/imagefield_slideshow": {
-                "Melhorando caption: https://www.drupal.org/project/imagefield_slideshow/issues/3282184":
-                    "https://www.drupal.org/files/issues/2022-05-24/imagefield_slideshow-display-title-as-caption.patch"
             }
         },
         "installer-types": [
