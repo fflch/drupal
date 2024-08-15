@@ -410,8 +410,6 @@
 
 <hr>
 
-<hr>
-
   - Módulo: pathauto
   - Versão: 8.x-1.12
   - Descrição: Cria automaticamente a URL/path para diversos tipos de conteúdos, baseados em um padrão de sistema que pode ser alterado
@@ -421,16 +419,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: recaptcha
   - Versão: 8.x-3.2
   - Descrição: Melhoria do CAPTCHA. Útil para a segurança
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -454,16 +448,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: scheduler
   - Versão: 2.0.4
   - Descrição: O Scheduler oferece a capacidade de agendar nodes para serem publicados/não publicados em datas e horários específicos no futuro.
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -476,16 +466,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: semanticviews
   - Versão: 3.0.0
   - Descrição: As visualizações semânticas permitem alterar o padrão Saída HTML pelo módulo Views.
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -498,16 +484,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: share_everywhere
   - Versão: 3.0.0
   - Descrição: Usado para botões de redes sociais encaixarem no layout da instituição, ao invés de aparecerem com o design padrão (Facebook, Instagram, etc)
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -520,16 +502,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: simplenews
   - Versão: 4.0.0
   - Descrição: Cria um tipo de conteúdo chamado "Newsletter Issue" que publica e envia emails para uma lista especifica de pessoas.
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -542,16 +520,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: smart_trim
   - Versão: 2.1.1
   - Descrição: Adiciona um novo campo de formatação em Textfields
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -564,16 +538,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: tagclouds
   - Versão: 2.0.8
   - Descrição: Disponibiliza uma "nuvem" de tags na tela. Provê um link para um node e não para a tela de taxonomia
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -586,16 +556,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: term_reference_tree
   - Versão: 2.0.1
   - Descrição: Disponibiliza visualização em árvore dos widgets dentro do Taxonomy Term Reference
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -608,16 +574,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: time_field
   - Versão: 2.1.2
   - Descrição: Time Field resolve a exibição/envio de horário e intervalo de tempo para o Drupal
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -630,16 +592,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: token_filter
   - Versão: 2.2.1
   - Descrição: Habilita a pesquisa do Módulo Token como um input field
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -652,16 +610,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: typed_data
   - Versão: SEM DOCUMENTAÇÃO
   - Descrição: SEM DOCUMENTAÇÃO
   - Está funcionando na 8.x? SEM DOCUMENTAÇÃO
   - Conseguiu usar e entender o módulo no 8.x? SEM DOCUMENTAÇÃO
   - Se está disponível na 10.x? SEM DOCUMENTAÇÃO
-
-<hr>
 
 <hr>
 
@@ -674,16 +628,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: verf
   - Versão: 2.0.2
   - Descrição: Em vez de inserir os IDs das entidades manualmente, os usuários podem selecionar os rótulos das entidades que desejam filtrar.
   - Está funcionando na 8.x? NÃO
   - Conseguiu usar e entender o módulo no 8.x? NÃO
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -696,16 +646,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: views_autocomplete_filters
   - Versão: 2.0.2
   - Descrição: É um filtro que permite um "autocomplete" nas buscas de campos de textos. Também possibilitam achar uma entidade pelo seu título; acha entidades que compartilham uma string em comum
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM 
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -718,16 +664,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: views_bulk_edit
   - Versão: 8.x-2.9
   - Descrição: Permite a atualização em massa de valores de entidade por meio  de ações  em massa de  visualizações. Por padrão, ele está configurado para nós
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -740,16 +682,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: views_data_export
   - Versão: 8.x-1.4
   - Descrição: Exporta grandes quantidades de dados de Views
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -762,16 +700,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: views_send
   - Versão: 2.0.0-rc1 [Obs.: versão não estável]
   - Descrição: Permite que você execute correspondência em massa personalizada a partir de uma visualização
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? NÃO
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -784,16 +718,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: visitors
   - Versão: 8.x-2.19
   - Descrição: Analisa os usuários que estão acessando o Drupal
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -806,16 +736,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: webform_analysis
   - Versão: 8.x-1.0-beta10
   - Descrição: Analisa as respostas submetidas aos Webforms
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -839,16 +765,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: webform_invitation
   - Versão: 2.0.0
   - Descrição: Permite restringir envios a um formulário da web gerando códigos
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
@@ -861,8 +783,6 @@
 
 <hr>
 
-<hr>
-
   - Módulo: webform_xlsx_export
   - Versão: 8.x-1.2
   - Descrição: Fornece um exportador de envios de formulários da Web que pode ser usado para exportar envios XLSX
@@ -872,16 +792,12 @@
 
 <hr>
 
-<hr>
-
   - Módulo: youtube
   - Versão: 2.0.0
   - Descrição: Permite adicionar um vídeo do youtube no tipo de conteúdo
   - Está funcionando na 8.x? SIM
   - Conseguiu usar e entender o módulo no 8.x? SIM
   - Se está disponível na 10.x? SIM
-
-<hr>
 
 <hr>
 
