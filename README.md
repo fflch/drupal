@@ -36,6 +36,17 @@ Instalação usando o profile fflch com *sqlite*:
         --account-pass="fflch" \
         --account-mail="fflch@localhost" --yes
 
+Instalação usando o profile fflch com *mysql*:
+
+    ./vendor/bin/drush site-install fflchprofile \
+        --sites-subdir=sti.fflch.usp.br \
+        --db-url=mysql://admin:admin@localhost/sti \
+        --site-name="admin" \
+        --site-mail="admin@localhost" \
+        --account-name="admin" \
+        --account-pass="admin" \
+        --account-mail="admin@localhost" --yes
+
 Servidor http básico:
 
     cd drupal
