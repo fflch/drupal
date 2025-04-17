@@ -1,0 +1,1 @@
+- Copiar dump do banco para MariaDD mais recente
