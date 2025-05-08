@@ -57,7 +57,7 @@ Instalação usando o profile fflch para o site sti.fflch.usp.br com *mysql*:
         --account-pass="admin" \
         --account-mail="admin@localhost" --yes
 
-Servidor http básico:
+Servidor http básico (usuário: fflch e senha: admin):
 
     ./vendor/bin/drupal serve -vvv
 
