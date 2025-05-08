@@ -217,3 +217,13 @@ traduzidos pois o langcode está com und (undefinided). Para corrigir:
 - @nelimaximino
 - Isaac R. L. Martins
 - @annavalim
+
+
+# Primeira rodada de atualização - core para 9.0.0
+
+- remover módulo media_entity: /vendor/bin/drush pm-uninstall media_entity media_entity_slideshow
+
+Depois que o "composer update" funcionar:
+
+    ./vendor/bin/drupal updb
+    ./vendor/bin/drush entup
