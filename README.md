@@ -203,5 +203,7 @@ traduzidos pois o langcode está com und (undefinided). Para corrigir:
 ## Equipe
 
 - @thiagogomesverissimo
--@nelimaximino
+- @nelimaximino
+- Isaac R. L. Martins
+- @annavalim
 
