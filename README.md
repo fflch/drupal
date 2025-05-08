@@ -59,7 +59,6 @@ Instalação usando o profile fflch para o site sti.fflch.usp.br com *mysql*:
 
 Servidor http básico:
 
-    cd drupal
     ./vendor/bin/drupal serve -vvv
 
 Caso queira escolher ip e porta:
