@@ -203,4 +203,4 @@ traduzidos pois o langcode está com und (undefinided). Para corrigir:
 ## Equipe
 
 - @thiagogomesverissimo
-
+- @kevinlf-usp
