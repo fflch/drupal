@@ -204,3 +204,7 @@ traduzidos pois o langcode está com und (undefinided). Para corrigir:
 
 - @thiagogomesverissimo
 - @kevinlf-usp
+- Augusto César Freire Santiago
+- @nelimaximino
+- Isaac R. L. Martins
+- @annavalim
