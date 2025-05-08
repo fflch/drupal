@@ -39,6 +39,16 @@ Instalação usando o profile fflch com *sqlite*:
 Instalação usando o profile fflch com *mysql*:
 
     ./vendor/bin/drush site-install fflchprofile \
+        --db-url=mysql://admin:admin@localhost/drupal \
+        --site-name="admin" \
+        --site-mail="admin@localhost" \
+        --account-name="admin" \
+        --account-pass="admin" \
+        --account-mail="admin@localhost" --yes
+
+Instalação usando o profile fflch para o site sti.fflch.usp.br com *mysql*:
+
+    ./vendor/bin/drush site-install fflchprofile \
         --sites-subdir=sti.fflch.usp.br \
         --db-url=mysql://admin:admin@localhost/sti \
         --site-name="admin" \
