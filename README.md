@@ -204,4 +204,5 @@ traduzidos pois o langcode está com und (undefinided). Para corrigir:
 
 - @thiagogomesverissimo
 - Isaac R. L. Martins
+- @annavalim
 
