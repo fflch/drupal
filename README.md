@@ -200,3 +200,7 @@ traduzidos pois o langcode está com und (undefinided). Para corrigir:
 
     drush @filosofia.fflch.usp.br config-set  field.storage.node.field_banca langcode pt-br --yes
 
+## Equipe
+
+- @thiagogomesverissimo
+
