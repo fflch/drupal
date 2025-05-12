@@ -221,7 +221,15 @@ traduzidos pois o langcode está com und (undefinided). Para corrigir:
 
 # Primeira rodada de atualização - core para 9.0.0
 
-- remover módulo media_entity: /vendor/bin/drush pm-uninstall media_entity media_entity_slideshow
+- remover módulo media_entity: ./vendor/bin/drush pm-uninstall media_entity media_entity_slideshow
+
+- remover módulo form_placeholder: ./vendor/bin/drush pm-uninstall form_placeholder --> Já estava desinstalado
+
+- remover módulo cpf: ./vendor/bin/drush pm-uninstall cpf --> Já estava desinstalado
+    - O módulo webform_cpf requer drupal/cpf, então tive que tirar também
+
+- remover módulo term_reference_tree: ./vendor/bin/drush pm-uninstall term_reference_tree
+    Funciona ^9.1, mas não tem nenhuma release que funcione 9.0
 
 Depois que o "composer update" funcionar:
 
