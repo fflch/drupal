@@ -218,20 +218,24 @@ traduzidos pois o langcode está com und (undefinided). Para corrigir:
 - Isaac R. L. Martins
 - @annavalim
 
-
 # Primeira rodada de atualização - core para 9.0.0
 
-- remover módulo media_entity: ./vendor/bin/drush pm-uninstall media_entity media_entity_slideshow
+No servidor antigo:
 
-- remover módulo form_placeholder: ./vendor/bin/drush pm-uninstall form_placeholder --> Já estava desinstalado
+    ./vendor/bin/drush pm-uninstall media_entity media_entity_slideshow form_placeholder term_reference_tree feeds_youtube cpf theme_permission
 
-- remover módulo cpf: ./vendor/bin/drush pm-uninstall cpf --> Já estava desinstalado
-    - O módulo webform_cpf requer drupal/cpf, então tive que tirar também
+- O módulo term_reference_tree funciona ^9.1, mas não tem nenhuma release que funcione 9.0
 
-- remover módulo term_reference_tree: ./vendor/bin/drush pm-uninstall term_reference_tree
-    Funciona ^9.1, mas não tem nenhuma release que funcione 9.0
+Depois que o "composer update" funcionar:   ./vendor/bin/drush pm-uninstall media_entity media_entity_slideshow form_placeholder term_reference_tree feeds_youtube cpf libraries
 
-Depois que o "composer update" funcionar:
+## Pós-atualização:
 
-    ./vendor/bin/drupal updb
-    ./vendor/bin/drush entup
+    ./vendor/bin/drush en webform_cpf webform_boleto_usp
+
+## Módulos que podemos reavaliar se usaremos:
+
+- theme_permission
+
+## Sites que não vão subir para versão 9.0.0:
+
+- lisa.fflch.usp.br (quando subirmos o core para 9.1, re-inserir term_reference_tree)

@@ -27,7 +27,6 @@ config_perms
 config_translation
 content_translation
 copyprevention
-cpf
 csv_importer
 ctools
 date_range_formatter
@@ -57,7 +56,6 @@ recaptcha
 redirect
 scheduler
 smtp
-theme_permission
 views_bootstrap
 views_data_export
 views_send
