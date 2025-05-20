@@ -72,7 +72,7 @@ class InstallHelper implements ContainerInjectionInterface {
    */
   public static function create(ContainerInterface $container) {
     return new static(
-      $container->get('path.alias_manager'),
+      $container->get('path_alias.manager'),
       $container->get('entity_type.manager'),
       $container->get('module_handler'),
       $container->get('state')

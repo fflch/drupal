@@ -36,9 +36,29 @@ Instalação usando o profile fflch com *sqlite*:
         --account-pass="fflch" \
         --account-mail="fflch@localhost" --yes
 
-Servidor http básico:
+Instalação usando o profile fflch com *mysql*:
 
-    cd drupal
+    ./vendor/bin/drush site-install fflchprofile \
+        --db-url=mysql://admin:admin@localhost/drupal \
+        --site-name="admin" \
+        --site-mail="admin@localhost" \
+        --account-name="admin" \
+        --account-pass="admin" \
+        --account-mail="admin@localhost" --yes
+
+Instalação usando o profile fflch para o site sti.fflch.usp.br com *mysql*:
+
+    ./vendor/bin/drush site-install fflchprofile \
+        --sites-subdir=sti.fflch.usp.br \
+        --db-url=mysql://admin:admin@localhost/sti \
+        --site-name="admin" \
+        --site-mail="admin@localhost" \
+        --account-name="admin" \
+        --account-pass="admin" \
+        --account-mail="admin@localhost" --yes
+
+Servidor http básico (usuário: fflch e senha: admin):
+
     ./vendor/bin/drupal serve -vvv
 
 Caso queira escolher ip e porta:
@@ -189,3 +209,33 @@ traduzidos pois o langcode está com und (undefinided). Para corrigir:
 
     drush @filosofia.fflch.usp.br config-set  field.storage.node.field_banca langcode pt-br --yes
 
+## Equipe
+
+- @thiagogomesverissimo
+- @kevinlf-usp
+- Augusto César Freire Santiago
+- @nelimaximino
+- Isaac R. L. Martins
+- @annavalim
+
+# Primeira rodada de atualização - core para 9.0.0
+
+No servidor antigo:
+
+    ./vendor/bin/drush pm-uninstall media_entity media_entity_slideshow form_placeholder term_reference_tree feeds_youtube cpf theme_permission
+
+- O módulo term_reference_tree funciona ^9.1, mas não tem nenhuma release que funcione 9.0
+
+Depois que o "composer update" funcionar:   ./vendor/bin/drush pm-uninstall media_entity media_entity_slideshow form_placeholder term_reference_tree feeds_youtube cpf libraries
+
+## Pós-atualização:
+
+    ./vendor/bin/drush en webform_cpf webform_boleto_usp
+
+## Módulos que podemos reavaliar se usaremos:
+
+- theme_permission
+
+## Sites que não vão subir para versão 9.0.0:
+
+- lisa.fflch.usp.br (quando subirmos o core para 9.1, re-inserir term_reference_tree)
