@@ -2,7 +2,7 @@ name: fflchprofile
 type: profile
 description: 'fflch profile'
 version: VERSION
-core: 8.x
+core_version_requirement: ^9 || ^10 || ^11
 # Módulos do core usado no profile FFLCH
 install:
   - book

@@ -1,7 +1,7 @@
 name: 'fflch_audit'
 type: module
 description: 'fflch Audit'
-core: 8.x
+core_version_requirement: ^9 || ^10 || ^11
 package: 'FFLCH'
 
 dependencies:
