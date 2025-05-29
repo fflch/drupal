@@ -2,7 +2,7 @@ name: 'fflch fake content'
 description: Imports fflch fake content to site
 type: module
 version: VERSION
-core: 8.x
+core_version_requirement: ^9 || ^10 || ^11
 package: 'FFLCH'
 dependencies:
   - field
