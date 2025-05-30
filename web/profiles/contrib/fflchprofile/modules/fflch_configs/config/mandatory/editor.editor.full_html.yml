@@ -1,3 +1,4 @@
+uuid: null
 langcode: pt-br
 status: true
 dependencies:
@@ -26,112 +27,72 @@ settings:
     rows:
       -
         -
-          name: Formatting
+          name: Screen
           items:
             - Maximize
             - Undo
             - Redo
-            - Cut
+        -
+          name: Formatação
+          items:
             - Bold
-            - Italic
             - Underline
             - Strike
-            - Superscript
-            - Subscript
+            - Italic
             - '-'
-            - RemoveFormat
-            - Blockquote
-            - Language
+            - TextColor
+            - BGColor
         -
-          name: 'Block Formatting'
+          name: Matemática
+          items:
+            - Subscript
+            - Superscript
+            - SpecialChar
+        -
+          name: Fonte
           items:
             - Format
             - Font
             - FontSize
-        -
-          name: Fonte
-          items:
-            - TextColor
-            - BGColor
-            - SpecialChar
       -
         -
-          name: Avançados
+          name: Links
           items:
-            - tokenbrowser
-            - ShowBlocks
-        -
-          name: Linking
-          items:
-            - Gallery
-            - ImceImage
-            - DrupalImage
-            - DrupalLink
-            - Link
-            - DrupalUnlink
-            - DrupalFile
-            - Anchor
             - Youtube
+            - Link
+            - Unlink
+            - DrupalFile
+            - DrupalImage
         -
-          name: Listas
+          name: Identação
           items:
-            - Outdent
-            - Indent
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+            - Blockquote
             - BulletedList
             - NumberedList
-            - HorizontalRule
+            - Indent
+            - Outdent
+            - widgetbootstrapTwoCol
       -
         -
-          name: Tabelas
+          name: Tabela
           items:
             - Table
-            - tableinsert
             - tabledelete
-            - tableproperties
             - tablerowinsertbefore
             - tablerowinsertafter
             - tablecolumninsertbefore
             - tablecolumninsertafter
-            - tablecellinsertbefore
-            - tablecellsmerge
-            - tablecellmergedown
-            - tablecellsplithorizontal
-            - tablecellsplitvertical
-            - tablecolumndelete
-            - tablecellmergeright
             - tablecellproperties
-            - tablecelldelete
-            - tablecellinsertafter
             - tablerowdelete
-      -
+            - tablecolumndelete
         -
-          name: Extras
-          items:
-            - bootstrapTabs
-            - Boxout
-            - DrupalFontAwesome
-            - Accordion
-            - btn_readmore
-        -
-          name: Alinhamento
-          items:
-            - WidgetTemplateMenu
-            - JustifyLeft
-            - JustifyBlock
-            - JustifyRight
-            - JustifyCenter
-            - widgetbootstrapLeftCol
-            - widgetbootstrapTwoCol
-            - widgetbootstrapThreeCol
-            - widgetbootstrapRightCol
-      -
-        -
-          name: code
+          name: Code
           items:
             - Source
-            - Markdown
-            - insert_view_adv
-            - Resize
   plugins:
     stylescombo:
       styles: ''
