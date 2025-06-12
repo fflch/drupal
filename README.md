@@ -228,6 +228,8 @@ No servidor antigo:
 
 Depois que o "composer update" funcionar:   ./vendor/bin/drush pm-uninstall media_entity media_entity_slideshow form_placeholder term_reference_tree feeds_youtube cpf libraries
 
+* Desinstalar o módulo markdown requerido pelo módulo webform_cpf.
+
 ## Pós-atualização:
 
     ./vendor/bin/drush en webform_cpf webform_boleto_usp
