@@ -84,7 +84,7 @@ class Configs {
 
     $smtp_settings = \Drupal::service('config.factory')->getEditable('smtp.settings');
 
-    $filename = '/var/aegir/.email.txt';
+    $filename = '/.tokens/noreply.txt';
     if (file_exists($filename)) {
         $senha = file_get_contents($filename);
         $smtp_settings->set('smtp_password', $senha)->save();
@@ -96,7 +96,7 @@ class Configs {
     $config = \Drupal::service('config.factory')->getEditable('webform_boleto_usp.settings');
     $centros = file_get_contents(__DIR__. '/' . 'centros.txt');
 
-    $filename = '/var/aegir/.boleto.txt';
+    $filename = '/.tokens/boleto.txt';
     if (file_exists($filename)) {
         $token = file_get_contents($filename);
         $token = trim( str_replace( PHP_EOL, '', $token ) );
@@ -117,7 +117,7 @@ class Configs {
     $user->set("preferred_langcode", $language);
     $user->set("preferred_admin_langcode", $language);
 
-    $filename = '/var/aegir/.user1.txt';
+    $filename = '/.tokens/user1.txt';
     if (file_exists($filename)) {
         $senha = file_get_contents($filename);
         $user->setPassword($senha);
