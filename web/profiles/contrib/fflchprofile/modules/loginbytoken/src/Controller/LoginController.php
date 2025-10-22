@@ -20,7 +20,7 @@ class LoginController extends ControllerBase {
     // Verifica se o usuário em questão tem permissão para logar
     $site = $request->server->get('HTTP_HOST');
 
-    $filename = '/var/aegir/.secretkey.txt';
+    $filename = '/.tokens/loginbytoken.txt';
     if (file_exists($filename)) {
         # ambiente prod
         $secretkey = file_get_contents($filename);
