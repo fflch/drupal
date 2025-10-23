@@ -6,7 +6,6 @@ dependencies:
     - collapse_text
     - editor
     - insert_view_adv
-    - markdown
     - token_filter
 name: 'HTML completo'
 format: full_html
@@ -67,13 +66,6 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
-  markdown:
-    id: markdown
-    provider: markdown
-    status: true
-    weight: 0
-    settings:
-      markdown_library: php-markdown
   insert_view_adv:
     id: insert_view_adv
     provider: insert_view_adv

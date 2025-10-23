@@ -64,7 +64,7 @@ permissions:
   - 'translate page node'
   - 'translate webform node'
   - 'update content translations'
-# Temas liberados
+# Temas liberados - permissões forncecidas pelo módulo "Theme Permission"
   - 'administer themes'
   - 'administer themes fflch'
 # Webform

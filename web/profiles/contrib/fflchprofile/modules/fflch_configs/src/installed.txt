@@ -12,7 +12,6 @@ ckeditor_bootstrap_grid
 ckeditor_bgimage
 ckeditor_youtube
 ckeditor_tabletoolstoolbar
-ckeditor_markdown
 ckeditor_images_gallery
 ckeditor_tableresize
 ckeditor_readmore

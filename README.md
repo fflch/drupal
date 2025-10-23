@@ -220,24 +220,34 @@ traduzidos pois o langcode está com und (undefinided). Para corrigir:
 
 # Primeira rodada de atualização - core para 9.0.0
 
-No servidor antigo:
+No servidor antigo já foram removidos os seguintes módulos:
 
-    ./vendor/bin/drush pm-uninstall media_entity media_entity_slideshow form_placeholder term_reference_tree feeds_youtube cpf theme_permission
+Não ativados, remoção direta na produção:
 
-- O módulo term_reference_tree funciona ^9.1, mas não tem nenhuma release que funcione 9.0
+    cd web/modules/contrib/
+    rm -rf media_entity feeds_youtube
 
-Depois que o "composer update" funcionar:   ./vendor/bin/drush pm-uninstall media_entity media_entity_slideshow form_placeholder term_reference_tree feeds_youtube cpf libraries
+O módulo theme_permission vamos desativar, mas quando estivermos no drupal 10 podemos ativá-lo novamente.
 
-* Desinstalar o módulo markdown requerido pelo módulo webform_cpf.
+Os módulos cpf, libraries e form_placeholder serão desativados e removidos
 
-## Pós-atualização:
+    for i in `ls|grep fflch`; do drush @$i pm-uninstall cpf form_placeholder theme_permission libraries --yes; done
 
-    ./vendor/bin/drush en webform_cpf webform_boleto_usp
+    cd web/modules/contrib/
+    rm -rf cpf form_placeholder
 
-## Módulos que podemos reavaliar se usaremos:
+Removendo markdown:
 
-- theme_permission
+    for i in `ls|grep fflch`; do drush @$i cim --partial --source=/var/aegir/platforms/drupal8916a/web/profiles/contrib/fflchprofile/modules/fflch_configs/config/mandatory --yes; done
+
+    for i in `ls|grep fflch`; do drush @$i pm-uninstall ckeditor_markdown markdown --yes; done
+
+Removendo raiz:
+
+    cd web/modules/contrib/
+    rm -rf cpf markdown ckeditor_markdown
 
 ## Sites que não vão subir para versão 9.0.0:
 
 - lisa.fflch.usp.br (quando subirmos o core para 9.1, re-inserir term_reference_tree)
+- centrodametropole.fflch.usp.br por conta do tema
