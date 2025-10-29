@@ -242,10 +242,17 @@ Removendo markdown:
 
     for i in `ls|grep fflch`; do drush @$i pm-uninstall ckeditor_markdown markdown --yes; done
 
-Removendo raiz:
+    (FALTA) Removendo na raiz:
 
     cd web/modules/contrib/
     rm -rf cpf markdown ckeditor_markdown
+ath: 'modules/contrib/languageicons/flags/*.png'
+Talvez:
+
+    for i in `ls|grep fflch`; do drush @$i config:set system.theme default fflch --yes; done
+
+    for i in `ls|grep fflch`; do drush @$i config:set languageicons.settings path 'modules/contrib/languageicons/flags/*.png' -y; done
+
 
 ## Sites que não vão subir para versão 9.0.0:
 
