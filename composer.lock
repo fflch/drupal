@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "856b67296b5802df744dc2bfc376dee1",
+    "content-hash": "74833b0285cb00c7e27b1ece76c646a9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5816,6 +5816,59 @@
             }
         },
         {
+            "name": "drupal/hcaptcha",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/hcaptcha.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/hcaptcha-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "8fc6f52908e67746b086bb04280f48d4243a03ba"
+            },
+            "require": {
+                "drupal/captcha": "*",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1596410782",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "hcaptcha",
+                    "homepage": "https://www.drupal.org/user/3615435"
+                },
+                {
+                    "name": "jedihe",
+                    "homepage": "https://www.drupal.org/user/350711"
+                }
+            ],
+            "description": "Protect your website from spam and abuse while letting real people pass through with ease.",
+            "homepage": "https://www.drupal.org/project/hcaptcha",
+            "support": {
+                "source": "https://git.drupalcode.org/project/hcaptcha"
+            }
+        },
+        {
             "name": "drupal/header_and_footer_scripts",
             "version": "3.0.0",
             "source": {
@@ -9804,6 +9857,52 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/webform_analysis",
                 "issues": "https://www.drupal.org/project/issues/webform_analysis"
+            }
+        },
+        {
+            "name": "drupal/webform_captcha_mandatory",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_captcha_mandatory.git",
+                "reference": "1.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_captcha_mandatory-1.0.3.zip",
+                "reference": "1.0.3",
+                "shasum": "c8754cb2c314930d7c541cfc6118c068e5ca9265"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10 || ^11",
+                "drupal/webform_ui": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.3",
+                    "datestamp": "1761763543",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Gomes Verissimo",
+                    "homepage": "https://www.drupal.org/user/1024062",
+                    "email": "verissimotgv@gmail.com"
+                }
+            ],
+            "description": "webform_captcha_mandatory",
+            "homepage": "https://www.drupal.org/project/webform_captcha_mandatory",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_captcha_mandatory"
             }
         },
         {
