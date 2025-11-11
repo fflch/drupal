@@ -150,7 +150,7 @@
         "drupal/webform": "6.0.3",
         "drupal/webform_analysis": "1.0-beta8",
         "drupal/webform_captcha_mandatory": "1.0.3",
-        "drupal/webform_cpf": "2.0.4",
+        "drupal/webform_cpf": "2.0.5",
         "drupal/webform_invitation": "2.0.0",
         "drupal/webform_views": "5.0-alpha8",
         "drupal/webform_xlsx_export": "1.0",

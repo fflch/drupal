@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f495697ab60d527203b81f66ecea4aa3",
+    "content-hash": "89b30b0a79fca5d2979cf0b61ef82ae5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -9911,28 +9911,27 @@
         },
         {
             "name": "drupal/webform_cpf",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_cpf.git",
-                "reference": "2.0.4"
+                "reference": "2.0.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_cpf-2.0.4.zip",
-                "reference": "2.0.4",
-                "shasum": "48745254520ad9359cba22aa72e506f5de5c43c1"
+                "url": "https://ftp.drupal.org/files/projects/webform_cpf-2.0.5.zip",
+                "reference": "2.0.5",
+                "shasum": "1cf2952140b0110452d34effa9f2453b57d67d92"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11",
-                "drupal/markdown": "^3.0",
                 "drupal/webform": "^5.6|^6.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.4",
-                    "datestamp": "1747331087",
+                    "version": "2.0.5",
+                    "datestamp": "1761216190",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -16387,16 +16386,16 @@
         },
         {
             "name": "uspdev/replicado",
-            "version": "1.26.0",
+            "version": "1.27.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/replicado.git",
-                "reference": "a3af7842103657b1af3f0880a3fcece3686e9089"
+                "reference": "e7148e2fb3c7e2b5fd350fd68ea3de6fbad2e421"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/replicado/zipball/a3af7842103657b1af3f0880a3fcece3686e9089",
-                "reference": "a3af7842103657b1af3f0880a3fcece3686e9089",
+                "url": "https://api.github.com/repos/uspdev/replicado/zipball/e7148e2fb3c7e2b5fd350fd68ea3de6fbad2e421",
+                "reference": "e7148e2fb3c7e2b5fd350fd68ea3de6fbad2e421",
                 "shasum": ""
             },
             "require": {
@@ -16430,9 +16429,9 @@
             "homepage": "https://github.com/uspdev/replicado",
             "support": {
                 "issues": "https://github.com/uspdev/replicado/issues",
-                "source": "https://github.com/uspdev/replicado/tree/1.26.0"
+                "source": "https://github.com/uspdev/replicado/tree/1.27.0"
             },
-            "time": "2025-08-13T20:41:20+00:00"
+            "time": "2025-11-05T18:20:28+00:00"
         },
         {
             "name": "uspdev/replicado_drupal",

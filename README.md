@@ -59,24 +59,13 @@ Instalação usando o profile fflch para o site sti.fflch.usp.br com *mysql*:
 
 Servidor http básico (usuário: fflch e senha: admin):
 
-    ./vendor/bin/drupal serve -vvv
+    ./vendor/bin/drush rs
 
 Caso queira escolher ip e porta:
 
-    ./vendor/bin/drupal serve 0.0.0.0:8000 -vvv
+    ./vendor/bin/drush rs 127.0.0.1:8000
 
-Criando nodes aleatórios:
-
-    ./vendor/bin/drupal create:nodes
-
-Deletando todos nodes:
-
-    ./vendor/bin/drupal entity:delete node --all
-
-Se quiser apagar o banco para fazer uma instalação zerada:
-
-    # mysql
-    ./vendor/bin/drupal database:drop
+Se quiser apagar o banco no sqlite:
 
     # sqlite
     rm web/sites/default/files/.ht.sqlite*
