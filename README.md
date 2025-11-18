@@ -264,3 +264,8 @@ Apagar configurações órfãs nos sites com probelma:
       drush @$site config:set $j chave valor --yes
       drush @$site config:delete $j --yes
     done
+
+Pós removoção da configurações problemáticas:
+
+    drush @ppgh.fflch.usp.br config:set system.theme default fflch --yes
+    drush @ppgh.fflch.usp.br config:set languageicons.settings path 'modules/contrib/languageicons/flags/*.png' -y
