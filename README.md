@@ -247,3 +247,12 @@ Talvez:
 
 - lisa.fflch.usp.br (quando subirmos o core para 9.1, re-inserir term_reference_tree)
 - centrodametropole.fflch.usp.br por conta do tema
+    
+Identifica site com problema ao aplicar configurações:
+
+    for i in `ls | grep fflch`; do
+      echo "Avaliando $i"
+      if drush @$i cim --partial  --source=/var/aegir/platforms/drupal8916a/web/profiles/contrib/fflchprofile/modules/fflch_configs/config/mandatory  --yes 2>&1  | grep "There were errors"; then
+        echo "Problema $i"
+      fi
+    done
