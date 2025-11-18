@@ -256,3 +256,11 @@ Identifica site com problema ao aplicar configurações:
         echo "Problema $i"
       fi
     done
+
+Apagar configurações órfãs nos sites com probelma:  
+
+    site='SITE.fflch.usp.br'
+    for j in `drush @$site cim --partial --source=/var/aegir/platforms/drupal8916a/web/profiles/contrib/fflchprofile/modules/fflch_configs/config/mandatory --yes 2>&1 | paste -sd ' '| grep -oP 'Configuration <em[^>]*>\K[^<]+'`; do
+      drush @$site config:set $j chave valor --yes
+      drush @$site config:delete $j --yes
+    done
