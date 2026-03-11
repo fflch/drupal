@@ -276,3 +276,20 @@ Considerar usar:
 
     ../vendor/bin/drush webform:repair --help
 Makes sure all Webform admin configuration and webform settings are up-to-date.
+
+## Problemas conhecidos por conta da migração 8.9 para 9.x:
+
+Erro ao adicionar novo conteúdo:
+Verificar se a configuração do tipo de conteúdo é 'Drupal\node\Entity\Node::getCurrentUserId'
+
+    drush config:get core.base_field_override.node.[nome de máquina do tipo de conteúdo].uid default_value_callback
+
+Alterar a configuração do tipo de conteúdo
+
+    drush config:set core.base_field_override.node.[nome de máquina do tipo de conteúdo].uid default_value_callback 'Drupal\node\Entity\Node::getDefaultEntityOwner' -y
+
+Campos Rótulo e Code inacessíveis no módulo Asset Injector:
+Já corrigido com a atualização da versão 2.7 para a versão 2.8.
+
+Erro na validação do campo CPF no módulo Boleto USP:
+Módulo Boleto USP usava módulo CPF para validação que foi removido na atualização do core.
