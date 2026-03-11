@@ -15,7 +15,8 @@ class Configs {
 
   public function doConfig($install = false){
     $this->modules();
-    $this->mandatory();
+    $this->applyPartialMandatoryConfigs();
+    $this->applyFullMandatoryConfigs();
     if($install) {
         $this->idiomas();
     }
@@ -37,11 +38,11 @@ class Configs {
     \Drupal::service('module_installer')->install($installed, TRUE);
   }
 
-  private function mandatory(){
+  private function applyPartialMandatoryConfigs(){
 
     // Diretório com as configurações obrigatórias
     $dir = \Drupal::service('module_handler')->getModule('fflch_configs')->getPath();
-    $dir = $dir . '/config/mandatory/';
+    $dir = $dir . '/config/mandatory/partial/';
 
     // Arquivos .yml
     $file_system = \Drupal::service('file_system');
@@ -55,6 +56,36 @@ class Configs {
             $original_config->set($name, $config);
         }
         $original_config->save();
+    }
+  }
+
+  private function applyFullMandatoryConfigs() {
+
+    // Caminho do módulo
+    $module_path = \Drupal::service('module_handler')
+      ->getModule('fflch_configs')
+      ->getPath();
+
+    $dir = $module_path . '/config/mandatory/full/';
+
+    // Arquivos .yml
+    $file_system = \Drupal::service('file_system');
+    $files = $file_system->scanDirectory($dir,'/^.*\.yml$/i');
+
+
+    foreach ($files as $file) {
+
+      $yml = $dir . $file->filename;
+
+      // Lê o YAML
+      $data = Yaml::parse(file_get_contents($yml));
+
+      // Obtém config editável
+      $config = \Drupal::configFactory()->getEditable($file->name);
+
+      // Substitui completamente os dados
+      $config->setData($data);
+      $config->save();
     }
   }
 
