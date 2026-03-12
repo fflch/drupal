@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "49105a0c65dc96da6cd78a1b9067b44b",
+    "content-hash": "5bf5ae128034dd1d0cbb1421755181a4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -82,7 +82,7 @@
             "version": "1.6.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jackmoore/colorbox.git",
+                "url": "https://github.com/jackmoore/colorbox.git",
                 "reference": "bac78120c6ca9e63370cc317ab6f400129cd6608"
             },
             "dist": {
@@ -118,7 +118,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kertal/cycle.git",
+                "url": "git@github.com:kertal/cycle.git",
                 "reference": "82d45e8e8dbb68c07300ba207efacbcce555903f"
             },
             "dist": {
@@ -12594,6 +12594,7 @@
                 "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Console_Getopt",
                 "source": "https://github.com/pear/Console_Getopt"
             },
+            "abandoned": true,
             "time": "2019-11-20T18:27:48+00:00"
         },
         {
@@ -12653,6 +12654,7 @@
                 "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Console_Table",
                 "source": "https://github.com/pear/Console_Table"
             },
+            "abandoned": true,
             "time": "2018-01-25T20:47:17+00:00"
         },
         {
@@ -13400,16 +13402,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.12.20",
+            "version": "v0.12.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "19678eb6b952a03b8a1d96ecee9edba518bb0373"
+                "reference": "4821fab5b7cd8c49a673a9fd5754dc9162bb9e97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/19678eb6b952a03b8a1d96ecee9edba518bb0373",
-                "reference": "19678eb6b952a03b8a1d96ecee9edba518bb0373",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/4821fab5b7cd8c49a673a9fd5754dc9162bb9e97",
+                "reference": "4821fab5b7cd8c49a673a9fd5754dc9162bb9e97",
                 "shasum": ""
             },
             "require": {
@@ -13473,9 +13475,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.12.20"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.21"
             },
-            "time": "2026-02-11T15:05:28+00:00"
+            "time": "2026-03-06T21:21:28+00:00"
         },
         {
             "name": "querypath/querypath",
@@ -16491,11 +16493,11 @@
         },
         {
             "name": "uspdev/webform_boleto_usp",
-            "version": "1.0.13",
+            "version": "1.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/webform_boleto_usp.git",
-                "reference": "6360b0ce1ad89f71ea0da2e5a7b04f4e37be0033"
+                "reference": "a9ef3da0c6127b6fefd127482cb1eb6546a32b57"
             },
             "require": {
                 "uspdev/boleto": "1.0.7"
@@ -16511,7 +16513,7 @@
                 }
             ],
             "description": "Gera boletos usando api USP",
-            "time": "2025-11-03T19:52:09+00:00"
+            "time": "2026-03-11T13:36:55+00:00"
         },
         {
             "name": "webflo/drupal-finder",
