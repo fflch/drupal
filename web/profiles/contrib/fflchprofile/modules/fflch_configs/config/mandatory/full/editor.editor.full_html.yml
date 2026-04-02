@@ -29,6 +29,8 @@ settings:
         -
           name: Screen
           items:
+            - WidgetTemplateMenu
+            - Accordion
             - Maximize
             - Undo
             - Redo
@@ -62,6 +64,7 @@ settings:
             - Link
             - Unlink
             - DrupalFile
+            - ImceImage
         -
           name: Identação
           items:
