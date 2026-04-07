@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5bf5ae128034dd1d0cbb1421755181a4",
+    "content-hash": "ede3e07a0a44d9ada7c86e945fea984d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -16493,11 +16493,11 @@
         },
         {
             "name": "uspdev/webform_boleto_usp",
-            "version": "1.0.14",
+            "version": "1.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/webform_boleto_usp.git",
-                "reference": "a9ef3da0c6127b6fefd127482cb1eb6546a32b57"
+                "reference": "8faf9f51f35b9c2d71b334df93c0412212380289"
             },
             "require": {
                 "uspdev/boleto": "1.0.7"
@@ -16513,7 +16513,7 @@
                 }
             ],
             "description": "Gera boletos usando api USP",
-            "time": "2026-03-11T13:36:55+00:00"
+            "time": "2026-04-06T13:27:11+00:00"
         },
         {
             "name": "webflo/drupal-finder",
