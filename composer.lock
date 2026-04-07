@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5bf5ae128034dd1d0cbb1421755181a4",
+    "content-hash": "ede3e07a0a44d9ada7c86e945fea984d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -100,7 +100,7 @@
             "version": "4.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "cfd8e3a885dca7b406791c1eed472af9dd717e8e"
             },
             "dist": {
@@ -5267,6 +5267,10 @@
                 {
                     "name": "pifagor",
                     "homepage": "https://www.drupal.org/user/2375692"
+                },
+                {
+                    "name": "vladimiraus",
+                    "homepage": "https://www.drupal.org/user/673120"
                 }
             ],
             "description": "Provides custom HTML class settings for field formatters.",
@@ -7280,7 +7284,7 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "EclipseGc",
+                    "name": "eclipsegc",
                     "homepage": "https://www.drupal.org/user/61203"
                 },
                 {
@@ -8912,8 +8916,20 @@
             ],
             "authors": [
                 {
+                    "name": "anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
+                {
+                    "name": "chesn0k",
+                    "homepage": "https://www.drupal.org/user/3650191"
+                },
+                {
                     "name": "chi",
                     "homepage": "https://www.drupal.org/user/556138"
+                },
+                {
+                    "name": "grevil",
+                    "homepage": "https://www.drupal.org/user/3668491"
                 }
             ],
             "description": "A Twig extension with some useful functions and filters for Drupal development.",
@@ -9466,6 +9482,10 @@
                 {
                     "name": "tizzo",
                     "homepage": "https://www.drupal.org/user/168251"
+                },
+                {
+                    "name": "vladimiraus",
+                    "homepage": "https://www.drupal.org/user/673120"
                 },
                 {
                     "name": "voxpelli",
@@ -12594,7 +12614,6 @@
                 "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Console_Getopt",
                 "source": "https://github.com/pear/Console_Getopt"
             },
-            "abandoned": true,
             "time": "2019-11-20T18:27:48+00:00"
         },
         {
@@ -13402,16 +13421,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.12.21",
+            "version": "v0.12.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "4821fab5b7cd8c49a673a9fd5754dc9162bb9e97"
+                "reference": "3be75d5b9244936dd4ac62ade2bfb004d13acf0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/4821fab5b7cd8c49a673a9fd5754dc9162bb9e97",
-                "reference": "4821fab5b7cd8c49a673a9fd5754dc9162bb9e97",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/3be75d5b9244936dd4ac62ade2bfb004d13acf0f",
+                "reference": "3be75d5b9244936dd4ac62ade2bfb004d13acf0f",
                 "shasum": ""
             },
             "require": {
@@ -13475,9 +13494,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.12.21"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.22"
             },
-            "time": "2026-03-06T21:21:28+00:00"
+            "time": "2026-03-22T23:03:24+00:00"
         },
         {
             "name": "querypath/querypath",
@@ -16380,21 +16399,21 @@
         },
         {
             "name": "uspdev/replicado",
-            "version": "1.27.0",
+            "version": "1.27.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/replicado.git",
-                "reference": "e7148e2fb3c7e2b5fd350fd68ea3de6fbad2e421"
+                "reference": "2ea81b6b0dca92e2fc9d3ea3f49812df90abcfae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/replicado/zipball/e7148e2fb3c7e2b5fd350fd68ea3de6fbad2e421",
-                "reference": "e7148e2fb3c7e2b5fd350fd68ea3de6fbad2e421",
+                "url": "https://api.github.com/repos/uspdev/replicado/zipball/2ea81b6b0dca92e2fc9d3ea3f49812df90abcfae",
+                "reference": "2ea81b6b0dca92e2fc9d3ea3f49812df90abcfae",
                 "shasum": ""
             },
             "require": {
                 "ext-pdo_dblib": "*",
-                "illuminate/collections": "^8 || ^9 || ^10 || ^11 || ^12",
+                "illuminate/collections": "^8 || ^9 || ^10 || ^11 || ^12 || ^13",
                 "monolog/monolog": "^2 || ^3",
                 "php": "^7 || ^8",
                 "uspdev/cache": "^1"
@@ -16423,9 +16442,9 @@
             "homepage": "https://github.com/uspdev/replicado",
             "support": {
                 "issues": "https://github.com/uspdev/replicado/issues",
-                "source": "https://github.com/uspdev/replicado/tree/1.27.0"
+                "source": "https://github.com/uspdev/replicado/tree/1.27.8"
             },
-            "time": "2025-11-05T18:20:28+00:00"
+            "time": "2026-04-02T15:00:09+00:00"
         },
         {
             "name": "uspdev/replicado_drupal",
@@ -16493,11 +16512,11 @@
         },
         {
             "name": "uspdev/webform_boleto_usp",
-            "version": "1.0.14",
+            "version": "1.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/webform_boleto_usp.git",
-                "reference": "a9ef3da0c6127b6fefd127482cb1eb6546a32b57"
+                "reference": "8faf9f51f35b9c2d71b334df93c0412212380289"
             },
             "require": {
                 "uspdev/boleto": "1.0.7"
@@ -16513,7 +16532,7 @@
                 }
             ],
             "description": "Gera boletos usando api USP",
-            "time": "2026-03-11T13:36:55+00:00"
+            "time": "2026-04-06T13:27:11+00:00"
         },
         {
             "name": "webflo/drupal-finder",
