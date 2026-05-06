@@ -1,0 +1,35 @@
+services:
+  drupalfflch:
+    build: .
+    container_name: drupalfflch
+    ports:
+      - "8000:80"
+    depends_on:
+      - mariadb
+    networks:
+      - drupalfflch-network
+    volumes:
+      - ./:/var/www/html
+    environment:
+      HOME: /tmp
+    user: "${UID:-1000}:${GID:-1000}"
+
+  mariadb:
+    image: mariadb:11
+    container_name: drupalfflch_mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: drupalfflch
+      MYSQL_USER: drupalfflch
+      MYSQL_PASSWORD: drupalfflch
+      MYSQL_ROOT_PASSWORD: drupalfflch
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    networks:
+      - drupalfflch-network
+
+networks:
+  drupalfflch-network:
+
+volumes:
+  mariadb_data:

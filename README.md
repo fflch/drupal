@@ -1,88 +1,27 @@
-## Drupal FFLCH
+# Drupal FFLCH
 
-Plataforma Drupal usada nos sites da FFLCH. Os módulos e bibliotecas
-estão em composer.json. Principais diretórios:
-
- - web/profiles/contrib/fflchprofile: profile com módulos e configurações customizações
+Plataforma Drupal usada nos sites da FFLCH.
 
 ## deploy em um ambiente dev:
 
-Biblioteca do php:
+Construindo a imagem e subindo o ecosistema com o banco de dados:
 
-    apt-get install php php-common php-cli php-gd php-curl php-xml php-mbstring php-zip php-sybase
+    docker build --no-cache -t drupalfflch .
+    docker compose up
 
-Bancos de dados:
 
-    apt-get install mariadb-server php-mysql sqlite3 php-sqlite3
-
-Instalação do composer:
-
-    curl -s https://getcomposer.org/installer | php
-    sudo mv composer.phar /usr/local/bin/composer
-
-Download e instalação das dependências:
-
-    git clone git@github.com:SEU-USERNAME/drupal.git
-    cd drupal
-    composer install
-
-Instalação usando o profile fflch com *sqlite*:
-
-    ./vendor/bin/drush site-install fflchprofile \
-        --db-url=sqlite://sites/default/files/.ht.sqlite \
+    docker exec -it drupalfflch composer install
+    docker exec -it drupalfflch ./vendor/bin/drush site-install fflchprofile \
+        --db-url=mysql://drupalfflch:drupalfflch@mariadb/drupalfflch \
         --site-name="fflch" \
         --site-mail="fflch@localhost" \
         --account-name="fflch" \
         --account-pass="fflch" \
         --account-mail="fflch@localhost" --yes
 
-Instalação usando o profile fflch com *mysql*:
-
-    ./vendor/bin/drush site-install fflchprofile \
-        --db-url=mysql://admin:admin@localhost/drupal \
-        --site-name="admin" \
-        --site-mail="admin@localhost" \
-        --account-name="admin" \
-        --account-pass="admin" \
-        --account-mail="admin@localhost" --yes
-
-Instalação usando o profile fflch para o site sti.fflch.usp.br com *mysql*:
-
-    ./vendor/bin/drush site-install fflchprofile \
-        --sites-subdir=sti.fflch.usp.br \
-        --db-url=mysql://admin:admin@localhost/sti \
-        --site-name="admin" \
-        --site-mail="admin@localhost" \
-        --account-name="admin" \
-        --account-pass="admin" \
-        --account-mail="admin@localhost" --yes
-
-Servidor http básico (usuário: fflch e senha: admin):
-
-    ./vendor/bin/drush rs
-
-Caso queira escolher ip e porta:
-
-    ./vendor/bin/drush rs 127.0.0.1:8000
-
-Se quiser apagar o banco no sqlite:
-
-    # sqlite
-    rm web/sites/default/files/.ht.sqlite*
+Acessar http://localhost:8000 com usuário: fflch e senha: fflch
 
 ## Adicionando temas, módulos e bibliotecas
-
-Exemplos de instalação de novos módulos:
-
-    cd drupal
-    composer require drupal/webform:5.1
-    composer require drupal/smtp:1.0-beta4
-
-Libraries são instaladas usando assest-packgist, assim,
-consulte o nome da biblioteca em https://asset-packagist.org e
-depois instale desta forma:
-
-    composer require npm-asset/datetimepicker:0.1.38
 
 Verificando se há atualizações para os módulos/temas/biliotecas:
 
