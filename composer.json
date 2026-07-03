@@ -16,6 +16,10 @@
             "type": "git",
             "url": "https://github.com/uspdev/webform_boleto_usp.git"
         },
+        "pragmatica-drupal-module": {
+            "type": "git",
+            "url": "https://github.com/fflch/pragmatica-drupal-module.git"
+        },
         "replicado_drupal": {
             "type": "git",
             "url": "https://github.com/uspdev/replicado_drupal.git"
@@ -152,14 +156,17 @@
         "drupal/webform_captcha_mandatory": "1.0.3",
         "drupal/webform_cpf": "2.0.5",
         "drupal/webform_invitation": "2.0.0",
+        "drupal/webform_prepopulate": "2.0.0",
         "drupal/webform_views": "5.0-alpha8",
         "drupal/webform_xlsx_export": "1.0",
+        "drupal/xmlsitemap": "1.0",
         "drupal/youtube": "1.2",
         "drupal/youtube_playlist": "1.x-dev#2e033f41",
         "drush/drush": "8.x",
         "fflch/cem-theme": "1.0.3",
         "fflch/centrodametropole_breadcrumb": "1.0.1",
         "fflch/fflch-theme": "1.0.8",
+        "fflch/pragmatica-drupal-module": "1.0.1",
         "fflch/urbandatabrasil_userform": "1.0.0",
         "fflch/webform_ficha_catalografica": "1.0.2",
         "markbaker/matrix": "2.0.0",
@@ -186,6 +193,9 @@
             "drupal/core-composer-scaffold": true,
             "drupal/console-extend-plugin": true,
             "oomphinc/composer-installers-extender": true
+        },
+        "audit": {
+            "block-insecure": false
         }
     },
     "extra": {
