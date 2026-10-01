@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c448bf915c22d18088587f125c2692f9",
+    "content-hash": "01bf82836d6ad8e2912f67f4736582d5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -160,16 +160,16 @@
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonPHP/carbon-doctrine-types.git",
-                "reference": "99f76ffa36cce3b70a4a6abce41dba15ca2e84cb"
+                "reference": "bf72f821b9952722ea9f9c3912f85946e1af9e3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonPHP/carbon-doctrine-types/zipball/99f76ffa36cce3b70a4a6abce41dba15ca2e84cb",
-                "reference": "99f76ffa36cce3b70a4a6abce41dba15ca2e84cb",
+                "url": "https://api.github.com/repos/CarbonPHP/carbon-doctrine-types/zipball/bf72f821b9952722ea9f9c3912f85946e1af9e3d",
+                "reference": "bf72f821b9952722ea9f9c3912f85946e1af9e3d",
                 "shasum": ""
             },
             "require": {
@@ -209,7 +209,7 @@
             ],
             "support": {
                 "issues": "https://github.com/CarbonPHP/carbon-doctrine-types/issues",
-                "source": "https://github.com/CarbonPHP/carbon-doctrine-types/tree/2.1.0"
+                "source": "https://github.com/CarbonPHP/carbon-doctrine-types/tree/2.1.1"
             },
             "funding": [
                 {
@@ -225,7 +225,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-11T17:09:12+00:00"
+            "time": "2026-09-06T14:11:23+00:00"
         },
         {
             "name": "commerceguys/addressing",
@@ -1517,8 +1517,16 @@
                     "role": "Maintainer"
                 },
                 {
+                    "name": "josebc",
+                    "homepage": "https://www.drupal.org/user/1376836"
+                },
+                {
                     "name": "mohammed j. razem",
                     "homepage": "https://www.drupal.org/user/255384"
+                },
+                {
+                    "name": "omar alahmed",
+                    "homepage": "https://www.drupal.org/user/308031"
                 },
                 {
                     "name": "rajab natshah",
@@ -3239,7 +3247,7 @@
                     "homepage": "https://www.drupal.org/user/317279"
                 },
                 {
-                    "name": "Krzysztof Domański",
+                    "name": "krzysztof domański",
                     "homepage": "https://www.drupal.org/user/3572982"
                 }
             ],
@@ -3317,10 +3325,6 @@
                 {
                     "name": "joelpittet",
                     "homepage": "https://www.drupal.org/user/160302"
-                },
-                {
-                    "name": "mparker17",
-                    "homepage": "https://www.drupal.org/user/536298"
                 },
                 {
                     "name": "OlgaRabodzei",
@@ -4459,6 +4463,10 @@
                     "homepage": "https://www.drupal.org/user/16747"
                 },
                 {
+                    "name": "klausi",
+                    "homepage": "https://www.drupal.org/user/262198"
+                },
+                {
                     "name": "mglaman",
                     "homepage": "https://www.drupal.org/user/2416470"
                 },
@@ -4721,14 +4729,6 @@
             ],
             "authors": [
                 {
-                    "name": "rgristroph",
-                    "homepage": "https://www.drupal.org/user/516442"
-                },
-                {
-                    "name": "snufkin",
-                    "homepage": "https://www.drupal.org/user/58645"
-                },
-                {
                     "name": "svendecabooter",
                     "homepage": "https://www.drupal.org/user/35369"
                 }
@@ -4788,6 +4788,10 @@
                 {
                     "name": "drunken monkey",
                     "homepage": "https://www.drupal.org/user/205582"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
                 },
                 {
                     "name": "mkalkbrenner",
@@ -5800,6 +5804,66 @@
             }
         },
         {
+            "name": "drupal/google_tag",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/google_tag.git",
+                "reference": "8.x-1.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/google_tag-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "13c95050a0d1b19ae1178636b2cc56217073b23e"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.8",
+                    "datestamp": "1738172701",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "acquia",
+                    "homepage": "https://www.drupal.org/user/1231722"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "kaynen",
+                    "homepage": "https://www.drupal.org/user/733308"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "solotandem",
+                    "homepage": "https://www.drupal.org/user/240748"
+                }
+            ],
+            "description": "Allows your website analytics to be managed using Google Tag Manager.",
+            "homepage": "https://www.drupal.org/project/google_tag",
+            "support": {
+                "source": "https://git.drupalcode.org/project/google_tag"
+            }
+        },
+        {
             "name": "drupal/hcaptcha",
             "version": "1.1.0",
             "source": {
@@ -6755,6 +6819,10 @@
                     "role": "Maintainer"
                 },
                 {
+                    "name": "murrayw",
+                    "homepage": "https://www.drupal.org/user/595658"
+                },
+                {
                     "name": "naveenvalecha",
                     "homepage": "https://www.drupal.org/user/2665733"
                 }
@@ -6861,7 +6929,7 @@
             ],
             "authors": [
                 {
-                    "name": "Anybody",
+                    "name": "anybody",
                     "homepage": "https://www.drupal.org/user/291091"
                 },
                 {
@@ -6869,7 +6937,7 @@
                     "homepage": "https://www.drupal.org/user/27504"
                 },
                 {
-                    "name": "Grevil",
+                    "name": "grevil",
                     "homepage": "https://www.drupal.org/user/3668491"
                 },
                 {
@@ -7009,17 +7077,17 @@
         },
         {
             "name": "drupal/markdown",
-            "version": "3.0.1",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/markdown.git",
-                "reference": "3.0.1"
+                "reference": "3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/markdown-3.0.1.zip",
-                "reference": "3.0.1",
-                "shasum": "ae33f2819c0f2591484ae02921781fb3ea783330"
+                "url": "https://ftp.drupal.org/files/projects/markdown-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "55da33c57c0237eab26398ff112a149ece5b2d33"
             },
             "require": {
                 "composer/semver": "^1.0 || ^2.0 || ^3.0",
@@ -7032,8 +7100,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.1",
-                    "datestamp": "1704727858",
+                    "version": "3.0.0",
+                    "datestamp": "1693943692",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7360,7 +7428,7 @@
                     "homepage": "https://www.drupal.org/user/317279"
                 },
                 {
-                    "name": "Krzysztof Domański",
+                    "name": "krzysztof domański",
                     "homepage": "https://www.drupal.org/user/3572982"
                 }
             ],
@@ -8439,7 +8507,7 @@
                     "homepage": "https://www.drupal.org/user/281473"
                 },
                 {
-                    "name": "andrey.troeglazov",
+                    "name": "andrtroe",
                     "homepage": "https://www.drupal.org/user/3145389"
                 },
                 {
@@ -9877,27 +9945,27 @@
         },
         {
             "name": "drupal/webform_captcha_mandatory",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_captcha_mandatory.git",
-                "reference": "1.0.3"
+                "reference": "1.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_captcha_mandatory-1.0.3.zip",
-                "reference": "1.0.3",
-                "shasum": "c8754cb2c314930d7c541cfc6118c068e5ca9265"
+                "url": "https://ftp.drupal.org/files/projects/webform_captcha_mandatory-1.0.4.zip",
+                "reference": "1.0.4",
+                "shasum": "883bb6e0abe74a93cfde2b165619455bf3a09751"
             },
             "require": {
-                "drupal/core": "^9 || ^10 || ^11",
+                "drupal/core": "^9.1 ||^10.3 || ^11.0",
                 "drupal/webform_ui": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.3",
-                    "datestamp": "1761763543",
+                    "version": "1.0.4",
+                    "datestamp": "1790191821",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -9911,8 +9979,12 @@
             "authors": [
                 {
                     "name": "Thiago Gomes Verissimo",
-                    "homepage": "https://www.drupal.org/user/1024062",
+                    "homepage": "https://www.drupal.org/user/1022774",
                     "email": "verissimotgv@gmail.com"
+                },
+                {
+                    "name": "thiagogomesverissimo",
+                    "homepage": "https://www.drupal.org/user/1024062"
                 }
             ],
             "description": "webform_captcha_mandatory",
@@ -10726,16 +10798,16 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.19.0",
+            "version": "v4.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "b287d2a16aceffbf6e0295559b39662612b77fcf"
+                "reference": "5e0539132d934f936fbae2c88b55d58f9438623f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/b287d2a16aceffbf6e0295559b39662612b77fcf",
-                "reference": "b287d2a16aceffbf6e0295559b39662612b77fcf",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/5e0539132d934f936fbae2c88b55d58f9438623f",
+                "reference": "5e0539132d934f936fbae2c88b55d58f9438623f",
                 "shasum": ""
             },
             "require": {
@@ -10781,9 +10853,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ezyang/htmlpurifier/issues",
-                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.19.0"
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.19.1"
             },
-            "time": "2025-10-17T16:34:55+00:00"
+            "time": "2026-09-15T15:42:51+00:00"
         },
         {
             "name": "fflch/cem-theme",
@@ -10841,6 +10913,41 @@
                 "source": "https://github.com/fflch/centrodametropole_breadcrumb/tree/1.0.1"
             },
             "time": "2021-04-09T01:51:14+00:00"
+        },
+        {
+            "name": "fflch/compras",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fflch/compras.git",
+                "reference": "ccdddfbcfe236b05f956304bf67463951f5dcecc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fflch/compras/zipball/ccdddfbcfe236b05f956304bf67463951f5dcecc",
+                "reference": "ccdddfbcfe236b05f956304bf67463951f5dcecc",
+                "shasum": ""
+            },
+            "require": {
+                "league/csv": "*"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Gomes Verissimo",
+                    "email": "verissimotgv@gmail.com"
+                }
+            ],
+            "description": "Compras FFLCH",
+            "support": {
+                "issues": "https://github.com/fflch/compras/issues",
+                "source": "https://github.com/fflch/compras/tree/1.0.0"
+            },
+            "time": "2026-09-08T14:45:53+00:00"
         },
         {
             "name": "fflch/fflch-theme",
@@ -12182,16 +12289,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.11.0",
+            "version": "2.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "37308608e599f34a1a4845b16440047ec98a172a"
+                "reference": "bf2403f591c5a431b6e0e1170cbadd3d64499564"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/37308608e599f34a1a4845b16440047ec98a172a",
-                "reference": "37308608e599f34a1a4845b16440047ec98a172a",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bf2403f591c5a431b6e0e1170cbadd3d64499564",
+                "reference": "bf2403f591c5a431b6e0e1170cbadd3d64499564",
                 "shasum": ""
             },
             "require": {
@@ -12268,7 +12375,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/2.11.0"
+                "source": "https://github.com/Seldaek/monolog/tree/2.11.1"
             },
             "funding": [
                 {
@@ -12280,20 +12387,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-01T13:05:00+00:00"
+            "time": "2026-09-02T07:57:24+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
-            "version": "2.9.1",
+            "version": "2.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmespath/jmespath.php.git",
-                "reference": "9c208ba27ae7d90853c288b3795d6702eb251d34"
+                "reference": "2157c5e50e813ec6a96c1eed3be7f64a20fb32a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/9c208ba27ae7d90853c288b3795d6702eb251d34",
-                "reference": "9c208ba27ae7d90853c288b3795d6702eb251d34",
+                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/2157c5e50e813ec6a96c1eed3be7f64a20fb32a8",
+                "reference": "2157c5e50e813ec6a96c1eed3be7f64a20fb32a8",
                 "shasum": ""
             },
             "require": {
@@ -12344,9 +12451,9 @@
             ],
             "support": {
                 "issues": "https://github.com/jmespath/jmespath.php/issues",
-                "source": "https://github.com/jmespath/jmespath.php/tree/2.9.1"
+                "source": "https://github.com/jmespath/jmespath.php/tree/2.9.2"
             },
-            "time": "2026-06-11T10:43:56+00:00"
+            "time": "2026-07-06T18:56:19+00:00"
         },
         {
             "name": "myclabs/php-enum",
@@ -12520,20 +12627,19 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.7.0",
+            "version": "v5.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "dca41cd15c2ac9d055ad70dbfd011130757d1f82"
+                "reference": "9e33da9553fe7786f0962b35f4e4ecf01be89def"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/dca41cd15c2ac9d055ad70dbfd011130757d1f82",
-                "reference": "dca41cd15c2ac9d055ad70dbfd011130757d1f82",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/9e33da9553fe7786f0962b35f4e4ecf01be89def",
+                "reference": "9e33da9553fe7786f0962b35f4e4ecf01be89def",
                 "shasum": ""
             },
             "require": {
-                "ext-ctype": "*",
                 "ext-json": "*",
                 "ext-tokenizer": "*",
                 "php": ">=7.4"
@@ -12572,9 +12678,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.7.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.9.0"
             },
-            "time": "2025-12-06T11:56:16+00:00"
+            "time": "2026-09-13T18:51:52+00:00"
         },
         {
             "name": "npm-asset/ckeditor_youtube",
@@ -16598,16 +16704,16 @@
         },
         {
             "name": "uspdev/replicado",
-            "version": "1.27.12",
+            "version": "1.28.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/replicado.git",
-                "reference": "2feec97a58b92b108e74eba83f61d29fee69a472"
+                "reference": "b5f2fdc1ebb2d1c645dcb948bc2a99e2d3e4fa15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/replicado/zipball/2feec97a58b92b108e74eba83f61d29fee69a472",
-                "reference": "2feec97a58b92b108e74eba83f61d29fee69a472",
+                "url": "https://api.github.com/repos/uspdev/replicado/zipball/b5f2fdc1ebb2d1c645dcb948bc2a99e2d3e4fa15",
+                "reference": "b5f2fdc1ebb2d1c645dcb948bc2a99e2d3e4fa15",
                 "shasum": ""
             },
             "require": {
@@ -16641,9 +16747,9 @@
             "homepage": "https://github.com/uspdev/replicado",
             "support": {
                 "issues": "https://github.com/uspdev/replicado/issues",
-                "source": "https://github.com/uspdev/replicado/tree/1.27.12"
+                "source": "https://github.com/uspdev/replicado/tree/1.28.4"
             },
-            "time": "2026-05-13T14:04:10+00:00"
+            "time": "2026-09-03T15:10:07+00:00"
         },
         {
             "name": "uspdev/replicado_drupal",
