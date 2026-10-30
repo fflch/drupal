@@ -12,7 +12,7 @@ services:
       - ./:/var/www/html
     environment:
       HOME: /tmp
-    user: "${UID:-1000}:${GID:-1000}"
+#    user: "${UID:-1000}:${GID:-1000}"
 
   mariadb:
     image: mariadb:11
@@ -76,8 +76,26 @@ services:
     networks:
       - drupalfflch-network
 
+  garage:
+    image: dxflrs/garage:v1.0.1
+    container_name: drupalfflch_garage
+    restart: always
+    ports:
+      - "3900:3900"   # API S3
+      - "3901:3901"   # Comunicação RPC (Inter-nós e Cluster)
+      - "3902:3902"   # S3 Web (Web Hosting de Buckets)
+      - "3903:3903"   # API de Administração K2
+    volumes:
+      - ./docker/garage/garage.toml:/etc/garage.toml:ro   # Mapeamento do arquivo de configuração
+      - garage_data:/var/lib/garage/data
+      - garage_meta:/var/lib/garage/meta
+    networks:
+      - drupalfflch-network
+
 networks:
   drupalfflch-network:
 
 volumes:
   mariadb_data:
+  garage_data:
+  garage_meta:

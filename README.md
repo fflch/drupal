@@ -18,7 +18,7 @@ Construindo a imagem e subindo o ecosistema com o banco de dados:
 
 Trocar senha:
 
-    docker exec -it drupalfflch ./vendor/bin/drush upwd fflch --password="fflch"
+    docker exec -it drupalfflch ./vendor/bin/drush user:password fflch "fflch"
 
 Acessar http://127.0.0.1:8000 com usuário: fflch e senha: fflch
 
@@ -138,15 +138,6 @@ traduzidos pois o langcode está com und (undefinided). Para corrigir:
 
     drush @filosofia.fflch.usp.br config-set  field.storage.node.field_banca langcode pt-br --yes
 
-## Equipe
-
-- @thiagogomesverissimo
-- @kevinlf-usp
-- Augusto César Freire Santiago
-- @nelimaximino
-- Isaac R. L. Martins
-- @annavalim
-
 # Primeira rodada de atualização - core para 9.0.0
 
 No servidor antigo já foram removidos os seguintes módulos:
@@ -170,32 +161,9 @@ Removendo markdown:
     for i in `ls|grep fflch`; do drush @$i cim --partial --source=/var/aegir/platforms/drupal8916a/web/profiles/contrib/fflchprofile/modules/fflch_configs/config/mandatory --yes; done
 
     for i in `ls|grep fflch`; do drush @$i pm-uninstall ckeditor_markdown markdown --yes; done
-
-    (FALTA) Removendo na raiz:
-
-    cd web/modules/contrib/
-    rm -rf cpf markdown ckeditor_markdown
-ath: 'modules/contrib/languageicons/flags/*.png'
-Talvez:
-
     for i in `ls|grep fflch`; do drush @$i config:set system.theme default fflch --yes; done
 
     for i in `ls|grep fflch`; do drush @$i config:set languageicons.settings path 'modules/contrib/languageicons/flags/*.png' -y; done
-
-
-## Sites que não vão subir para versão 9.0.0:
-
-- lisa.fflch.usp.br (quando subirmos o core para 9.1, re-inserir term_reference_tree)
-- centrodametropole.fflch.usp.br por conta do tema
-    
-Identifica site com problema ao aplicar configurações:
-
-    for i in `ls | grep fflch`; do
-      echo "Avaliando $i"
-      if drush @$i cim --partial  --source=/var/aegir/platforms/drupal8916a/web/profiles/contrib/fflchprofile/modules/fflch_configs/config/mandatory  --yes 2>&1  | grep "There were errors"; then
-        echo "Problema $i"
-      fi
-    done
 
 Apagar configurações órfãs nos sites com probelma:  
 
@@ -214,22 +182,76 @@ Considerar usar:
 
     drush webform:repair
 
-    ../vendor/bin/drush webform:repair --help
-Makes sure all Webform admin configuration and webform settings are up-to-date.
+#  S3
 
-## Problemas conhecidos por conta da migração 8.9 para 9.x:
+Inicializa S3:
 
-Erro ao adicionar novo conteúdo:
-Verificar se a configuração do tipo de conteúdo é 'Drupal\node\Entity\Node::getCurrentUserId'
+    NODE_ID=$(docker exec drupalfflch_garage /garage status | grep -E "^[0-9a-f]" | awk '{print $1}')
+    docker exec drupalfflch_garage /garage layout assign $NODE_ID -c 10G -z zone1
+    docker exec drupalfflch_garage /garage layout apply --version 1
 
-    drush config:get core.base_field_override.node.[nome de máquina do tipo de conteúdo].uid default_value_callback
+key:
 
-Alterar a configuração do tipo de conteúdo
+    docker exec drupalfflch_garage /garage key create drupal-key
 
-    drush config:set core.base_field_override.node.[nome de máquina do tipo de conteúdo].uid default_value_callback 'Drupal\node\Entity\Node::getDefaultEntityOwner' -y
+buckets:
 
-Campos Rótulo e Code inacessíveis no módulo Asset Injector:
-Já corrigido com a atualização da versão 2.7 para a versão 2.8.
+    docker exec drupalfflch_garage /garage bucket create drupal
 
-Erro na validação do campo CPF no módulo Boleto USP:
-Módulo Boleto USP usava módulo CPF para validação que foi removido na atualização do core.
+Permissões:
+
+    docker exec drupalfflch_garage /garage bucket allow --read --write drupal --key drupal
+
+Key ID: GKb718b6060b294443377e41ee
+Secret key: 02a250b5b0bedf5408717334f953aea86c68b701209562d551734423f810c793
+
+
+docker exec -it drupalfflch composer require 'drupal/s3fs:^3.0'
+docker exec -it drupalfflch ./vendor/bin/drush en s3fs --yes
+docker exec -it drupalfflch vendor/bin/drush s3fs:refresh-cache
+
+docker exec -it drupalfflch ./vendor/bin/drush config:set system.file default_scheme private -y
+
+
+Exemplo de  web/sites/default/settings.php:
+
+// 1. Credenciais
+
+$settings['s3fs.access_key'] = 'GKb718b6060b294443377e41ee';
+$settings['s3fs.secret_key'] = '02a250b5b0bedf5408717334f953aea86c68b701209562d551734423f810c793';
+
+
+// 2. Servidor e Bucket Privado
+
+$config['s3fs.settings']['bucket'] = 'drupal'; // Nome do seu bucket
+$config['s3fs.settings']['region'] = 'garage';
+$config['s3fs.settings']['use_customhost'] = TRUE;
+$config['s3fs.settings']['hostname'] = 'http://garage:3900';
+$config['s3fs.settings']['use_path_style_endpoint'] = TRUE;
+$config['s3fs.settings']['use_https'] = FALSE;
+
+
+// 3. Compatibilidade com o Garage S3
+$config['s3fs.settings']['use_versioning'] = FALSE;
+$config['s3fs.settings']['disable_versioning'] = TRUE;
+$config['s3fs.settings']['ignore_s3_check'] = TRUE;
+$settings['s3fs.upload_as_private'] = TRUE;
+
+// 4. Mapeamento de Ficheiros: Desativa S3 Público e ativa apenas S3 Privado
+$settings['s3fs.use_s3_for_public'] = FALSE;
+$settings['s3fs.use_s3_for_private'] = TRUE;
+$config['s3fs.settings']['private_folder'] = 'private';
+
+// 5. Configuração de URLs Assinadas (Presigned URLs)
+// Gera links temporários e seguros diretamente do S3 para cada requisição
+$config['s3fs.settings']['presigned_urls'] = TRUE;
+$config['s3fs.settings']['presigned_urls_lifetime'] = 600; // Validade da URL em segundos (ex: 10 min)
+
+// 6. Redirecionamento de traduções locais
+$config['locale.settings']['translation']['path'] = '/tmp/languages';
+$config['s3fs.settings']['presigned_urls'] = TRUE;
+$config['s3fs.settings']['presigned_urls_lifetime'] = 600;
+
+
+// Garante o controle do protocolo privado pelo S3FS
+$settings['s3fs.use_s3_for_private'] = TRUE; 

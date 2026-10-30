@@ -1,57 +1,56 @@
-FROM php:7.4-apache
+FROM ubuntu:22.04
 
-# Pacotes do sistema
-# Subtitui os repositórios para usar apenas o repositório de arquivo do Debian Bullseye
-RUN echo "deb http://archive.debian.org/debian bullseye main" > /etc/apt/sources.list \
-    && apt-get -o Acquire::Check-Valid-Until=false update && apt-get install -y \
-    default-mysql-client \
-    unixodbc \
-    unixodbc-dev \
-    freetds-bin \
-    freetds-dev \
-    libicu-dev \
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=UTC
+
+# 1. Instalação de dependências do sistema e adição do PPA com suporte ao PHP 7.4
+RUN apt-get update && apt-get install -y \
+    software-properties-common \
+    curl \
     git \
     unzip \
-    libzip-dev \
-    libpng-dev \
-    libonig-dev \
-    libxml2-dev \
-    libjpeg-dev \
-    libfreetype6-dev \
-    curl
+    mysql-client \
+    unixodbc \
+    freetds-bin \
+    && add-apt-repository ppa:ondrej/php -y \
+    && apt-get update
 
-# Cria um link simbólico para que o PHP encontre as bibliotecas do FreeTDS
-RUN ln -s /usr/lib/x86_64-linux-gnu/libsybdb.a /usr/lib/
+# 2. Instalação do Apache e Extensões PHP 7.4 (pacotes equivalentes aos do Dockerfile original)
+RUN apt-get install -y \
+    apache2 \
+    libapache2-mod-php7.4 \
+    php7.4-cli \
+    php7.4-intl \
+    php7.4-mysql \
+    php7.4-soap \
+    php7.4-zip \
+    php7.4-mbstring \
+    php7.4-bcmath \
+    php7.4-sybase \
+    php7.4-gd \
+    php7.4-curl \
+    php7.4-xml \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
-# Limpeza
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+# Link simbólico para FreeTDS (se necessário)
+RUN ln -s /usr/lib/x86_64-linux-gnu/libsybdb.a /usr/lib/ || true
 
-# Composer
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+# 3. Composer (Versão 2.2 LTS ideal para PHP 7.4)
+COPY --from=composer:2.2 /usr/bin/composer /usr/bin/composer
 
-# Instalação das extensões PHP
-RUN docker-php-ext-install \
-    intl \
-    pdo_mysql \
-    soap \
-    zip \
-    mbstring \
-    bcmath \
-    pdo_dblib
+# 4. Ajustes de memória e upload no php.ini do Apache
+RUN echo 'memory_limit = 512M' >> /etc/php/7.4/apache2/conf.d/docker-php-ram.ini \
+    && echo 'upload_max_filesize = 512M' >> /etc/php/7.4/apache2/conf.d/docker-php-ram.ini \
+    && echo 'post_max_size = 512M' >> /etc/php/7.4/apache2/conf.d/docker-php-ram.ini
 
-# Configuração da GD
-RUN docker-php-ext-configure gd --with-freetype --with-jpeg && \
-    docker-php-ext-install gd
-
-# php memory e outros ajustes
-RUN echo 'memory_limit = 512M' >> /usr/local/etc/php/conf.d/docker-php-ram.ini \
-    && echo 'upload_max_filesize = 512M' >> /usr/local/etc/php/conf.d/docker-php-ram.ini \
-    && echo 'post_max_size = 512M' >> /usr/local/etc/php/conf.d/docker-php-ram.ini
-
-# Restante das configurações (Apache, Memory, etc) seguem iguais...
-RUN a2enmod rewrite
+# 5. Configurações do Apache
+RUN a2enmod rewrite php7.4
 RUN sed -i 's|/var/www/html|/var/www/html/web|' /etc/apache2/sites-available/000-default.conf
+RUN sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 WORKDIR /var/www/html
-CMD ["apache2-foreground"]
+
+EXPOSE 80
+CMD ["apache2ctl", "-D", "FOREGROUND"]
