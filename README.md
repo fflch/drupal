@@ -290,7 +290,7 @@ $settings['file_private_path'] = 'sites/default/files/private';
 
 # parei aqui:
 
-docker exec -it drupalfflch_garage /garage bucket alias drupal localhost
+docker exec -it drupalfflch_garage /garage bucket alias drupal localhost -> não entendi direito, mas funcionou
 
 acessa arquivo: http://localhost:3902/public/arquivo.pdf
 
