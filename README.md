@@ -182,6 +182,13 @@ Considerar usar:
 
     drush webform:repair
 
+Habilitar sanitização?
+
+drush config:set file.settings filename_sanitization.replace_whitespace true -y
+drush config:set file.settings filename_sanitization.lowercase true -y
+
+
+
 #  S3
 
 Inicializa S3:
@@ -192,11 +199,12 @@ Inicializa S3:
 
 key:
 
-    docker exec drupalfflch_garage /garage key create drupal-key
+    docker exec drupalfflch_garage /garage key create drupal
 
-buckets:
+cria bucket e expoe na porta 3902:
 
     docker exec drupalfflch_garage /garage bucket create drupal
+    docker exec drupalfflch_garage /garage bucket website --allow drupal
 
 Permissões:
 
@@ -210,48 +218,83 @@ docker exec -it drupalfflch composer require 'drupal/s3fs:^3.0'
 docker exec -it drupalfflch ./vendor/bin/drush en s3fs --yes
 docker exec -it drupalfflch vendor/bin/drush s3fs:refresh-cache
 
-docker exec -it drupalfflch ./vendor/bin/drush config:set system.file default_scheme private -y
 
+# Ajusta o proprietário para o usuário padrão do servidor web
+docker exec -it drupalfflch chown -R www-data:www-data /var/www/html/web/sites/default/files /tmp
+
+# Libera permissão de leitura e escrita
+docker exec -it drupalfflch chmod -R 775 /var/www/html/web/sites/default/files /tmp
+
+
+docker exec -it drupalfflch vendor/bin/drush config:set s3fs.settings use_s3_for_public true -y
+docker exec -it drupalfflch vendor/bin/drush config:set s3fs.settings use_s3_for_private true -y
+docker exec -it drupalfflch vendor/bin/drush config:set system.file default_scheme s3fs -y
+
+docker exec -it drupalfflch vendor/bin/drush s3fs:copy-local --scheme=all --yes
+docker exec -it drupalfflch vendor/bin/drush s3fs-refresh-cache
 
 Exemplo de  web/sites/default/settings.php:
 
-// 1. Credenciais
 
+// --- Configuração do S3 File System (s3fs) com Prefixos (dev) ---
+
+// 1. Credenciais
 $settings['s3fs.access_key'] = 'GKb718b6060b294443377e41ee';
 $settings['s3fs.secret_key'] = '02a250b5b0bedf5408717334f953aea86c68b701209562d551734423f810c793';
 
+// Fallback no objeto de configuração do s3fs
+$config['s3fs.settings']['key'] = 'GKb718b6060b294443377e41ee';
+$config['s3fs.settings']['secret'] = '02a250b5b0bedf5408717334f953aea86c68b701209562d551734423f810c793';
 
-// 2. Servidor e Bucket Privado
-
-$config['s3fs.settings']['bucket'] = 'drupal'; // Nome do seu bucket
+// 2. Bucket e Região
+$config['s3fs.settings']['bucket'] = 'drupal';
 $config['s3fs.settings']['region'] = 'garage';
-$config['s3fs.settings']['use_customhost'] = TRUE;
-$config['s3fs.settings']['hostname'] = 'http://garage:3900';
-$config['s3fs.settings']['use_path_style_endpoint'] = TRUE;
-$config['s3fs.settings']['use_https'] = FALSE;
+$config['s3fs.settings']['use_customlocation'] = TRUE;
+$config['s3fs.settings']['customlocation'] = 'garage';
 
-
-// 3. Compatibilidade com o Garage S3
-$config['s3fs.settings']['use_versioning'] = FALSE;
-$config['s3fs.settings']['disable_versioning'] = TRUE;
-$config['s3fs.settings']['ignore_s3_check'] = TRUE;
-$settings['s3fs.upload_as_private'] = TRUE;
-
-// 4. Mapeamento de Ficheiros: Desativa S3 Público e ativa apenas S3 Privado
-$settings['s3fs.use_s3_for_public'] = FALSE;
-$settings['s3fs.use_s3_for_private'] = TRUE;
+// 3. Pastas / Prefixos
+$config['s3fs.settings']['public_folder'] = 'public';
 $config['s3fs.settings']['private_folder'] = 'private';
 
-// 5. Configuração de URLs Assinadas (Presigned URLs)
-// Gera links temporários e seguros diretamente do S3 para cada requisição
-$config['s3fs.settings']['presigned_urls'] = TRUE;
-$config['s3fs.settings']['presigned_urls_lifetime'] = 600; // Validade da URL em segundos (ex: 10 min)
+// 4. Parâmetros de Protocolo e Endpoint para Garage S3
+$config['s3fs.settings']['use_customhost'] = TRUE;
+$config['s3fs.settings']['hostname'] = 'garage:3900';
+$config['s3fs.settings']['use_path_style_endpoint'] = TRUE;
+$config['s3fs.settings']['use_https'] = FALSE; // HTTP para dev local
 
-// 6. Redirecionamento de traduções locais
+// 5. Ajustes de Compatibilidade e Performance
+$config['s3fs.settings']['ignore_s3_check'] = TRUE;
+$config['s3fs.settings']['use_versioning'] = FALSE;
+$config['s3fs.settings']['disable_version_sync'] = TRUE;
+$config['s3fs.settings']['presigned_urls'] = FALSE; // Drupal faz a entrega dos privados em dev
+$config['s3fs.settings']['no_rewrite_cssjs'] = TRUE;
+
+// 6. Redirecionar cache de traduções para o disco local (evita lentidão)
 $config['locale.settings']['translation']['path'] = '/tmp/languages';
-$config['s3fs.settings']['presigned_urls'] = TRUE;
-$config['s3fs.settings']['presigned_urls_lifetime'] = 600;
+$config['system.file']['path']['temporary'] = '/tmp';
+
+// 7. Domínio público das imagens (Porta 3900 para dev)
+$config['s3fs.settings']['domain'] = '127.0.0.1:3900/drupal';
+
+// 8. Ativar a substituição dos esquemas nativos
+$config['s3fs.settings']['use_s3_for_public'] = TRUE;
+$config['s3fs.settings']['use_s3_for_private'] = TRUE;
+$settings['s3fs.use_s3_for_public'] = TRUE;
+$settings['s3fs.use_s3_for_private'] = TRUE;
+
+// 9. Instruct s3fs to not request public-read ACLs on PutObject
+$settings['s3fs.upload_as_private'] = TRUE;
+$config['s3fs.settings']['upload_as_private'] = TRUE;
+$settings['file_private_path'] = 'sites/default/files/private';
 
 
-// Garante o controle do protocolo privado pelo S3FS
-$settings['s3fs.use_s3_for_private'] = TRUE; 
+# parei aqui:
+
+docker exec -it drupalfflch_garage /garage bucket alias drupal localhost
+
+acessa arquivo: http://localhost:3902/public/arquivo.pdf
+
+
+
+
+
