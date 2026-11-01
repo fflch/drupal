@@ -1,0 +1,5 @@
+loginbytoken.settings:
+  title: 'Login by Token'
+  description: 'Configurar token e chave secreta do módulo'
+  parent: system.admin_config_system
+  route_name: loginbytoken.settings

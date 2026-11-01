@@ -2,10 +2,10 @@
 
 namespace Drupal\loginbytoken\Controller;
 
-use Drupal\Core\Routing\TrustedRedirectResponse;
-use Symfony\Component\HttpFoundation\Request;
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Routing\TrustedRedirectResponse;
 use GuzzleHttp\Client;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class LoginController.
@@ -17,35 +17,29 @@ class LoginController extends ControllerBase {
     $temp_token = $request->query->get('temp_token');
     $codpes = $request->query->get('codpes');
 
-    // Verifica se o usuário em questão tem permissão para logar
+    // Recupera as configurações salvas no Drupal (com fallback default)
+    $config = $this->config('loginbytoken.settings');
+    $secretkey = $config->get('secretkey') ?: 'token123';
+    $base_uri = $config->get('base_uri') ?: 'https://sites.fflch.usp.br/';
+
     $site = $request->server->get('HTTP_HOST');
 
-    $filename = '/.tokens/loginbytoken.txt';
-    if (file_exists($filename)) {
-        # ambiente prod
-        $secretkey = file_get_contents($filename);
-        $base_uri = 'https://sites.fflch.usp.br/';
-
-    } else {
-        # ambiente dev
-        $secretkey = '123';
-        $base_uri = 'http://127.0.0.1:8000/';
-    }
-
     $client = new Client([
-        'base_uri' => $base_uri,
+      'base_uri' => $base_uri,
     ]);
 
-    $res = $client->request('GET',"/check/",
-        ['query' => ['secretkey'  => $secretkey,
-                     'codpes'     => $codpes,
-                     'site'       => $site,
-                     'temp_token' => $temp_token,
-        ]]);
+    $res = $client->request('GET', "/check/", [
+      'query' => [
+        'secretkey'  => $secretkey,
+        'codpes'     => $codpes,
+        'site'       => $site,
+        'temp_token' => $temp_token,
+      ],
+    ]);
 
     $response = json_decode($res->getBody());
 
-    if($response[0] == true) {
+    if (!empty($response) && $response[0] == TRUE) {
       $user = user_load_by_name($codpes);
       if (empty($user)) {
         $user = \Drupal\user\Entity\User::create();
@@ -60,28 +54,31 @@ class LoginController extends ControllerBase {
       $user->set("preferred_langcode", $language);
       $user->set("preferred_admin_langcode", $language);
 
-      // não sei o que faz, mas se não colocarmos não cria o usuário
       $user->set("init", 'email');
 
       // Ativa usuário
       $user->activate();
 
-      // role
+      // Role
       $user->addRole('fflch');
 
-      // Bem, user não deve ter sem senha local...
+      // User sem senha local
       $user->setPassword(FALSE);
 
-      //Save user.
+      // Save user.
       $user->save();
 
       // Loga usuário
       user_login_finalize($user);
       $this->messenger()->addMessage('Login efetuado com sucesso');
-    } else {
-        $this->messenger()->addMessage("Desculpe-nos! Você não permissão para logar nesse site. {$response[1]}");
     }
+    else {
+      $message = isset($response[1]) ? $response[1] : '';
+      $this->messenger()->addMessage("Desculpe-nos! Você não tem permissão para logar nesse site. {$message}");
+    }
+
     return $this->redirect('<front>');
 
   }
+
 }

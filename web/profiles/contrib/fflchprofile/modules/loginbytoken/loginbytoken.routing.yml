@@ -8,3 +8,11 @@ loginbytoken.login_controller_login:
     _permission: 'access content'
   options:
     no_cache: TRUE
+
+loginbytoken.settings:
+  path: '/admin/config/system/loginbytoken'
+  defaults:
+    _form: '\Drupal\loginbytoken\Form\LoginByTokenSettingsForm'
+    _title: 'Configurações do Login by Token'
+  requirements:
+    _permission: 'administer site configuration'
