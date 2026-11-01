@@ -54,10 +54,13 @@ WORKDIR /var/www/html
 
 RUN sed -i 's|/var/www/html|/var/www/html/web|' /etc/apache2/sites-available/000-default.conf
 
-# composer
+ENV COMPOSER_HOME=/tmp/composer
+RUN chown www-data:www-data /var/www/html
+
 USER www-data
 COPY --chown=www-data . .
-RUN composer install
+RUN composer install --no-dev --optimize-autoloader --no-interaction
+USER root
 
 EXPOSE 80
 CMD ["apache2ctl", "-D", "FOREGROUND"]
