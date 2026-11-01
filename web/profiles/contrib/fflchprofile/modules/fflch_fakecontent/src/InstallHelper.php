@@ -11,7 +11,6 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Component\Utility\Html;
 use Drupal\menu_link_content\Entity\MenuLinkContent;
 use Drupal\language\Entity\ConfigurableLanguage;
-use Drupal\Core\File\FileSystemInterface;
 
 /**
  * Defines a helper class for importing default content.
@@ -95,7 +94,7 @@ class InstallHelper implements ContainerInjectionInterface {
     ]);
     $menu_link->save();
 
-    // defina a página importada como inicial
+    // defina a página inicial
     $system_site = \Drupal::configFactory()->getEditable('system.site');
     $system_site->set('page.front', '/node/1')->save(TRUE);
   }
@@ -108,7 +107,6 @@ class InstallHelper implements ContainerInjectionInterface {
   protected function importPages() {
 
     $module_path = $this->moduleHandler->getModule('fflch_fakecontent')->getPath();
-    $fflch_image = $this->createFileEntity($module_path . '/default_content/fflch.jpg');
 
     $title = [
         'pt-br' => 'Faculdade de Filosofia, Letras e Ciências Humanas',
@@ -118,9 +116,8 @@ class InstallHelper implements ContainerInjectionInterface {
     ];
 
     // pt-br frontpage
-    $file = $module_path .'/default_content/frontpage_pt.html';
+    $file = $module_path . '/default_content/frontpage_pt.html';
     $body = file_get_contents($file);
-    $body = str_replace("__fflch_image__", $fflch_image, $body);
     $uuids = [];
 
     // Prepare content.
@@ -138,12 +135,10 @@ class InstallHelper implements ContainerInjectionInterface {
     $node->save();
 
     // other languages
-    //$langcodes = ['en','es','fr'];
     $langcodes = ['en'];
     foreach ($langcodes as $langcode) {
-        $file = $module_path ."/default_content/frontpage_{$langcode}.html";
+        $file = $module_path . "/default_content/frontpage_{$langcode}.html";
         $body = file_get_contents($file);
-        $body = str_replace("__fflch_image__", $fflch_image, $body);
         $values = [
             'title' => $title[$langcode],
             'moderation_state' => 'published',
@@ -179,28 +174,6 @@ class InstallHelper implements ContainerInjectionInterface {
     return $this;
   }
 
-
-  /**
-   * Creates a file entity based on an image path.
-   *
-   * @param string $path
-   *   Image path.
-   *
-   * @return int
-   *   File ID.
-   */
-  protected function createFileEntity($path) {
-    $uri = $this->fileUnmanagedCopy($path);
-    $file = $this->entityTypeManager->getStorage('file')->create([
-      'uri' => $uri,
-      'status' => 1,
-    ]);
-    $file->save();
-    $this->storeCreatedContentUuids([$file->uuid() => 'file']);
-    //return $file->id();
-    return file_url_transform_relative(file_create_url($file->getFileUri()));
-  }
-
   /**
    * Stores record of content entities created by this import.
    *
@@ -211,23 +184,6 @@ class InstallHelper implements ContainerInjectionInterface {
   protected function storeCreatedContentUuids(array $uuids) {
     $uuids = $this->state->get('fflch_fakecontent_uuids', []) + $uuids;
     $this->state->set('fflch_fakecontent_uuids', $uuids);
-    
-  }
-
-  /**
-   * Wrapper around file_unmanaged_copy().
-   *
-   * @param string $path
-   *   Path to image.
-   *
-   * @return string|false
-   *   The path to the new file, or FALSE in the event of an error.
-   */
-  protected function fileUnmanagedCopy($path) {
-    $file_system = \Drupal::service('file_system');
-    $filename = basename($path);
-    
-    return $file_system->copy($path, 'public://' . $filename, FileSystemInterface::EXISTS_REPLACE);
   }
 
 }

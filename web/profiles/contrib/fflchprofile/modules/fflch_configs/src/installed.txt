@@ -25,7 +25,6 @@ conditional_fields
 config_perms
 config_translation
 content_translation
-copyprevention
 csv_importer
 ctools
 date_range_formatter
@@ -55,6 +54,7 @@ recaptcha
 redirect
 scheduler
 smtp
+s3fs
 views_bootstrap
 views_data_export
 views_send

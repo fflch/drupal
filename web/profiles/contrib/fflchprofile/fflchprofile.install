@@ -6,8 +6,7 @@
  */
 
 use Drupal\user\Entity\User;
-use Drupal\user\RoleInterface;
-use Drupal\shortcut\Entity\Shortcut;
+use Drupal\user\UserInterface;
 
 /**
  * Implements hook_install().
@@ -18,28 +17,26 @@ use Drupal\shortcut\Entity\Shortcut;
  */
 function fflchprofile_install() {
 
-  // Deny visitor account creation with administrative approval.
+  // Define que o registro de visitantes requer aprovação administrativa
   $user_settings = \Drupal::configFactory()->getEditable('user.settings');
-  $user_settings->set('register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)->save(FALSE);
+  $user_settings->set('register', UserInterface::REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)->save(TRUE);
 
-  // Enable default permissions for system roles.
-  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, ['']);
-  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, ['']);
-
-  // Assign user 1 the "administrator" role.
+  // Atribui ao usuário 1 (root) a função de "administrator" utilizando a API de entidades
   $user = User::load(1);
-  $user->roles[] = 'administrator';
-  $user->save();
+  if ($user) {
+    $user->addRole('administrator');
+    $user->save();
+  }
 
-  // Enable the admin theme.
+  // Ativa o tema de administração para edição de conteúdo
   \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
 
-  // fflch configs
-  \Drupal::service('module_installer')->install(['fflch_configs'], TRUE);
+  // Instala módulos customizados em um único lote
+  \Drupal::service('module_installer')->install([
+    'fflch_configs',
+    'fflch_fakecontent',
+  ], TRUE);
 
-  // fflch fake content
-  \Drupal::service('module_installer')->install(['fflch_fakecontent'], TRUE);
-
-  // Desinstala módulo que fica verificando atualizações
+  // Desinstala o módulo "update" caso esteja ativo
   \Drupal::service('module_installer')->uninstall(['update'], TRUE);
 }

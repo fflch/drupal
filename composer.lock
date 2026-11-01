@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12d220dc4a49f4b3e0484198e2e49c52",
+    "content-hash": "94983331f9ee75cf9059aaace57ff0c7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -227,7 +227,7 @@
             "version": "1.6.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jackmoore/colorbox.git",
+                "url": "https://github.com/jackmoore/colorbox.git",
                 "reference": "bac78120c6ca9e63370cc317ab6f400129cd6608"
             },
             "dist": {
@@ -4086,16 +4086,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.1.0",
+            "version": "9.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "de8c1769ea3d8b640e1a35c9228880d0b74ca4cc"
+                "reference": "62b7a8e2f1c78b076d9e54d2b24234cac3aea548"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/de8c1769ea3d8b640e1a35c9228880d0b74ca4cc",
-                "reference": "de8c1769ea3d8b640e1a35c9228880d0b74ca4cc",
+                "url": "https://api.github.com/repos/drupal/core/zipball/62b7a8e2f1c78b076d9e54d2b24234cac3aea548",
+                "reference": "62b7a8e2f1c78b076d9e54d2b24234cac3aea548",
                 "shasum": ""
             },
             "require": {
@@ -4332,13 +4332,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.1.0"
+                "source": "https://github.com/drupal/core/tree/9.1.2"
             },
-            "time": "2020-12-02T18:11:58+00:00"
+            "time": "2021-01-07T01:42:38+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.1.0",
+            "version": "9.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -4382,22 +4382,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.1.0"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.1.2"
             },
             "time": "2020-08-07T22:30:13+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.1.0",
+            "version": "9.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "0e9d5f06c35fc4365864a6395812e6422ecdd62d"
+                "reference": "227e6b7e7f2207074ef11c3262f4a062ef343ce1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/0e9d5f06c35fc4365864a6395812e6422ecdd62d",
-                "reference": "0e9d5f06c35fc4365864a6395812e6422ecdd62d",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/227e6b7e7f2207074ef11c3262f4a062ef343ce1",
+                "reference": "227e6b7e7f2207074ef11c3262f4a062ef343ce1",
                 "shasum": ""
             },
             "require": {
@@ -4406,7 +4406,7 @@
                 "doctrine/annotations": "1.11.1",
                 "doctrine/lexer": "1.2.1",
                 "doctrine/reflection": "1.2.2",
-                "drupal/core": "9.1.0",
+                "drupal/core": "9.1.2",
                 "egulias/email-validator": "2.1.22",
                 "guzzlehttp/guzzle": "6.5.5",
                 "guzzlehttp/promises": "1.4.0",
@@ -4467,9 +4467,9 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/9.1.0"
+                "source": "https://github.com/drupal/core-recommended/tree/9.1.2"
             },
-            "time": "2020-12-02T18:11:58+00:00"
+            "time": "2021-01-07T01:42:38+00:00"
         },
         {
             "name": "drupal/crop",
@@ -5638,7 +5638,7 @@
                     "datestamp": "1591295180",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5654,6 +5654,10 @@
                 {
                     "name": "megachriz",
                     "homepage": "https://www.drupal.org/user/654114"
+                },
+                {
+                    "name": "smustgrave",
+                    "homepage": "https://www.drupal.org/user/3252890"
                 },
                 {
                     "name": "twistor",
@@ -8485,17 +8489,17 @@
         },
         {
             "name": "drupal/s3fs",
-            "version": "3.11.0",
+            "version": "3.12.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/s3fs.git",
-                "reference": "8.x-3.11"
+                "reference": "8.x-3.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/s3fs-8.x-3.11.zip",
-                "reference": "8.x-3.11",
-                "shasum": "4dbc77c8d396006a2bab2a77124ddd6fcef038a4"
+                "url": "https://ftp.drupal.org/files/projects/s3fs-8.x-3.12.zip",
+                "reference": "8.x-3.12",
+                "shasum": "16a9436a318be8c8fd004da7f647cf788625b0f5"
             },
             "require": {
                 "aws/aws-sdk-php": "^3.18",
@@ -8517,8 +8521,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.11",
-                    "datestamp": "1784613899",
+                    "version": "8.x-3.12",
+                    "datestamp": "1793215268",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9035,6 +9039,10 @@
                     "name": "Mark Casias (markie)",
                     "homepage": "https://www.drupal.org/u/markie",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "markie",
+                    "homepage": "https://www.drupal.org/user/206687"
                 },
                 {
                     "name": "ultimike",
@@ -13607,7 +13615,8 @@
             "version": "2.1.15",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor_youtube/-/ckeditor_youtube-2.1.15.tgz"
+                "url": "https://registry.npmjs.org/ckeditor_youtube/-/ckeditor_youtube-2.1.15.tgz",
+                "shasum": "eebc897b816e5e23f0326949d03ee68316b11e39"
             },
             "type": "npm-asset",
             "license": [
@@ -13619,7 +13628,8 @@
             "version": "4.15.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/fakeobjects/-/fakeobjects-4.15.0.tgz"
+                "url": "https://registry.npmjs.org/fakeobjects/-/fakeobjects-4.15.0.tgz",
+                "shasum": "39f1e4a0a7ef698cc38f77a4b9ed3b558f03251e"
             },
             "type": "npm-asset",
             "license": [
@@ -13631,7 +13641,8 @@
             "version": "0.2.3",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/jquery-ui-touch-punch/-/jquery-ui-touch-punch-0.2.3.tgz"
+                "url": "https://registry.npmjs.org/jquery-ui-touch-punch/-/jquery-ui-touch-punch-0.2.3.tgz",
+                "shasum": "eed82242733ba243f46b3e87c1841b308191da68"
             },
             "type": "npm-asset",
             "license": [
@@ -13643,7 +13654,8 @@
             "version": "1.5.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/juicebox_lite/-/juicebox_lite-1.5.1.tgz"
+                "url": "https://registry.npmjs.org/juicebox_lite/-/juicebox_lite-1.5.1.tgz",
+                "shasum": "cc8f42c5fb1755729e48be03d41b421d30d9184f"
             },
             "type": "npm-asset",
             "license": [
@@ -13655,7 +13667,8 @@
             "version": "0.0.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/tabletoolstoolbar/-/tabletoolstoolbar-0.0.1.tgz"
+                "url": "https://registry.npmjs.org/tabletoolstoolbar/-/tabletoolstoolbar-0.0.1.tgz",
+                "shasum": "55f40c9e7637c003950ae9f791a0d1050cde1447"
             },
             "type": "npm-asset",
             "license": [
@@ -17691,16 +17704,16 @@
         },
         {
             "name": "uspdev/replicado",
-            "version": "1.28.4",
+            "version": "1.28.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/replicado.git",
-                "reference": "b5f2fdc1ebb2d1c645dcb948bc2a99e2d3e4fa15"
+                "reference": "5563118c219773529a690c02b53497ebdc1fb86a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/replicado/zipball/b5f2fdc1ebb2d1c645dcb948bc2a99e2d3e4fa15",
-                "reference": "b5f2fdc1ebb2d1c645dcb948bc2a99e2d3e4fa15",
+                "url": "https://api.github.com/repos/uspdev/replicado/zipball/5563118c219773529a690c02b53497ebdc1fb86a",
+                "reference": "5563118c219773529a690c02b53497ebdc1fb86a",
                 "shasum": ""
             },
             "require": {
@@ -17734,9 +17747,9 @@
             "homepage": "https://github.com/uspdev/replicado",
             "support": {
                 "issues": "https://github.com/uspdev/replicado/issues",
-                "source": "https://github.com/uspdev/replicado/tree/1.28.4"
+                "source": "https://github.com/uspdev/replicado/tree/1.28.6"
             },
-            "time": "2026-09-03T15:10:07+00:00"
+            "time": "2026-10-29T19:06:41+00:00"
         },
         {
             "name": "uspdev/replicado_drupal",
