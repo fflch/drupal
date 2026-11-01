@@ -83,12 +83,25 @@ services:
     ports:
       - "3900:3900"   # API S3
       - "3901:3901"   # Comunicação RPC (Inter-nós e Cluster)
-      - "3902:3902"   # S3 Web (Web Hosting de Buckets)
+#      - "3902:3902"   # S3 Web (Web Hosting de Buckets)
       - "3903:3903"   # API de Administração K2
     volumes:
       - ./docker/garage/garage.toml:/etc/garage.toml:ro   # Mapeamento do arquivo de configuração
       - garage_data:/var/lib/garage/data
       - garage_meta:/var/lib/garage/meta
+    networks:
+      - drupalfflch-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: drupalfflch_nginx
+    restart: always
+    depends_on:
+      - garage
+    ports:
+      - "3902:80"
+    volumes:
+      - ./docker/nginx/s3-public.conf:/etc/nginx/conf.d/default.conf:ro
     networks:
       - drupalfflch-network
 

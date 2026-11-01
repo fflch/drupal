@@ -239,6 +239,10 @@
             "drupal/ckeditor_resize": {
                 "fix location":
                     "patches/ckeditor_resize/1.3.patch"
+            },
+            "drupal/s3fs": {
+                "fflch":
+                    "patches/s3fs/fflch.patch"
             }
         },
         "installer-types": [

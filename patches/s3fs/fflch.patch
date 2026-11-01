@@ -1,0 +1,11 @@
+--- a/src/StreamWrapper/PrivateS3fsStream.php
++++ b/src/StreamWrapper/PrivateS3fsStream.php
+@@ -31,6 +31,9 @@
+   public function getExternalUrl() {
+     $s3_key = str_replace('\\', '/', $this->streamWrapperManager::getTarget($this->uri));
++    if ($s3_key === '' || $s3_key === FALSE) {
++      return '';
++    }
+     return Url::fromRoute(
+       'system.private_file_download',
+       ['filepath' => $s3_key],

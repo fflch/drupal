@@ -231,7 +231,7 @@ docker exec -it drupalfflch vendor/bin/drush config:set s3fs.settings use_s3_for
 docker exec -it drupalfflch vendor/bin/drush config:set system.file default_scheme s3fs -y
 
 docker exec -it drupalfflch vendor/bin/drush s3fs:copy-local --scheme=all --yes
-docker exec -it drupalfflch vendor/bin/drush s3fs-refresh-cache
+docker exec -it drupalfflch vendor/bin/drush s3fs:refresh-cache
 
 Exemplo de  web/sites/default/settings.php:
 
@@ -239,11 +239,11 @@ Exemplo de  web/sites/default/settings.php:
 // --- Configuração do S3 File System (s3fs) com Prefixos (dev) ---
 
 // 1. Credenciais
-$settings['s3fs.access_key'] = 'GKb718b6060b294443377e41ee';
+$settings['s3fs.access_key'] = 'GK8439d96e149cb59ee7784a41';
 $settings['s3fs.secret_key'] = '02a250b5b0bedf5408717334f953aea86c68b701209562d551734423f810c793';
 
 // Fallback no objeto de configuração do s3fs
-$config['s3fs.settings']['key'] = 'GKb718b6060b294443377e41ee';
+$config['s3fs.settings']['key'] = 'GK8439d96e149cb59ee7784a41';
 $config['s3fs.settings']['secret'] = '02a250b5b0bedf5408717334f953aea86c68b701209562d551734423f810c793';
 
 // 2. Bucket e Região
@@ -267,6 +267,7 @@ $config['s3fs.settings']['ignore_s3_check'] = TRUE;
 $config['s3fs.settings']['use_versioning'] = FALSE;
 $config['s3fs.settings']['disable_version_sync'] = TRUE;
 $config['s3fs.settings']['presigned_urls'] = FALSE; // Drupal faz a entrega dos privados em dev
+$config['s3fs.settings']['presigned_urls_lifetime'] = 3600;
 $config['s3fs.settings']['no_rewrite_cssjs'] = TRUE;
 
 // 6. Redirecionar cache de traduções para o disco local (evita lentidão)
@@ -274,7 +275,8 @@ $config['locale.settings']['translation']['path'] = '/tmp/languages';
 $config['system.file']['path']['temporary'] = '/tmp';
 
 // 7. Domínio público das imagens (Porta 3900 para dev)
-$config['s3fs.settings']['domain'] = '127.0.0.1:3900/drupal';
+$config['s3fs.settings']['use_cname'] = TRUE;
+$config['s3fs.settings']['domain'] = 'localhost:3902';
 
 // 8. Ativar a substituição dos esquemas nativos
 $config['s3fs.settings']['use_s3_for_public'] = TRUE;
@@ -285,14 +287,22 @@ $settings['s3fs.use_s3_for_private'] = TRUE;
 // 9. Instruct s3fs to not request public-read ACLs on PutObject
 $settings['s3fs.upload_as_private'] = TRUE;
 $config['s3fs.settings']['upload_as_private'] = TRUE;
-$settings['file_private_path'] = 'sites/default/files/private';
-
+$settings['file_private_path'] = 's3fs-private-unused';
 
 # parei aqui:
 
 docker exec -it drupalfflch_garage /garage bucket alias drupal localhost -> não entendi direito, mas funcionou
 
 acessa arquivo: http://localhost:3902/public/arquivo.pdf
+
+
+Site abc:
+
+Key ID:              GK8439d96e149cb59ee7784a41
+Key name:            abc
+Secret key:          704d83147023310b3bdbe1c2384848057525d996870f3128e201b13062453120
+
+
 
 
 
