@@ -20,7 +20,7 @@ class LoginController extends ControllerBase {
     // Recupera as configurações salvas no Drupal (com fallback default)
     $config = $this->config('loginbytoken.settings');
     $secretkey = $config->get('secretkey') ?: 'token123';
-    $base_uri = $config->get('base_uri') ?: 'https://sites.fflch.usp.br/';
+    $base_uri = $config->get('base_uri') ?: 'https://sites.local/';
 
     $site = $request->server->get('HTTP_HOST');
 
