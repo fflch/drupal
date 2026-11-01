@@ -52,8 +52,6 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 WORKDIR /var/www/html
 
-RUN sed -i 's|/var/www/html|/var/www/html/web|' /etc/apache2/sites-available/000-default.conf
-
 ENV COMPOSER_HOME=/tmp/composer
 ENV COMPOSER_ALLOW_UNSAFE_PHAR_METADATA=1
 
