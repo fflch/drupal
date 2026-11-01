@@ -187,8 +187,6 @@ Habilitar sanitização?
 drush config:set file.settings filename_sanitization.replace_whitespace true -y
 drush config:set file.settings filename_sanitization.lowercase true -y
 
-
-
 #  S3
 
 Inicializa S3:
@@ -209,9 +207,6 @@ cria bucket e expoe na porta 3902:
 Permissões:
 
     docker exec drupalfflch_garage /garage bucket allow --read --write drupal --key drupal
-
-Key ID: GKb718b6060b294443377e41ee
-Secret key: 02a250b5b0bedf5408717334f953aea86c68b701209562d551734423f810c793
 
 
 docker exec -it drupalfflch composer require 'drupal/s3fs:^3.0'
@@ -239,12 +234,12 @@ Exemplo de  web/sites/default/settings.php:
 // --- Configuração do S3 File System (s3fs) com Prefixos (dev) ---
 
 // 1. Credenciais
-$settings['s3fs.access_key'] = 'GK8439d96e149cb59ee7784a41';
-$settings['s3fs.secret_key'] = '02a250b5b0bedf5408717334f953aea86c68b701209562d551734423f810c793';
+$settings['s3fs.access_key'] = 'X';
+$settings['s3fs.secret_key'] = 'X';
 
 // Fallback no objeto de configuração do s3fs
-$config['s3fs.settings']['key'] = 'GK8439d96e149cb59ee7784a41';
-$config['s3fs.settings']['secret'] = '02a250b5b0bedf5408717334f953aea86c68b701209562d551734423f810c793';
+$config['s3fs.settings']['key'] = 'X';
+$config['s3fs.settings']['secret'] = 'X';
 
 // 2. Bucket e Região
 $config['s3fs.settings']['bucket'] = 'drupal';
@@ -294,13 +289,6 @@ $settings['file_private_path'] = 's3fs-private-unused';
 docker exec -it drupalfflch_garage /garage bucket alias drupal localhost -> não entendi direito, mas funcionou
 
 acessa arquivo: http://localhost:3902/public/arquivo.pdf
-
-
-Site abc:
-
-Key ID:              GK8439d96e149cb59ee7784a41
-Key name:            abc
-Secret key:          704d83147023310b3bdbe1c2384848057525d996870f3128e201b13062453120
 
 
 
