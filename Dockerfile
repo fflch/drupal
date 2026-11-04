@@ -62,5 +62,10 @@ COPY --chown=www-data . .
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 USER root
 
+# Não é a melhor solução...
+RUN mkdir -p /var/www/html/config/sync /var/www/html/web/sites/default/files \
+    && chown -R www-data:www-data /var/www/html/config /var/www/html/web/sites/default/files \
+    && chmod -R 775 /var/www/html/config /var/www/html/web/sites/default/files
+
 EXPOSE 80
 CMD ["apache2ctl", "-D", "FOREGROUND"]
