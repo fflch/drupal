@@ -34,8 +34,8 @@ editor_advanced_link
 editor_file
 entity
 entity_clone
+fixfflch
 fontyourface
-fontawesome
 local_fonts
 google_analytics
 google_fonts_api
