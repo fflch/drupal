@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94983331f9ee75cf9059aaace57ff0c7",
+    "content-hash": "eb86857a8f412a8d268ee0f7def2d341",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -212,12 +212,12 @@
             "version": "4.14.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:ckeditor/ckeditor-dev.git",
+                "url": "https://github.com/ckeditor/ckeditor4.git",
                 "reference": "eb2d11644a796cd13cd047cd55541430359f9317"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ckeditor/ckeditor-dev/zipball/eb2d11644a796cd13cd047cd55541430359f9317",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor4/zipball/eb2d11644a796cd13cd047cd55541430359f9317",
                 "reference": "eb2d11644a796cd13cd047cd55541430359f9317"
             },
             "type": "bower-asset"
@@ -293,7 +293,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:douglascrockford/JSON-js.git",
+                "url": "https://github.com/douglascrockford/JSON-js.git",
                 "reference": "7e83f38a2312429fd4933169c1f6a27fd65e889c"
             },
             "dist": {
@@ -722,16 +722,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.10.5",
+            "version": "4.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "78abf3b6853d7ff9044babd2b9c002ff433207d8"
+                "reference": "9ac9ff187bb9d448b823e05dd1769702ef894bfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/78abf3b6853d7ff9044babd2b9c002ff433207d8",
-                "reference": "78abf3b6853d7ff9044babd2b9c002ff433207d8",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/9ac9ff187bb9d448b823e05dd1769702ef894bfc",
+                "reference": "9ac9ff187bb9d448b823e05dd1769702ef894bfc",
                 "shasum": ""
             },
             "require": {
@@ -772,9 +772,9 @@
             "description": "Initialize Symfony Console commands from annotated command class methods.",
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
-                "source": "https://github.com/consolidation/annotated-command/tree/4.10.5"
+                "source": "https://github.com/consolidation/annotated-command/tree/4.10.6"
             },
-            "time": "2026-03-29T00:50:52+00:00"
+            "time": "2026-11-05T04:00:25+00:00"
         },
         {
             "name": "consolidation/config",
@@ -985,16 +985,16 @@
         },
         {
             "name": "consolidation/output-formatters",
-            "version": "4.7.1",
+            "version": "4.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/output-formatters.git",
-                "reference": "a112df9a74854c8438b33b334ed619fa43edf31a"
+                "reference": "3ec909a4f304dba9c6af7669aa6c1b68d2c2a1dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/a112df9a74854c8438b33b334ed619fa43edf31a",
-                "reference": "a112df9a74854c8438b33b334ed619fa43edf31a",
+                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/3ec909a4f304dba9c6af7669aa6c1b68d2c2a1dd",
+                "reference": "3ec909a4f304dba9c6af7669aa6c1b68d2c2a1dd",
                 "shasum": ""
             },
             "require": {
@@ -1033,9 +1033,9 @@
             "description": "Format text by applying transformations provided by plug-in formatters.",
             "support": {
                 "issues": "https://github.com/consolidation/output-formatters/issues",
-                "source": "https://github.com/consolidation/output-formatters/tree/4.7.1"
+                "source": "https://github.com/consolidation/output-formatters/tree/4.7.2"
             },
-            "time": "2026-03-28T23:34:39+00:00"
+            "time": "2026-11-05T04:02:33+00:00"
         },
         {
             "name": "consolidation/robo",
@@ -2870,6 +2870,50 @@
             }
         },
         {
+            "name": "drupal/cdn",
+            "version": "3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cdn.git",
+                "reference": "8.x-3.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cdn-8.x-3.6.zip",
+                "reference": "8.x-3.6",
+                "shasum": "894d31e96b7576b27a134ad5edcd5436df52beb0"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.6",
+                    "datestamp": "1670831701",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "wim leers",
+                    "homepage": "https://www.drupal.org/user/99777"
+                }
+            ],
+            "description": "Serves files (CSS, JS, images …) from a CDN.",
+            "homepage": "https://www.drupal.org/project/cdn",
+            "support": {
+                "source": "https://git.drupalcode.org/project/cdn"
+            }
+        },
+        {
             "name": "drupal/checklistapi",
             "version": "2.0.0",
             "source": {
@@ -4579,6 +4623,10 @@
                 {
                     "name": "lashabp",
                     "homepage": "https://www.drupal.org/user/3382242"
+                },
+                {
+                    "name": "tyapchyc",
+                    "homepage": "https://www.drupal.org/user/3351412"
                 }
             ],
             "description": "CSV Importer.",
@@ -7482,10 +7530,6 @@
                 {
                     "name": "luke.leber",
                     "homepage": "https://www.drupal.org/user/3509746"
-                },
-                {
-                    "name": "neslee canil pinto",
-                    "homepage": "https://www.drupal.org/user/3580850"
                 },
                 {
                     "name": "rjacobs",
@@ -11705,16 +11749,16 @@
         },
         {
             "name": "fflch/fflch-theme",
-            "version": "1.0.8",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/fflch-theme.git",
-                "reference": "5a54f288f80a137c6a2d4773838d7e3e429c4cc7"
+                "reference": "6553689d9cb238f19d440511a034cc02c0fd435d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fflch/fflch-theme/zipball/5a54f288f80a137c6a2d4773838d7e3e429c4cc7",
-                "reference": "5a54f288f80a137c6a2d4773838d7e3e429c4cc7",
+                "url": "https://api.github.com/repos/fflch/fflch-theme/zipball/6553689d9cb238f19d440511a034cc02c0fd435d",
+                "reference": "6553689d9cb238f19d440511a034cc02c0fd435d",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -11731,7 +11775,39 @@
                 "issues": "https://github.com/fflch/fflch-theme/issues",
                 "source": "https://github.com/fflch/fflch-theme"
             },
-            "time": "2021-09-28T17:48:06+00:00"
+            "time": "2026-11-07T04:21:16+00:00"
+        },
+        {
+            "name": "fflch/fixfflch",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fflch/fixfflch.git",
+                "reference": "2aa8eb4f796e3d5fa2c0576bd7bbe867d5e95573"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fflch/fixfflch/zipball/2aa8eb4f796e3d5fa2c0576bd7bbe867d5e95573",
+                "reference": "2aa8eb4f796e3d5fa2c0576bd7bbe867d5e95573",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Gomes Verissimo",
+                    "email": "verissimotgv@gmail.com"
+                }
+            ],
+            "description": "Ajustes e correções customizadas para os sites da FFLCH USP.",
+            "support": {
+                "issues": "https://github.com/fflch/fixfflch/issues",
+                "source": "https://github.com/fflch/fixfflch/tree/1.0.0"
+            },
+            "time": "2026-11-07T03:35:27+00:00"
         },
         {
             "name": "fflch/pragmatica-drupal-module",
@@ -17704,16 +17780,16 @@
         },
         {
             "name": "uspdev/replicado",
-            "version": "1.28.6",
+            "version": "1.28.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/replicado.git",
-                "reference": "5563118c219773529a690c02b53497ebdc1fb86a"
+                "reference": "aac9710f830fe2e58ccd0e720891a48ee5510378"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/replicado/zipball/5563118c219773529a690c02b53497ebdc1fb86a",
-                "reference": "5563118c219773529a690c02b53497ebdc1fb86a",
+                "url": "https://api.github.com/repos/uspdev/replicado/zipball/aac9710f830fe2e58ccd0e720891a48ee5510378",
+                "reference": "aac9710f830fe2e58ccd0e720891a48ee5510378",
                 "shasum": ""
             },
             "require": {
@@ -17747,9 +17823,9 @@
             "homepage": "https://github.com/uspdev/replicado",
             "support": {
                 "issues": "https://github.com/uspdev/replicado/issues",
-                "source": "https://github.com/uspdev/replicado/tree/1.28.6"
+                "source": "https://github.com/uspdev/replicado/tree/1.28.9"
             },
-            "time": "2026-10-29T19:06:41+00:00"
+            "time": "2026-11-06T12:19:27+00:00"
         },
         {
             "name": "uspdev/replicado_drupal",
