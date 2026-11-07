@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb86857a8f412a8d268ee0f7def2d341",
+    "content-hash": "3c35f1053f991cd9e854e14cdd6685a2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11749,16 +11749,16 @@
         },
         {
             "name": "fflch/fflch-theme",
-            "version": "1.0.10",
+            "version": "1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/fflch-theme.git",
-                "reference": "6553689d9cb238f19d440511a034cc02c0fd435d"
+                "reference": "3f07b2afcc2f0c7b3c9dd1bd6ed1b55eb2cc36ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fflch/fflch-theme/zipball/6553689d9cb238f19d440511a034cc02c0fd435d",
-                "reference": "6553689d9cb238f19d440511a034cc02c0fd435d",
+                "url": "https://api.github.com/repos/fflch/fflch-theme/zipball/3f07b2afcc2f0c7b3c9dd1bd6ed1b55eb2cc36ea",
+                "reference": "3f07b2afcc2f0c7b3c9dd1bd6ed1b55eb2cc36ea",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -11775,7 +11775,7 @@
                 "issues": "https://github.com/fflch/fflch-theme/issues",
                 "source": "https://github.com/fflch/fflch-theme"
             },
-            "time": "2026-11-07T04:21:16+00:00"
+            "time": "2026-11-07T13:12:44+00:00"
         },
         {
             "name": "fflch/fixfflch",
