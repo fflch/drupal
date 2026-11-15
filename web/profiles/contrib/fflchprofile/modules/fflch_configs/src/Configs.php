@@ -7,7 +7,6 @@ use Symfony\Component\Yaml\Yaml;
 use Drupal\Core\Config\PreExistingConfigException;
 use Drupal\Core\Config\StorageInterface;
 use Drupal\Core\Entity\ContentEntityTypeInterface;
-use Drupal\Core\Extension\ModuleUninstallValidatorException;
 
 use Drupal\language\Entity\ConfigurableLanguage;
 
@@ -227,8 +226,10 @@ class Configs {
       \Drupal::service('module_installer')->uninstall([$module], TRUE);
       return;
     }
-    catch (ModuleUninstallValidatorException $e) {
-      \Drupal::logger('fflch_configs')->warning('Desinstalação de @module bloqueada (@message). Apagando o conteúdo do módulo e tentando de novo.', [
+    catch (\Throwable $e) {
+      // Bloqueio por conteúdo (ModuleUninstallValidatorException) ou erro do
+      // próprio site, como tabela do módulo inexistente (sites migrados).
+      \Drupal::logger('fflch_configs')->warning('Desinstalação de @module falhou (@message). Corrigindo tabelas, apagando o conteúdo do módulo e tentando de novo.', [
         '@module' => $module,
         '@message' => $e->getMessage(),
       ]);
@@ -242,9 +243,54 @@ class Configs {
         $modules[] = $dependent;
       }
     }
+    $this->recreateMissingEntityTables($modules);
     $this->deleteModuleContent($modules);
 
     \Drupal::service('module_installer')->uninstall([$module], TRUE);
+  }
+
+  /**
+   * Recria as tabelas de entidades dos módulos quando alguma estiver faltando.
+   *
+   * Em sites migrados, o módulo pode constar como instalado sem as tabelas
+   * dele. A desinstalação consulta essas tabelas (para ver se há conteúdo) e
+   * falha. As tabelas restantes do tipo de entidade são apagadas e todas são
+   * recriadas vazias; a desinstalação, em seguida, apaga tudo de novo.
+   */
+  private function recreateMissingEntityTables(array $modules) {
+    $logger = \Drupal::logger('fflch_configs');
+    $entity_type_manager = \Drupal::entityTypeManager();
+    $schema = \Drupal::database()->schema();
+
+    foreach ($entity_type_manager->getDefinitions() as $entity_type_id => $definition) {
+      if (!in_array($definition->getProvider(), $modules, TRUE) || !$definition instanceof ContentEntityTypeInterface) {
+        continue;
+      }
+      try {
+        $storage = $entity_type_manager->getStorage($entity_type_id);
+        if (!method_exists($storage, 'getTableMapping')) {
+          continue;
+        }
+        $tables = $storage->getTableMapping()->getTableNames();
+        $missing = array_filter($tables, function ($table) use ($schema) {
+          return !$schema->tableExists($table);
+        });
+        if (!$missing) {
+          continue;
+        }
+        foreach (array_diff($tables, $missing) as $table) {
+          $schema->dropTable($table);
+        }
+        \Drupal::service('entity_type.listener')->onEntityTypeCreate($definition);
+        $logger->warning('Tabelas de @type ausentes (@tables); recriadas vazias para permitir a desinstalação.', [
+          '@type' => $entity_type_id,
+          '@tables' => implode(', ', $missing),
+        ]);
+      }
+      catch (\Throwable $e) {
+        $logger->warning('Falha ao recriar as tabelas de @type: @message', ['@type' => $entity_type_id, '@message' => $e->getMessage()]);
+      }
+    }
   }
 
   /**
