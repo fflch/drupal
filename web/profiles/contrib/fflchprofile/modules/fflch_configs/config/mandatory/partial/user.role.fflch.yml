@@ -10,7 +10,6 @@ permissions:
   - 'access toolbar'
   - 'access administration pages'
   - 'view the administration theme'
-  - 'access in-place editing'
   - 'access contextual links'
 # Administração de nodes
   - 'bypass node access'
@@ -137,10 +136,6 @@ permissions:
 # administrar captcha
   - 'administer CAPTCHA settings'
   - 'administer recaptcha'
-# feeds
-  - 'access feed overview'
-  - 'administer feeds'
-  - 'administer feeds_tamper'
 # fancy_file_delete
   - 'administer fancy file delete'
   - 'add unmanaged files entities'

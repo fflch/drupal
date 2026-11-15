@@ -3,6 +3,22 @@
 use Drupal\fflch_configs\Configs;
 
 /**
+ * Implements hook_module_implements_alter().
+ *
+ * O hook_cron deste módulo roda por último: ele pode desinstalar módulos
+ * (uninstalled.txt), e o hook_cron de um módulo desinstalado que ainda
+ * estivesse na fila do mesmo cron quebraria (ex.: update_cron() pedindo o
+ * serviço update.manager, que já não existe).
+ */
+function fflch_configs_module_implements_alter(&$implementations, $hook) {
+  if ($hook === 'cron' && isset($implementations['fflch_configs'])) {
+    $group = $implementations['fflch_configs'];
+    unset($implementations['fflch_configs']);
+    $implementations['fflch_configs'] = $group;
+  }
+}
+
+/**
  * Implements hook_cron().
  */
 function fflch_configs_cron() {

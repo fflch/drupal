@@ -1,4 +1,19 @@
-anchor_link
+# Módulos que DEVEM estar instalados em todos os sites.
+#
+# A cada cron o fflch_configs instala os módulos desta lista que estiverem
+# faltando (junto com as dependências), um por vez, inclusive se alguém tiver
+# desinstalado algum manualmente. Se a instalação for bloqueada por
+# configurações do módulo que já existem no site (PreExistingConfigException),
+# elas são apagadas e a instalação é refeita. Falhas vão para o log
+# (canal fflch_configs).
+#
+# O uninstalled.txt tem prioridade: um módulo listado lá não é instalado, nem
+# um módulo que dependa dele (o log avisa para tirá-lo desta lista).
+#
+# Para remover um módulo de todos os sites, tire-o daqui e coloque-o no
+# uninstalled.txt (ver o README).
+# Linhas iniciadas por # são comentários.
+
 admin_toolbar
 asset_injector
 auto_entitylabel
@@ -20,7 +35,6 @@ ckeditor_bootstrap_table
 ckeditor_resize
 insert_view_adv
 collapse_text
-colorbutton
 conditional_fields
 config_perms
 config_translation

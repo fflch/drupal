@@ -1,9 +1,0 @@
-
-fflch_audit.audit_controller.json_api:
-  path: '/site_audit/api/json'
-  defaults:
-    _controller: '\Drupal\fflch_audit\Controller\AuditController::audit'
-    _title: 'audit'
-  methods:  [GET]
-  requirements:
-    _permission: 'TRUE'

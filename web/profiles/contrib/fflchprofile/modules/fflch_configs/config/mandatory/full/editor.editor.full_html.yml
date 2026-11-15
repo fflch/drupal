@@ -1,4 +1,3 @@
-uuid: null
 langcode: pt-br
 status: true
 dependencies:
@@ -41,9 +40,6 @@ settings:
             - Underline
             - Strike
             - Italic
-            - '-'
-            - TextColor
-            - BGColor
         -
           name: Matemática
           items:
@@ -61,8 +57,8 @@ settings:
           name: Links
           items:
             - Youtube
-            - Link
-            - Unlink
+            - DrupalLink
+            - DrupalUnlink
             - DrupalFile
             - ImceImage
         -
@@ -107,8 +103,6 @@ settings:
       type: text
       more_text: 'Read more'
       less_text: 'Show less'
-    colorbutton:
-      colors: ''
     editoradvancedimage:
       default_class: ''
     insert_view_adv:

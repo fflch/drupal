@@ -1,8 +1,0 @@
-name: 'fflch_audit'
-type: module
-description: 'fflch Audit'
-core_version_requirement: ^9 || ^10 || ^11
-package: 'FFLCH'
-
-dependencies:
-  - site_audit

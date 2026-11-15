@@ -1,0 +1,46 @@
+# Módulos que NÃO devem estar instalados em nenhum site.
+#
+# A cada cron o fflch_configs desinstala os módulos desta lista que estiverem
+# instalados, junto com os módulos que dependem deles. Se o Drupal impedir a
+# desinstalação por existir conteúdo (entidades ou campos do módulo), esse
+# conteúdo é APAGADO e a desinstalação é refeita. Falhas vão para o log
+# (canal fflch_configs).
+#
+# Módulos listados aqui que já não existem no codebase são ignorados, então um
+# módulo pode continuar na lista depois de sair do composer.json.
+# Linhas iniciadas por # são comentários.
+
+update
+comment
+
+# Marcados para remoção em 9.4.15a
+feeds_tamper
+feeds_ex
+feeds
+tamper
+anchor_link
+colorbutton
+
+# Módulos do core sem uso nos sites (o tema fflch tem paleta própria).
+color
+
+# Módulos do core descontinuados (deprecated) nas versões seguintes do Drupal
+# e sem uso nos sites. Os que dependem de outro vêm antes dele.
+action
+aggregator
+ban
+contact
+field_layout
+forum
+hal
+tracker
+history
+migrate_drupal_ui
+migrate_drupal
+quickedit
+rdf
+settings_tray
+shortcut
+statistics
+telephone
+tour
