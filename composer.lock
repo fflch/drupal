@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78681e8ad6019d0859c1a99a0e67b014",
+    "content-hash": "6d73d5e2400133c0b4463f2312cadd01",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -12196,16 +12196,16 @@
         },
         {
             "name": "fflch/fixfflch",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/fixfflch.git",
-                "reference": "2aa8eb4f796e3d5fa2c0576bd7bbe867d5e95573"
+                "reference": "61b0027e95c2cb0900d7b1b0e0b773d5c40aa2a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fflch/fixfflch/zipball/2aa8eb4f796e3d5fa2c0576bd7bbe867d5e95573",
-                "reference": "2aa8eb4f796e3d5fa2c0576bd7bbe867d5e95573",
+                "url": "https://api.github.com/repos/fflch/fixfflch/zipball/61b0027e95c2cb0900d7b1b0e0b773d5c40aa2a2",
+                "reference": "61b0027e95c2cb0900d7b1b0e0b773d5c40aa2a2",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -12222,10 +12222,10 @@
             "description": "Ajustes e correções customizadas para os sites da FFLCH USP.",
             "support": {
                 "issues": "https://github.com/fflch/fixfflch/issues",
-                "source": "https://github.com/fflch/fixfflch/tree/1.0.0"
+                "source": "https://github.com/fflch/fixfflch/tree/1.0.1"
             },
-            "time": "2026-11-07T03:35:27+00:00",
-            "published-time": "2026-11-07T03:37:03+00:00"
+            "time": "2026-11-15T20:29:12+00:00",
+            "published-time": "2026-11-15T20:51:59+00:00"
         },
         {
             "name": "fflch/pragmatica-drupal-module",
