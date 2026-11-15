@@ -44,3 +44,6 @@ shortcut
 statistics
 telephone
 tour
+
+# Removidos do projeto: saem do composer.json na próxima release.
+copyprevention

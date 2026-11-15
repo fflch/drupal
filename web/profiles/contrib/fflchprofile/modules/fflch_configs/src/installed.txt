@@ -33,6 +33,7 @@ ckeditor_readmore
 ckeditor_uploadimage
 ckeditor_bootstrap_table
 ckeditor_resize
+dblog
 insert_view_adv
 collapse_text
 conditional_fields

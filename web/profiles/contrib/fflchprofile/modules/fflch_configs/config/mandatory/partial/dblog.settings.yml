@@ -1,0 +1,3 @@
+# Teto de segurança de linhas no log do banco. Além disso, o cron do
+# fflch_configs apaga as mensagens com mais de 12 horas (Configs::dblog()).
+row_limit: 100000

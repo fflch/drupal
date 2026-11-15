@@ -26,6 +26,26 @@ class Configs {
     }
     $this->user1();
     $this->boleto();
+    $this->dblog();
+  }
+
+  /**
+   * Horas de mensagens mantidas no log do banco (dblog).
+   */
+  const DBLOG_MAX_AGE_HOURS = 12;
+
+  /**
+   * Apaga do log do banco (tabela watchdog) as mensagens mais antigas que
+   * DBLOG_MAX_AGE_HOURS. O dblog do core só limita por número de linhas
+   * (row_limit, definido em config/mandatory/partial/dblog.settings.yml).
+   */
+  private function dblog() {
+    if (!$this->isExtensionInstalled('dblog')) {
+      return;
+    }
+    \Drupal::database()->delete('watchdog')
+      ->condition('timestamp', \Drupal::time()->getRequestTime() - self::DBLOG_MAX_AGE_HOURS * 3600, '<')
+      ->execute();
   }
 
   // Só chama o installer quando há algo a fazer: install()/uninstall()
