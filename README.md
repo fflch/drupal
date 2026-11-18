@@ -7,9 +7,9 @@ Plataforma Drupal usada nos sites da FFLCH.
 Construindo a imagem e subindo o ecosistema com o banco de dados:
 
     docker compose up --build
-    docker exec -it drupalfflch composer install
-    docker exec -it drupalfflch ./vendor/bin/drush site-install fflchprofile \
-        --db-url=mysql://drupalfflch:drupalfflch@mariadb/drupalfflch \
+    docker exec -it drupal composer install
+    docker exec -it drupal ./vendor/bin/drush site-install fflchprofile \
+        --db-url=mysql://drupal:drupal@mariadb/drupal \
         --site-name="fflch" \
         --site-mail="fflch@localhost" \
         --account-name="fflch" \
@@ -19,9 +19,9 @@ Construindo a imagem e subindo o ecosistema com o banco de dados:
 
 Trocar senha:
 
-    docker exec -it drupalfflch ./vendor/bin/drush user:password fflch "fflch"
-    docker exec -it drupalfflch ./vendor/bin/drush cr
-    docker exec -it drupalfflch ./vendor/bin/drush cron
+    docker exec -it drupal ./vendor/bin/drush user:password fflch "fflch"
+    docker exec -it drupal ./vendor/bin/drush cr
+    docker exec -it drupal ./vendor/bin/drush cron
 
 Acessar http://127.0.0.1:8000 com usuário: fflch e senha: fflch
 
@@ -270,42 +270,42 @@ Habilitar sanitização?
 
 Inicializa S3:
 
-    NODE_ID=$(docker exec drupalfflch_garage /garage status | grep -E "^[0-9a-f]" | awk '{print $1}')
-    docker exec drupalfflch_garage /garage layout assign $NODE_ID -c 10G -z zone1
-    docker exec drupalfflch_garage /garage layout apply --version 1
+    NODE_ID=$(docker exec drupal_garage /garage status | grep -E "^[0-9a-f]" | awk '{print $1}')
+    docker exec drupal_garage /garage layout assign $NODE_ID -c 10G -z zone1
+    docker exec drupal_garage /garage layout apply --version 1
 
 key:
 
-    docker exec drupalfflch_garage /garage key create drupal
+    docker exec drupal_garage /garage key create drupal
 
 cria bucket e expoe na porta 3902:
 
-    docker exec drupalfflch_garage /garage bucket create drupal
-    docker exec drupalfflch_garage /garage bucket website --allow drupal
+    docker exec drupal_garage /garage bucket create drupal
+    docker exec drupal_garage /garage bucket website --allow drupal
 
 Permissões:
 
-    docker exec drupalfflch_garage /garage bucket allow --read --write drupal --key drupal
+    docker exec drupal_garage /garage bucket allow --read --write drupal --key drupal
 
 
-docker exec -it drupalfflch composer require 'drupal/s3fs:^3.0'
-docker exec -it drupalfflch ./vendor/bin/drush en s3fs --yes
-docker exec -it drupalfflch vendor/bin/drush s3fs:refresh-cache
+docker exec -it drupal composer require 'drupal/s3fs:^3.0'
+docker exec -it drupal ./vendor/bin/drush en s3fs --yes
+docker exec -it drupal vendor/bin/drush s3fs:refresh-cache
 
 
 # Ajusta o proprietário para o usuário padrão do servidor web
-docker exec -it drupalfflch chown -R www-data:www-data /var/www/html/web/sites/default/files /tmp
+docker exec -it drupal chown -R www-data:www-data /var/www/html/web/sites/default/files /tmp
 
 # Libera permissão de leitura e escrita
-docker exec -it drupalfflch chmod -R 775 /var/www/html/web/sites/default/files /tmp
+docker exec -it drupal chmod -R 775 /var/www/html/web/sites/default/files /tmp
 
 
-docker exec -it drupalfflch vendor/bin/drush config:set s3fs.settings use_s3_for_public true -y
-docker exec -it drupalfflch vendor/bin/drush config:set s3fs.settings use_s3_for_private true -y
-docker exec -it drupalfflch vendor/bin/drush config:set system.file default_scheme s3fs -y
+docker exec -it drupal vendor/bin/drush config:set s3fs.settings use_s3_for_public true -y
+docker exec -it drupal vendor/bin/drush config:set s3fs.settings use_s3_for_private true -y
+docker exec -it drupal vendor/bin/drush config:set system.file default_scheme s3fs -y
 
-docker exec -it drupalfflch vendor/bin/drush s3fs:copy-local --scheme=all --yes
-docker exec -it drupalfflch vendor/bin/drush s3fs:refresh-cache
+docker exec -it drupal vendor/bin/drush s3fs:copy-local --scheme=all --yes
+docker exec -it drupal vendor/bin/drush s3fs:refresh-cache
 
 
 
