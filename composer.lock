@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33bdc3c83705aaea1d3ce6dca69667d7",
+    "content-hash": "31598e75d6765e241a2edd2f0406ae8c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -12229,16 +12229,16 @@
         },
         {
             "name": "fflch/cem-theme",
-            "version": "1.0.3",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/cem-theme.git",
-                "reference": "8e92d6af559317fd540b9f0d52d2ecad3f24f2f3"
+                "reference": "232a37b6ed81eadf0545e76d31892356933062ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fflch/cem-theme/zipball/8e92d6af559317fd540b9f0d52d2ecad3f24f2f3",
-                "reference": "8e92d6af559317fd540b9f0d52d2ecad3f24f2f3",
+                "url": "https://api.github.com/repos/fflch/cem-theme/zipball/232a37b6ed81eadf0545e76d31892356933062ec",
+                "reference": "232a37b6ed81eadf0545e76d31892356933062ec",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -12254,23 +12254,23 @@
             ],
             "support": {
                 "issues": "https://github.com/fflch/cem-theme/issues",
-                "source": "https://github.com/fflch/cem-theme/tree/1.0.3"
+                "source": "https://github.com/fflch/cem-theme/tree/1.0.6"
             },
-            "time": "2021-04-09T01:55:17+00:00",
-            "published-time": "2021-04-09T01:55:51+00:00"
+            "time": "2026-07-02T19:03:33+00:00",
+            "published-time": "2026-11-18T02:12:29+00:00"
         },
         {
             "name": "fflch/centrodametropole_breadcrumb",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/centrodametropole_breadcrumb.git",
-                "reference": "b9d3f7d961a7b79eb401733503d51deee3b66418"
+                "reference": "6a6d57dc1f424b6771078afd42e76596d0334a2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fflch/centrodametropole_breadcrumb/zipball/b9d3f7d961a7b79eb401733503d51deee3b66418",
-                "reference": "b9d3f7d961a7b79eb401733503d51deee3b66418",
+                "url": "https://api.github.com/repos/fflch/centrodametropole_breadcrumb/zipball/6a6d57dc1f424b6771078afd42e76596d0334a2c",
+                "reference": "6a6d57dc1f424b6771078afd42e76596d0334a2c",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -12281,10 +12281,10 @@
             "description": "centrodametropole_breadcrumb",
             "support": {
                 "issues": "https://github.com/fflch/centrodametropole_breadcrumb/issues",
-                "source": "https://github.com/fflch/centrodametropole_breadcrumb/tree/1.0.1"
+                "source": "https://github.com/fflch/centrodametropole_breadcrumb/tree/1.0.2"
             },
-            "time": "2021-04-09T01:51:14+00:00",
-            "published-time": "2021-04-09T01:56:03+00:00"
+            "time": "2026-11-18T02:09:44+00:00",
+            "published-time": "2026-11-18T02:10:22+00:00"
         },
         {
             "name": "fflch/compras",
@@ -12413,17 +12413,22 @@
         },
         {
             "name": "fflch/urbandatabrasil_userform",
-            "version": "1.0.0",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fflch/urbandatabrasil_userform.git",
-                "reference": "c1343754f7aed92aa5a71e123efd05760ed926f8"
+                "reference": "6de76af634b05900bf3b700c6265f8ca0b4b5ac5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fflch/urbandatabrasil_userform/zipball/c1343754f7aed92aa5a71e123efd05760ed926f8",
-                "reference": "c1343754f7aed92aa5a71e123efd05760ed926f8",
+                "url": "https://api.github.com/repos/fflch/urbandatabrasil_userform/zipball/6de76af634b05900bf3b700c6265f8ca0b4b5ac5",
+                "reference": "6de76af634b05900bf3b700c6265f8ca0b4b5ac5",
                 "shasum": ""
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10 || ^11",
+                "drupal/webform": "*",
+                "php": ">=7.3"
             },
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -12439,10 +12444,10 @@
             "description": "Custom module for Urbandata Project",
             "support": {
                 "issues": "https://github.com/fflch/urbandatabrasil_userform/issues",
-                "source": "https://github.com/fflch/urbandatabrasil_userform/tree/1.0.0"
+                "source": "https://github.com/fflch/urbandatabrasil_userform/tree/1.0.3"
             },
-            "time": "2021-04-09T02:01:28+00:00",
-            "published-time": "2021-04-09T02:02:34+00:00"
+            "time": "2026-11-18T02:22:03+00:00",
+            "published-time": "2026-11-18T02:22:30+00:00"
         },
         {
             "name": "fflch/webform_ficha_catalografica",
