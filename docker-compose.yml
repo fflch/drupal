@@ -1,13 +1,13 @@
 services:
-  drupalfflch:
+  drupal:
     build: .
-    container_name: drupalfflch
+    container_name: drupal
     ports:
       - "8000:80"
     depends_on:
       - mariadb
     networks:
-      - drupalfflch-network
+      - drupal-network
     volumes:
       - ./:/var/www/html
     environment:
@@ -16,21 +16,21 @@ services:
 
   mariadb:
     image: mariadb:11
-    container_name: drupalfflch_mariadb
+    container_name: drupal_mariadb
     restart: always
     environment:
-      MYSQL_DATABASE: drupalfflch
-      MYSQL_USER: drupalfflch
-      MYSQL_PASSWORD: drupalfflch
-      MYSQL_ROOT_PASSWORD: drupalfflch
+      MYSQL_DATABASE: drupal
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: drupal
+      MYSQL_ROOT_PASSWORD: drupal
     volumes:
       - mariadb_data:/var/lib/mysql
     networks:
-      - drupalfflch-network
+      - drupal-network
 
   phpmyadmin:
     image: phpmyadmin:latest
-    container_name: drupalfflch_phpmyadmin
+    container_name: drupal_phpmyadmin
     restart: always
     depends_on:
       - mariadb
@@ -40,45 +40,45 @@ services:
       PMA_HOST: mariadb
       PMA_PORT: 3306
       PMA_USER: root
-      PMA_PASSWORD: drupalfflch
+      PMA_PASSWORD: drupal
     networks:
-      - drupalfflch-network
+      - drupal-network
 
   selenium:
     image: selenium/standalone-chrome
-    container_name: drupalfflch_selenium
+    container_name: drupal_selenium
     ports:
       - "7900:7900"
     networks:
-      - drupalfflch-network
+      - drupal-network
     shm_size: 2gb
 
   # No /etc/hosts do seu computador colocar a linha `127.0.0.1 auth.local` 
   # particularidades do protocolo oAuth1 usado na USP
   senhaunica-faker:
     image: uspdev/senhaunica-faker
-    container_name: drupalfflch_senhaunica-faker
+    container_name: drupal_senhaunica-faker
     ports:
       - "3141:3141"
     environment:
           - APP_URL=http://auth.local:3141
     networks:
-      drupalfflch-network:
+      drupal-network:
         aliases:
           - auth.local
 
   mailpit:
     image: axllent/mailpit:latest
-    container_name: drupalfflch_mailpit
+    container_name: drupal_mailpit
     ports:
       - "1025:1025"   # SMTP
       - "8025:8025"   # Interface Web
     networks:
-      - drupalfflch-network
+      - drupal-network
 
   garage:
     image: dxflrs/garage:v1.0.1
-    container_name: drupalfflch_garage
+    container_name: drupal_garage
     restart: always
     ports:
       - "3900:3900"   # API S3
@@ -90,11 +90,11 @@ services:
       - garage_data:/var/lib/garage/data
       - garage_meta:/var/lib/garage/meta
     networks:
-      - drupalfflch-network
+      - drupal-network
 
   nginx:
     image: nginx:alpine
-    container_name: drupalfflch_nginx
+    container_name: drupal_nginx
     restart: always
     depends_on:
       - garage
@@ -103,10 +103,10 @@ services:
     volumes:
       - ./docker/nginx/s3-public.conf:/etc/nginx/conf.d/default.conf:ro
     networks:
-      - drupalfflch-network
+      - drupal-network
 
 networks:
-  drupalfflch-network:
+  drupal-network:
 
 volumes:
   mariadb_data:
